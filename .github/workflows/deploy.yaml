@@ -34,14 +34,14 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           path: build
-    deploy:
-      if: github.ref_name == "main"
-      environment:
-        name: github-pages
-        url: ${{ steps.deploy.outputs.url }}
-      runs-on: ubuntu-latest
-      needs: build
-      steps:
-        - name: Deploy to GitHub Pages
-          id: deploy
-          uses: actions/deploy@-pages@v2
+      deploy:
+        if: github.ref_name == "main"
+        environment:
+          name: github-pages
+          url: ${{ steps.deploy.outputs.url }}
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+          - name: Deploy to GitHub Pages
+            id: deploy
+            uses: actions/deploy@-pages@v2
