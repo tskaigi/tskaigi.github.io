@@ -108,6 +108,10 @@ export default function Home() {
           </p>
         </a>
       </div>
+
+      <div className="p-10">
+        <button className="btn btn-primary">Button</button>
+      </div>
     </main>
   )
 }
