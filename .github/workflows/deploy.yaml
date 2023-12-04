@@ -39,10 +39,10 @@ jobs:
     if: github.ref_name == 'main'
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.url }}
+      url: ${{ steps.depoyment.outputs.url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        id: deploy
+        id: deployment
         uses: actions/deploy-pages@v2
