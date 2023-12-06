@@ -14,7 +14,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    enbvironment:
+    environment:
       REPO_NAME: ${{ github.event.repository.name }}
     steps:
       - uses: actions/checkout@v3
