@@ -17,8 +17,10 @@ export default function RootLayout({
   return (
     <html lang="jp">
       <body className={noto.className}>
-        <header><NavBar></NavBar></header>
+        <header><NavBar /></header>
+        <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
         {children}
+        </div>
       </body>
     </html>
   )
