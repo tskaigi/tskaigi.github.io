@@ -1,16 +1,17 @@
 import Link from "next/link"
 
 type Link = {
+  index: number
   name: string
   icon: string
   href: string
 }
 
 const links = [
-  { name: "Home", icon: "home", href: "/" },
-  { name: "Sponsor", icon: "home", href: "/sponsor" },
-  { name: "About", icon: "home", href: "/about" },
-  { name: "Contact", icon: "home", href: "/contact" },
+  { index: 1, name: "Home", icon: "home", href: "/" },
+  { index: 2, name: "Sponsor", icon: "home", href: "/sponsor" },
+  { index: 3, name: "About", icon: "home", href: "/about" },
+  { index: 4, name: "Contact", icon: "home", href: "/contact" },
 ]
 
 export default function NavBar() {
@@ -45,7 +46,7 @@ export default function NavBar() {
       <ul className="menu p-4 w-80 min-h-full bg-base-200">
         {/* Sidebar content here */}
         {links.map((link: Link) => (
-              <li>
+              <li key={link.index}>
                 <Link href={link.href}>
                   {link.name}
                 </Link>
