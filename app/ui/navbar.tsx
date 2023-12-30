@@ -1,18 +1,5 @@
 import Link from "next/link"
-
-type Link = {
-  index: number
-  name: string
-  icon: string
-  href: string
-}
-
-const links = [
-  { index: 1, name: "Home", icon: "home", href: "/" },
-  { index: 2, name: "Sponsor", icon: "home", href: "/sponsor" },
-  { index: 3, name: "About", icon: "home", href: "/about" },
-  { index: 4, name: "Contact", icon: "home", href: "/contact" },
-]
+import { PageInfos, PageInfo } from "../lib/definitions"
 
 export default function NavBar() {
   return(
@@ -21,10 +8,10 @@ export default function NavBar() {
     {/* Navbar */}
     <div className="drawer-content flex flex-col">
       <div className="w-full navbar bg-base-300">
-        <div className="flex-1 px-2 mx-2">TsKaigi</div>
+        <div className="flex-1 px-2 mx-2">TSKaigi</div>
         <div className="flex-none hidden lg:block">
           <ul className="menu menu-horizontal">
-            {links.map((link: Link) => (
+            {PageInfos.map((link: PageInfo) => (
               <li key={link.index}>
                 <Link href={link.href}>
                   {link.name}
@@ -45,7 +32,7 @@ export default function NavBar() {
       <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
       <ul className="menu p-4 w-80 min-h-full bg-base-200">
         {/* Sidebar content here */}
-        {links.map((link: Link) => (
+        {PageInfos.map((link: PageInfo) => (
               <li key={link.index}>
                 <Link href={link.href}>
                   {link.name}
