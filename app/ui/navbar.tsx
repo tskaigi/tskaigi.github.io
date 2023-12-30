@@ -25,7 +25,7 @@ export default function NavBar() {
         <div className="flex-none hidden lg:block">
           <ul className="menu menu-horizontal">
             {links.map((link: Link) => (
-              <li>
+              <li key={link.index}>
                 <Link href={link.href}>
                   {link.name}
                 </Link>
