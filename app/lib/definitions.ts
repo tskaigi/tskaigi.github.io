@@ -7,6 +7,7 @@ export type PageInfo = {
 }
 
 export const PageInfos = [
-	{ index: 1, name: "Home", icon: "home", href: "/" },
-	{ index: 2, name: "Sponsor", icon: "home", href: "/sponsorrecruitment" },
+	{index: 1, name: "Home", icon: "home", href: "/" },
+	{index: 2, name: "Sponsor", icon: "", href: "/sponsorrecruitment" },
+	{index: 3, name: "CfP", icon: "", href: "/call-for-proposals" },
 ]

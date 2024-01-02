@@ -1,11 +1,18 @@
+"use client";
 import Link from "next/link"
 import { PageInfos, PageInfo } from "../lib/definitions"
 
+const closeSideBar = () => {
+  const drawerElement = document.getElementById('my-drawer-3') as HTMLInputElement;
+  if (drawerElement) {
+    drawerElement.checked = false;
+  }
+}
+
 export default function NavBar() {
   return(
-  <div className="drawer drawer-end">
+  <div className="drawer drawer-end z-50">
     <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
-    {/* Navbar */}
     <div className="drawer-content flex flex-col">
       <div className="w-full navbar bg-base-300">
         <div className="flex-1 px-2 mx-2">TSKaigi</div>
@@ -29,16 +36,16 @@ export default function NavBar() {
     </div> 
     {/* Sidebar */}
     <div className="drawer-side">
+      <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
       <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
       <ul className="menu p-4 w-80 min-h-full bg-base-200">
-        {/* Sidebar content here */}
         {PageInfos.map((link: PageInfo) => (
-              <li key={link.index}>
-                <Link href={link.href}>
-                  {link.name}
-                </Link>
-              </li>
-            ))}
+          <li key={link.index}>
+            <Link href={link.href} onClick={closeSideBar}>
+              {link.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   </div>
