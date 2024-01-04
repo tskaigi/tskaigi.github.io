@@ -69,7 +69,7 @@ export default function Page() {
             <div className="divider divider-neutral my-0"></div>
             <p>複数応募：　可</p>
             <div className="divider divider-neutral my-0"></div>
-            <p>応募方法：　<a className=" link-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform">こちらのフォーム</a>から応募</p>
+            <p>応募方法：　<a className="link link-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform">こちらのフォーム</a>から応募</p>
             <div className="divider divider-neutral my-0"></div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function Page() {
           </div>
         ))}
       </div>
-      <div className="flex flex-col items-center justify-center lg:flex-row gap-8 lg:gap-8 my-24 lg:my-48">
+      <div className="flex flex-col items-center justify-center lg:flex-row gap-4 lg:gap-8 my-24 lg:my-48">
         <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full lg:w-auto"><button className="btn lg:btn-lg w-full">お問い合わせ</button></a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" className="w-full lg:w-auto"><button className="btn lg:btn-lg btn-accent block w-full">応募する</button></a>
       </div>
