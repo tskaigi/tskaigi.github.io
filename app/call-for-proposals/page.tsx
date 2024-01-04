@@ -8,13 +8,17 @@ const QandAs: QandA[] = [
     answer: "トークはセッション30分LT5分のいずれかの枠での提案をお待ちしています。ご自身のアイデアに合った形式での提案をお願いいたします。"
   },
   {
-    question: "CfPの選考方法や基準はどのようになりますか？",
-    answer: "選考は複数のステップを経て行われ、選考委員やプログラムチームがトークの内容や提案者の経験を評価します。公正かつ多様性を考慮した選考プロセスを構築し、興味深いプログラムを作り上げることを目指しています。"
-  },
-  {
-    question: "申請をする際に注意すべきポイントはありますか？",
-    answer: "提案をする際には、トークのタイトルなどの必須事項や、任意項目をしっかりと記入してください。また、トークの内容が聴衆にどのような価値を提供するか、どのレベルの聴衆に適しているかなども考慮して提案してください。"
+    question: "名前は本名である必要がありますか？",
+    answer: "本名でもハンドルネームでも、どちらでも構いません。"
   }
+  // {
+  //   question: "CfPの選考方法や基準はどのようになりますか？",
+  //   answer: "選考は複数のステップを経て行われ、選考委員やプログラムチームがトークの内容や提案者の経験を評価します。公正かつ多様性を考慮した選考プロセスを構築し、興味深いプログラムを作り上げることを目指しています。"
+  // },
+  // {
+  //   question: "申請をする際に注意すべきポイントはありますか？",
+  //   answer: "提案をする際には、トークのタイトルなどの必須事項や、任意項目をしっかりと記入してください。また、トークの内容が聴衆にどのような価値を提供するか、どのレベルの聴衆に適しているかなども考慮して提案してください。"
+  // }
 ]
 export default function Page() {
   return (
@@ -29,8 +33,12 @@ export default function Page() {
           <div>
             <p>日程：　2024年5月11日（土）</p>
             <div className="divider divider-neutral my-0"></div>
-            <p>会場：　中野セントラルパーク カンファレンス</p>
+            <p>会場：　<a className="link link-primary" href="https://maps.app.goo.gl/Zwff1Z3yCu32pNHz6">中野セントラルパーク カンファレンス</a></p>
             <div className="divider divider-neutral my-0"></div>
+            <div className="flex flex-col items-center justify-center lg:flex-row h-32 gap-4 lg:gap-8 my-8">
+              <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full lg:w-auto"><button className="btn lg:btn-lg w-full">お問い合わせ</button></a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" className="w-full lg:w-auto"><button className="btn lg:btn-lg btn-accent block w-full">応募する</button></a>
+            </div>
           </div>
         </div>
         <p className="md:px-10">
@@ -49,7 +57,7 @@ export default function Page() {
           <div>
             <p>応募締切：　2024年2月29日（木）</p>
             <div className="divider divider-neutral my-0"></div>
-            <p>結果通知：　2024年3月中旬</p>
+            <p>結果通知：　2024年3月中旬（連絡は採用者のみ）</p>
             <div className="divider divider-neutral my-0"></div>
             <p>テーマ　：　TypeScriptに関する内容</p>
             <div className="divider divider-neutral my-0"></div>
@@ -75,6 +83,10 @@ export default function Page() {
             <div className="divider divider-neutral"></div>
           </div>
         ))}
+      </div>
+      <div className="flex flex-col items-center justify-center lg:flex-row gap-8 lg:gap-8 my-24 lg:my-48">
+        <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full lg:w-auto"><button className="btn lg:btn-lg w-full">お問い合わせ</button></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" className="w-full lg:w-auto"><button className="btn lg:btn-lg btn-accent block w-full">応募する</button></a>
       </div>
     </>
   )

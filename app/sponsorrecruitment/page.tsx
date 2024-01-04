@@ -2,7 +2,7 @@ export default function SponsorRecruitment() {
   return(
     <>
       <div className="hero min-h-[70vh]">
-        <div className="hero-content flex-col max-w-full lg:gap-24 lg:flex-row-reverse">
+        <div className="hero-content p-0 flex-col max-w-full lg:gap-24 lg:flex-row-reverse">
           <div className="basis-1/3 card card-compact  max-w-full bg-base-100 shadow-xl">
             <figure><img src="favicon.ico" alt="tskaigi logo" /></figure>
             <div className="card-body">
