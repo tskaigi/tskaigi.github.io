@@ -2,7 +2,7 @@ export default function Loading() {
   return (
     <>
       <div className="shadow-lg rounded-md animate-pulse bg-slate-400 my-8 w-full aspect-[16/9] mx-auto flex items-center justify-center text-4xl">
-        comming soon
+        coming soon
       </div>
       <div className="grid shadow-lg rounded-md px-4 w-full mx-auto my-8">
         <div className="animate-pulse flex space-x-4 items-center">
