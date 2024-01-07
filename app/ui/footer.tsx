@@ -12,7 +12,7 @@ export default function Footer() {
     <header className="footer-title">ページ一覧</header> 
       {PageInfos.map((link: PageInfo) => (
         <Link key={link.index} href={link.href}>
-          {link.name}
+          {link.title}
         </Link>
       ))}
   </nav>
