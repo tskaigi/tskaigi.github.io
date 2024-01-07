@@ -21,7 +21,7 @@ export default function NavBar() {
             {PageInfos.map((link: PageInfo) => (
               <li key={link.index}>
                 <Link href={link.href}>
-                  {link.name}
+                  {link.title}
                 </Link>
               </li>
             ))}
@@ -42,7 +42,7 @@ export default function NavBar() {
         {PageInfos.map((link: PageInfo) => (
           <li key={link.index}>
             <Link href={link.href} onClick={closeSideBar}>
-              {link.name}
+              {link.title}
             </Link>
           </li>
         ))}
