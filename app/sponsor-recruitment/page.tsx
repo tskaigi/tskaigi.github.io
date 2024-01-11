@@ -1,3 +1,12 @@
+import type { Metadata } from 'next'
+import { getTitleByIndex, getDescriptionByIndex } from '../lib/utils'
+const targetIndex = 2;
+
+export const metadata: Metadata = {
+  title: getTitleByIndex(targetIndex),
+  description: getDescriptionByIndex(targetIndex)
+}
+
 export default function SponsorRecruitment() {
   return(
     <>
