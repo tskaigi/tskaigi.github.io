@@ -35,7 +35,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="my-5 flex justify-center">
+      <div className="my-5 flex justify-center flex-col md:flex-row items-center">
         <Link href="/sponsor-recruitment">
           <button className="btn lg:btn-lg font-bold  btn-accent m-1 btn-wide">
             スポンサー募集
