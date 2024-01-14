@@ -10,28 +10,23 @@ export const metadata: Metadata = {
 export default function SponsorRecruitment() {
   return(
     <>
-      <div className="hero min-h-[70vh]">
-        <div className="hero-content p-0 flex-col max-w-full lg:gap-24 lg:flex-row-reverse">
-          <div className="basis-1/3 card card-compact  max-w-full bg-base-100 shadow-xl">
-            <figure><img src="favicon.ico" alt="tskaigi logo" /></figure>
-            <div className="card-body">
-            </div>
-          </div>
-          <div className="basis-2/3">
-            <h1 className="text-2xl lg:leading-relaxed lg:text-5xl font-bold"><span className="text-accent">TSKaigi 2024</span><br />のスポンサー募集中</h1>
-            <p className="py-6">
-            TSKaigiは日本最大級のtypescriptカンファレンスを開催します。スポンサーになって、typescriptコミュニティを一緒に盛り上げませんか？<br />
-            業界でのエキスパートとして日本のTypeScriptユーザーの支援をお願いします。
-            </p>
-            <div className="flex flex-col justify-end lg:flex-row">
-              <button className="btn btn-link lg:btn-lg m-1">詳細を見る</button>
-              <button className="btn lg:btn-lg btn-accent m-1">スポンサーになる</button>
-            </div>
-          </div>
+      <div className="hero min-h-[30vh]">
+        <div className="hero-content p-0 max-w-full">
+          <h1 className="text-2xl lg:leading-relaxed lg:text-5xl font-bold"><span className="text-accent pr-4">TSKaigi 2024</span>スポンサー募集</h1>
         </div>
       </div>
       <div className="my-20 lg:mb-32">
-        <h2 className="text-2xl lg:text-4xl my-10 text-center">詳細情報</h2>
+        <h2 className="text-2xl lg:text-4xl my-10 text-center">メッセージ</h2>
+        <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
+          <p>国内最大規模の TypeScript カンファレンスの開催に向けて、協賛いただけるスポンサー様を募集いたします。</p>
+          <p>近年、コロナ禍により多くのオフラインイベントの中止され、TypeScript を扱うエンジニアが集う機会も減少しました。その一方で技術の進展や活用は進み、この分野の知見を共有する場の必要性は高まり続けています。</p>
+          <p>そこで新たに有志が集まり、コミュニティの活性と学びが共有される場を作ることを目的として TypeScript の一大カンファレンスを企画いたしました。</p>
+          <p>オフライン400名、オンライン1,500名規模の参加者を見込んでおり、貴社の TypeScript を使用するエンジニアに対するブランディングとリクルーティングの絶好の機会となります。</p>
+          <p>ぜひ貴社のご支援・ご協力を賜りますようお願い申し上げます。</p>
+        </div>
+      </div>
+      <div className="my-20 lg:mb-32">
+        <h2 className="text-2xl lg:text-4xl my-10 text-center">協賛のご案内</h2>
         <div className="mockup-browser border border-base-300">
           <div className="mockup-browser-toolbar">
             <div className="input border border-base-300 lg:text-xl">https://tskaigi.org</div>
@@ -40,18 +35,11 @@ export default function SponsorRecruitment() {
         </div>
       </div>
       <div className="my-20 lg:mb-32">
+        <h2 className="text-2xl lg:text-4xl my-10 text-center">応募フォーム</h2>
         <div className="">
-          <h2 className="text-2xl text-center lg:leading-relaxed lg:text-5xl font-bold">
-            <span className="text-accent">TSKaigi 2024</span><br />
-            スポンサーとしてコミュニティを盛り上げましょう
-          </h2>
-          <p className="mx-auto my-6 text-left lg:text-xl max-w-2xl text-info-contents">
-          TSKaigiへのスポンサーシップは、国内外の開発者コミュニティの成長を後押しします。<br />
-          あなたのサポートが、次世代のエンジニアたちの力強いバックボーンとなります。
-          </p>
-          <div className="flex flex-col justify-end lg:flex-row lg:justify-center">
-            <button className="btn btn-link lg:btn-lg m-1">Mailで申請</button>
-            <button className="btn lg:btn-lg btn-accent m-1">Slackで参加</button>
+          <div className="flex flex-col items-center justify-center lg:flex-row gap-4 lg:gap-8 my-24 lg:my-24">
+            <a href="https://forms.gle/aZnQSAz8UEwdiitj7" className="link link-primary w-full lg:w-auto"><button className="btn lg:btn-lg btn-wide">お問い合わせ</button></a>
+            <a href="https://forms.gle/ERgp32CP8q7ZTc8h8" className="w-full lg:w-auto"><button className="btn lg:btn-lg btn-accent btn-wide">応募する</button></a>
           </div>
         </div>
       </div>
