@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Loading from "./ui/loading";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <div className="max-w-3xl my-8 lg:mt-20 m-auto">
+    <div className="max-w-2xl my-8 m-auto">
       <div className="md:block ">
         <img
           src="/TSKaigiLogo.png"
@@ -34,7 +35,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div className="my-5 lg:mb-20 flex justify-center">
+      <div className="my-5 flex justify-center">
         <Link href="/sponsor-recruitment">
           <button className="btn lg:btn-lg font-bold  btn-accent m-1 btn-wide">
             スポンサー募集
@@ -47,8 +48,18 @@ export default function Home() {
         </Link>
       </div>
       <div className="my-5 flex flex-col">
-        <h3 className="m-2 text-2xl text-center">チケット</h3>
-        <div className="text-center">
+        <h3 className="text-2xl text-center text-accent">最新情報</h3>
+        <div className="text-center p-2">
+          <a className="pl-1 text-accent" href="https://twitter.com/tskaigi">
+            <FaXTwitter className="inline-block" />
+            TSKaigi公式アカウント
+          </a>
+          で発信しています。ぜひフォローください。
+        </div>
+      </div>
+      <div className="my-5 flex flex-col">
+        <h3 className="text-2xl text-center text-accent">チケット</h3>
+        <div className="text-center p-2">
           チケット販売は3月頃を予定しています。もうしばらくお待ち下さい。
         </div>
       </div>
