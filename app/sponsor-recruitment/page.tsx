@@ -27,7 +27,7 @@ export default function SponsorRecruitment() {
         </div>
       </div>
       <div className="my-20 lg:mb-32">
-        <h2 className="text-2xl lg:text-4xl my-10 text-center">協賛のご案内(法人様向け)</h2>
+        <h2 className="text-2xl lg:text-4xl my-10 text-center">協賛のご案内(法人向け)</h2>
         <div className="mockup-browser border border-base-300">
           <div className="mockup-browser-toolbar">
             <div className="input border border-base-300 lg:text-xl">https://tskaigi.org</div>
@@ -45,7 +45,7 @@ export default function SponsorRecruitment() {
         </div>
       </div>
       <div className="my-10 lg:mb-32">
-        <h2 id="detail" className="text-2xl lg:text-4xl my-10 text-center">個人スポンサー詳細</h2>
+        <h2 id="detail" className="text-2xl lg:text-4xl my-10 text-center">協賛のご案内(個人向け)</h2>
         <div className="mx-auto my-6 text-left lg:text-xl max-w-2xl text-info-contentss">
           <p>一般チケット販売と同時に個人スポンサーを募集します。情報公開までしばらくお待ちください。</p>
         </div>
