@@ -15,7 +15,7 @@ export default function NavBar() {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         <div className="w-full navbar bg-base-300">
-          <div className="flex-1 px-2 mx-2"><img src="favicon.ico" alt="tskaigi logo" className="w-6 h-6 mr-4" />TSKaigi</div>
+          <div className="flex-1 px-2 mx-2"><Link href={"/"}>TSKaigi</Link></div>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
               {PageInfos.map((link: PageInfo) => {
