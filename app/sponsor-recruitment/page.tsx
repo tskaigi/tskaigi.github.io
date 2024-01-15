@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 export default function SponsorRecruitment() {
   return(
     <>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
       <div className="hero min-h-[30vh]">
         <div className="hero-content p-0 max-w-full">
           <h1 className="text-2xl lg:leading-relaxed lg:text-5xl font-bold"><span className="text-accent pr-4">TSKaigi 2024</span>スポンサー募集</h1>
@@ -26,7 +27,7 @@ export default function SponsorRecruitment() {
         </div>
       </div>
       <div className="my-20 lg:mb-32">
-        <h2 className="text-2xl lg:text-4xl my-10 text-center">協賛のご案内</h2>
+        <h2 className="text-2xl lg:text-4xl my-10 text-center">協賛のご案内(法人様向け)</h2>
         <div className="mockup-browser border border-base-300">
           <div className="mockup-browser-toolbar">
             <div className="input border border-base-300 lg:text-xl">https://tskaigi.org</div>
@@ -36,12 +37,19 @@ export default function SponsorRecruitment() {
       </div>
       <div className="my-20 lg:mb-32">
         <h2 className="text-2xl lg:text-4xl my-10 text-center">応募フォーム</h2>
-        <div className="">
+        <div>
           <div className="flex flex-col items-center justify-center lg:flex-row gap-4 lg:gap-8 my-24 lg:my-24">
-            <a href="https://forms.gle/aZnQSAz8UEwdiitj7" className="link link-primary w-full lg:w-auto"><button className="btn lg:btn-lg btn-wide">お問い合わせ</button></a>
-            <a href="https://forms.gle/ERgp32CP8q7ZTc8h8" className="w-full lg:w-auto"><button className="btn lg:btn-lg btn-accent btn-wide">応募する</button></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://forms.gle/aZnQSAz8UEwdiitj7" className="link link-primary w-full lg:w-auto text-center"><button className="btn lg:btn-lg btn-wide">お問い合わせ</button></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://forms.gle/ERgp32CP8q7ZTc8h8" className="w-full lg:w-auto text-center"><button className="btn lg:btn-lg btn-accent btn-wide">応募する</button></a>
           </div>
         </div>
+      </div>
+      <div className="my-10 lg:mb-32">
+        <h2 id="detail" className="text-2xl lg:text-4xl my-10 text-center">個人スポンサー詳細</h2>
+        <div className="mx-auto my-6 text-left lg:text-xl max-w-2xl text-info-contentss">
+          <p>一般チケット販売と同時に個人スポンサーを募集します。情報公開までしばらくお待ちください。</p>
+        </div>
+      </div>
       </div>
     </>
   )
