@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#3498db',
+  themeColor: '#345DA7',
 }
 
 export default function RootLayout({
@@ -35,12 +35,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="jp">
+    <html lang="jp" className="scroll-smooth">
       <body className={noto.className}>
         <header><NavBar /></header>
-        <div className='container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen'>
         {children}
-        </div>
         <Footer />
       </body>
     </html>
