@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { PageInfos, PageInfo } from "../lib/definitions";
+import { PageInfo } from "../lib/definitions";
+import { PageInfos } from "../lib/data";
 import { HiExternalLink } from "react-icons/hi";
 
 export default function Footer() {
