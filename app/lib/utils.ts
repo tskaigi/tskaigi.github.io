@@ -1,4 +1,4 @@
-import { PageInfos } from '../lib/definitions'
+import { PageInfos } from '../lib/data'
 
 export const getTitleByIndex = (index: number): string | undefined => {
   const pageInfo = PageInfos.find((page) => page.index === index);

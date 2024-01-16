@@ -12,13 +12,13 @@ export default function SponsorRecruitment() {
     <>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
 
-      <div className="hero min-h-[30vh]">
+      <div className="hero min-h-[20vh] lg:min-h-[30vh]">
         <div className="hero-content p-0 max-w-full">
           <h1 className="text-2xl lg:leading-relaxed lg:text-5xl font-bold"><span className="text-accent pr-4">TSKaigi 2024</span>スポンサー募集</h1>
         </div>
       </div>
-      <div className="my-20 lg:mb-32">
-        <h2 className="text-2xl lg:text-4xl my-10 text-center">メッセージ</h2>
+      <div className="mb-10 lg:my-20 lg:mb-32">
+        <h2 className="text-2xl lg:text-4xl mb-10 lg:my-10 text-center">メッセージ</h2>
         <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
           <p>国内最大規模の TypeScript カンファレンスの開催に向けて、協賛いただけるスポンサー様を募集いたします。</p>
           <p>近年、コロナ禍により多くのオフラインイベントの中止され、TypeScript を扱うエンジニアが集う機会も減少しました。その一方で技術の進展や活用は進み、この分野の知見を共有する場の必要性は高まり続けています。</p>

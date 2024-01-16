@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
+import { QandAs } from '../lib/data';
 import { getTitleByIndex, getDescriptionByIndex } from '../lib/utils'
 import { HiExternalLink } from "react-icons/hi";
+import Qa from '../ui/qa';
 
 const targetIndex = 3;
 
@@ -9,31 +11,15 @@ export const metadata: Metadata = {
   description: getDescriptionByIndex(targetIndex)
 }
 
-type QandA = {
-  question: string
-  answer: string
-}
-
-const QandAs: QandA[] = [
-  {
-    question: "トークの時間はどのくらいですか？",
-    answer: "トークはセッション30分LT5分のいずれかの枠での提案をお待ちしています。ご自身のアイデアに合った形式での提案をお願いいたします。"
-  },
-  {
-    question: "名前は本名である必要がありますか？",
-    answer: "本名でもハンドルネームでも、どちらでも構いません。"
-  }
-  // {
-  //   question: "CfPの選考方法や基準はどのようになりますか？",
-  //   answer: "選考は複数のステップを経て行われ、選考委員やプログラムチームがトークの内容や提案者の経験を評価します。公正かつ多様性を考慮した選考プロセスを構築し、興味深いプログラムを作り上げることを目指しています。"
-  // },
-  // {
-  //   question: "申請をする際に注意すべきポイントはありますか？",
-  //   answer: "提案をする際には、トークのタイトルなどの必須事項や、任意項目をしっかりと記入してください。また、トークの内容が聴衆にどのような価値を提供するか、どのレベルの聴衆に適しているかなども考慮して提案してください。"
-  // }
-]
-
 export default function Page() {
+  QandAs.categories
+  .filter(category => category.name === "hoge") // name が "hoge" のカテゴリだけをフィルタリング
+  .flatMap(category => category.questions) // フィルタリングされたカテゴリの questions を結合
+  .map(question => {
+    // ここで question ごとの処理を行う
+    console.log(question.id, question.question, question.answer);
+  });
+
   return (
     <>
       {/* 未定 */}
@@ -91,7 +77,7 @@ export default function Page() {
           <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">CfP概要</h2>
           <div className="grid md:grid-cols-2 gap-8 my-12">
             <div className="m-auto">
-              <img src="/banner.png" className="object-cover h-48 md:h-56 lg:h-80" alt="tskaigi logo" />
+              <img src="/banner.png" className="object-cover h-48 md:h-56 lg:h-80 rounded-lg " alt="tskaigi logo" />
             </div>
             <div>
               <p>応募締切：　2024年2月29日（木）</p>
@@ -113,20 +99,12 @@ export default function Page() {
             </div>
           </div>
         </div>
+        <div className="flex flex-col items-center justify-center lg:flex-row gap-4 lg:gap-12 my-24 lg:my-28">
+          <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full max-w-md"><button className="btn lg:btn-lg w-full">お問い合わせ</button></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" className="w-full max-w-md"><button className="btn lg:btn-lg btn-accent block w-full">応募する</button></a>
+        </div>
         <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">Q&A よくある質問</h2>
-        <div className="my-8 md:px-10">
-          {QandAs.map((qanda, index) => (
-            <div key={index}>
-              <h3 className="text-md lg:text-2xl my-4  border-primary text-accent"><span className="text-xl lg:text-3xl">Q: </span>{qanda.question}</h3>
-              <p><span className="text-primary text-lg lg:text-3xl">A: </span>{qanda.answer}</p>
-              <div className="divider divider-neutral"></div>
-            </div>
-          ))}
-        </div>
-        <div className="flex flex-col items-center justify-center lg:flex-row gap-4 lg:gap-8 my-24 lg:my-48">
-          <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full lg:w-auto"><button className="btn lg:btn-lg w-full">お問い合わせ</button></a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" className="w-full lg:w-auto"><button className="btn lg:btn-lg btn-accent block w-full">応募する</button></a>
-        </div>
+        <Qa categoryName="CfP" />
       </div>
     </>
   )

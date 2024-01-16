@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link"
-import { PageInfos, PageInfo } from "../lib/definitions"
+import { PageInfo } from "../lib/definitions"
+import { PageInfos } from "../lib/data"
 
 const closeSideBar = () => {
   const drawerElement = document.getElementById('my-drawer-3') as HTMLInputElement;
