@@ -33,7 +33,6 @@ export const metadata: Metadata = {
     type: 'website',
     images: ['/banner.png'],
   },
-  manifest: 'localhost:3000/manifest.json',
 }
 
 export const viewport: Viewport = {
