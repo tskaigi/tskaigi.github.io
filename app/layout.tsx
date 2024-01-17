@@ -1,5 +1,4 @@
-import type { Metadata } from 'next'
-import type { Viewport } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_JP } from 'next/font/google'
 import './globals.css'
 import NavBar from './ui/navbar'
@@ -16,13 +15,23 @@ export const metadata: Metadata = {
   authors: [
     { name: '一般社団法人TSKaigi Association', url: 'https://association.tskaigi.org/' },
   ],
-  keywords: ['TypeScript', 'カンファレンス', 'イベント', 'オンライン',],
+  keywords: ['TypeScript', 'TSKaigi', 'TS会議', 'カンファレンス', 'イベント', 'オンライン',],
   publisher: 'TSKaigi.org',
   robots: 'index, follow',
-  icons: {
-    icon: '',
-    apple: '',
+  twitter: {
+    title: 'TSKaigi 2024',
+    card: 'summary_large_image',
+    site: '@tskaigi',
+    creator: '@tskaigi',
+    images: ['/banner.png'],
   },
+  openGraph: {
+    title: 'TSKaigi 2024',
+    description: 'TSKaigi 2024は、日本最大級のTypeScriptカンファレンスを開催します。',
+    type: 'website',
+    images: ['/banner.png'],
+  },
+  manifest: '/manifest.json',
 }
 
 export const viewport: Viewport = {
@@ -35,11 +44,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="jp" className="scroll-smooth">
+    <html lang="ja" className="scroll-smooth">
       <body className={noto.className}>
-        <header><NavBar /></header>
+        <div>
+          <NavBar />
         {children}
         <Footer />
+        </div>
       </body>
     </html>
   )
