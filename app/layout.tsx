@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     template: 'TSKaigi 2024 | %s',
     default: 'TSKaigi 2024',
   },
+  metadataBase: new URL('https://tskaigi.org/'),
   description: 'TSKaigi 2024は、日本最大級のTypeScriptカンファレンスを開催します。',
   applicationName: 'TSKaigi 2024',
   authors: [
@@ -27,11 +28,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'TSKaigi 2024',
+    url: 'https://tskaigi.org/',
     description: 'TSKaigi 2024は、日本最大級のTypeScriptカンファレンスを開催します。',
     type: 'website',
     images: ['/banner.png'],
   },
-  manifest: '/manifest.json',
+  manifest: 'localhost:3000/manifest.json',
 }
 
 export const viewport: Viewport = {
