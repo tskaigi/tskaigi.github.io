@@ -91,7 +91,7 @@ export default function Page() {
         </div>
         <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">Q&A よくある質問</h2>
         <Card cardData={selectionCommittee} />
-        <Qa categoryName="CfP" />
+        {/* <Qa categoryName="CfP" /> */}
       </div>
     </>
   )
