@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { PageInfo } from "../lib/definitions"
-import { PageInfos } from "../lib/data"
+import { pageInfos } from "../lib/data"
 
 const closeSideBar = () => {
   const drawerElement = document.getElementById('my-drawer-3') as HTMLInputElement;
@@ -20,7 +20,7 @@ export default function NavBar() {
             <div className="flex-1 px-2 mx-2"><Link href={"/"}>TSKaigi</Link></div>
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">
-                {PageInfos.map((link: PageInfo) => {
+                {pageInfos.map((link: PageInfo) => {
                   const LinkIcon = link.icon;
                   return (
                     <li key={link.index} className="mx-2">
@@ -44,8 +44,8 @@ export default function NavBar() {
         <div className="drawer-side overflow-x-hidden">
           <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
           <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-64 sm:w-80 min-h-full bg-base-200">
-            {PageInfos.map((link: PageInfo) => {
+          <ul className="bg-gradient-to-b from-[#363541] via-base-300 to-base-200 menu p-4 w-64 sm:w-80 min-h-full bg-base-200">
+            {pageInfos.map((link: PageInfo) => {
               const LinkIcon = link.icon;
               return (
                 <li key={link.index}>

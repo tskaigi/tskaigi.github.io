@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-white">
-        <img src="/banner.png" className=" h6 object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]" alt="" />
+        <img src="/banner.png" className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]" alt="" />
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
         <div className="max-w-2xl my-8 m-auto">

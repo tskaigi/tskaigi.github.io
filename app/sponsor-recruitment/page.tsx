@@ -11,7 +11,6 @@ export default function SponsorRecruitment() {
   return(
     <>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
-
       <div className="hero min-h-[20vh] lg:min-h-[30vh]">
         <div className="hero-content p-0 max-w-full">
           <h1 className="text-2xl lg:leading-relaxed lg:text-5xl font-bold"><span className="text-accent pr-4">TSKaigi 2024</span>スポンサー募集</h1>

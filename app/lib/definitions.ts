@@ -9,18 +9,33 @@ export type PageInfo = {
   href: string;
 };
 
-export type Question = {
+type Question = {
   id: number;
   question: string;
   answer: string;
 };
 
-export type Category = {
+type QACategory = {
   id: number;
   name: string;
   questions: Question[];
 };
 
 export type QandA = {
-  categories: Category[];
+  categories: QACategory[];
+};
+
+export type CardComponentProps = {
+  headding: string;
+  subheading?: string;
+  dataList: CardData[];
+};
+
+
+export type CardData = {
+  title: string;
+  imageUrl?: string;
+  subtitle?: string;
+  description?: string;
+  links: { icon?: IconType; href: string;}[]
 };

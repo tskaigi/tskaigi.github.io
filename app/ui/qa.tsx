@@ -1,11 +1,9 @@
-"use client"
-import { useEffect } from 'react';
-import { QandAs } from '../lib/data';
+import { qaList } from '../lib/data';
 
 export default function Qa({categoryName}: {categoryName: string}) {
   return (
     <div className="my-8 md:px-10">
-      {QandAs.categories.
+      {qaList.categories.
       filter(category => category.name === categoryName)
       .map((category, index) => (
         <div key={index}>

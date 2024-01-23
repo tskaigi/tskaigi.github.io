@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { QandAs } from '../lib/data';
+import { selectionCommittee } from '@/app/lib/data';
 import { getTitleByIndex, getDescriptionByIndex } from '../lib/utils'
 import { HiExternalLink } from "react-icons/hi";
-import Qa from '../ui/qa';
-
+import Qa from '@/app/ui/qa';
+import Card from '../ui/card';
 const targetIndex = 3;
 
 export const metadata: Metadata = {
@@ -12,22 +12,8 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  QandAs.categories
-  .filter(category => category.name === "hoge") // name が "hoge" のカテゴリだけをフィルタリング
-  .flatMap(category => category.questions) // フィルタリングされたカテゴリの questions を結合
-  .map(question => {
-    // ここで question ごとの処理を行う
-    console.log(question.id, question.question, question.answer);
-  });
-
   return (
     <>
-      {/* 未定 */}
-      {/* <div className="relative">
-      <img src="/background.png" alt="" />
-      <h1 className="text-secondary font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 container mx-auto px-4 sm:px-6 lg:px-8 text-2xl lg:text-4xl">TSKaigi 2024のプロポーザル募集について</h1>
-    </div> */}
-      {/* 未定 */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
         <h1 className="text-2xl lg:text-4xl my-10">TSKaigi 2024のプロポーザル募集について</h1>
         <div>
@@ -104,6 +90,7 @@ export default function Page() {
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" className="w-full max-w-md"><button className="btn lg:btn-lg btn-accent block w-full">応募する</button></a>
         </div>
         <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">Q&A よくある質問</h2>
+        <Card cardData={selectionCommittee} />
         <Qa categoryName="CfP" />
       </div>
     </>
