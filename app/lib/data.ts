@@ -1,9 +1,10 @@
-import type { PageInfo, QandA } from "./definitions";
+import type { PageInfo, QandA, CardData, CardComponentProps } from "./definitions";
 import { HiHome } from "react-icons/hi";
 import { HiLightBulb } from "react-icons/hi2";
 import { FaHandshake } from "react-icons/fa";
+import { FaXTwitter, FaInstagram, FaFacebookF } from "react-icons/fa6";
 
-export const PageInfos: PageInfo[] = [
+export const pageInfos: PageInfo[] = [
 	{
 		index: 1,
 		title: "Home",
@@ -29,36 +30,73 @@ export const PageInfos: PageInfo[] = [
 	},
 ];
 
-export const QandAs: QandA = {
+export const qaList: QandA = {
 	categories: [
 		{
 			id: 1,
 			name: "sponsor-recruitment",
 			questions: [
-			  {
-				id: 1,
-				question: "一般社団法人TSKaigi Association はインボイス制度の適格請求書発行事業者登録ですか？",
-				answer: "",
-			  },
-
+				{
+					id: 1,
+					question: "一般社団法人TSKaigi Association はインボイス制度の適格請求書発行事業者登録ですか？",
+					answer: "",
+				},
 			]
 		},
 		{
 			id: 2,
 			name: "CfP",
 			questions: [
-			  {
-				id: 101,
-				question: "トークの時間はどのくらいですか？",
-				answer: "トークはセッション30分LT5分のいずれかの枠での提案をお待ちしています。ご自身のアイデアに合った形式での提案をお願いいたします。",
-			  },
-			  {
-				id: 102,
-				question: "名前は本名である必要がありますか？",
-				answer: "本名でもハンドルネームでも、どちらでも構いません。",
-			  },
+				{
+					id: 101,
+					question: "トークの時間はどのくらいですか？",
+					answer: "トークはセッション30分LT5分のいずれかの枠での提案をお待ちしています。ご自身のアイデアに合った形式での提案をお願いいたします。",
+				},
+				{
+					id: 102,
+					question: "名前は本名である必要がありますか？",
+					answer: "本名でもハンドルネームでも、どちらでも構いません。",
+				},
 			]
 		},
 	]
-}
+};
 
+export const selectionCommittee: CardComponentProps = {
+	headding: "選考委員一覧",
+	subheading: "ここに軽い挨拶やテキストを入れても入れなくてもよし。選考委員の紹介です、など。このテキストはオプショナルな項目。",
+	dataList: [
+		{
+			title: "@about_hiroppy",
+			imageUrl: "https://pbs.twimg.com/profile_images/1721255496/101010_400x400.GIF",
+			links: [
+				{icon: FaXTwitter ,href:"https://twitter.com/about_hiroppy"},
+			]
+		},
+		{
+			title: "@mizchi",
+			imageUrl: "https://pbs.twimg.com/profile_images/2507664307/viccruw2m1zb0xkkisil_400x400.jpeg",
+			links: [
+				{icon: FaXTwitter ,href:"https://twitter.com/mizchi"},
+			]
+		},
+		{
+			title: "@uhyo_",
+			imageUrl: "https://pbs.twimg.com/profile_images/1341186424423378944/gYTKIbFl_400x400.jpg",
+			links: [
+				{icon: FaXTwitter ,href:"https://twitter.com/uhyo_"},
+			]
+		},
+		{
+			title: "@iam_oku",
+			subtitle: "例:TSKaigi Associationこのテキストはオプショナルな項目。",
+			description: "例:tskaigiの運営チームに参加中。毎日TypeScriptを書いています。CfPのご応募お待ちしています！このテキストはオプショナルな項目。",
+			imageUrl: "https://pbs.twimg.com/profile_images/1683114914737684480/upMA762v_400x400.jpg",
+			links: [
+				{icon: FaXTwitter ,href:"https://twitter.com/iam_oku"},
+				{icon: FaInstagram ,href:""},
+				{icon: FaFacebookF ,href:""},
+			]
+		}
+	],
+};
