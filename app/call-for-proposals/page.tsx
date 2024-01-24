@@ -90,8 +90,8 @@ export default function Page() {
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" className="w-full max-w-md"><button className="btn lg:btn-lg btn-accent block w-full">応募する</button></a>
         </div>
         <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">Q&A よくある質問</h2>
-        <Card cardData={selectionCommittee} />
-        {/* <Qa categoryName="CfP" /> */}
+        {/* <Card cardData={selectionCommittee} /> */}
+        <Qa categoryName="CfP" />
       </div>
     </>
   )
