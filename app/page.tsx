@@ -1,12 +1,17 @@
 import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { HiExternalLink } from "react-icons/hi";
 
 export default function Home() {
   return (
     <>
       <div className="bg-white">
-        <img src="/banner.png" className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]" alt="" />
+        <img
+          src="/banner.png"
+          className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]"
+          alt=""
+        />
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
         <div className="max-w-2xl my-8 m-auto">
@@ -24,14 +29,22 @@ export default function Home() {
               開催: 2024年5月11日
             </div>
             <div className="text-xl font-bold m-auto text-center">
-              <a
-                target="_blank"
-                href="https://maps.app.goo.gl/KbKTnBPywSn6i4GB6"
-                className="px-2"
-              >
-                <span className="align-middle">場所: 中野セントラルパーク</span>
-                <FaMapMarkerAlt className="inline-block" />
-              </a>
+              <p>
+                <span>
+                  会場：
+                  <a
+                    className="link link-primary inline-block items-center gap-2"
+                    href="https://maps.app.goo.gl/Zwff1Z3yCu32pNHz6"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    中野セントラルパーク カンファレンス
+                    <span className="inline-block ml-2">
+                      <HiExternalLink />
+                    </span>
+                  </a>
+                </span>
+              </p>
             </div>
           </div>
           <div className="my-5 flex justify-center flex-col md:flex-row items-center">
@@ -49,7 +62,10 @@ export default function Home() {
           <div className="my-5 flex flex-col">
             <h3 className="text-2xl text-center text-accent">最新情報</h3>
             <div className="text-center p-2">
-              <a className="pl-1 text-accent" href="https://twitter.com/tskaigi">
+              <a
+                className="pl-1 text-accent"
+                href="https://twitter.com/tskaigi"
+              >
                 <FaXTwitter className="inline-block" />
                 TSKaigi公式アカウント
               </a>
