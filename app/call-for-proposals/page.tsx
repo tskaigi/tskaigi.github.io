@@ -4,6 +4,7 @@ import { getTitleByIndex, getDescriptionByIndex } from '../lib/utils'
 import { HiExternalLink } from "react-icons/hi";
 import Qa from '@/app/ui/qa';
 import Card from '../ui/card';
+import Container from '../ui/container';
 const targetIndex = 3;
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
+      <Container>
         <h1 className="text-2xl lg:text-4xl my-10">TSKaigi 2024のプロポーザル募集について</h1>
         <div>
           <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">TSKaigi 2024概要</h2>
@@ -43,11 +44,11 @@ export default function Page() {
               </p>
               <div className="divider divider-neutral my-0"></div>
               <div className="flex flex-col items-center justify-center lg:flex-row h-32 gap-4 lg:gap-8 my-8">
-                <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full lg:w-auto">
+                <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full max-w-xs">
                   <button className="btn lg:btn-lg w-full">お問い合わせ</button>
                 </a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" className="w-full lg:w-auto">
-                  <button className="btn lg:btn-lg btn-accent block w-full">応募する</button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" rel="noopener noreferrer" target="_blank" className="w-full  max-w-xs">
+                  <button className="btn lg:btn-lg btn-accent block w-full  bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">応募する</button>
                 </a>
               </div>
             </div>
@@ -60,10 +61,10 @@ export default function Page() {
             あなたの発表が、誰かのキャリア、あるいはプロジェクトに新たな光をもたらすかもしれません。<br />
             ぜひ一緒に日本のTypeScriptコミュニティを盛り上げましょう！
           </p>
-          <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">CfP概要</h2>
+          <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">プロポーザル募集概要</h2>
           <div className="grid md:grid-cols-2 gap-8 my-12">
             <div className="m-auto">
-              <img src="/banner.png" className="object-cover h-48 md:h-56 lg:h-80 rounded-lg " alt="tskaigi logo" />
+              <img src="/banner.jpg" className="object-cover h-48 md:h-56 lg:h-80 rounded-lg " alt="tskaigi logo" />
             </div>
             <div>
               <p>応募締切：　2024年2月29日（木）</p>
@@ -80,19 +81,27 @@ export default function Page() {
               <div className="divider divider-neutral my-0"></div>
               <p>複数応募：　可</p>
               <div className="divider divider-neutral my-0"></div>
-              <p>応募方法：　<a className="link link-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform">こちらのフォーム</a>から応募</p>
+              <p>応募方法：　<a className="link link-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform" rel="noopener noreferrer" target="_blank" >こちらのフォーム
+                <span className='inline-block'>
+                  <HiExternalLink />
+                </span></a>から応募</p>
               <div className="divider divider-neutral my-0"></div>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center lg:flex-row gap-4 lg:gap-12 my-24 lg:my-28">
           <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full max-w-md"><button className="btn lg:btn-lg w-full">お問い合わせ</button></a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" className="w-full max-w-md"><button className="btn lg:btn-lg btn-accent block w-full">応募する</button></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" rel="noopener noreferrer" target="_blank" className="w-full max-w-md"><button className="btn lg:btn-lg btn-accent block w-full bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">応募する</button></a>
         </div>
+        {/* <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">審査員紹介</h2>
+        <p>
+          TSKaigi 2024の審査員は、TypeScriptコミュニティの中心的な存在である方々にお願いしています。<br />
+          皆さんのプロポーザルを審査するのは、日本のTypeScriptコミュニティの中心的な存在である方々です。<br />
+        </p>
+        <Card cardData={selectionCommittee} /> */}
         <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">Q&A よくある質問</h2>
-        {/* <Card cardData={selectionCommittee} /> */}
         <Qa categoryName="CfP" />
-      </div>
+      </Container>
     </>
   )
 }
