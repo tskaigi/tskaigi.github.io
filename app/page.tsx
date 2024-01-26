@@ -26,14 +26,22 @@ export default function Home() {
               開催: 2024年5月11日
             </div>
             <div className="text-xl font-bold m-auto text-center">
-              <a
-                target="_blank"
-                href="https://maps.app.goo.gl/KbKTnBPywSn6i4GB6"
-                className="px-2"
-              >
-                <span className="align-middle">場所: 中野セントラルパーク</span>
-                <FaMapMarkerAlt className="inline-block" />
-              </a>
+              <p>
+                <span>
+                  会場：
+                  <a
+                    className="link link-primary inline-block items-center gap-2"
+                    href="https://maps.app.goo.gl/Zwff1Z3yCu32pNHz6"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    中野セントラルパーク カンファレンス
+                    <span className="inline-block ml-2">
+                      <HiExternalLink />
+                    </span>
+                  </a>
+                </span>
+              </p>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center lg:flex-row h-32 gap-4 lg:gap-8 my-8">
