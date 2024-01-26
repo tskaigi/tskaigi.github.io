@@ -25,17 +25,10 @@ export type QandA = {
   categories: QACategory[];
 };
 
-export type CardComponentProps = {
-  headding: string;
-  subheading?: string;
-  dataList: CardData[];
-};
-
-
 export type CardData = {
   title: string;
   imageUrl?: string;
   subtitle?: string;
   description?: string;
-  links: { icon?: IconType; href: string;}[]
+  links: { icon?: IconType; href: string; }[]
 };

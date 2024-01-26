@@ -1,4 +1,4 @@
-import type { PageInfo, QandA, CardData, CardComponentProps } from "./definitions";
+import type { PageInfo, QandA, CardData, } from "./definitions";
 import { HiHome } from "react-icons/hi";
 import { HiLightBulb } from "react-icons/hi2";
 import { FaHandshake } from "react-icons/fa";
@@ -62,41 +62,37 @@ export const qaList: QandA = {
 	]
 };
 
-export const selectionCommittee: CardComponentProps = {
-	headding: "選考委員一覧",
-	subheading: "ここに軽い挨拶やテキストを入れても入れなくてもよし。選考委員の紹介です、など。このテキストはオプショナルな項目。",
-	dataList: [
-		{
-			title: "@about_hiroppy",
-			imageUrl: "https://pbs.twimg.com/profile_images/1721255496/101010_400x400.GIF",
-			links: [
-				{icon: FaXTwitter ,href:"https://twitter.com/about_hiroppy"},
-			]
-		},
-		{
-			title: "@mizchi",
-			imageUrl: "https://pbs.twimg.com/profile_images/2507664307/viccruw2m1zb0xkkisil_400x400.jpeg",
-			links: [
-				{icon: FaXTwitter ,href:"https://twitter.com/mizchi"},
-			]
-		},
-		{
-			title: "@uhyo_",
-			imageUrl: "https://pbs.twimg.com/profile_images/1341186424423378944/gYTKIbFl_400x400.jpg",
-			links: [
-				{icon: FaXTwitter ,href:"https://twitter.com/uhyo_"},
-			]
-		},
-		{
-			title: "@iam_oku",
-			subtitle: "例:TSKaigi Associationこのテキストはオプショナルな項目。",
-			description: "例:tskaigiの運営チームに参加中。毎日TypeScriptを書いています。CfPのご応募お待ちしています！このテキストはオプショナルな項目。",
-			imageUrl: "https://pbs.twimg.com/profile_images/1683114914737684480/upMA762v_400x400.jpg",
-			links: [
-				{icon: FaXTwitter ,href:"https://twitter.com/iam_oku"},
-				{icon: FaInstagram ,href:""},
-				{icon: FaFacebookF ,href:""},
-			]
-		}
-	],
-};
+export const selectionCommittee: CardData[] = [
+	// {
+	// 	title: "名前",
+	// 	subtitle: "所属等",
+	// 	description: "詳細説明文",
+	// 	imageUrl: "https://pbs.twimg.com/profile_images/1683114914737684480/upMA762v_400x400.jpg",
+	// 	links: [
+	// 		{ icon: FaXTwitter, href: "https://twitter.com/iam_oku" },
+	// 		{ icon: FaInstagram, href: "" },
+	// 		{ icon: FaFacebookF, href: "" },
+	// 	]
+	// },
+	{
+		title: "hiroppy",
+		imageUrl: "/hiroppy_icon.png",
+		links: [
+			{ icon: FaXTwitter, href: "https://twitter.com/about_hiroppy" },
+		]
+	},
+	{
+		title: "mizchi",
+		imageUrl: "https://pbs.twimg.com/profile_images/2507664307/viccruw2m1zb0xkkisil_400x400.jpeg",
+		links: [
+			{ icon: FaXTwitter, href: "https://twitter.com/mizchi" },
+		]
+	},
+	{
+		title: "うひょ",
+		imageUrl: "https://pbs.twimg.com/profile_images/1341186424423378944/gYTKIbFl_400x400.jpg",
+		links: [
+			{ icon: FaXTwitter, href: "https://twitter.com/uhyo_" },
+		]
+	},
+]

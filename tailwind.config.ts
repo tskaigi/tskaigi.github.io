@@ -20,19 +20,35 @@ const config: Config = {
   daisyui: {
     themes: [
       {
-        mytheme: {
+        darkTheme: {
           "color-scheme": "dark",
-          "primary": "#5ED7E8",
-          "primary-content": "#005355",
-          "secondary": "#384575",
-          "accent": "#EAE686",
+          "primary": "#93E7FB",
+          "primary-content": "#384575",
+          "secondary": "#65E0B8",
+          "accent": "#ffe999",
           "neutral": "#3b8ac4",
           "base-100": "#345da7",
           "info": "#2563eb",
-          "success": "#16a34a",
-          "warning": "#d97706",
+          "success": "#81CFD1",
+          "warning": "#EFD7BB",
           "error": "oklch(73.95% 0.19 27.33)",
         },
+        // lightTheme: {
+        //   "color-scheme": "light",
+        //   "primary": "#3178C6", //done
+        //   "primary-content": "#c5d9f2", //done
+        //   "secondary": "#23CAFF", //done
+        //   "accent": "#EAE686", //done
+        //   "neutral": "#021431",
+        //   "base-100": "#fdfdfd", //done
+        //   "base-200": "#F2F7FF",
+        //   "base-300": "#E3E9F4",
+        //   "base-content": "#384575", //done
+        //   "info": "#93E7FB",
+        //   "success": "#81CFD1",
+        //   "warning": "#EFD7BB",
+        //   "error": "#E58B8B",
+        // },
       },
     ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     base: true, // applies background color and foreground color for root element by default
