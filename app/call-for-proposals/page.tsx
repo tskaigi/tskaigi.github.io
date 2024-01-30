@@ -95,7 +95,7 @@ export default function Page() {
         </div>
         <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">審査員紹介</h2>
         <p className="md:px-10 text-xl leading-relaxed">
-          以下のTypeScriptコミュニティの中心的な存在である方々に審査員として参加していただいています。
+          以下のTypeScriptコミュニティの方々に審査員として参加していただいています。
         </p>
         <div className="md:px-10">
           <Card cardData={selectionCommittee} />
