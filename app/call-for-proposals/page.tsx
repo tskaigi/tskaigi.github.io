@@ -93,13 +93,14 @@ export default function Page() {
           <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full max-w-md"><button className="btn lg:btn-lg w-full">お問い合わせ</button></a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" rel="noopener noreferrer" target="_blank" className="w-full max-w-md"><button className="btn lg:btn-lg btn-accent block w-full bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">応募する</button></a>
         </div>
-        {/* <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">審査員紹介</h2>
-        <p>
-          TSKaigi 2024の審査員は、TypeScriptコミュニティの中心的な存在である方々にお願いしています。<br />
-          皆さんのプロポーザルを審査するのは、日本のTypeScriptコミュニティの中心的な存在である方々です。<br />
+        <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">審査員紹介</h2>
+        <p className="md:px-10 text-xl leading-relaxed">
+          以下のTypeScriptコミュニティの中心的な存在である方々に審査員として参加していただいています。
         </p>
-        <Card cardData={selectionCommittee} /> */}
-        <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">Q&A よくある質問</h2>
+        <div className="md:px-10">
+          <Card cardData={selectionCommittee} />
+        </div>
+        <h2 className="text-xl lg:text-3xl mt-24 lg:mt-28 mb-10 border-l-4 pl-2">Q&A よくある質問</h2>
         <Qa categoryName="CfP" />
       </Container>
     </>

@@ -9,7 +9,7 @@ export default function Card({ cardData }: { cardData: CardData[] }) {
       {cardData.map((data) => (
         <li key={data.title} className="rounded-2xl bg-base-200 hover:bg-base-content/5 duration-150 ease-in-out py-8">
           <a href={data.links[0].href} rel="noopener noreferrer" target="_blank" >
-            <img className="object-cover mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src={data.imageUrl} alt="" />
+            <img className="object-fit mx-auto h-48 w-48 rounded-full md:h-56 md:w-56" src={data.imageUrl} alt={data.title + "icon"} />
             <h3 className="link-hover hover:text-primary text-center text-xl pt-2 font-semibold leading-7 tracking-tight">{data.title}</h3>
             <p className="text-sm text-right leading-6 px-8 pb-2 text-base-content/50">{data.subtitle}</p>
           </a>

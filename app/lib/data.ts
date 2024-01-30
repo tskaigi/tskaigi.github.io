@@ -64,10 +64,10 @@ export const qaList: QandA = {
 
 export const selectionCommittee: CardData[] = [
 	// {
-	// 	title: "名前",
-	// 	subtitle: "所属等",
-	// 	description: "詳細説明文",
-	// 	imageUrl: "https://pbs.twimg.com/profile_images/1683114914737684480/upMA762v_400x400.jpg",
+	// 	title: "一般社団法人TSKaigi Association",
+	// 	subtitle: "",
+	// 	description: "サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト",
+	// 	imageUrl: "/logo.svg",
 	// 	links: [
 	// 		{ icon: FaXTwitter, href: "https://twitter.com/iam_oku" },
 	// 		{ icon: FaInstagram, href: "" },
