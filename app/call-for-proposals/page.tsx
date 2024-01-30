@@ -64,7 +64,7 @@ export default function Page() {
           <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">プロポーザル募集概要</h2>
           <div className="grid md:grid-cols-2 gap-8 my-12">
             <div className="m-auto">
-              <img src="/banner.jpg" className="object-cover h-48 md:h-56 lg:h-80 rounded-lg " alt="tskaigi logo" />
+              <img src="/banner.png" className="object-cover h-48 md:h-56 lg:h-80 rounded-lg " alt="tskaigi logo" />
             </div>
             <div>
               <p>応募締切：　2024年2月29日（木）</p>
