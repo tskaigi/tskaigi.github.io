@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <>
       <div className="bg-white">
-        <img src="/banner.jpg" className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]" alt="" />
+        <img src="/banner.png" className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]" alt="banner image" />
       </div>
       <Container>
         <div className="max-w-4xl my-8 m-auto">
           <div className="mb-10 lg:my-20 lg:mb-32">
-            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
+            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents lg:leading-loose">
               TSKaigiは、
               <span className="text-2xl text-accent">
                 日本最大級のTypeScriptをテーマとした技術カンファレンス
