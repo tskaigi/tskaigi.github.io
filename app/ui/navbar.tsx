@@ -41,7 +41,7 @@ export default function NavBar() {
           </div>
         </div>
         {/* Sidebar */}
-        <div className="drawer-side overflow-x-hidden">
+        <div className="drawer-side overflow-x-hidden lg:hidden">
           <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
           <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
           <ul className="bg-gradient-to-b from-[#363541] via-base-300 to-base-200 menu p-4 w-64 sm:w-80 min-h-full">
