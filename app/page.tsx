@@ -13,7 +13,7 @@ export default function Home() {
       <Container>
         <div className="max-w-4xl my-8 m-auto">
           <div className="mb-10 lg:my-20 lg:mb-32">
-            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents lg:leading-loose">
+          <div className="leading-9 mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents sm:leading-loose ">
               TSKaigiは、
               <span className="text-2xl text-accent">
                 日本最大級のTypeScriptをテーマとした技術カンファレンス
@@ -30,7 +30,7 @@ export default function Home() {
                 <span>
                   会場：
                   <a
-                    className="link link-primary inline-block items-center gap-2"
+                    className="link link-primary inline-block items-center gap-2 text-base sm:text-xl"
                     href="https://maps.app.goo.gl/Zwff1Z3yCu32pNHz6"
                     rel="noopener noreferrer"
                     target="_blank"
