@@ -1,3 +1,4 @@
+import React from "react";
 import { IconType } from "react-icons";
 
 export type PageInfo = {
@@ -11,8 +12,8 @@ export type PageInfo = {
 
 type Question = {
   id: number;
-  question: string;
-  answer: string;
+  question: React.ReactNode;
+  answer: React.ReactNode;
 };
 
 type QACategory = {
@@ -30,5 +31,5 @@ export type CardData = {
   imageUrl?: string;
   subtitle?: string;
   description?: string;
-  links: { icon?: IconType; href: string; }[]
+  links: { icon?: IconType; href: string }[];
 };
