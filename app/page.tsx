@@ -3,10 +3,17 @@ import Container from "./ui/container";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { HiExternalLink } from "react-icons/hi";
+import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-first-render";
+
+const pageAnchors = {
+  news: 'news',
+  ticketInfo: 'ticket-info',
+}
 
 export default function Home() {
   return (
     <>
+      <NavigateAnchorOnFirstRender />
       <div className="bg-white">
         <img src="/banner.png" className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]" alt="banner image" />
       </div>
@@ -53,7 +60,11 @@ export default function Home() {
             </Link>
           </div>
           <div className="my-5 flex flex-col">
-            <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">最新情報</h2>
+            <h2 id={pageAnchors.news} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
+              <a href={`#${pageAnchors.news}`}>
+                最新情報
+              </a>
+            </h2>
             {/* <h3 className="text-2xl text-center text-accent">最新情報</h3> */}
             <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
               <a className="pl-1 text-primary" rel="noopener noreferrer" target="_blank" href="https://twitter.com/tskaigi">
@@ -65,7 +76,11 @@ export default function Home() {
             </div>
           </div>
           <div className="my-5 flex flex-col">
-            <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">チケット情報</h2>
+            <h2 id={pageAnchors.ticketInfo} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
+              <a href={`#${pageAnchors.ticketInfo}`}>
+              チケット情報
+              </a>
+            </h2>
             <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
               チケット販売は3月頃を予定しています。<br />
               また、開始時には公式SNSでも告知を予定しています。もうしばらくお待ち下さい。

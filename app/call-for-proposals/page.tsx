@@ -5,7 +5,15 @@ import { HiExternalLink } from "react-icons/hi";
 import Qa from '@/app/ui/qa';
 import Card from '../ui/card';
 import Container from '../ui/container';
+import { NavigateAnchorOnFirstRender } from '../functional/navigate-anchor-on-first-render';
+
 const targetIndex = 3;
+const pageAnchors = {
+  overview: 'overview',
+  proposalOverview: 'proposal-overview',
+  judges: 'judges',
+  qAndA: 'questions-and-answers'
+}
 
 export const metadata: Metadata = {
   title: getTitleByIndex(targetIndex),
@@ -15,10 +23,15 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
+      <NavigateAnchorOnFirstRender />
       <Container>
         <h1 className="text-2xl lg:text-4xl my-10">TSKaigi 2024のプロポーザル募集について</h1>
         <div>
-          <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">TSKaigi 2024概要</h2>
+          <h2 id={pageAnchors.overview} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
+            <a href={`#${pageAnchors.overview}`}>
+              TSKaigi 2024概要
+            </a>
+          </h2>
           <div className="grid md:grid-cols-2 gap-8 my-12">
             <div className="m-auto">
               <img className="rounded-lg aspect-[4/3] md:aspect-video object-cover max-h-64" src="https://www.nakano-centralpark.jp/conference/wp-content/themes/company_renewal3/images/location_img_new.png" alt="tskaigi logo" />
@@ -61,7 +74,11 @@ export default function Page() {
             あなたの発表が、誰かのキャリア、あるいはプロジェクトに新たな光をもたらすかもしれません。<br />
             ぜひ一緒に日本のTypeScriptコミュニティを盛り上げましょう！
           </p>
-          <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">プロポーザル募集概要</h2>
+          <h2 id={pageAnchors.proposalOverview} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
+            <a href={`#${pageAnchors.proposalOverview}`}>
+              プロポーザル募集概要
+            </a>
+          </h2>
           <div className="grid md:grid-cols-2 gap-8 my-12">
             <div className="m-auto">
               <img src="/banner.png" className="object-cover h-48 md:h-56 lg:h-80 rounded-lg " alt="tskaigi logo" />
@@ -93,14 +110,22 @@ export default function Page() {
           <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full max-w-md"><button className="btn lg:btn-lg w-full">お問い合わせ</button></a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" rel="noopener noreferrer" target="_blank" className="w-full max-w-md"><button className="btn lg:btn-lg btn-accent block w-full bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">応募する</button></a>
         </div>
-        <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">審査員紹介</h2>
+        <h2 id={pageAnchors.judges} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
+          <a href={`#${pageAnchors.judges}`}>
+            審査員紹介
+          </a>
+        </h2>
         <p className="md:px-10 text-xl leading-relaxed">
           以下のTypeScriptコミュニティの方々に審査員として参加していただいています。
         </p>
         <div className="md:px-10">
           <Card cardData={selectionCommittee} />
         </div>
-        <h2 className="text-xl lg:text-3xl mt-24 lg:mt-28 mb-10 border-l-4 pl-2">Q&A よくある質問</h2>
+          <h2 id={pageAnchors.qAndA} className="text-xl lg:text-3xl mt-24 lg:mt-28 mb-10 border-l-4 pl-2 scroll-mt-20">
+            <a href={`#${pageAnchors.qAndA}`}>
+              Q&A よくある質問
+            </a>
+          </h2>
         <Qa categoryName="CfP" />
       </Container>
     </>

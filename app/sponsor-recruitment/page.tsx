@@ -1,7 +1,14 @@
 import type { Metadata } from 'next'
 import Container from '../ui/container';
 import { getTitleByIndex, getDescriptionByIndex } from '../lib/utils'
+import { NavigateAnchorOnFirstRender } from '../functional/navigate-anchor-on-first-render';
+
 const targetIndex = 2;
+const pageAnchors = {
+  message: 'message',
+  corporateSponsors: 'corporate-sponsors',
+  individualSponsors: 'individual-sponsors'
+}
 
 export const metadata: Metadata = {
   title: getTitleByIndex(targetIndex),
@@ -11,6 +18,7 @@ export const metadata: Metadata = {
 export default function SponsorRecruitment() {
   return (
     <>
+      <NavigateAnchorOnFirstRender />
       <Container>
         <div className="hero min-h-[20vh] lg:min-h-[30vh]">
           <div className="hero-content p-0 max-w-full text-center">
@@ -18,7 +26,11 @@ export default function SponsorRecruitment() {
           </div>
         </div>
         <div className="mb-10 lg:my-20 lg:mb-32">
-          <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">TSKaigiからのメッセージ</h2>
+          <h2 id={pageAnchors.message} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
+            <a href={`#${pageAnchors.message}`}>
+              TSKaigiからのメッセージ
+            </a>
+          </h2>
           <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
             <p>国内最大規模の TypeScript カンファレンスの開催に向けて、協賛いただけるスポンサー様を募集いたします。</p>
             <p>近年、コロナ禍により多くのオフラインイベントの中止され、TypeScript を扱うエンジニアが集う機会も減少しました。その一方で技術の進展や活用は進み、この分野の知見を共有する場の必要性は高まり続けています。</p>
@@ -36,7 +48,11 @@ export default function SponsorRecruitment() {
           </div>
         </div>
         <div className="my-20 lg:mb-32">
-          <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">協賛のご案内(法人向け)</h2>
+          <h2 id={pageAnchors.corporateSponsors} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
+            <a href={`#${pageAnchors.corporateSponsors}`}>
+              協賛のご案内(法人向け)
+            </a>
+          </h2>
           <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
             <div className="mockup-browser border border-base-300">
               <div className="mockup-browser-toolbar">
@@ -47,7 +63,11 @@ export default function SponsorRecruitment() {
           </div>
         </div>
         <div className="my-10 lg:mb-32">
-          <h2 className="text-xl lg:text-3xl my-10 border-l-4 pl-2">協賛のご案内(個人向け)</h2>
+          <h2 id={pageAnchors.individualSponsors} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
+            <a href={`#${pageAnchors.individualSponsors}`}>
+              協賛のご案内(個人向け)
+            </a>
+          </h2>
           <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
             <p>一般チケット販売と同時に個人スポンサーを募集します。情報公開までしばらくお待ちください。</p>
             <div className="flex flex-col items-center justify-center lg:flex-row h-32 gap-4 lg:gap-8 my-8">
