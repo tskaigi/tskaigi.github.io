@@ -3,6 +3,7 @@ import Container from '../ui/container';
 import { getTitleByIndex, getDescriptionByIndex } from '../lib/utils'
 import { NavigateAnchorOnFirstRender } from '../functional/navigate-anchor-on-first-render';
 
+import Cta from '../ui/cta';
 const targetIndex = 2;
 const pageAnchors = {
   message: 'message',
@@ -38,14 +39,7 @@ export default function SponsorRecruitment() {
             <p>オフライン400名、オンライン1,500名規模の参加者を見込んでおり、貴社の TypeScript を使用するエンジニアに対するブランディングとリクルーティングの絶好の機会となります。</p>
             <p>ぜひ貴社のご支援・ご協力を賜りますようお願い申し上げます。</p>
           </div>
-          <div className="flex flex-col items-center justify-center lg:flex-row h-32 gap-4 lg:gap-8 my-8">
-            <a rel="noopener noreferrer" target="_blank" href="https://forms.gle/aZnQSAz8UEwdiitj7" className="link link-primary w-full  max-w-xs">
-              <button className="btn lg:btn-lg w-full">お問い合わせ</button>
-            </a>
-            <a rel="noopener noreferrer" target="_blank" href="https://forms.gle/ERgp32CP8q7ZTc8h8" className="w-full  max-w-xs">
-              <button className="btn lg:btn-lg btn-accent block w-full bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">応募する</button>
-            </a>
-          </div>
+          <Cta subLink="https://forms.gle/aZnQSAz8UEwdiitj7" subLinkText="お問い合わせ" mainLink="https://forms.gle/ERgp32CP8q7ZTc8h8" mainLinkText="応募する" />
         </div>
         <div className="my-20 lg:mb-32">
           <h2 id={pageAnchors.corporateSponsors} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">

@@ -1,4 +1,4 @@
-import type { PageInfo, QandA, CardData } from "./definitions";
+import type { PageInfo, QandA, CardData, SponsorList } from "./definitions";
 import { HiHome } from "react-icons/hi";
 import { HiLightBulb } from "react-icons/hi2";
 import { FaHandshake, FaBook } from "react-icons/fa";
@@ -97,7 +97,7 @@ export const qaList: QandA = {
 export const selectionCommittee: CardData[] = [
   // {
   // 	title: "一般社団法人TSKaigi Association",
-  // 	subtitle: "",
+  // 	subtitle: "/favicon.ico",
   // 	description: "サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト",
   // 	imageUrl: "/logo.svg",
   // 	links: [
@@ -126,3 +126,369 @@ export const selectionCommittee: CardData[] = [
 ];
 
 export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
+
+export const sponsorList: SponsorList = {
+  platinum: [
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/twitter-image.png",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+  ],
+  gold: [
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/tskaigi"],
+    },
+
+  ],
+  silver: [
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+
+  ],
+  bronze: [
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/twitter-image.png",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+  ],
+  other: [
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "/favicon.ico",
+      links: ["https://twitter.com/ts"],
+    },
+  ],
+};

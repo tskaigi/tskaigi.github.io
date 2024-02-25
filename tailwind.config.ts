@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     colors: {
       "white": "#fdfdfd",
+      "bronze": "#b5795a",
     },
     extend: {
       backgroundImage: {
