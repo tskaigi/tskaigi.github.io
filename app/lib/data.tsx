@@ -124,3 +124,5 @@ export const selectionCommittee: CardData[] = [
     links: [{ icon: FaXTwitter, href: "https://twitter.com/uhyo_" }],
   },
 ];
+
+export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";

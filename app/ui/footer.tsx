@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PageInfo } from "../lib/definitions";
-import { pageInfos } from "../lib/data";
+import { pageInfos, ticketURL } from "../lib/data";
 import { HiExternalLink } from "react-icons/hi";
 
 export default function Footer() {
@@ -37,12 +37,12 @@ export default function Footer() {
       <nav>
         <header className="footer-title">チケット購入</header>
         <Link
-          href={"/"}
+          href={ticketURL}
           rel="noopener noreferrer"
           target="_blank"
-          className="flex items-center gap-2 pl-2 pointer-events-none cursor-not-allowed opacity-50"
+          className="flex items-center gap-2 pl-2"
         >
-          チケット購入(Coming soon)
+          チケット購入
           <HiExternalLink />
         </Link>
       </nav>
