@@ -30,6 +30,13 @@ export const pageInfos: PageInfo[] = [
   },
   {
     index: 4,
+    title: "スポンサー",
+    description: "TSKaigiに協賛いただいているスポンサーです。各種トークイベントやブースの出展、懇親会でのフリートークを盛り上げるお手伝いをしていただきます。",
+    icon: FaHandshake,
+    href: "/sponsor",
+  },
+  {
+    index: 5,
     title: "Blog",
     description: "TSKaigi運営のブログ",
     icon: FaBook,
@@ -128,16 +135,43 @@ export const selectionCommittee: CardData[] = [
 export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
 
 export const sponsorList: SponsorList = {
-  platinum: [
+  Platinum: [
     {
       name: "サンプル株式会社",
       description: (
         <>
           sample description
+          sample description<br />
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
+          sample description
         </>
       ),
-      imageUrl: "/twitter-image.png",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},{href: "https://twitter.com/tskaigi",text: "リンクテキスト"}],
     },
     {
       name: "サンプル株式会社",
@@ -146,8 +180,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -156,11 +190,31 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
+    },
+    {
+      name: "サンプル株式会社",
+      description: (
+        <>
+          sample description
+        </>
+      ),
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
   ],
-  gold: [
+  Gold: [
     {
       name: "サンプル株式会社",
       description: (
@@ -168,8 +222,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -178,8 +232,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -188,8 +242,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -198,8 +252,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -208,8 +262,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -218,8 +272,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -228,8 +282,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -238,8 +292,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -248,8 +302,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -258,12 +312,12 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/tskaigi"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
 
   ],
-  silver: [
+  Silver: [
     {
       name: "サンプル株式会社",
       description: (
@@ -271,8 +325,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -281,8 +335,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -291,8 +345,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -301,8 +355,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     
     {
@@ -312,8 +366,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -322,8 +376,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -332,8 +386,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -342,8 +396,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -352,8 +406,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -362,12 +416,12 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
 
   ],
-  bronze: [
+  Bronze: [
     {
       name: "サンプル株式会社",
       description: (
@@ -375,8 +429,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/twitter-image.png",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.sv",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -385,8 +439,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -395,8 +449,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -405,8 +459,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -415,8 +469,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -425,8 +479,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -435,8 +489,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -445,8 +499,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -455,11 +509,11 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
   ],
-  other: [
+  Other: [
     {
       name: "サンプル株式会社",
       description: (
@@ -467,8 +521,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -477,8 +531,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
     {
       name: "サンプル株式会社",
@@ -487,8 +541,8 @@ export const sponsorList: SponsorList = {
           sample description
         </>
       ),
-      imageUrl: "/favicon.ico",
-      links: ["https://twitter.com/ts"],
+      imageUrl: "logo_tskaigi_black.svg",
+      links: [{href: "https://twitter.com/tskaigi",text: "リンクテキスト"},],
     },
   ],
 };

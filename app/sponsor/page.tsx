@@ -1,76 +1,66 @@
-import Card from "../ui/card"
-import Color from "../ui/color"
 import Container from "../ui/container";
-import { selectionCommittee } from '@/app/lib/data';
-import News from "../ui/news";
-import Cta from "../ui/cta";
 import { SponsorList } from "../lib/definitions";
 import { sponsorList } from "../lib/data";
+// const links: ["https://twitter.com/ts", "https://twitter.com/ts", "https://twitter.com/ts"],
+
+const pageAnchors = {
+  news: 'news',
+  ticketInfo: 'ticket-info',
+  sponsor: 'sponsor',
+}
 export default function Sponsor() {
   const plans: (keyof SponsorList)[] = Object.keys(sponsorList) as (keyof SponsorList)[];
+  const sponsorVariants = {
+    Platinum: {
+      divider: `text-secondary divider-secondary`,
+    },
+    Gold: {
+      divider: `text-accent divider-accent`,
+    },
+    Silver: {
+      divider: `text-primary divider-primary`,
+    },
+    Bronze: {
+      divider: `text-error divider-error`,
+    },
+    Other: {
+      divider: `text-gray-500 divider-gray-500`,
+    },
+  };
   return (
-    <div>
-      <Container>
-        <Color />
-        <Card cardData={selectionCommittee} />
-        <News />
-        <h2 className="text-center text-3xl m-4">ぷらちなすぽ</h2>
-        <div className="h-12 flex justify-center">
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        </div>
-        <div className="divider"></div>
-
-        <h2 className="text-center text-3xl m-4">ごるどすぽ</h2>
-        <div className="h-12 flex justify-center">
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        </div>
-        <div className="divider"></div>
-        <h2 className="text-center text-3xl m-4">しるばすぽ</h2>
-        <div className="h-12 flex justify-center">
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        <img src="/logo.svg" className="w-24" alt="" />
-        </div>
-        {plans.map((plan) => (
-          <>
-            <h3 key={plan}>{plan}</h3>
-            <div>
-              {sponsorList[plan].map((sponsor) => (
-                <div key={sponsor.name}>
-                  <h4>{sponsor.name}</h4>
-                  <p>{sponsor.description}</p>
-                  <img src={sponsor.imageUrl} alt={sponsor.name} />
-                  <ul>
+    <div className="">
+      <h1 id={pageAnchors.sponsor} className="text-2xl lg:text-4xl my-10 scroll-mt-20 mx-auto px-4 sm:px-6 lg:px-8">
+        <a href="#sponsor">TSKaigi 2024のスポンサー</a>
+      </h1>
+      {plans.map((plan) => (
+        <div key={plan}>
+          <h3 className={`mb-8 text-2xl font-bold divider ${sponsorVariants[plan].divider} `}>
+            {plan} Sponsors
+          </h3>
+          {sponsorList[plan].map((sponsor, index) => (
+            <div key={sponsor.name} className={`p-6 sm:p-6 lg:p-8  ${index % 2 === 0 ? "bg-base-100" : "bg-base-200"}`}>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <div className="sm:col-span-1 mx-auto">
+                  <img src={sponsor.imageUrl} alt={sponsor.name + `logo`} className="" />
+                </div>
+                <div className="sm:col-span-2">
+                  <h4 className="text-xl font-bold mb-2">{sponsor.name}</h4>
+                  <p className="mb-2">{sponsor.description}</p>
+                  <ul className="mb-2">
                     {sponsor.links.map((link) => (
-                      <li key={link}>
-                        <a href={link}>{link}</a>
+                      <li key={link.href} className="mb-1">
+                        <a href={link.href} className="link link-primary">
+                          {link.text}
+                        </a>
                       </li>
                     ))}
                   </ul>
                 </div>
-              ))}
+              </div>
             </div>
-          </>
-        ))}
-      </Container>
+          ))}
+        </div>
+      ))}
     </div>
   )
 }

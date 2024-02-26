@@ -38,13 +38,16 @@ export type SponsorData = {
   name: string;
   description: React.ReactNode;
   imageUrl: string;
-  links: string[];
+  links: {
+    href: string,
+    text: string,
+  }[];
 };
 
 export type SponsorList = {
-  platinum: SponsorData[];
-  gold: SponsorData[];
-  silver: SponsorData[];
-  bronze: SponsorData[];
-  other: SponsorData[];
+  Platinum: SponsorData[];
+  Gold: SponsorData[];
+  Silver: SponsorData[];
+  Bronze: SponsorData[];
+  Other: SponsorData[];
 };
