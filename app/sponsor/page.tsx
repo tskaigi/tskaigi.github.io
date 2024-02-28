@@ -1,6 +1,7 @@
 import Container from "../ui/container";
 import { SponsorList } from "../lib/definitions";
 import { sponsorList } from "../lib/data";
+import Link from "next/link";
 // const links: ["https://twitter.com/ts", "https://twitter.com/ts", "https://twitter.com/ts"],
 
 const pageAnchors = {
@@ -51,7 +52,7 @@ export default function Sponsor({
       >
         <a href="#sponsor">TSKaigi 2024のスポンサー</a>
       </h1>
-      {plans.map((plan) => {
+      {plans.filter(plan => plan !== "Bronze").map((plan) => {
         const list = sponsorList[plan].filter(sponsor => showDraft || !sponsor.draft)
         if (list.length === 0) {
           return null
@@ -109,6 +110,36 @@ export default function Sponsor({
           ))}
         </div>
       )})}
+      {
+        <div>
+          <h3
+            className={`mb-8 text-2xl font-bold divider ${sponsorVariants["Bronze"].divider} `}
+          >
+            Bronze Sponsors
+          </h3>
+          <div className={`grid my-8 px-4 sm:px-6 lg:px-8 mt-8 mb-12 grid-cols-1 gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4`}>
+            {sponsorList.Bronze.filter(sponsor => showDraft || !sponsor.draft).map((sponsor) => (
+              <Link
+                key={sponsor.name}
+                href={sponsor.links[0].href}
+                rel="noopener noreferrer"
+                target="_blank"
+                >
+                <div
+                  key={sponsor.name}
+                  className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out overflow-hidden h-36 ${sponsor.addPadding ? "p-8" : "p-2"}`}
+                >
+                  <img
+                    className="p-4 h-full w-full object-contain"
+                    src={sponsor.logoImage}
+                    alt={sponsor.name}
+                  />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      }
     </div>
   );
 }
