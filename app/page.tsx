@@ -143,51 +143,49 @@ export default function Home({
           </div>
         </div>
       </Container>
-      {showSponsorDraft && (
-        <div className="py-20">
-          <div className="max-w-4xl mx-auto">
-            <h2 id={pageAnchors.sponsor} className="text-2xl font-bold text-center text-accent lg:text-3xl mb-20 scroll-mt-20">
-              <a href="#sponsor">TSKaigi 2024 スポンサー各社</a>
-            </h2>
-          </div>
-          <div className="mx-auto pb-20">
-            {plans.map((plan) => {
-              const list = sponsorList[plan].filter(sponsor => showSponsorDraft || !sponsor.draft)
-              if (list.length === 0) {
-                return null
-              }
-              return (
-              <div key={plan}>
-                <h3 className={`text-2xl font-bold divider ${sponsorVariants[plan].divider}`}>
-                  {plan} Sponsors
-                </h3>
-                <div className={`grid my-8 px-4 sm:px-6 lg:px-8 mt-8 mb-12 grid-cols-1 ${sponsorVariants[plan].gridSize}`}>
-                  {list.map((sponsor) => (
-                    <Link
-                      key={sponsor.name}
-                      href={sponsor.links[0].href}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className={`${sponsorVariants[plan].colStart}`}
-                      >
-                      <div
-                        key={sponsor.name}
-                        className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out overflow-hidden ${sponsorVariants[plan].height} ${plan === "Bronze" ? (sponsor.addPadding ? "p-2" : "p-1") : (sponsor.addPadding ? "p-8" : "p-2")}`}
-                      >
-                        <img
-                          className="p-4 h-full w-full object-contain"
-                          src={sponsor.logoImage}
-                          alt={sponsor.name}
-                        />
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )})}
-          </div>
+      <div className="py-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 id={pageAnchors.sponsor} className="text-2xl font-bold text-center text-accent lg:text-3xl mb-20 scroll-mt-20">
+            <a href="#sponsor">TSKaigi 2024 スポンサー各社</a>
+          </h2>
         </div>
-      )}
+        <div className="mx-auto pb-20">
+          {plans.map((plan) => {
+            const list = sponsorList[plan].filter(sponsor => showSponsorDraft || !sponsor.draft)
+            if (list.length === 0) {
+              return null
+            }
+            return (
+            <div key={plan}>
+              <h3 className={`text-2xl font-bold divider ${sponsorVariants[plan].divider}`}>
+                {plan} Sponsors
+              </h3>
+              <div className={`grid my-8 px-4 sm:px-6 lg:px-8 mt-8 mb-12 grid-cols-1 ${sponsorVariants[plan].gridSize}`}>
+                {list.map((sponsor) => (
+                  <Link
+                    key={sponsor.name}
+                    href={sponsor.links[0].href}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className={`${sponsorVariants[plan].colStart}`}
+                    >
+                    <div
+                      key={sponsor.name}
+                      className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out overflow-hidden ${sponsorVariants[plan].height} ${plan === "Bronze" ? (sponsor.addPadding ? "p-2" : "p-1") : (sponsor.addPadding ? "p-8" : "p-2")}`}
+                    >
+                      <img
+                        className="p-4 h-full w-full object-contain"
+                        src={sponsor.logoImage}
+                        alt={sponsor.name}
+                      />
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )})}
+        </div>
+      </div>
     </>
   );
 }

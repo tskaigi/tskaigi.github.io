@@ -28,14 +28,14 @@ export const pageInfos: PageInfo[] = [
     icon: HiLightBulb,
     href: "/call-for-proposals",
   },
-  // {
-  //   index: 4,
-  //   title: "スポンサー",
-  //   description:
-  //     "TSKaigiに協賛いただいているスポンサーです。各種トークイベントやブースの出展、懇親会でのフリートークを盛り上げるお手伝いをしていただきます。",
-  //   icon: FaHandshake,
-  //   href: "/sponsor",
-  // },
+  {
+    index: 4,
+    title: "スポンサー",
+    description:
+      "TSKaigiに協賛いただいているスポンサーです。各種トークイベントやブースの出展、懇親会でのフリートークを盛り上げるお手伝いをしていただきます。",
+    icon: FaHandshake,
+    href: "/sponsor",
+  },
   {
     index: 5,
     title: "Blog",
