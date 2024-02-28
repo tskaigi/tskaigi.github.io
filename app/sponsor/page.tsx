@@ -8,7 +8,12 @@ const pageAnchors = {
   ticketInfo: "ticket-info",
   sponsor: "sponsor",
 };
-export default function Sponsor() {
+export default function Sponsor({
+  searchParams
+}: {
+  searchParams: {sponsorDraft: string | undefined}
+}) {
+  const showDraft = typeof searchParams.sponsorDraft !== "undefined"
   const plans: (keyof SponsorList)[] = Object.keys(
     sponsorList
   ) as (keyof SponsorList)[];
@@ -46,14 +51,19 @@ export default function Sponsor() {
       >
         <a href="#sponsor">TSKaigi 2024のスポンサー</a>
       </h1>
-      {plans.map((plan) => (
+      {plans.map((plan) => {
+        const list = sponsorList[plan].filter(sponsor => showDraft || !sponsor.draft)
+        if (list.length === 0) {
+          return null
+        }
+        return (
         <div key={plan}>
           <h3
             className={`mb-8 text-2xl font-bold divider ${sponsorVariants[plan].divider} `}
           >
             {plan} Sponsors
           </h3>
-          {sponsorList[plan].map((sponsor, index) => (
+          {list.map((sponsor, index) => (
             <div
               key={sponsor.name}
               className={`p-6 sm:p-6 lg:p-8  ${
@@ -98,7 +108,7 @@ export default function Sponsor() {
             </div>
           ))}
         </div>
-      ))}
+      )})}
     </div>
   );
 }

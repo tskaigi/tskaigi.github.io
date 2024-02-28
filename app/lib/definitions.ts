@@ -44,6 +44,7 @@ export type SponsorData = {
     text: string;
   }[];
   addPadding: boolean;
+  draft?: true;
 };
 
 export type SponsorList = {
