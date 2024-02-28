@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   robots: 'index, follow',
   twitter: {
     title: 'TSKaigi 2024',
+    description: 'TypeScriptカンファレンスを開催します。',
     card: 'summary_large_image',
     site: '@tskaigi',
     creator: '@tskaigi',

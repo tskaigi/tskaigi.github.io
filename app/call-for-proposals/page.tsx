@@ -4,6 +4,7 @@ import { getTitleByIndex, getDescriptionByIndex } from '../lib/utils'
 import { HiExternalLink } from "react-icons/hi";
 import Qa from '@/app/ui/qa';
 import Card from '../ui/card';
+import Cta from '../ui/cta';
 import Container from '../ui/container';
 import { NavigateAnchorOnFirstRender } from '../functional/navigate-anchor-on-first-render';
 
@@ -49,21 +50,12 @@ export default function Page() {
                     target="_blank"
                   >
                     中野セントラルパーク カンファレンス
-                    <span className='inline-block ml-2'>
-                      <HiExternalLink />
-                    </span>
+                    <HiExternalLink className="inline-block ml-2" />
                   </a>
                 </span>
               </p>
               <div className="divider divider-neutral my-0"></div>
-              <div className="flex flex-col items-center justify-center lg:flex-row h-32 gap-4 lg:gap-8 my-8">
-                <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full max-w-xs">
-                  <button className="btn lg:btn-lg w-full">お問い合わせ</button>
-                </a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" rel="noopener noreferrer" target="_blank" className="w-full  max-w-xs">
-                  <button className="btn lg:btn-lg btn-accent block w-full  bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">応募する</button>
-                </a>
-              </div>
+              <Cta mainLink="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" mainLinkText="応募する" subLink="mailto:cfp@tskaigi.org" subLinkText="お問い合わせ" />
             </div>
           </div>
           <p className="md:px-10">
@@ -98,18 +90,16 @@ export default function Page() {
               <div className="divider divider-neutral my-0"></div>
               <p>複数応募：　可</p>
               <div className="divider divider-neutral my-0"></div>
-              <p>応募方法：　<a className="link link-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform" rel="noopener noreferrer" target="_blank" >こちらのフォーム
-                <span className='inline-block'>
-                  <HiExternalLink />
-                </span></a>から応募</p>
+              <p>応募方法：　
+                <a className="link link-primary" href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform" rel="noopener noreferrer" target="_blank" >こちらのフォーム
+                <HiExternalLink className="inline-block ml-2" />
+              </a>から応募
+              </p>
               <div className="divider divider-neutral my-0"></div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center lg:flex-row gap-4 lg:gap-12 my-24 lg:my-28">
-          <a href="mailto:cfp@tskaigi.org" className="link link-primary w-full max-w-md"><button className="btn lg:btn-lg w-full">お問い合わせ</button></a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" rel="noopener noreferrer" target="_blank" className="w-full max-w-md"><button className="btn lg:btn-lg btn-accent block w-full bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">応募する</button></a>
-        </div>
+        <Cta mainLink="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" mainLinkText="応募する" subLink="mailto:cfp@tskaigi.org" subLinkText="お問い合わせ" />
         <h2 id={pageAnchors.judges} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
           <a href={`#${pageAnchors.judges}`}>
             審査員紹介

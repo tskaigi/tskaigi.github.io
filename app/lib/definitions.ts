@@ -33,3 +33,27 @@ export type CardData = {
   description?: string;
   links: { icon?: IconType; href: string }[];
 };
+
+export type SponsorData = {
+  name: string;
+  description: React.ReactNode;
+  logoImage: string;
+  logoLink: string;
+  links: {
+    href: string;
+    text: string;
+  }[];
+  addPadding: boolean;
+  draft?: true;
+};
+
+export type SponsorList = {
+  Platinum: SponsorData[];
+  Gold: SponsorData[];
+  Silver: SponsorData[];
+  Bronze: SponsorData[];
+  Refreshment: SponsorData[];
+  Coffee: SponsorData[];
+  Beer: SponsorData[];
+  "Event Platform": SponsorData[];
+};
