@@ -161,7 +161,7 @@ export default function Home() {
                     >
                     <div
                       key={sponsor.name}
-                      className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out overflow-hidden ${sponsorVariants[plan].height} ${plan === "Bronze" ? (sponsor.addPadding ? "p-8" : "p-2") : (sponsor.addPadding ? "p-4" : "p-1")}`}
+                      className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out overflow-hidden ${sponsorVariants[plan].height} ${plan === "Bronze" ? (sponsor.addPadding ? "p-2" : "p-1") : (sponsor.addPadding ? "p-8" : "p-2")}`}
                     >
                       <img
                         className="p-4 h-full w-full object-contain"
