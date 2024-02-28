@@ -342,7 +342,10 @@ export const sponsorList: SponsorList = {
       name: "株式会社LayerX",
       description: (
         <>
+          LayerXは「すべての経済活動を、デジタル化する。」をミッションに掲げるSaaS+FinTechスタートアップです。 法人支出管理サービス「バクラク」を中心に、デジタルネイティブなアセットマネジメント会社を目指す合弁会社「三井物産デジタル・アセットマネジメント」、大規模言語モデル（LLM）関連技術を活用し企業や行政における業務効率化・データ活用を支援する「AI・LLM事業」などを開発・運営しています。
 
+          LayerXは、今後のプロダクト戦略で重要なテーマとして「AI-UX（AIを前提とした利用体験）」を掲げています。そして、最高のAI-UXを作り上げるにはAI以外のソフトウェア体験の磨き込み、改善基盤の構築も重要です。
+          昨年策定したバクラクフロントエンドVisionでは「お客様に最高の体験を届けたい」「Webフロントエンドを楽しくしたい」という渾身の想いを込めました。ぜひ一度ご覧ください！
         </>
       ),
       logoImage: "/sponsors/layerx_horizontal.png",
@@ -642,7 +645,7 @@ export const sponsorList: SponsorList = {
       name: "KAKEHASHI Inc.",
       description: (
         <>
-          調剤薬局を入口に、日本の医療システムの再構築を目指すヘルステックスタートアップ。創業2016年。現在、主要サービスの一つ薬局SaaS「Musubi」のユーザーは全国7000店以上（シェア10％超）に。そのほか患者フォローシステム「Pocket Musubi」など薬局関連サービスを複数展開。Dev/Bizの垣根なく一貫してアジャイルな組織を志向。「プロダクトを介して蓄積される医療現場の膨大なリアルデータを、医療価値の向上にどう活かしていくか」という観点で、既存プロダクトの改善から新規事業まで、一人ひとりの自律的な行動によりプロジェクトを推進。ミッションは「日本の医療体験を、しなやかに」。
+          日本の医療システムの再構築を目指すヘルステックスタートアップ。現在、主要サービスの一つ薬局SaaS「Musubi」のユーザーは全国7000店以上（シェア10％超）に。そのほか薬局関連サービスを複数展開。Dev/Bizの垣根なく一貫してアジャイルな組織を志向。「プロダクトを介して蓄積される医療現場の膨大なリアルデータを、医療価値の向上にどう活かしていくか」という観点で、既存プロダクトの改善から新規事業まで、一人ひとりの自律的な行動によりプロジェクトを推進。ミッションは「日本の医療体験を、しなやかに」。
         </>
       ),
       logoImage: "/sponsors/kakehashi.png",
@@ -667,8 +670,8 @@ export const sponsorList: SponsorList = {
       logoImage: "/sponsors/cloudbase.png",
       logoLink: "https://cloudbase.ink",
       links: [
-        { href: "https://cloudbase.co.jp/", text: "", },
-        { href: "https://levetty.notion.site/Cloudbase-Engineer-Entrance-Book-1f51dcaf9edd490e934780f526f833a3?pvs=74", text: "KAKEHASHI RECRUTHING SITE" },
+        { href: "https://cloudbase.co.jp/", text: "Cloudbase株式会社", },
+        { href: "https://levetty.notion.site/Cloudbase-Engineer-Entrance-Book-1f51dcaf9edd490e934780f526f833a3?pvs=74", text: "Cloudbase Engineer Entrance Book" },
       ],
     }
 
