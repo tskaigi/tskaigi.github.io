@@ -34,7 +34,7 @@ export default function Sponsor() {
     Beer: {
       divider: `text-gray-500 divider-gray-500`,
     },
-    EventPlatform: {
+    "Event Platform": {
       divider: `text-gray-500 divider-gray-500`,
     },
   };

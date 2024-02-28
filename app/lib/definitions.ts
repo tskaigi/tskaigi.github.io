@@ -54,5 +54,5 @@ export type SponsorList = {
   Refreshment: SponsorData[];
   Coffee: SponsorData[];
   Beer: SponsorData[];
-  EventPlatform: SponsorData[];
+  "Event Platform": SponsorData[];
 };

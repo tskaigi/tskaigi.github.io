@@ -584,7 +584,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
       addPadding: true,
     },
   ],
-  EventPlatform: [
+  "Event Platform": [
     {
       name: "株式会社EventHub",
       description: `💁‍♀️ EventHubについて
@@ -708,7 +708,7 @@ export const sponsorList: SponsorList = {
   ),
   Coffee: originalSponsorList.Coffee.filter((sponsor) => sponsor.name !== ""),
   Beer: originalSponsorList.Beer.filter((sponsor) => sponsor.name !== ""),
-  EventPlatform: originalSponsorList.EventPlatform.filter(
+  "Event Platform": originalSponsorList["Event Platform"].filter(
     (sponsor) => sponsor.name !== ""
   ),
   Bronze: originalSponsorList.Bronze.filter((sponsor) => sponsor.name !== ""),

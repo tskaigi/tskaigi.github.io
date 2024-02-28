@@ -56,7 +56,7 @@ export default function Home() {
       height: `h-36`,
       colStart: `sm:col-start-2`,
     },
-    EventPlatform: {
+    "Event Platform": {
       divider: `text-gray-500 divider-gray-500`,
       gridSize: `gap-4 gridcols-1 sm:grid-cols-2 md:grid-cols-3`,
       height: `h-36`,
