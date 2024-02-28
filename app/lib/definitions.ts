@@ -40,9 +40,10 @@ export type SponsorData = {
   logoImage: string;
   logoLink: string;
   links: {
-    href: string,
-    text: string,
+    href: string;
+    text: string;
   }[];
+  addPadding: boolean;
 };
 
 export type SponsorList = {
@@ -53,4 +54,5 @@ export type SponsorList = {
   Refreshment: SponsorData[];
   Coffee: SponsorData[];
   Beer: SponsorData[];
+  EventPlatform: SponsorData[];
 };
