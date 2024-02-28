@@ -56,6 +56,12 @@ export default function Home() {
       height: `h-36`,
       colStart: `sm:col-start-2`,
     },
+    EventPlatform: {
+      divider: `text-gray-500 divider-gray-500`,
+      gridSize: `gap-4 gridcols-1 sm:grid-cols-2 md:grid-cols-3`,
+      height: `h-36`,
+      colStart: `sm:col-start-2`,
+    },
   };
 
   return (
@@ -146,7 +152,8 @@ export default function Home() {
               </h3>
               <div className={`grid my-8 px-4 sm:px-6 lg:px-8 mt-8 mb-12 grid-cols-1 ${sponsorVariants[plan].gridSize}`}>
                 {sponsorList[plan].map((sponsor) => (
-                  <Link 
+                  <Link
+                    key={sponsor.name}
                     href={sponsor.links[0].href}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -154,7 +161,7 @@ export default function Home() {
                     >
                     <div
                       key={sponsor.name}
-                      className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out overflow-hidden ${sponsorVariants[plan].height}`}
+                      className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out overflow-hidden ${sponsorVariants[plan].height} ${plan === "Bronze" ? (sponsor.addPadding ? "p-8" : "p-2") : (sponsor.addPadding ? "p-4" : "p-1")}`}
                     >
                       <img
                         className="p-4 h-full w-full object-contain"
