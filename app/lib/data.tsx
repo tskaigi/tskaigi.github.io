@@ -153,6 +153,7 @@ const originalSponsorList: SponsorList = {
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
       name: "アセンド株式会社",
@@ -189,6 +190,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
       name: "Progate",
@@ -221,6 +223,7 @@ Progate では「Empowering everyone to open new doors through programming.」�
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
   ],
   Gold: [
@@ -240,9 +243,10 @@ Progate では「Empowering everyone to open new doors through programming.」�
         },
       ],
       addPadding: true,
+      draft: true,
     },
     {
-      name: "",
+      name: "ファストドクター株式会社",
       description: ``,
       logoImage: "/sponsors/xxx.png",
       logoLink: "",
@@ -252,6 +256,7 @@ Progate では「Empowering everyone to open new doors through programming.」�
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
       name: "株式会社メドレー",
@@ -355,6 +360,7 @@ Progate では「Empowering everyone to open new doors through programming.」�
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
       name: "株式会社LayerX",
@@ -376,6 +382,7 @@ LayerXは、今後のプロダクト戦略で重要なテーマとして「AI-UX
         { href: "https://layerx.co.jp/jobs", text: "LayerX 採用情報" },
       ],
       addPadding: false,
+      draft: true,
     },
   ],
   Silver: [
@@ -393,7 +400,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
       addPadding: true,
     },
     {
-      name: "",
+      name: "株式会社LabBase",
       description: ``,
       logoImage: "/sponsors/xxx.png",
       logoLink: "",
@@ -403,6 +410,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
       name: "AMDlab Inc.",
@@ -423,9 +431,10 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         },
       ],
       addPadding: true,
+      draft: true,
     },
     {
-      name: "",
+      name: "株式会社Linc'well",
       description: ``,
       logoImage: "/sponsors/xxx.png",
       logoLink: "",
@@ -435,6 +444,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
       name: "株式会社Linc'well",
@@ -453,7 +463,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
       addPadding: false,
     },
     {
-      name: "",
+      name: "株式会社ビットキー",
       description: ``,
       logoImage: "/sponsors/xxx.png",
       logoLink: "",
@@ -463,9 +473,10 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
-      name: "",
+      name: "Micoworks株式会社",
       description: ``,
       logoImage: "/sponsors/xxx.png",
       logoLink: "",
@@ -475,6 +486,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
       name: "株式会社オプティム",
@@ -513,9 +525,10 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
-      name: "",
+      name: "チームラボ株式会社",
       description: ``,
       logoImage: "/sponsors/xxx.png",
       logoLink: "",
@@ -525,11 +538,12 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
   ],
   Refreshment: [
     {
-      name: "",
+      name: "エムスリー株式会社",
       description: ``,
       logoImage: "/sponsors/xxx.png",
       logoLink: "",
@@ -539,6 +553,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
   ],
 
@@ -582,6 +597,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
   ],
   "Event Platform": [
@@ -607,6 +623,7 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         },
       ],
       addPadding: true,
+      draft: true,
     },
   ],
   Bronze: [
@@ -657,6 +674,7 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
       name: "",
@@ -669,6 +687,7 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
     {
       name: "株式会社AppBrew",
@@ -693,6 +712,7 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         { href: "", text: "" },
       ],
       addPadding: true,
+      draft: true,
     },
   ],
 };
