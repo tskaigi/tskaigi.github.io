@@ -37,7 +37,8 @@ export type CardData = {
 export type SponsorData = {
   name: string;
   description: React.ReactNode;
-  imageUrl: string;
+  logoImage: string;
+  logoLink: string;
   links: {
     href: string,
     text: string,
@@ -49,5 +50,7 @@ export type SponsorList = {
   Gold: SponsorData[];
   Silver: SponsorData[];
   Bronze: SponsorData[];
-  Other: SponsorData[];
+  Refreshment: SponsorData[];
+  Coffee: SponsorData[];
+  Beer: SponsorData[];
 };

@@ -16,24 +16,45 @@ export default function Home() {
   const sponsorVariants = {
     Platinum: {
       divider: `text-secondary divider-secondary`,
-      // boxSize: `h-40 w-64 mx-3 my-2 sm:w-64 sm:h-48 sm:my-6`,
-      boxSize: `gap-4 gridcols-1 sm:grid-cols-2 md:grid-cols-3`,
+      gridSize: `gap-4 gridcols-1 sm:grid-cols-2 md:grid-cols-3`,
+      height: `h-48`,
+      colStart: ``,
     },
     Gold: {
       divider: `text-accent divider-accent`,
-      boxSize: `gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4`,
+      gridSize: `gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4`,
+      height: `h-36`,
+      colStart: ``,
     },
     Silver: {
       divider: `text-primary divider-primary`,
-      boxSize: `gap-2 grid-cols-3 sm:grid-cols-4 md:grid-cols-5`,
+      gridSize: `gap-2 grid-cols-3 sm:grid-cols-4 md:grid-cols-5`,
+      height: `h-28`,
+      colStart: ``,
     },
     Bronze: {
       divider: `text-error divider-error`,
-      boxSize: `gap-1 grid-cols-4 sm:grid-cols-5 md:grid-cols-6`,
+      gridSize: `gap-1 grid-cols-4 sm:grid-cols-5 md:grid-cols-6`,
+      height: `h-24`,
+      colStart: ``,
     },
-    Other: {
+    Refreshment: {
       divider: `text-gray-500 divider-gray-500`,
-      boxSize: `gap-4 gridcols-1 sm:grid-cols-2 md:grid-cols-3`,
+      gridSize: `gap-4 gridcols-1 sm:grid-cols-2 md:grid-cols-3`,
+      height: `h-36`,
+      colStart: `sm:col-start-2`,
+    },
+    Coffee: {
+      divider: `text-gray-500 divider-gray-500`,
+      gridSize: `gap-4 gridcols-1 sm:grid-cols-2 md:grid-cols-3`,
+      height: `h-36`,
+      colStart: `sm:col-start-2`,
+    },
+    Beer: {
+      divider: `text-gray-500 divider-gray-500`,
+      gridSize: `gap-4 gridcols-1 sm:grid-cols-2 md:grid-cols-3`,
+      height: `h-36`,
+      colStart: `sm:col-start-2`,
     },
   };
 
@@ -123,21 +144,21 @@ export default function Home() {
               <h3 className={`text-2xl font-bold divider ${sponsorVariants[plan].divider}`}>
                 {plan} Sponsors
               </h3>
-              <div className={`grid my-8 px-4 sm:px-6 lg:px-8 mt-8 mb-12 grid-cols-1 ${sponsorVariants[plan].boxSize}`}>
+              <div className={`grid my-8 px-4 sm:px-6 lg:px-8 mt-8 mb-12 grid-cols-1 ${sponsorVariants[plan].gridSize}`}>
                 {sponsorList[plan].map((sponsor) => (
                   <Link 
                     href={sponsor.links[0].href}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className=""
-                  >
+                    className={`${sponsorVariants[plan].colStart}`}
+                    >
                     <div
                       key={sponsor.name}
-                      className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out`}
+                      className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out overflow-hidden ${sponsorVariants[plan].height}`}
                     >
                       <img
-                        className="px-4 text-nowrap overflow-hidden"
-                        src={sponsor.imageUrl}
+                        className="p-4 h-full w-full object-contain"
+                        src={sponsor.logoImage}
                         alt={sponsor.name}
                       />
                     </div>
