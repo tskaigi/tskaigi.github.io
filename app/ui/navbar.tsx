@@ -66,7 +66,7 @@ export default function NavBar() {
             {pageInfos.map((link: PageInfo) => {
               const LinkIcon = link.icon;
               return (
-                <li key={link.index}>
+                link.showNavbar && <li key={link.index}>
                   <Link href={link.href} onClick={closeSideBar}>
                     <LinkIcon className="w-4 h-4" />
                     {link.title}

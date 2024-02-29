@@ -19,7 +19,7 @@ export default function Footer() {
       <nav>
         <header className="footer-title">ページ一覧</header>
         {pageInfos.map((link: PageInfo) => (
-          <Link key={link.index} href={link.href} className="pl-2 link-hover">
+          link.showFooter && <Link key={link.index} href={link.href} className="pl-2 link-hover">
             {link.title}
           </Link>
         ))}
