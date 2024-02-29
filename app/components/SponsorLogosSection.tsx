@@ -92,7 +92,7 @@ export const SponsorLogosSection = ({showDraft, anchor}: SponsorLogosSectionProp
           </div>
           <PlanSponsors
             plan="Bronze"
-            sponsors={sponsorList.Bronze}
+            sponsors={sponsorList.Bronze.filter(sponsor => showDraft || !sponsor.draft)}
           />
         </div>
       </div>
