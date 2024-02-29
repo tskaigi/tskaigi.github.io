@@ -222,7 +222,6 @@ Progate では「Empowering everyone to open new doors through programming.」�
         { href: "", text: "" },
       ],
       addPadding: true,
-      draft: true,
     },
   ],
   Gold: [
@@ -350,7 +349,6 @@ Innovators Live Japan は、Googsle Cloud やデベロッパー界隈の注目�
         { href: "", text: "" },
       ],
       addPadding: true,
-      draft: true,
     },
     {
       name: "株式会社LayerX",
@@ -434,7 +432,6 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         },
       ],
       addPadding: true,
-      draft: true,
     },
     {
       name: "レバテック株式会社",
@@ -467,7 +464,9 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
     },
     {
       name: "株式会社ビットキー",
-      description: `準備中`,
+      description: `ビットキーは、独自開発のデジタルコネクトプラットフォームを通して、人と「暮らし」や「仕事」の間にある分断を解消するアプリ/SaaSを開発しています。 あらゆるサービスやモノを柔軟につなげることで、体験のアップデートを進めています。
+この「暮らし」のサービスである「homehub」、「仕事」のサービスである「workhub」における各種WEBシステムの多くはフロントエンド、バックエンド双方TypeScriptで構築されております。
+現在TypeScriptエンジニアは絶賛採用中のため、是非下記1番上のリンクからビットキーを知っていただき、ご興味あれば下記2番目のカジュアル面談をしていただければと思います！`,
       logoImage: "/sponsors/bitkey_horizontal.png",
       logoLink: "",
       links: [
@@ -489,7 +488,6 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "https://herp.careers/v1/micoworksinc/requisition-groups/1102ea37-e879-4e43-88d3-0c4facf51dec", text: "採用ページ（求人一覧）" },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "株式会社オプティム",
@@ -528,7 +526,6 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "https://twitter.com/DMMcom_tech", text: "X DMM.com Tech (@DMMcom_tech)" },
       ],
       addPadding: true,
-      draft: true,
     },
     {
       name: "チームラボ株式会社",
@@ -600,7 +597,6 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: true,
-      draft: true,
     },
   ],
   "Event Platform": [
@@ -626,7 +622,6 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         },
       ],
       addPadding: true,
-      draft: true,
     },
   ],
   Bronze: [
