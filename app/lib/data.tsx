@@ -519,14 +519,14 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
       logoLink: "https://dmm-corp.com/",
       links: [
         {
-          href: " https://dmm-corp.com/recruit/engineer/1859/",
+          href: "https://dmm-corp.com/recruit/engineer/1859/",
           text: "フロントエンドエンジニア（オープンポジション）",
         },
         {
           href: "https://dmm-corp.com/recruit/engineer/1860/",
           text: "フロントエンドエンジニア_テックリード（オープンポジション）",
         },
-        { href: "", text: "" },
+        { href: "https://twitter.com/DMMcom_tech", text: "X DMM.com Tech (@DMMcom_tech)" },
       ],
       addPadding: true,
       draft: true,
