@@ -536,15 +536,28 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
   Refreshment: [
     {
       name: "エムスリー株式会社",
-      description: ``,
-      logoImage: "/sponsors/xxx.png",
-      logoLink: "",
+      description: `ギークな集団だからこそ世界の医療を変えられる
+
+医療における様々な課題を
+ユニークなプロダクトで解決するからこそ
+ユニークなエンジニアリング文化があるからこそ
+ユニークなメンバーが集っているからこそ
+世界の医療を変えていくことができる
+3つのユニークを掛け合わせ、新たな世界を創造する
+挑み続けるエムスリーのエンジニア組織で世界の医療の変革に
+挑戦してみませんか？
+
+突然ですが、ここで難読クイズ
+これが解けたら連絡を
+[1, 2, 3].map(a => {arg1: a}).join()[1]`,
+      logoImage: "/sponsors/m3.png",
+      logoLink: "https://jobs.m3.com/engineer/",
       links: [
-        { href: "", text: "" },
-        { href: "", text: "" },
-        { href: "", text: "" },
+        { href: "https://jobs.m3.com/engineer/", text: "エンジニア採用サイト" },
+        { href: "https://twitter.com/m3_engineering", text: "公式X（旧Twitter）" },
+        { href: "https://www.m3tech.blog", text: "テックブログ" },
       ],
-      addPadding: true,
+      addPadding: false,
       draft: true,
     },
   ],
