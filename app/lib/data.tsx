@@ -466,7 +466,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
       name: "株式会社ビットキー",
       description: `準備中`,
       logoImage: "/sponsors/bitkey_horizontal.png",
-      logoLink: "https://bitkey-creative.webflow.io/creative-hub/asset-kits",
+      logoLink: "",
       links: [
         { href: "https://speakerdeck.com/bitkey/bitkey-recruiting-book", text: "企業説明資料" },
         { href: "https://wk87qzuwsh2.typeform.com/to/IhG1fHSj?typeform-source=qrcode-button", text: "カジュアル面談フォーム" },
