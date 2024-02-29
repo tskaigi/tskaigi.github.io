@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link"
 import { PageInfo } from "../lib/definitions"
-import { pageInfos } from "../lib/data"
+import { acountLink, pageInfos } from "../lib/data"
 
 const closeSideBar = () => {
   const drawerElement = document.getElementById('my-drawer-3') as HTMLInputElement;
@@ -22,8 +22,8 @@ export default function NavBar() {
               <ul className="menu menu-horizontal">
                 {pageInfos.map((link: PageInfo) => {
                   const LinkIcon = link.icon;
-                  return (
-                    <li key={link.index} className="mx-2">
+                  return link.showNavbar && (
+                    <li key={link.index}>
                       <Link href={link.href}>
                         <LinkIcon className="w-5 h-5" />
                         {link.title}
@@ -31,6 +31,24 @@ export default function NavBar() {
                     </li>
                   )
                 })}
+                {acountLink.map((link) => {
+                  const LinkIcon = link.icon;
+                  return link.showNavbar && (
+                    <div  key={link.index} className={link.emphasis ? 'indicator text-accent' : ''}>
+                      <li>
+                        <Link
+                          href={link.href}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <LinkIcon className="w-5 h-5" />
+                          {link.title}
+                        </Link>
+                      </li>
+                    </div>
+                  )
+                }
+                )}
               </ul>
             </div>
             <div className="flex-none lg:hidden">
@@ -56,6 +74,24 @@ export default function NavBar() {
                 </li>
               )
             })}
+            {acountLink.map((link) => {
+                  const LinkIcon = link.icon;
+                  return link.showNavbar && (
+                    <div  key={link.index} className={link.emphasis ? 'indicator text-accent' : ''}>
+                      <li>
+                        <Link
+                          href={link.href}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          <LinkIcon className="w-4 h-4" />
+                          {link.title}
+                        </Link>
+                      </li>
+                    </div>
+                  )
+                }
+                )}
           </ul>
         </div>
       </div>

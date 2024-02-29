@@ -1,41 +1,87 @@
-import type { PageInfo, QandA, CardData, SponsorList } from "./definitions";
+import type { PageInfo, QandA, CardData, SponsorList, AcountLink } from "./definitions";
 import { HiHome } from "react-icons/hi";
 import { HiLightBulb } from "react-icons/hi2";
 import { FaHandshake, FaBook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { IoTicket } from "react-icons/io5";
+
+export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
 
 export const pageInfos: PageInfo[] = [
   {
     index: 1,
+    showNavbar: true,
+    showFooter: true,
     title: "Home",
     description: "",
     icon: HiHome,
     href: "/",
   },
   {
+    index: 2,
+    showNavbar: false,
+    showFooter: true,
+    title: "スポンサー募集",
+    description:
+      "TSKaigiは日本最大級のtypescriptカンファレンスを開催します。スポンサーになって、typescriptコミュニティを一緒に盛り上げませんか？業界でのエキスパートとして日本のTypeScriptユーザーの支援をお願いします。",
+    icon: FaHandshake,
+    href: "/sponsor-recruitment",
+  },
+  {
     index: 3,
+    showNavbar: false,
+    showFooter: true,
     title: "プロポーザル募集",
     description:
       "TSKaigiは日本のTypeScriptコミュニティを盛り上げるカンファレンスを開催します。あなたの発表・登壇をお待ちしております。ぜひ一緒に日本のTypeScriptコミュニティを盛り上げましょう！",
     icon: HiLightBulb,
     href: "/call-for-proposals",
   },
-  // {
-  //   index: 4,
-  //   title: "スポンサー",
-  //   description:
-  //     "TSKaigiに協賛いただいているスポンサーです。各種トークイベントやブースの出展、懇親会でのフリートークを盛り上げるお手伝いをしていただきます。",
-  //   icon: FaHandshake,
-  //   href: "/sponsor",
-  // },
   {
-    index: 5,
+    index: 4,
+    showNavbar: false,
+    showFooter: false,
+    title: "スポンサー",
+    description:
+      "TSKaigiに協賛いただいているスポンサーです。各種トークイベントやブースの出展、懇親会でのフリートークを盛り上げるお手伝いをしていただきます。",
+    icon: FaHandshake,
+    href: "/sponsor",
+  },
+  
+];
+
+export const acountLink: AcountLink[] = [
+  {
+    index: 1,
+    showNavbar: true,
+    showFooter: true,
+    emphasis: false,
+    title: "公式X",
+    description: "TSKaigiの公式X",
+    icon: FaXTwitter,
+    href: "https://twitter.com/tskaigi",
+  },
+  {
+    index: 2,
     title: "Blog",
+    showNavbar: true,
+    showFooter: true,
+    emphasis: false,
     description: "TSKaigi運営のブログ",
     icon: FaBook,
     href: "https://tskaigi.hatenablog.com/",
   },
-];
+  {
+    index: 3,
+    title: "チケット販売",
+    showNavbar: true,
+    showFooter: true,
+    emphasis: true,
+    description: "TSKaigiのチケット販売ページ",
+    icon: IoTicket,
+    href: ticketURL,
+  },
+]
 
 export const qaList: QandA = {
   categories: [
@@ -127,7 +173,6 @@ export const selectionCommittee: CardData[] = [
   },
 ];
 
-export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
 
 export const sponsorList: SponsorList = {
   Platinum: [

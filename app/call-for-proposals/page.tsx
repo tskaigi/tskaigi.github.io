@@ -26,7 +26,7 @@ export default function Page() {
     <>
       <NavigateAnchorOnFirstRender />
       <Container>
-        <h1 className="text-2xl lg:text-4xl my-10">TSKaigi 2024のプロポーザル募集について</h1>
+        <h1 className="text-2xl lg:text-4xl my-10">TSKaigi 2024のプロポーザル募集について <span className='text-xl text-error'>*現在、募集期間は終了しています</span></h1>
         <div>
           <h2 id={pageAnchors.overview} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
             <a href={`#${pageAnchors.overview}`}>
@@ -55,7 +55,13 @@ export default function Page() {
                 </span>
               </p>
               <div className="divider divider-neutral my-0"></div>
-              <Cta mainLink="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" mainLinkText="応募する" subLink="mailto:cfp@tskaigi.org" subLinkText="お問い合わせ" />
+              <Cta
+                prevent={true}
+                mainLink="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1"
+                mainLinkText="募集終了"
+                subLink="mailto:cfp@tskaigi.org"
+                subLinkText="お問い合わせ"
+              />
             </div>
           </div>
           <p className="md:px-10">
@@ -99,7 +105,13 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <Cta mainLink="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1" mainLinkText="応募する" subLink="mailto:cfp@tskaigi.org" subLinkText="お問い合わせ" />
+        <Cta
+          prevent={true}
+          mainLink="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform?pli=1"
+          mainLinkText="募集終了"
+          subLink="mailto:cfp@tskaigi.org"
+          subLinkText="お問い合わせ"
+        />
         <h2 id={pageAnchors.judges} className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20">
           <a href={`#${pageAnchors.judges}`}>
             審査員紹介
