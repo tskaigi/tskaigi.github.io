@@ -72,17 +72,23 @@ export default function Sponsor({
               }`}
             >
               <div className="grid sm:grid-cols-3 gap-4">
-                <div
-                  className={`sm:col-span-1 bg-white w-full rounded-sm flex items-center h-[300px] ${
-                    sponsor.addPadding ? "p-[20%]" : "p-8"
-                  }`}
+                <Link
+                  href={sponsor.logoLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  <img
-                    src={sponsor.logoImage}
-                    alt={sponsor.name + `logo`}
-                    className="max-h-44 mx-auto"
-                  />
-                </div>
+                  <div
+                    className={`sm:col-span-1 bg-white w-full rounded-sm flex items-center h-[200px] ${
+                      sponsor.addPadding ? "p-[20%]" : "p-8"
+                    }`}
+                  >
+                    <img
+                      src={sponsor.logoImage}
+                      alt={sponsor.name + `logo`}
+                      className="max-h-44 mx-auto"
+                    />
+                  </div>
+                </Link>
                 <div className="sm:col-span-2">
                   <h4 className="text-xl lg:text-3xl mb-4 border-l-4 pl-2 ">
                     {sponsor.name}
