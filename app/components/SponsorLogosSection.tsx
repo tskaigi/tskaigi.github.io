@@ -2,7 +2,6 @@ import React from 'react'
 import { sponsorList } from '../lib/data';
 import Link from 'next/link';
 import { SponsorData, SponsorList } from '../lib/definitions';
-import { pageAnchors } from '../page';
 
 const sponsorVariants = {
   Platinum: {
@@ -50,14 +49,14 @@ const sponsorVariants = {
 
 type SponsorLogosSectionProps = {
   showDraft: boolean;
-
+  anchor: string
 }
 
-export const SponsorLogosSection = ({showDraft}: SponsorLogosSectionProps) => {
+export const SponsorLogosSection = ({showDraft, anchor}: SponsorLogosSectionProps) => {
   return (
       <div className="py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 id={pageAnchors.sponsor} className="text-2xl font-bold text-center text-accent lg:text-3xl mb-20 scroll-mt-20">
+          <h2 id={anchor} className="text-2xl font-bold text-center text-accent lg:text-3xl mb-20 scroll-mt-20">
             <a href="#sponsor">TSKaigi 2024 スポンサー各社</a>
           </h2>
         </div>
