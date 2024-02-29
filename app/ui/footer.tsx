@@ -30,7 +30,7 @@ export default function Footer() {
           href={ticketURL}
           rel="noopener noreferrer"
           target="_blank"
-          className="flex items-center gap-2 pl-2"
+          className="flex items-center gap-2 pl-2 text-accent link-hover"
         >
           チケット購入
           <HiExternalLink />
