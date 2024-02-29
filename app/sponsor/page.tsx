@@ -67,7 +67,7 @@ export default function Sponsor({
           {list.map((sponsor, index) => (
             <div
               key={sponsor.name}
-              className={`p-6 sm:p-6 lg:p-8  ${
+              className={`p-6 sm:p-6 lg:p-8 ${
                 index % 2 === 0 ? "bg-base-100" : "bg-base-200"
               }`}
             >
