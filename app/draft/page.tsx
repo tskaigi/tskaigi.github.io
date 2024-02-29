@@ -1,17 +1,11 @@
 import Link from "next/link";
-import Container from "./ui/container";
 import { HiExternalLink } from "react-icons/hi";
-import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-first-render";
-import { SponsorLogosSection } from "./components/SponsorLogosSection";
+import { SponsorLogosSection } from '../components/SponsorLogosSection'
+import Container from "../ui/container";
+import { NavigateAnchorOnFirstRender } from "../functional/navigate-anchor-on-first-render";
+import { pageAnchors } from "../page";
 
-export const pageAnchors = {
-  news: 'news',
-  ticketInfo: 'ticket-info',
-  sponsor: 'sponsor',
-}
-
-
-export default function Home() {
+export default function DraftTopPage () {
   return (
     <>
       <NavigateAnchorOnFirstRender />
@@ -86,6 +80,7 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      <SponsorLogosSection showDraft/>
     </>
-  );
+  )
 }
