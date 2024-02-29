@@ -86,7 +86,7 @@ export default function Home() {
                 最新情報
               </a>
             </h2>
-            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
+            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents sm:px-4">
               <a className="pl-1 link link-primary" rel="noopener noreferrer" target="_blank" href="https://twitter.com/tskaigi">
                 TSKaigi公式アカウント
                 <HiExternalLink className="inline-block ml-1" />
@@ -101,7 +101,7 @@ export default function Home() {
                 プログラム情報&nbsp;<span className="text-error text-sm sm:text-lg">*審査中</span>
               </a>
             </h2>
-            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
+            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents sm:px-4">
               プログラムは現在審査中です。<br />
               公開時には公式SNSでも告知を予定しています。もうしばらくお待ち下さい。
             </div>
