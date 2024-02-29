@@ -558,7 +558,6 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "https://www.m3tech.blog", text: "テックブログ" },
       ],
       addPadding: false,
-      draft: true,
     },
   ],
 
