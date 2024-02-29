@@ -2,14 +2,12 @@ import Link from "next/link";
 import Container from "./ui/container";
 import { HiExternalLink } from "react-icons/hi";
 import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-first-render";
-import { SponsorLogosSection } from "./components/SponsorLogosSection";
 
-export const pageAnchors = {
+const pageAnchors = {
   news: 'news',
   ticketInfo: 'ticket-info',
   sponsor: 'sponsor',
 }
-
 
 export default function Home() {
   return (

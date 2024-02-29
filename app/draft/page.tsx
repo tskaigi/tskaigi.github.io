@@ -3,7 +3,12 @@ import { HiExternalLink } from "react-icons/hi";
 import { SponsorLogosSection } from '../components/SponsorLogosSection'
 import Container from "../ui/container";
 import { NavigateAnchorOnFirstRender } from "../functional/navigate-anchor-on-first-render";
-import { pageAnchors } from "../page";
+
+const pageAnchors = {
+  news: 'news',
+  ticketInfo: 'ticket-info',
+  sponsor: 'sponsor',
+}
 
 export default function DraftTopPage () {
   return (
@@ -80,7 +85,7 @@ export default function DraftTopPage () {
           </div>
         </div>
       </Container>
-      <SponsorLogosSection showDraft/>
+      <SponsorLogosSection anchor={pageAnchors.sponsor} showDraft/>
     </>
   )
 }
