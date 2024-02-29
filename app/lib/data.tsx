@@ -332,7 +332,11 @@ Progate では「Empowering everyone to open new doors through programming.」�
     },
     {
       name: "グーグル・クラウド・ジャパン合同会社",
-      description: `Google Cloudは、最高クラスのインフラストラクチャ、プラットフォーム、インダストリーソリューションと専門知識により、企業のデジタルトランスフォーメーション（DX）を加速します。Googleの最先端技術を活用したエンタープライズグレードのソリューションを、業界で最もクリーンなクラウド上で提供しています。200以上の国と地域のお客様が、成長を実現し、重要なビジネス上の課題を解決するための信頼できるパートナーとして、Google Cloudを利用しています。`,
+      description: `Google Cloud は、最高クラスのインフラストラクチャ、プラットフォーム、インダストリーソリューションと専門知識により、企業のデジタルトランスフォーメーション（DX）を加速します。Google の最先端技術を活用したエンタープライズグレードのソリューションを、業界で最もクリーンなクラウド上で提供しています。200 以上の国と地域のお客様が、成長を実現し、重要なビジネス上の課題を解決するための信頼できるパートナーとして、Google Cloud を利用しています。
+
+Google Cloud Innovators は、デベロッパーや学生向けのプログラムです。イベントへの優先招待や最新情報提供などの特典があります。
+
+Innovators Live Japan は、Googsle Cloud やデベロッパー界隈の注目トピックについて、Google社員や Innovators メンバーなどがトークするライブ配信型ウェビナーです。`,
       logoImage: "/sponsors/googlecloudjapan.png",
       logoLink: "https://cloud.google.com/innovators?hl=ja",
       links: [
