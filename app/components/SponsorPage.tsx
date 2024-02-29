@@ -127,7 +127,7 @@ export default function SponsorPage({showDraft}:SponsorPageProps) {
           >
             Bronze Sponsors
           </h3>
-          <div className={`grid my-8 px-4 sm:px-6 lg:px-8 mt-8 mb-12 grid-cols-1 gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4`}>
+          <div className={`grid my-8 px-4 sm:px-6 lg:px-8 mt-8 mb-12 gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4`}>
             {sponsorList.Bronze.filter(sponsor => showDraft || !sponsor.draft).map((sponsor) => (
               <Link
                 key={sponsor.name}

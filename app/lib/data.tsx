@@ -20,6 +20,8 @@ export const pageInfos: PageInfo[] = [
   {
     index: 2,
     title: "スポンサー",
+    showNavbar: true,
+    showFooter: true,
     description:
       "TSKaigiは日本のTypeScriptコミュニティを盛り上げるカンファレンスを開催します。TSKaigiに協賛いただいた企業をご紹介します。",
     icon: FaHandshake,
@@ -35,17 +37,6 @@ export const pageInfos: PageInfo[] = [
     icon: HiLightBulb,
     href: "/call-for-proposals",
   },
-  {
-    index: 4,
-    showNavbar: false,
-    showFooter: false,
-    title: "スポンサー",
-    description:
-      "TSKaigiに協賛いただいているスポンサーです。各種トークイベントやブースの出展、懇親会でのフリートークを盛り上げるお手伝いをしていただきます。",
-    icon: FaHandshake,
-    href: "/sponsor",
-  },
-  
 ];
 
 export const acountLink: AcountLink[] = [
