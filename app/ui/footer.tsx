@@ -53,7 +53,7 @@ export default function Footer() {
           target="_blank"
           className="flex items-center gap-2 pl-2 link-hover"
         >
-          公式グログ
+          公式ブログ
           <HiExternalLink />
         </Link>
       </nav>
