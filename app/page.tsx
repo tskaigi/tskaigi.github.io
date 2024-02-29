@@ -156,7 +156,7 @@ export default function Home({
                 />
               )}
             )}
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               {(["Event Platform", "Refreshment", "Coffee", "Beer"] as const).map(plan => {
                 const list = sponsorList[plan].filter(sponsor => showSponsorDraft || !sponsor.draft)
                 if (list.length === 0) {
