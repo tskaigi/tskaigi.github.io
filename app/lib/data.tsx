@@ -246,19 +246,6 @@ Progate では「Empowering everyone to open new doors through programming.」�
       draft: true,
     },
     {
-      name: "ファストドクター株式会社",
-      description: ``,
-      logoImage: "/sponsors/xxx.png",
-      logoLink: "",
-      links: [
-        { href: "", text: "" },
-        { href: "", text: "" },
-        { href: "", text: "" },
-      ],
-      addPadding: true,
-      draft: true,
-    },
-    {
       name: "株式会社メドレー",
       description: `メドレーは、「医療ヘルスケアの未来をつくる」ミッションのもと、テクノロジーを活用した事業やプロジェクトを通じて、医療ヘルスケア分野の課題を解決していきます。それにより、病院や行政による「持続可能な医療」の実現と、患者さんやそのご家族にとって「納得できる医療」の実現を目指しています。
 医療ヘルスケア領域の成果報酬型人材採用システム「ジョブメドレー」、オンライン動画研修サービス「ジョブメドレーアカデミー」、オンライン診療・服薬指導アプリ「CLINICS」、かかりつけ薬局支援システム「Pharms」、クラウド歯科業務支援システム「Dentis」などを運営しています。
@@ -382,6 +369,19 @@ LayerXは、今後のプロダクト戦略で重要なテーマとして「AI-UX
         { href: "https://layerx.co.jp/jobs", text: "LayerX 採用情報" },
       ],
       addPadding: false,
+      draft: true,
+    },
+    {
+      name: "",
+      description: ``,
+      logoImage: "/sponsors/xxx.png",
+      logoLink: "",
+      links: [
+        { href: "", text: "" },
+        { href: "", text: "" },
+        { href: "", text: "" },
+      ],
+      addPadding: true,
       draft: true,
     },
   ],
