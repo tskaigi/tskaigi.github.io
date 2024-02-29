@@ -121,7 +121,7 @@ export default function Sponsor({
             {sponsorList.Bronze.filter(sponsor => showDraft || !sponsor.draft).map((sponsor) => (
               <Link
                 key={sponsor.name}
-                href={sponsor.links[0].href}
+                href={sponsor.logoLink}
                 rel="noopener noreferrer"
                 target="_blank"
                 >
