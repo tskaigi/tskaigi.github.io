@@ -40,8 +40,7 @@ export default function News() {
           </thead>
           <tbody>
             {newsData.map((data) => (
-              <tr>
-                <th>{data.date}</th>
+              <tr key={data.text}>
                 <td>{data.text}</td>
                 <td><Link href={`${data.link?.href}`}>{data.link?.label}</Link></td>
               </tr>
