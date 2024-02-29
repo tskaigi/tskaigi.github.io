@@ -151,6 +151,7 @@ export default function Home({
               }
               return (
                 <PlanSponsors
+                  key={plan}
                   plan={plan}
                   sponsors={list}
                 />
@@ -164,6 +165,7 @@ export default function Home({
                 }
                 return (
                   <PlanSponsors
+                    key={plan}
                     plan={plan}
                     sponsors={list}
                     isOptionalPlan
