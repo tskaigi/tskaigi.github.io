@@ -152,7 +152,7 @@ const originalSponsorList: SponsorList = {
         },
         { href: "", text: "" },
       ],
-      addPadding: true,
+      addPadding: false,
       draft: true,
     },
     {
@@ -177,7 +177,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
           text: "プロダクトエンジニアに関して",
         },
       ],
-      addPadding: true,
+      addPadding: false,
     },
     {
       name: "株式会社ドワンゴ",
@@ -242,7 +242,7 @@ Progate では「Empowering everyone to open new doors through programming.」�
           text: "「ユビーメディカルナビ」",
         },
       ],
-      addPadding: true,
+      addPadding: false,
       draft: true,
     },
     {
@@ -307,7 +307,7 @@ Progate では「Empowering everyone to open new doors through programming.」�
           text: "エンジニア採用ページ",
         },
       ],
-      addPadding: true,
+      addPadding: false,
     },
     {
       name: "トグルホールディングス株式会社",
@@ -506,7 +506,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "https://tech-blog.optim.co.jp", text: "OPTiM TECH BLOG" },
         { href: "https://www.optim.co.jp/recruit/", text: "採用情報" },
       ],
-      addPadding: true,
+      addPadding: false,
     },
     {
       name: "合同会社DMM.com",
@@ -699,7 +699,7 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         { href: "", text: "" },
         { href: "", text: "" },
       ],
-      addPadding: true,
+      addPadding: false,
     },
     {
       name: "",
