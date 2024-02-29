@@ -473,6 +473,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "", text: "" },
       ],
       addPadding: false,
+      draft: true,
     },
     {
       name: "Micoworks株式会社",
