@@ -137,7 +137,7 @@ export const selectionCommittee: CardData[] = [
 
 export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
 
-const originalSponsorList: SponsorList = {
+export const sponsorList: SponsorList = {
   Platinum: [
     {
       name: "レバレジーズ株式会社",
@@ -326,7 +326,7 @@ Progate では「Empowering everyone to open new doors through programming.」�
         },
         { href: "https://note.com/toggle/m/md6005990812a", text: "note" },
       ],
-      addPadding: true,
+      addPadding: false,
     },
     {
       name: "株式会社EARTHBRAIN",
@@ -434,7 +434,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
       draft: true,
     },
     {
-      name: "株式会社Linc'well",
+      name: "レバテック株式会社",
       description: ``,
       logoImage: "/sponsors/xxx.png",
       logoLink: "",
@@ -715,21 +715,4 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
       draft: true,
     },
   ],
-};
-
-export const sponsorList: SponsorList = {
-  Platinum: originalSponsorList.Platinum.filter(
-    (sponsor) => sponsor.name !== ""
-  ),
-  Gold: originalSponsorList.Gold.filter((sponsor) => sponsor.name !== ""),
-  Silver: originalSponsorList.Silver.filter((sponsor) => sponsor.name !== ""),
-  Refreshment: originalSponsorList.Refreshment.filter(
-    (sponsor) => sponsor.name !== ""
-  ),
-  Coffee: originalSponsorList.Coffee.filter((sponsor) => sponsor.name !== ""),
-  Beer: originalSponsorList.Beer.filter((sponsor) => sponsor.name !== ""),
-  "Event Platform": originalSponsorList["Event Platform"].filter(
-    (sponsor) => sponsor.name !== ""
-  ),
-  Bronze: originalSponsorList.Bronze.filter((sponsor) => sponsor.name !== ""),
 };
