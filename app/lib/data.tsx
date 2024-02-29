@@ -118,7 +118,7 @@ export const selectionCommittee: CardData[] = [
   // },
   {
     title: "hiroppy",
-    imageUrl: "/sponsors//hiroppy_icon.png",
+    imageUrl: "/hiroppy_icon.png",
     links: [{ icon: FaXTwitter, href: "https://twitter.com/about_hiroppy" }],
   },
   {
