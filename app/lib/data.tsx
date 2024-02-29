@@ -703,7 +703,7 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         { href: "", text: "" },
         { href: "", text: "" },
       ],
-      addPadding: false,
+      addPadding: true,
     },
     {
       name: "",
