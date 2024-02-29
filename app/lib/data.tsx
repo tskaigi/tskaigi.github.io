@@ -190,7 +190,6 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
         { href: "", text: "" },
       ],
       addPadding: true,
-      draft: true,
     },
     {
       name: "Progate",
@@ -481,15 +480,15 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
     },
     {
       name: "Micoworks株式会社",
-      description: ``,
-      logoImage: "/sponsors/xxx.png",
-      logoLink: "",
+      description: `Micoworks株式会社は、企業と顧客のコミュニケーションを最適化するマーケティングプラットフォーム「MicoCloud（ミコクラウド）」、飲食店向けLINEミニアプリサービス「ミコミー」を開発、提供しています。最適なコミュニケーションによって、ブランド価値を最大化し、あらゆるビジネスの可能性を広げます。`,
+      logoImage: "/sponsors/micoworks.png",
+      logoLink: "https://micoworks.jp/",
       links: [
-        { href: "", text: "" },
-        { href: "", text: "" },
-        { href: "", text: "" },
+        { href: "https://micoworks.jp/", text: "会社HP" },
+        { href: "https://speakerdeck.com/micoworks/enziniaxiang-ke-micoworkszhu-shi-hui-she-hui-she-shuo-ming-zi-liao", text: "採用Deck" },
+        { href: "https://herp.careers/v1/micoworksinc/requisition-groups/1102ea37-e879-4e43-88d3-0c4facf51dec", text: "採用ページ（求人一覧）" },
       ],
-      addPadding: true,
+      addPadding: false,
       draft: true,
     },
     {
