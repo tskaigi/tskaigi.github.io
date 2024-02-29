@@ -152,7 +152,7 @@ export const sponsorList: SponsorList = {
         },
         { href: "", text: "" },
       ],
-      addPadding: false,
+      addPadding: true,
       draft: true,
     },
     {
@@ -177,7 +177,7 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
           text: "プロダクトエンジニアに関して",
         },
       ],
-      addPadding: false,
+      addPadding: true,
     },
     {
       name: "株式会社ドワンゴ",
@@ -242,7 +242,7 @@ Progate では「Empowering everyone to open new doors through programming.」�
           text: "「ユビーメディカルナビ」",
         },
       ],
-      addPadding: false,
+      addPadding: true,
       draft: true,
     },
     {
@@ -294,7 +294,7 @@ Progate では「Empowering everyone to open new doors through programming.」�
           text: "エンジニア採用ページ",
         },
       ],
-      addPadding: false,
+      addPadding: true,
     },
     {
       name: "トグルホールディングス株式会社",
@@ -328,7 +328,7 @@ Progate では「Empowering everyone to open new doors through programming.」�
         },
         { href: "", text: "" },
       ],
-      addPadding: false,
+      addPadding: true,
     },
     {
       name: "グーグル・クラウド・ジャパン合同会社",
@@ -368,7 +368,7 @@ LayerXは、今後のプロダクト戦略で重要なテーマとして「AI-UX
         },
         { href: "https://layerx.co.jp/jobs", text: "LayerX 採用情報" },
       ],
-      addPadding: false,
+      addPadding: true,
       draft: true,
     },
     {
@@ -414,9 +414,9 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
     },
     {
       name: "AMDlab Inc.",
-      description: `3Dの技術を強みとして、建築業界のDXを推進してきた建築系スタートアップです。
-建築オンライン学習プラットフォーム「AMDhaus」、株式会社LIXILと共同開発を行っている、パブリックトイレ自動設計サービス「A-SPEC」の提供も行っています。
-現在、建築設計クラウドサービス「DDDDbox」の開発に注力しています。プロジェクト情報の管理、申請、建物の3Dモデリング、作図に至るまで、建築設計の全工程をウェブブラウザ上で一貫して行えるようにすることを目指し、鋭意開発を進めています。3D、CAD、BIMなどに興味がある開発メンバーを絶賛募集しています。`,
+      description: `3D、CAD、BIMの技術を強みとして、建築業界のDXを推進してきたスタートアップです。
+建築オンライン学習プラットフォーム「AMDhaus」、株式会社LIXILとの共同開発である、パブリックトイレ自動設計サービス「A-SPEC」の提供も行っています。
+現在、建築設計クラウドサービス「DDDDbox」の開発に注力し、プロジェクトの管理、申請、建物の3Dモデリング、作図に至るまで、建築設計の全工程をウェブブラウザ上で行えるようにすることを目指して開発を進めています。開発メンバーを絶賛募集中です。`,
       logoImage: "/sponsors/amdlab.png",
       logoLink: "https://amd-lab.com/",
       links: [
@@ -472,7 +472,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "https://wk87qzuwsh2.typeform.com/to/IhG1fHSj?typeform-source=qrcode-button", text: "カジュアル面談フォーム" },
         { href: "", text: "" },
       ],
-      addPadding: false,
+      addPadding: true,
       draft: true,
     },
     {
@@ -506,7 +506,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
         { href: "https://tech-blog.optim.co.jp", text: "OPTiM TECH BLOG" },
         { href: "https://www.optim.co.jp/recruit/", text: "採用情報" },
       ],
-      addPadding: false,
+      addPadding: true,
     },
     {
       name: "合同会社DMM.com",
@@ -577,7 +577,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
           text: "X カケハシ技術広報(@kakehashi_dev)",
         },
       ],
-      addPadding: false,
+      addPadding: true,
     },
   ],
   Beer: [
@@ -699,7 +699,7 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         { href: "", text: "" },
         { href: "", text: "" },
       ],
-      addPadding: false,
+      addPadding: true,
     },
     {
       name: "",
