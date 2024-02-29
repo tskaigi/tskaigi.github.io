@@ -13,14 +13,6 @@ export const pageInfos: PageInfo[] = [
     href: "/",
   },
   {
-    index: 2,
-    title: "スポンサー募集",
-    description:
-      "TSKaigiは日本最大級のtypescriptカンファレンスを開催します。スポンサーになって、typescriptコミュニティを一緒に盛り上げませんか？業界でのエキスパートとして日本のTypeScriptユーザーの支援をお願いします。",
-    icon: FaHandshake,
-    href: "/sponsor-recruitment",
-  },
-  {
     index: 3,
     title: "プロポーザル募集",
     description:

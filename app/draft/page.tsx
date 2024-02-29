@@ -50,7 +50,7 @@ export default function DraftTopPage () {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center lg:flex-row h-32 gap-4 lg:gap-8 my-8">
-            <Link href="/sponsor-recruitment" className="w-full max-w-xs">
+            <Link href="/sponsor" className="w-full max-w-xs">
               <div className="btn lg:btn-lg btn-accent w-full text-center bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">スポンサー募集</div>
             </Link>
             <Link href="/call-for-proposals" className="w-full max-w-xs">

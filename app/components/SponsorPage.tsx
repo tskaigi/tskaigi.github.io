@@ -1,11 +1,15 @@
 import { SponsorList } from "../lib/definitions";
 import { sponsorList } from "../lib/data";
 import Link from "next/link";
+import { NavigateAnchorOnFirstRender } from "../functional/navigate-anchor-on-first-render";
+import Container from "../ui/container";
+import Cta from "../ui/cta";
 
 const pageAnchors = {
   news: "news",
   ticketInfo: "ticket-info",
   sponsor: "sponsor",
+  corporateSponsors: 'corporate-sponsors',
 };
 
 type SponsorPageProps = {
@@ -45,6 +49,7 @@ export default function SponsorPage({showDraft}:SponsorPageProps) {
   };
   return (
     <div className="">
+      <NavigateAnchorOnFirstRender />
       <h1
         id={pageAnchors.sponsor}
         className="text-2xl lg:text-4xl my-10 scroll-mt-20 mx-auto px-4 sm:px-6 lg:px-8"
@@ -145,6 +150,24 @@ export default function SponsorPage({showDraft}:SponsorPageProps) {
           </div>
         </div>
       }
+      <Container>
+        <div className="hero min-h-[10vh] lg:min-h-[20vh]">
+          <div className="hero-content p-0 max-w-full text-center">
+            <h1 className="text-4xl lg:leading-relaxed lg:text-4xl font-bold"><span className=" lg:text-6xl text-accent pr-4">TSKaigi 2024 <br /></span>はスポンサーを募集しています</h1>
+          </div>
+        </div>
+        <div className="mb-20">
+          <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
+            <div className="mockup-browser border border-base-300">
+              <div className="mockup-browser-toolbar">
+                <div className="input border border-base-300 lg:text-xl">https://tskaigi.org</div>
+              </div>
+              <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTfoOlP1rvCDd0YI_3RAt-ocQ4Q_4ylC9hAyBirJ8u65drn7NISquC__v3lGhnnKcYFmrfjU_dDTQJ_/embed?start=false&loop=false&delayms=30000" className="w-full aspect-[16/9]"></iframe>
+            </div>
+          </div>
+          <Cta subLink="https://forms.gle/aZnQSAz8UEwdiitj7" subLinkText="お問い合わせ" mainLink="https://forms.gle/ERgp32CP8q7ZTc8h8" mainLinkText="応募する" />
+        </div>
+      </Container>
     </div>
   );
 }
