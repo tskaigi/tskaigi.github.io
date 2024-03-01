@@ -431,9 +431,9 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       logoImage: "/sponsors/labbase.png",
       logoLink: "https://labbase.co.jp/engineer/",
       links: [
-        { href: "https://zenn.dev/p/labbase", text: "LabBaseのエンジニアが運営しているTechBlogです。" },
+        { href: "https://zenn.dev/p/labbase", text: "LabBase Tech blog" },
         { href: "https://qiita.com/advent-calendar/2023/labbase", text: "LabBase Advent Calendar 2023" },
-        { href: "https://note.com/labbase_corp/n/n0773704986a3", text: "取締役CEO加茂と取締役松﨑の対談記事です。LabBaseが向き合っている課題について語っています。" },
+        { href: "https://note.com/labbase_corp/n/n0773704986a3", text: "代表取締役CEO加茂・取締役松﨑の対談記事" },
       ],
       addPadding: false,
     },
