@@ -426,7 +426,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
     },
     {
       name: "株式会社LabBase",
-      description: `「研究の力を、人類の力に」をパーパスに、研究を加速させるプラットフォームの構築を行っています。
+      description: `「研究の力を、人類の力に。」をパーパスに、研究を加速させるプラットフォームの構築を行っています。
 新卒理系学生の「LabBase 就職」、中途向けの「LabBase 転職」、研究室検索サービス「LabBase 研究室サーチ」などのプロダクトをリリースし、現在研究領域のインフラとなるプロダクトの仮設検証を進めています。
 Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に対して最適な技術を駆使し取り組んでいただけるエンジニアを募集しております。ぜひ、カジュアル面談でお話しましょう。`,
       logoImage: "/sponsors/labbase.png",
@@ -476,17 +476,17 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       description: `Linc'wellは「テクノロジーを通じて、医療を一歩前へ」をミッションに掲げ、医療を効率化し患者の利便性と医療の質の向上を目指した事業展開を行っています。
 オンライン・オフラインで医療従事者・患者をつなぐヘルスケアプラットフォーム事業を主力としており、「オンライン診療システム提供サービス」「クリニックDX支援サービス」「ヘルスケアECサービス」の3つのサービスを提供しています。`,
       logoImage: "/sponsors/lincwell.png",
+      subLogoImage: "/sponsors/lincwell-sub.png",
       logoLink: "https://linc-well.com/",
       links: [
-        { href: "https://linc-well.com/", text: "株式会社Linc'well" },
+        { href: "https://engineer.linc-well.com", text: "採用サイト" },
         {
-          href: "https://engineer.linc-well.com/",
-          text: "エンジニア採用サイト",
+          href: "https://zenn.dev/p/lincwell_inc",
+          text: "テックブログ",
         },
-        { href: "", text: "" },
+        { href: "https://note.com/lincwell", text: "note" },
       ],
-      addPadding: true,
-      draft: true,
+      addPadding: false,
     },
     {
       name: "Micoworks株式会社",

@@ -87,7 +87,7 @@ export default function SponsorPage({showDraft}:SponsorPageProps) {
                     }`}
                   >
                     <img
-                      src={sponsor.logoImage}
+                      src={sponsor.subLogoImage ?? sponsor.logoImage}
                       alt={sponsor.name + `logo`}
                       className="max-h-44 mx-auto"
                     />
