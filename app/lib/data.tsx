@@ -180,7 +180,6 @@ export const sponsorList: SponsorList = {
         { href: "", text: "" },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "アセンド株式会社",
@@ -268,7 +267,6 @@ Progate では「Empowering everyone to open new doors through programming.」�
         },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "株式会社メドレー",
@@ -397,7 +395,6 @@ LayerXは、今後のプロダクト戦略で重要なテーマとして「AI-UX
         { href: "https://layerx.co.jp/jobs", text: "LayerX 採用情報" },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "",
