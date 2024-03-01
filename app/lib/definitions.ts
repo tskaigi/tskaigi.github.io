@@ -41,6 +41,7 @@ export type SponsorData = {
   description: React.ReactNode;
   logoImage: string;
   logoLink: string;
+  subLogoImage?: string;
   links: {
     href: string;
     text: string;
