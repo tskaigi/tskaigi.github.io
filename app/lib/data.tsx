@@ -268,6 +268,20 @@ Progate では「Empowering everyone to open new doors through programming.」�
       addPadding: false,
     },
     {
+      name: "株式会社ビットキー",
+      description: `ビットキーは、独自開発のデジタルコネクトプラットフォームを通して、人と「暮らし」や「仕事」の間にある分断を解消するアプリ/SaaSを開発しています。 あらゆるサービスやモノを柔軟につなげることで、体験のアップデートを進めています。
+この「暮らし」のサービスである「homehub」、「仕事」のサービスである「workhub」における各種WEBシステムの多くはフロントエンド、バックエンド双方TypeScriptで構築されております。
+現在TypeScriptエンジニアは絶賛採用中のため、是非下記1番上のリンクからビットキーを知っていただき、ご興味あれば下記2番目のカジュアル面談をしていただければと思います！`,
+      logoImage: "/sponsors/bitkey_horizontal.png",
+      logoLink: "",
+      links: [
+        { href: "https://speakerdeck.com/bitkey/bitkey-recruiting-book", text: "企業説明資料" },
+        { href: "https://wk87qzuwsh2.typeform.com/to/IhG1fHSj?typeform-source=qrcode-button", text: "カジュアル面談フォーム" },
+        { href: "", text: "" },
+      ],
+      addPadding: false,
+    },
+    {
       name: "株式会社メドレー",
       description: `メドレーは、「医療ヘルスケアの未来をつくる」ミッションのもと、テクノロジーを活用した事業やプロジェクトを通じて、医療ヘルスケア分野の課題を解決していきます。それにより、病院や行政による「持続可能な医療」の実現と、患者さんやそのご家族にとって「納得できる医療」の実現を目指しています。
 医療ヘルスケア領域の成果報酬型人材採用システム「ジョブメドレー」、オンライン動画研修サービス「ジョブメドレーアカデミー」、オンライン診療・服薬指導アプリ「CLINICS」、かかりつけ薬局支援システム「Pharms」、クラウド歯科業務支援システム「Dentis」などを運営しています。
@@ -395,19 +409,6 @@ LayerXは、今後のプロダクト戦略で重要なテーマとして「AI-UX
       ],
       addPadding: false,
     },
-    {
-      name: "",
-      description: ``,
-      logoImage: "/sponsors/xxx.png",
-      logoLink: "",
-      links: [
-        { href: "", text: "" },
-        { href: "", text: "" },
-        { href: "", text: "" },
-      ],
-      addPadding: true,
-      draft: true,
-    },
   ],
   Silver: [
     {
@@ -485,21 +486,6 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
         { href: "", text: "" },
       ],
       addPadding: true,
-      draft: true,
-    },
-    {
-      name: "株式会社ビットキー",
-      description: `ビットキーは、独自開発のデジタルコネクトプラットフォームを通して、人と「暮らし」や「仕事」の間にある分断を解消するアプリ/SaaSを開発しています。 あらゆるサービスやモノを柔軟につなげることで、体験のアップデートを進めています。
-この「暮らし」のサービスである「homehub」、「仕事」のサービスである「workhub」における各種WEBシステムの多くはフロントエンド、バックエンド双方TypeScriptで構築されております。
-現在TypeScriptエンジニアは絶賛採用中のため、是非下記1番上のリンクからビットキーを知っていただき、ご興味あれば下記2番目のカジュアル面談をしていただければと思います！`,
-      logoImage: "/sponsors/bitkey_horizontal.png",
-      logoLink: "",
-      links: [
-        { href: "https://speakerdeck.com/bitkey/bitkey-recruiting-book", text: "企業説明資料" },
-        { href: "https://wk87qzuwsh2.typeform.com/to/IhG1fHSj?typeform-source=qrcode-button", text: "カジュアル面談フォーム" },
-        { href: "", text: "" },
-      ],
-      addPadding: false,
       draft: true,
     },
     {
