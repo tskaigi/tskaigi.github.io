@@ -7,6 +7,7 @@ import Card from '../ui/card';
 import Cta from '../ui/cta';
 import Container from '../ui/container';
 import { NavigateAnchorOnFirstRender } from '../functional/navigate-anchor-on-first-render';
+import Image from 'next/image';
 
 const targetIndex = 3;
 const pageAnchors = {
@@ -79,7 +80,7 @@ export default function Page() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 my-12">
             <div className="m-auto">
-              <img src="/banner.png" className="object-cover h-48 md:h-56 lg:h-80 rounded-lg " alt="tskaigi logo" />
+              <img src="/banner.jpg" className="object-cover h-48 md:h-56 lg:h-80 rounded-lg " alt="tskaigi logo" />
             </div>
             <div>
               <p>応募締切：　2024年2月29日（木）</p>
