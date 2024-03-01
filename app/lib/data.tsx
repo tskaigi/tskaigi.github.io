@@ -206,13 +206,13 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
     },
     {
       name: "株式会社ドワンゴ",
-      description: `準備中`,
+      description: `ドワンゴは "ネットの向こうの、リアルを動かす。人間らしさと、つながるデジタルを。" をコーポレートメッセージとして、学校法人角川ドワンゴ学園が運営するネットに特化した通信制高校「N高等学校・S高等学校」とオンライン学習アプリ「N予備校」、ネットの双方向性を最大限に動画や生放送に取り込んだ「ニコニコ」、ネットとリアルの融合をテーマにした巨大イベント「ニコニコ超会議」など、新しい価値を創り出し、それを事業として成立させていくことに挑戦しつづける企業です。`,
       logoImage: "/sponsors/dwango_horizontal.png",
       logoLink: "https://dwango.co.jp/",
       links: [
-        { href: "", text: "" },
-        { href: "", text: "" },
-        { href: "", text: "" },
+        { href: "https://www.nnn.ed.nico/", text: "N予備校" },
+        { href: "https://www.nnn.ed.nico/recruit/", text: "N高等学校・S高等学校プロジェクト採用 | 株式会社ドワンゴ" },
+        { href: "https://www.nicovideo.jp/", text: "ニコニコ" },
       ],
       addPadding: true,
     },
