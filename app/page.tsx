@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <NavigateAnchorOnFirstRender />
       <div className="bg-white">
-        <img src="/banner.png" className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]" alt="banner image" />
+        <img src="/banner.jpg" className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]" alt="banner image" />
       </div>
       <Container>
         <div className="relative isolate overflow-hidden">

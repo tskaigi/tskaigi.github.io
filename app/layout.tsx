@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@tskaigi',
     creator: '@tskaigi',
-    images: ['/banner.png'],
+    images: ['/banner.jpg'],
   },
   openGraph: {
     title: 'TSKaigi 2024',
     url: 'https://tskaigi.org/',
     description: 'TSKaigi 2024は、日本最大級のTypeScriptカンファレンスを開催します。',
     type: 'website',
-    images: ['/banner.png'],
+    images: ['/banner.jpg'],
   },
 }
 
