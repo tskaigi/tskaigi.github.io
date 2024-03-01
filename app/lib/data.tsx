@@ -18,6 +18,16 @@ export const pageInfos: PageInfo[] = [
     href: "/",
   },
   {
+    index: 2,
+    title: "スポンサー",
+    showNavbar: true,
+    showFooter: true,
+    description:
+      "TSKaigiは日本のTypeScriptコミュニティを盛り上げるカンファレンスを開催します。TSKaigiに協賛いただいた企業をご紹介します。",
+    icon: FaHandshake,
+    href: "/sponsor",
+  },
+  {
     index: 3,
     showNavbar: false,
     showFooter: true,
@@ -27,17 +37,6 @@ export const pageInfos: PageInfo[] = [
     icon: HiLightBulb,
     href: "/call-for-proposals",
   },
-  {
-    index: 4,
-    showNavbar: false,
-    showFooter: false,
-    title: "スポンサー",
-    description:
-      "TSKaigiに協賛いただいているスポンサーです。各種トークイベントやブースの出展、懇親会でのフリートークを盛り上げるお手伝いをしていただきます。",
-    icon: FaHandshake,
-    href: "/sponsor",
-  },
-  
 ];
 
 export const acountLink: AcountLink[] = [
@@ -566,6 +565,33 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
       draft: true,
     },
   ],
+
+  "Event Platform": [
+    {
+      name: "株式会社EventHub",
+      description: `💁‍♀️ EventHubについて
+EventHubは、マーケティング、営業のためのウェビナー・カンファレンスを主軸に、展示会、学会や商談会を含む幅広いニーズで利用されているシェアNo.1イベントマーケティングプラットフォームです。
+
+＼フルサイクルエンジニア募集中／
+
+🧑‍💻 開発環境
+サーバーサイド：Node.js, NestJS, TypeScript
+フロントエンド: React.js,TypeScript,styled-components
+データベース　：MySQL, Redis`,
+      logoImage: "/sponsors/eventhub_horizontal.png",
+      logoLink: "https://jobs.eventhub.co.jp/",
+      links: [
+        { href: "https://jobs.eventhub.co.jp/", text: "💁‍♀️ EventHub 採用情報" },
+        { href: "https://eventhub.jp/", text: "💁‍♂️ EventHub サービスページ" },
+        {
+          href: "https://jobs.eventhub.co.jp/engineer",
+          text: "🧑‍💻 EventHub エンジニアチーム",
+        },
+      ],
+      addPadding: true,
+    },
+  ],
+
   Refreshment: [
     {
       name: "エムスリー株式会社",
@@ -632,31 +658,6 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
           text: "Cloudbase Engineer Entrance Book",
         },
         { href: "", text: "" },
-      ],
-      addPadding: true,
-    },
-  ],
-  "Event Platform": [
-    {
-      name: "株式会社EventHub",
-      description: `💁‍♀️ EventHubについて
-EventHubは、マーケティング、営業のためのウェビナー・カンファレンスを主軸に、展示会、学会や商談会を含む幅広いニーズで利用されているシェアNo.1イベントマーケティングプラットフォームです。
-
-＼フルサイクルエンジニア募集中／
-
-🧑‍💻 開発環境
-サーバーサイド：Node.js, NestJS, TypeScript
-フロントエンド: React.js,TypeScript,styled-components
-データベース　：MySQL, Redis`,
-      logoImage: "/sponsors/eventhub_horizontal.png",
-      logoLink: "https://jobs.eventhub.co.jp/",
-      links: [
-        { href: "https://jobs.eventhub.co.jp/", text: "💁‍♀️ EventHub 採用情報" },
-        { href: "https://eventhub.jp/", text: "💁‍♂️ EventHub サービスページ" },
-        {
-          href: "https://jobs.eventhub.co.jp/engineer",
-          text: "🧑‍💻 EventHub エンジニアチーム",
-        },
       ],
       addPadding: true,
     },

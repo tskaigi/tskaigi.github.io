@@ -4,6 +4,7 @@ import { HiExternalLink } from "react-icons/hi";
 import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-first-render";
 import Cta from "./ui/cta";
 import { ticketURL } from "./lib/data";
+import { SponsorLogosSection } from "./components/SponsorLogosSection";
 
 const pageAnchors = {
   news: 'news',
@@ -108,6 +109,7 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      <SponsorLogosSection anchor={pageAnchors.sponsor} showDraft={false}/>
     </>
   );
 }
