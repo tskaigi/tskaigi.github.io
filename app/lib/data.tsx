@@ -180,7 +180,6 @@ export const sponsorList: SponsorList = {
         { href: "", text: "" },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "アセンド株式会社",
@@ -268,7 +267,6 @@ Progate では「Empowering everyone to open new doors through programming.」�
         },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "株式会社メドレー",
@@ -397,7 +395,6 @@ LayerXは、今後のプロダクト戦略で重要なテーマとして「AI-UX
         { href: "https://layerx.co.jp/jobs", text: "LayerX 採用情報" },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "",
@@ -599,7 +596,7 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
   Coffee: [
     {
       name: "KAKEHASHI Inc.",
-      description: `日本の医療システムの再構築を目指すヘルステックスタートアップ。現在、主要サービスの一つ薬局SaaS「Musubi」のユーザーは全国7000店以上（シェア10％超）に。そのほか薬局関連サービスを複数展開。Dev/Bizの垣根なく一貫してアジャイルな組織を志向。「プロダクトを介して蓄積される医療現場の膨大なリアルデータを、医療価値の向上にどう活かしていくか」という観点で、既存プロダクトの改善から新規事業まで、一人ひとりの自律的な行動によりプロジェクトを推進。ミッションは「日本の医療体験を、しなやかに」。`,
+      description: `日本の医療システムの再構築を目指すkヘルステックスタートアップ。現在、主要サービスの一つ薬局SaaS「Musubi」のユーザーは全国7000店以上（シェア10％超）に。そのほか薬局関連サービスを複数展開。Dev/Bizの垣根なく一貫してアジャイルな組織を志向。「プロダクトを介して蓄積される医療現場の膨大なリアルデータを、医療価値の向上にどう活かしていくか」という観点で、既存プロダクトの改善から新規事業まで、一人ひとりの自律的な行動によりプロジェクトを推進。ミッションは「日本の医療体験を、しなやかに」。`,
       logoImage: "/sponsors/kakehashi.png",
       logoLink: "https://www.kakehashi.life/",
       links: [
