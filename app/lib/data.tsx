@@ -429,16 +429,17 @@ Cloudflare Workers や Hono, Astro など、新しい技術を積極的に取り
     },
     {
       name: "株式会社LabBase",
-      description: ``,
-      logoImage: "/sponsors/xxx.png",
-      logoLink: "",
+      description: `「研究の力を、人類の力に」をパーパスに、研究を加速させるプラットフォームの構築を行っています。
+新卒理系学生の「LabBase 就職」、中途向けの「LabBase 転職」、研究室検索サービス「LabBase 研究室サーチ」などのプロダクトをリリースし、現在研究領域のインフラとなるプロダクトの仮設検証を進めています。
+Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に対して最適な技術を駆使し取り組んでいただけるエンジニアを募集しております。ぜひ、カジュアル面談でお話しましょう。`,
+      logoImage: "/sponsors/labbase.png",
+      logoLink: "https://labbase.co.jp/engineer/",
       links: [
-        { href: "", text: "" },
-        { href: "", text: "" },
-        { href: "", text: "" },
+        { href: "https://zenn.dev/p/labbase", text: "LabBaseのエンジニアが運営しているTechBlogです。" },
+        { href: "https://qiita.com/advent-calendar/2023/labbase", text: "LabBase Advent Calendar 2023" },
+        { href: "https://note.com/labbase_corp/n/n0773704986a3", text: "取締役CEO加茂と取締役松﨑の対談記事です。LabBaseが向き合っている課題について語っています。" },
       ],
-      addPadding: true,
-      draft: true,
+      addPadding: false,
     },
     {
       name: "AMDlab Inc.",
