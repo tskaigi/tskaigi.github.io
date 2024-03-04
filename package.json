@@ -6,10 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --check --write --ignore-path .gitignore './app/**/*.{js,jsx,ts,tsx,json,css}'"
   },
   "dependencies": {
+    "eslint-plugin-tailwind": "^0.2.1",
     "next": "14.0.3",
+    "prettier": "^3.2.5",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
@@ -23,8 +26,17 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
     "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "printWidth": 100
   },
   "volta": {
     "node": "18.19.0",
