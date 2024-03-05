@@ -167,7 +167,14 @@ export const sponsorList: SponsorList = {
   Platinum: [
     {
       name: "レバレジーズ株式会社",
-      description: `準備中`,
+      description: `レバレジーズ株式会社では、こんなエンジニアを求めています！ピンと来たらぜひご応募ください。
+・新規事業や業務改善の提案など、ビジネスからエンジニアリングまで一気通貫でやっていきたい方
+・営業、マーケター、デザイナー、事業企画、データアナリストなど、あらゆる職種と協力しながら、イノベーティブなサービスを開発したい方
+・「関係者全員の幸福の追求」の理念を共にした仲間と一緒に、社会貢献性の高い事業を行っていきたい方
+・先制・再生医療など新しい分野も含め、多角的かつグローバルなサービスに幅広く関わりたい方
+       
+■ 会社紹介 	
+社会の課題を解決し関係者全員の幸福を追求し続けることをミッションに、IT・医療・介護・若年層を中心とした人材事業や、Webメディア事業、M&Aコンサルティング事業など、社会貢献を軸に様々な領域でこれまで40以上のサービスを展開。2005年に創業以来、黒字経営を継続し18期目の2022年度は年商869億を突破しました。各分野のスペシャリストが集うオールインハウスの組織構成と、業界を絞らないポートフォリオ経営で、時代を代表するグローバル企業を目指します。`,
       logoImage: "/sponsors/leverages.jpg",
       logoLink: "https://recruit.leverages.jp/recruit/engineer",
       links: [
@@ -176,7 +183,7 @@ export const sponsorList: SponsorList = {
           href: "https://recruit.leverages.jp/recruit/engineer/",
           text: "エンジニア採用",
         },
-        { href: "", text: "" },
+        { href: "https://tech.leverages.jp/", text: "Leverages Tech Blog" },
       ],
       addPadding: false,
     },
