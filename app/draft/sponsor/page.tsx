@@ -1,9 +1,7 @@
-import SponsorPage from '@/app/components/SponsorPage'
+import SponsorPage from "@/app/components/SponsorPage";
 
 const DraftSponsorPage = () => {
-  return (
-    <SponsorPage showDraft/>
-  )
-}
+  return <SponsorPage showDraft />;
+};
 
-export default DraftSponsorPage
+export default DraftSponsorPage;

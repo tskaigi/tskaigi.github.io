@@ -4,7 +4,7 @@ import { IconType } from "react-icons";
 export type PageInfo = {
   index: number;
   showNavbar: boolean;
-  showFooter:  boolean;
+  showFooter: boolean;
   title: string;
   description?: string;
   metaImage?: string;
@@ -64,10 +64,10 @@ export type SponsorList = {
 export type AcountLink = {
   index: number;
   showNavbar: boolean;
-  showFooter:  boolean;
+  showFooter: boolean;
   emphasis: boolean;
   title: string;
   description?: string;
   icon: IconType;
   href: string;
-}
+};

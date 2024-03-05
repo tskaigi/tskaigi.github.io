@@ -6,18 +6,18 @@ export type NewsData = {
     href?: string;
     label?: string;
   };
-}
+};
 
 const newsData: NewsData[] = [
   {
     text: "プロポーザル募集を開始しました。LTやトークセッションの登壇に挑戦してみてください。",
-    link: { href: "https://google.com", label: "応募はこちら" }
+    link: { href: "https://google.com", label: "応募はこちら" },
   },
   {
     text: "スポンサー募集を開始しました。",
-    link: { href: "https://google.com", label: "応募はこちら" }
+    link: { href: "https://google.com", label: "応募はこちら" },
   },
-]
+];
 
 export default function News() {
   return (
@@ -42,12 +42,14 @@ export default function News() {
             {newsData.map((data) => (
               <tr key={data.text}>
                 <td>{data.text}</td>
-                <td><Link href={`${data.link?.href}`}>{data.link?.label}</Link></td>
+                <td>
+                  <Link href={`${data.link?.href}`}>{data.link?.label}</Link>
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
     </div>
-  )
+  );
 }

@@ -70,7 +70,7 @@ export const acountLink: AcountLink[] = [
     icon: IoTicket,
     href: ticketURL,
   },
-]
+];
 
 export const qaList: QandA = {
   categories: [
@@ -116,8 +116,7 @@ export const qaList: QandA = {
         },
         {
           id: 105,
-          question:
-            "トーク時間が30分未満の場合でも、セッションへの応募は可能ですか？",
+          question: "トーク時間が30分未満の場合でも、セッションへの応募は可能ですか？",
           answer: "はい、可能です。トーク時間は20分以上を目安としてください。",
         },
         {
@@ -150,18 +149,15 @@ export const selectionCommittee: CardData[] = [
   },
   {
     title: "mizchi",
-    imageUrl:
-      "https://pbs.twimg.com/profile_images/2507664307/viccruw2m1zb0xkkisil_400x400.jpeg",
+    imageUrl: "https://pbs.twimg.com/profile_images/2507664307/viccruw2m1zb0xkkisil_400x400.jpeg",
     links: [{ icon: FaXTwitter, href: "https://twitter.com/mizchi" }],
   },
   {
     title: "うひょ",
-    imageUrl:
-      "https://pbs.twimg.com/profile_images/1341186424423378944/gYTKIbFl_400x400.jpg",
+    imageUrl: "https://pbs.twimg.com/profile_images/1341186424423378944/gYTKIbFl_400x400.jpg",
     links: [{ icon: FaXTwitter, href: "https://twitter.com/uhyo_" }],
   },
 ];
-
 
 export const sponsorList: SponsorList = {
   Platinum: [
@@ -218,7 +214,10 @@ TypeScriptを駆使して社会課題解決に挑むプロダクトエンジニ�
       logoLink: "https://dwango.co.jp/",
       links: [
         { href: "https://www.nnn.ed.nico/", text: "N予備校" },
-        { href: "https://www.nnn.ed.nico/recruit/", text: "N高等学校・S高等学校プロジェクト採用 | 株式会社ドワンゴ" },
+        {
+          href: "https://www.nnn.ed.nico/recruit/",
+          text: "N高等学校・S高等学校プロジェクト採用 | 株式会社ドワンゴ",
+        },
         { href: "https://www.nicovideo.jp/", text: "ニコニコ" },
       ],
       addPadding: true,
@@ -283,7 +282,10 @@ Progate では「Empowering everyone to open new doors through programming.」�
       logoLink: "",
       links: [
         { href: "https://speakerdeck.com/bitkey/bitkey-recruiting-book", text: "企業説明資料" },
-        { href: "https://wk87qzuwsh2.typeform.com/to/IhG1fHSj?typeform-source=qrcode-button", text: "カジュアル面談フォーム" },
+        {
+          href: "https://wk87qzuwsh2.typeform.com/to/IhG1fHSj?typeform-source=qrcode-button",
+          text: "カジュアル面談フォーム",
+        },
         { href: "", text: "" },
       ],
       addPadding: false,
@@ -440,8 +442,14 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       logoLink: "https://labbase.co.jp/engineer/",
       links: [
         { href: "https://zenn.dev/p/labbase", text: "LabBase Tech blog" },
-        { href: "https://qiita.com/advent-calendar/2023/labbase", text: "LabBase Advent Calendar 2023" },
-        { href: "https://note.com/labbase_corp/n/n0773704986a3", text: "代表取締役CEO加茂・取締役松﨑の対談記事" },
+        {
+          href: "https://qiita.com/advent-calendar/2023/labbase",
+          text: "LabBase Advent Calendar 2023",
+        },
+        {
+          href: "https://note.com/labbase_corp/n/n0773704986a3",
+          text: "代表取締役CEO加茂・取締役松﨑の対談記事",
+        },
       ],
       addPadding: false,
     },
@@ -502,8 +510,14 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       logoLink: "https://micoworks.jp/",
       links: [
         { href: "https://micoworks.jp/", text: "会社HP" },
-        { href: "https://speakerdeck.com/micoworks/enziniaxiang-ke-micoworkszhu-shi-hui-she-hui-she-shuo-ming-zi-liao", text: "採用Deck" },
-        { href: "https://herp.careers/v1/micoworksinc/requisition-groups/1102ea37-e879-4e43-88d3-0c4facf51dec", text: "採用ページ（求人一覧）" },
+        {
+          href: "https://speakerdeck.com/micoworks/enziniaxiang-ke-micoworkszhu-shi-hui-she-hui-she-shuo-ming-zi-liao",
+          text: "採用Deck",
+        },
+        {
+          href: "https://herp.careers/v1/micoworksinc/requisition-groups/1102ea37-e879-4e43-88d3-0c4facf51dec",
+          text: "採用ページ（求人一覧）",
+        },
       ],
       addPadding: false,
     },
