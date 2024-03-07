@@ -71,7 +71,7 @@ export default function SponsorPage({ showDraft }: SponsorPageProps) {
                   className={`p-6 sm:p-6 lg:p-8 ${index % 2 === 0 ? "bg-base-100" : "bg-base-200"}`}
                 >
                   <div className="grid sm:grid-cols-3 gap-4">
-                    <Link href={sponsor.logoLink} rel="noopener noreferrer" target="_blank">
+                    <Link href={sponsor.logoLink} rel="noopener" target="_blank">
                       <div
                         className={`sm:col-span-1 bg-white w-full rounded-sm flex items-center h-[200px] ${
                           sponsor.addPadding ? "p-[20%]" : "p-8"
@@ -93,7 +93,7 @@ export default function SponsorPage({ showDraft }: SponsorPageProps) {
                             <a
                               href={link.href}
                               target="_blank"
-                              rel="noreferrer noopener"
+                              rel="noopener"
                               className="link link-primary"
                             >
                               {link.text}
@@ -120,7 +120,7 @@ export default function SponsorPage({ showDraft }: SponsorPageProps) {
               <Link
                 key={sponsor.name}
                 href={sponsor.logoLink}
-                rel="noopener noreferrer"
+                rel="noopener"
                 target="_blank"
               >
                 <div
