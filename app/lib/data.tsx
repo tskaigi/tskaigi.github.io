@@ -386,7 +386,7 @@ Innovators Live Japan は、Googsle Cloud やデベロッパー界隈の注目�
       logoLink: "https://cloud.google.com/innovators?hl=ja",
       links: [
         {
-          href: "https://cloud.google.com/innovators?hl=ja",
+          href: "https://cloud.google.com/innovators?hl=en&utm_source=events-with-google&utm_medium=et&utm_campaign=FY24-Q2-3P-TSKaigi_join&utm_content=joininnovators&utm_term=-",
           text: "Innovators プログラム",
         },
         {
