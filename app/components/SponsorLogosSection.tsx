@@ -109,7 +109,7 @@ const PlanSponsors = ({
           <Link
             key={sponsor.name}
             href={sponsor.logoLink}
-            rel="noopener noreferrer"
+            rel="noopener"
             target="_blank"
           >
             <div
