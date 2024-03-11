@@ -761,7 +761,7 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
     {
       name: "Vue Fes Japan",
       description: ``,
-      logoImage: "/sponsors/xxx.png",
+      logoImage: "/sponsors/vue_fes_japan.svg",
       logoLink: "https://vuefes.jp",
       links: [
         { href: "", text: "" },
@@ -774,14 +774,14 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
     {
       name: "NuxtLabs Japan by ZEN Advisor",
       description: ``,
-      logoImage: "/sponsors/xxx.png",
+      logoImage: "/sponsors/nuxtlabs_japan.svg",
       logoLink: "https://zenadvisor.io/nuxtlabs-japan/",
       links: [
         { href: "", text: "" },
         { href: "", text: "" },
         { href: "", text: "" },
       ],
-      addPadding: true,
+      addPadding: false,
       draft: true,
     },
   ],
