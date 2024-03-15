@@ -241,15 +241,15 @@ Progate では「Empowering everyone to open new doors through programming.」�
     {
       name: "株式会社Helpfeel",
       description: `type TechMap = {
-    TypeScript: 'Helpfeel' | 'Gyazo' | 'Scrapbox',
-    React: 'Helpfeel' | 'Gyazo' | 'Scrapbox',
-    Express: 'Helpfeel' | 'Scrapbox',
-  }
-  type Techs = keyof TechMap
-  type MessageTemplate<T extends Techs> = \`\${T}を使って\${TechMap[T]}の開発を共に取り組む仲間を募集しています\`
-  type Message = {
-    [T in Techs]: MessageTemplate<T>
-  }[Techs]
+  TypeScript: 'Helpfeel' | 'Gyazo' | 'Scrapbox',
+  React: 'Helpfeel' | 'Gyazo' | 'Scrapbox',
+  Express: 'Helpfeel' | 'Scrapbox',
+}
+type Techs = keyof TechMap
+type MessageTemplate<T extends Techs> = \`\${T}を使って\${TechMap[T]}の開発を共に取り組む仲間を募集しています\`
+type Message = {
+  [T in Techs]: MessageTemplate<T>
+}[Techs]
 
 株式会社Helpfeelでは、知識を届けるエンタープライズサーチ「Helpfeel」知識を磨き上げるアイディエーションツール「Scrapbox」情報を知識にするメディアキャプチャー「Gyazo」の開発運用を行なっています。全てのプロダクトでTypeScriptを使用しています。特にtoB SaaSのHelpfeelではフロントエンド・バックエンド両方にTypeScriptを採用しており、エンジニアほぼ全員がフルスタックな開発を行っています。また、Hepfeelはブラウザ上で動く独自の検索エンジンをTypeScriptで実装しています。TypeScriptが大好きな皆さん！ぜひ会場でお話ししましょう！！`,
       logoImage: "/sponsors/helpfeel_horizontal.png",
