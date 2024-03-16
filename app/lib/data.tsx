@@ -794,17 +794,16 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
       addPadding: false,
     },
     {
-      name: "",
+      name: "株式会社TwoGate",
       description: ``,
-      logoImage: "",
-      logoLink: "",
+      logoImage: "/sponsors/twogate.svg",
+      logoLink: "https://twogate.com/",
       links: [
         { href: "", text: "" },
         { href: "", text: "" },
         { href: "", text: "" },
       ],
       addPadding: true,
-      draft: true,
     },
     {
       name: "カミナシ",
