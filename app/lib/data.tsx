@@ -782,10 +782,35 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
       addPadding: true,
     },
     {
-      name: "NuxtLabs Japan by ZEN Advisor",
+      name: "NuxtLabs Japan",
       description: ``,
       logoImage: "/sponsors/nuxtlabs_japan.svg",
       logoLink: "https://zenadvisor.io/nuxtlabs-japan/",
+      links: [
+        { href: "", text: "" },
+        { href: "", text: "" },
+        { href: "", text: "" },
+      ],
+      addPadding: false,
+    },
+    {
+      name: "",
+      description: ``,
+      logoImage: "",
+      logoLink: "",
+      links: [
+        { href: "", text: "" },
+        { href: "", text: "" },
+        { href: "", text: "" },
+      ],
+      addPadding: true,
+      draft: true,
+    },
+    {
+      name: "カミナシ",
+      description: ``,
+      logoImage: "/sponsors/kaminashi.png",
+      logoLink: "https://corp.kaminashi.jp/",
       links: [
         { href: "", text: "" },
         { href: "", text: "" },
