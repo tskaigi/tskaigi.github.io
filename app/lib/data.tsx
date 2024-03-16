@@ -574,7 +574,7 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       name: "チームラボ",
       description: `最新のテクノロジーを活用したデジタルソリューション、大規模なシステム開発や、プロダクト、デジタルコンテンツの制作、都市計画や建築空間設計などを行う。
 アーティスト、プログラマ、エンジニア、CGアニメーター、数学者、建築家など、デジタル社会の様々な分野のスペシャリストから構成されているウルトラテクノロジスト集団で、アート、サイエンス、テクノロジー、クリエイティビティの境界を越えて、集団的創造をコンセプトに活動している。`,
-      logoImage: "/sponsors/xxx.png",
+      logoImage: "/sponsors/teamlab.png",
       logoLink: "https://www.team-lab.com/",
       links: [
         { href: "https://www.team-lab.com/", text: "チームラボHP" },
