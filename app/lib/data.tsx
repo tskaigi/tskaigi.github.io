@@ -581,7 +581,7 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
         { href: "https://note.team-lab.com/", text: "チームラボ採用note『解体新書』" },
         { href: "https://twitter.com/teamlab_recruit", text: "チームラボ採用Xアカウント" },
       ],
-      addPadding: true,
+      addPadding: false,
       draft: true,
     },
   ],
