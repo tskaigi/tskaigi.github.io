@@ -571,6 +571,19 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       addPadding: true,
     },
     {
+      name: "株式会社メディカルフォース",
+      description: `「これからの産業の成長プロセスを合理化する」をビジョンに、現在は自由診療クリニック向けのオールインワンSaaSを提供しています。自由診療以外にも、今後の成長が期待されながら産業ならではの専門性・複雑性の高さから整備が行われず、今のテクノロジーの発展の恩恵が受けられていない産業は数多くあります。その中に深く入り込み、産業と共に会社としての成長を生み出すことを目指しています。
+弊社のプロダクトは一貫してTypescriptを活用しており、また経営陣にエンジニアが2名おり技術的な意思決定に強い組織です。`,
+      logoImage: "/sponsors/medicalforce_horizontal.png",
+      logoLink: "https://corp.medical-force.com/",
+      links: [
+        { href: "https://medicalforce.notion.site/d47facf9d55c470aae6a184b85a5c326", text: "エントランスブック" },
+        { href: "https://service.medical-force.com/", text: "自由診療クリニック向けオールインワンSaaS「medicalforce」" },
+        { href: "https://note.com/s_hatanaka/n/n7f9561844b92", text: "全社で大規模スクラムを導入してみた話 - CTO畠中のnote" },
+      ],
+      addPadding: true,
+    },
+    {
       name: "チームラボ",
       description: `最新のテクノロジーを活用したデジタルソリューション、大規模なシステム開発や、プロダクト、デジタルコンテンツの制作、都市計画や建築空間設計などを行う。
 アーティスト、プログラマ、エンジニア、CGアニメーター、数学者、建築家など、デジタル社会の様々な分野のスペシャリストから構成されているウルトラテクノロジスト集団で、アート、サイエンス、テクノロジー、クリエイティビティの境界を越えて、集団的創造をコンセプトに活動している。`,
