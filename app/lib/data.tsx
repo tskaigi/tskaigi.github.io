@@ -485,14 +485,17 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       addPadding: true,
     },
     {
-      name: "レバテック株式会社",
-      description: ``,
-      logoImage: "/sponsors/xxx.png",
-      logoLink: "",
+      name: "レバテック",
+      description: `"レバテックは、ITエンジニアと開発組織の挑戦と成長を加速させるための採用プラットフォームです。「日本を、IT先進国に。」というビジョンを掲げ、多角的に事業拡大を続けています。
+
+レバテックの開発組織では、その発展を支えるために、ユーザー体験や業務プロセスを含めたアーキテクチャの見直しと、事業拡大とともに積み重なった技術的負債の解消を進めています。
+守りを固めるフェーズでもあるため、より運用性・保守性の向上が見込めれば、o11yやTiDBなどの新しい技術も積極的に導入しています。"`,
+      logoImage: "/sponsors/levtech.jpg",
+      logoLink: "https://leverages.jp/",
       links: [
-        { href: "", text: "" },
-        { href: "", text: "" },
-        { href: "", text: "" },
+        { href: "https://zenn.dev/p/levtech", text: "テックブログ" },
+        { href: "https://speakerdeck.com/leverages/levtech-hui-she-shao-jie-zi-liao-enziniazhi-xiang-ke", text: "エンジニア職向け会社紹介" },
+        { href: "https://speakerdeck.com/leveragestech", text: "登壇資料" },
       ],
       addPadding: true,
       draft: true,
@@ -583,6 +586,19 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       ],
       addPadding: false,
       draft: true,
+    },
+    {
+      name: "株式会社メディカルフォース",
+      description: `「これからの産業の成長プロセスを合理化する」をビジョンに、現在は自由診療クリニック向けのオールインワンSaaSを提供しています。自由診療以外にも、今後の成長が期待されながら産業ならではの専門性・複雑性の高さから整備が行われず、今のテクノロジーの発展の恩恵が受けられていない産業は数多くあります。その中に深く入り込み、産業と共に会社としての成長を生み出すことを目指しています。
+弊社のプロダクトは一貫してTypescriptを活用しており、また経営陣にエンジニアが2名おり技術的な意思決定に強い組織です。`,
+      logoImage: "/sponsors/medicalforce_horizontal.png",
+      logoLink: "https://corp.medical-force.com/",
+      links: [
+        { href: "https://medicalforce.notion.site/d47facf9d55c470aae6a184b85a5c326", text: "エントランスブック" },
+        { href: "https://service.medical-force.com/", text: "自由診療クリニック向けオールインワンSaaS「medicalforce」" },
+        { href: "https://note.com/s_hatanaka/n/n7f9561844b92", text: "全社で大規模スクラムを導入してみた話 - CTO畠中のnote" },
+      ],
+      addPadding: true,
     },
   ],
 
@@ -786,6 +802,30 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
       description: ``,
       logoImage: "/sponsors/nuxtlabs_japan.svg",
       logoLink: "https://zenadvisor.io/nuxtlabs-japan/",
+      links: [
+        { href: "", text: "" },
+        { href: "", text: "" },
+        { href: "", text: "" },
+      ],
+      addPadding: false,
+    },
+    {
+      name: "株式会社TwoGate",
+      description: ``,
+      logoImage: "/sponsors/twogate.svg",
+      logoLink: "https://twogate.com/",
+      links: [
+        { href: "", text: "" },
+        { href: "", text: "" },
+        { href: "", text: "" },
+      ],
+      addPadding: true,
+    },
+    {
+      name: "カミナシ",
+      description: ``,
+      logoImage: "/sponsors/kaminashi.png",
+      logoLink: "https://corp.kaminashi.jp/",
       links: [
         { href: "", text: "" },
         { href: "", text: "" },
