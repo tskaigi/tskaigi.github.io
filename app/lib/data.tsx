@@ -582,9 +582,9 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       logoImage: "/sponsors/teamlab.png",
       logoLink: "https://www.team-lab.com/",
       links: [
-        { href: "https://www.team-lab.com/", text: "チームラボHP" },
-        { href: "https://note.team-lab.com/", text: "チームラボ採用note『解体新書』" },
-        { href: "https://twitter.com/teamlab_recruit", text: "チームラボ採用Xアカウント" },
+        { href: "https://open.talentio.com/r/1/c/teamlab/homes/4227", text: "カジュアル面談の受付" },
+        { href: "https://zenn.dev/teamlab_front", text: "チームラボ フロントエンド班Zenn" },
+        { href: "https://note.team-lab.com/", text: "チームラボ採用note「解体新書」" },
       ],
       addPadding: false,
       draft: true,
