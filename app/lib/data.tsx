@@ -485,13 +485,15 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       addPadding: true,
     },
     {
-      name: "レバテック",
-      description: `"レバテックは、ITエンジニアと開発組織の挑戦と成長を加速させるための採用プラットフォームです。「日本を、IT先進国に。」というビジョンを掲げ、多角的に事業拡大を続けています。
+      name: "レバテック株式会社",
+      description: `レバテックは、ITエンジニアと開発組織の挑戦と成長を加速させるための採用プラットフォームです。
+「日本を、IT先進国に。」というビジョンを掲げ、多角的に事業拡大を続けています。
 
 レバテックの開発組織では、その発展を支えるために、ユーザー体験や業務プロセスを含めたアーキテクチャの見直しと、事業拡大とともに積み重なった技術的負債の解消を進めています。
-守りを固めるフェーズでもあるため、より運用性・保守性の向上が見込めれば、o11yやTiDBなどの新しい技術も積極的に導入しています。"`,
+
+フロントエンド/バックエンドともにTypescriptを使用しており、o11yやTiDBなど新しい技術も積極的に導入しています。`,
       logoImage: "/sponsors/levtech.jpg",
-      logoLink: "https://leverages.jp/",
+      logoLink: "https://speakerdeck.com/leverages/levtech-hui-she-shao-jie-zi-liao-enziniazhi-xiang-ke",
       links: [
         { href: "https://zenn.dev/p/levtech", text: "テックブログ" },
         { href: "https://speakerdeck.com/leverages/levtech-hui-she-shao-jie-zi-liao-enziniazhi-xiang-ke", text: "エンジニア職向け会社紹介" },
