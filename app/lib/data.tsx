@@ -500,7 +500,6 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
         { href: "https://speakerdeck.com/leveragestech", text: "登壇資料" },
       ],
       addPadding: true,
-      draft: true,
     },
     {
       name: "株式会社Linc'well",
@@ -587,7 +586,6 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
         { href: "https://note.team-lab.com/", text: "チームラボ採用note「解体新書」" },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "株式会社メディカルフォース",
