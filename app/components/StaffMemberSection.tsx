@@ -156,6 +156,11 @@ const memberInfos = [
     image: "m0m0i.jpg",
     href: "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFG5sK74hHZ6gAAAY5kdTY4H5AHGGu-aNgDc7xOJFn_ApVvkO24dFpxvZFdrTLo85AyqeZiA6l7pRlKDATyO3LdIivlk9dHSGyFDDlh0Z5ZiqQCPE_63qMgaeJMzWoEXU6kWAU=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fhiroyuki-momoi%2F",
   },
+  {
+    name: "midori",
+    image: "midori.jpg",
+    href: "https://x.com/midori697810050?t=-4nMNVetCm2Sw7ehIZCvwg&s=09",
+  },
 ];
 
 const StaffCard = (props: (typeof memberInfos)[number]) => {
