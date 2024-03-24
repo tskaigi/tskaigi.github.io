@@ -161,6 +161,11 @@ const memberInfos = [
     image: "midori.jpg",
     href: "https://x.com/midori697810050?t=-4nMNVetCm2Sw7ehIZCvwg&s=09",
   },
+  {
+    name: "jp-knj",
+    image: "jp-knj.jpg",
+    href: "https://twitter.com/jp_knj",
+  },
 ];
 
 const StaffCard = (props: (typeof memberInfos)[number]) => {
