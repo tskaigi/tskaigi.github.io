@@ -290,7 +290,7 @@ type Message = {
 この「暮らし」のサービスである「homehub」、「仕事」のサービスである「workhub」における各種WEBシステムの多くはフロントエンド、バックエンド双方TypeScriptで構築されております。
 現在TypeScriptエンジニアは絶賛採用中のため、是非下記1番上のリンクからビットキーを知っていただき、ご興味あれば下記2番目のカジュアル面談をしていただければと思います！`,
       logoImage: "/sponsors/bitkey_horizontal.png",
-      logoLink: "",
+      logoLink: "https://bitkey.co.jp/",
       links: [
         { href: "https://speakerdeck.com/bitkey/bitkey-recruiting-book", text: "企業説明資料" },
         {
