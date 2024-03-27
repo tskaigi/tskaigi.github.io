@@ -736,16 +736,16 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
       addPadding: true,
     },
     {
-      name: "",
+      name: "株式会社Luup",
       description: ``,
-      logoImage: "/sponsors/xxx.png",
-      logoLink: "",
+      logoImage: "/sponsors/luup.png",
+      logoLink: "https://luup.sc/",
       links: [
         { href: "", text: "" },
         { href: "", text: "" },
         { href: "", text: "" },
       ],
-      addPadding: true,
+      addPadding: false,
       draft: true,
     },
     {
