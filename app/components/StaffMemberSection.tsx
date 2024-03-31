@@ -162,9 +162,34 @@ const memberInfos = [
     href: "https://x.com/midori697810050?t=-4nMNVetCm2Sw7ehIZCvwg&s=09",
   },
   {
+    name: "ujita",
+    image: "noimage.png",
+    href: "",
+  },
+  {
+    name: "jamashita",
+    image: "noimage.png",
+    href: "",
+  },
+  {
     name: "jp-knj",
     image: "jp-knj.jpg",
     href: "https://twitter.com/jp_knj",
+  },
+  {
+    name: "わた",
+    image: "8Dbxu84x_400x400-1.jpg",
+    href: "https://twitter.com/hishiwata7",
+  },
+  {
+    name: "ツノ",
+    image: "noimage.png",
+    href: "https://twitter.com/2nofa11",
+  },
+  {
+    name: "かがみもち",
+    image: "noimage.png",
+    href: "https://twitter.com/omotidaisukijp",
   },
 ];
 
