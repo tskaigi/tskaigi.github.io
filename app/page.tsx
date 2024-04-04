@@ -127,7 +127,7 @@ export default function Home() {
       </Container>
       <SponsorLogosSection anchor={pageAnchors.sponsor} showDraft={false} />
       <PersonalSponsorSection />
-      <StaffMemberSection />
+      {/* <StaffMemberSection /> */}
     </>
   );
 }

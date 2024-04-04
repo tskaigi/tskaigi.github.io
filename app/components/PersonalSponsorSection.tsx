@@ -2,39 +2,9 @@ import Link from "next/link";
 
 const PersonalSponsors = [
   {
-    name: "km-tr",
-    image: "https://avatars.githubusercontent.com/u/4058100?v=4",
-    href: "https://github.com/km-tr",
-  },
-  {
-    name: "tacck",
-    image: "https://pbs.twimg.com/profile_images/1571789838097207297/V2aYM6_A_400x400.jpg",
-    href: "https://twitter.com/tacck",
-  },
-  {
-    name: "フラクト",
-    image: "https://avatars.githubusercontent.com/u/87593133?v=4",
-    href: "https://twitter.com/Fract_x",
-  },
-  {
-    name: "cilly",
-    image: "https://avatars.githubusercontent.com/u/16274232?v=4",
-    href: "https://twitter.com/cilly_yllic",
-  },
-  {
-    name: "JJ",
-    image: "https://pbs.twimg.com/profile_images/1755180781599956992/PjYZLSja_400x400.png",
-    href: "https://0xjj.dev",
-  },
-  {
-    name: "yamanoku",
-    image: "https://avatars.githubusercontent.com/u/1996642?v=4",
-    href: "https://yamanoku.net",
-  },
-  {
-    name: "onk",
-    image: "https://avatars.githubusercontent.com/u/203046?v=4",
-    href: "https://github.com/onk",
+    name: "大石 貴則 (おおいし)",
+    image: "	https://pbs.twimg.com/profile_images/1671084783122907139/ovRsFdyJ_400x400.jpg",
+    href: "https://bicstone.me/",
   },
   {
     name: "shige",
@@ -42,9 +12,39 @@ const PersonalSponsors = [
     href: "https://github.com/shige/",
   },
   {
-    name: "大石 貴則 (おおいし)",
-    image: "	https://pbs.twimg.com/profile_images/1671084783122907139/ovRsFdyJ_400x400.jpg",
-    href: "https://bicstone.me/",
+    name: "onk",
+    image: "https://avatars.githubusercontent.com/u/203046?v=4",
+    href: "https://github.com/onk",
+  },
+  {
+    name: "yamanoku",
+    image: "https://avatars.githubusercontent.com/u/1996642?v=4",
+    href: "https://yamanoku.net",
+  },
+  {
+    name: "JJ",
+    image: "https://pbs.twimg.com/profile_images/1755180781599956992/PjYZLSja_400x400.png",
+    href: "https://0xjj.dev",
+  },
+  {
+    name: "cilly",
+    image: "https://avatars.githubusercontent.com/u/16274232?v=4",
+    href: "https://twitter.com/cilly_yllic",
+  },
+  {
+    name: "フラクト",
+    image: "https://avatars.githubusercontent.com/u/87593133?v=4",
+    href: "https://twitter.com/Fract_x",
+  },
+  {
+    name: "tacck",
+    image: "https://pbs.twimg.com/profile_images/1571789838097207297/V2aYM6_A_400x400.jpg",
+    href: "https://twitter.com/tacck",
+  },
+  {
+    name: "km-tr",
+    image: "https://avatars.githubusercontent.com/u/4058100?v=4",
+    href: "https://github.com/km-tr",
   },
 ] as const;
 
