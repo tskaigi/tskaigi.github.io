@@ -5,6 +5,8 @@ import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-fir
 import Cta from "./ui/cta";
 import { ticketURL } from "./lib/data";
 import { SponsorLogosSection } from "./components/SponsorLogosSection";
+import { StaffMemberSection } from "./components/StaffMemberSection";
+import { PersonalSponsorSection } from "./components/PersonalSponsorSection";
 
 const pageAnchors = {
   news: "news",
@@ -124,6 +126,8 @@ export default function Home() {
         </div>
       </Container>
       <SponsorLogosSection anchor={pageAnchors.sponsor} showDraft={false} />
+      <PersonalSponsorSection />
+      {/* <StaffMemberSection /> */}
     </>
   );
 }
