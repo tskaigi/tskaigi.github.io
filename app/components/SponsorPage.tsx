@@ -145,7 +145,7 @@ export default function SponsorPage({ showDraft }: SponsorPageProps) {
               <span className=" lg:text-6xl text-accent pr-4">
                 TSKaigi 2024 <br />
               </span>
-              はスポンサーを募集しています
+              スポンサーの募集は終了しました。
             </h1>
           </div>
         </div>
