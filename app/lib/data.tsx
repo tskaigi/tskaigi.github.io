@@ -4,6 +4,8 @@ import { HiLightBulb } from "react-icons/hi2";
 import { FaHandshake, FaBook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoTicket } from "react-icons/io5";
+import { GiPublicSpeaker } from "react-icons/gi";
+
 
 export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
 
@@ -36,6 +38,16 @@ export const pageInfos: PageInfo[] = [
       "TSKaigiは日本のTypeScriptコミュニティを盛り上げるカンファレンスを開催します。あなたの発表・登壇をお待ちしております。ぜひ一緒に日本のTypeScriptコミュニティを盛り上げましょう！",
     icon: HiLightBulb,
     href: "/call-for-proposals",
+  },
+  {
+    index: 4,
+    title: "セッション",
+    showNavbar: true,
+    showFooter: true,
+    description:
+      "TSKaigiのセッションリストです。",
+    icon: GiPublicSpeaker,
+    href: "/talks",
   },
 ];
 
