@@ -833,5 +833,17 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
       ],
       addPadding: false,
     },
+    {
+      name: "株式会社ケップル",
+      description: ``,
+      logoImage: "/sponsors/kepple.svg",
+      logoLink: "https://corp.kepple.co.jp/",
+      links: [
+        { href: "", text: "" },
+        { href: "", text: "" },
+        { href: "", text: "" },
+      ],
+      addPadding: false,
+    },
   ],
 };
