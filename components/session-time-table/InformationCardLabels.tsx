@@ -21,7 +21,7 @@ const InformationCardLabels = ({ track, labels }: InformationCardLabelsProps) =>
             <SessionLabel key={label + "-" + index} label={label} bgColor={labelBgColor[index]} />
           ))
         : labels?.map((label, index) => (
-            typeof track === "string" && <SessionLabel key={label + "-" + index} label={label} bgColor={LABEL_BG_COLOR[track]} />
+            typeof labelBgColor === "string" && <SessionLabel key={label + "-" + index} label={label} bgColor={labelBgColor} />
           ))}
     </div>
   );
