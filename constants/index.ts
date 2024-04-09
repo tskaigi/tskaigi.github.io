@@ -1,11 +1,11 @@
 import { CardInfo, SessionInfo } from "@/typs";
 
-export const TRACK_HEADER_NAMES: string[] = ["TrackA", "TrackB", "TrackC"];
+export const TRACK_HEADER_NAMES: string[] = ["Track1", "Track2", "Track3"];
 
 export const LABEL_BG_COLOR: { [key: string]: string } = {
-  TrackA: "bg-[#65E0B8]",
-  TrackB: "bg-[#FFE999]",
-  TrackC: "bg-[#93E7FB]",
+  Track1: "bg-[#65E0B8]",
+  Track2: "bg-[#FFE999]",
+  Track3: "bg-[#93E7FB]",
 };
 
 export const SESSION_LIST: { [key: string]: SessionInfo } = {
@@ -208,6 +208,17 @@ export const LT_LIST: {[key: string]: SessionInfo} = {
 };
 
 export const TIME_TABLE_DATA: CardInfo[][] = [
+  // 09:30 ~ 10:25
+  [
+    { type: "time", content: "09:30 ~ 10:25", size: "md:col-span-1" },
+    {
+      type: "info",
+      content: "開場",
+      size: "md:col-span-9",
+      track: "Track1",
+      labels: ["トラック1"],
+    },
+  ],
   // 10:25 ~ 10:30
   [
     { type: "time", content: "10:25 ~ 10:30", size: "md:col-span-1" },
@@ -215,15 +226,15 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
       type: "info",
       content: "オープニング",
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA"],
+      track: "Track1",
+      labels: ["トラック1"],
     },
     {
       type: "info",
       content: "サテライト",
       size: "md:col-span-6",
-      track: ["TrackB", "TrackC"],
-      labels: ["トラックB", "トラックC"],
+      track: ["Track2", "Track3"],
+      labels: ["トラック2", "トラック3"],
     },
   ],
 
@@ -234,22 +245,22 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
       type: "info",
       content: "基調講演",
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA"],
+      track: "Track1",
+      labels: ["トラック1"],
       keynoteSpeaker: "Daniel Rosenwasser",
     },
     {
       type: "info",
       content: "サテライト",
       size: "md:col-span-6",
-      track: ["TrackB", "TrackC"],
-      labels: ["トラックB", "トラックC"],
+      track: ["Track2", "Track3"],
+      labels: ["トラック2", "トラック3"],
     },
   ],
 
-  // 11:15 ~ 11:40
+  // 11:15 ~ 11:30
   [
-    { type: "time", content: "11:15 ~ 11:40", size: "" },
+    { type: "time", content: "11:15 ~ 11:30", size: "" },
     {
       type: "close",
       content: "休憩",
@@ -257,61 +268,61 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
-  // 11:40 ~ 12:10
+  // 11:30 ~ 12:00
   [
-    { type: "time", content: "11:40 ~ 12:10", size: "md:col-span-1" },
+    { type: "time", content: "11:30 ~ 12:00", size: "md:col-span-1" },
     {
       type: "session",
       content: [SESSION_LIST.s_001],
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA", "セッション"],
-    },
-    {
-      type: "session",
-      content: [SESSION_LIST.s_002],
-      size: "md:col-span-3",
-      track: "TrackB",
-      labels: ["トラックB", "セッション"],
+      track: "Track1",
+      labels: ["トラック1", "セッション"],
     },
     {
       type: "session",
       content: [SESSION_LIST.s_003],
       size: "md:col-span-3",
-      track: "TrackC",
-      labels: ["トラックC", "セッション"],
+      track: "Track2",
+      labels: ["トラック2", "セッション"],
+    },
+    {
+      type: "session",
+      content: [SESSION_LIST.s_002],
+      size: "md:col-span-3",
+      track: "Track3",
+      labels: ["トラック3", "セッション"],
     },
   ],
 
-  // 12:10 ~ 13:20
+  // 12:10 ~ 13:10
   [
-    { type: "time", content: "12:10 ~ 13:20", size: "md:col-span-1" },
+    { type: "time", content: "12:10 ~ 13:10", size: "md:col-span-1" },
     {
       type: "session",
       content: [LT_LIST.lt_001, LT_LIST.lt_002, LT_LIST.lt_003, LT_LIST.lt_004],
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA", "ランチタイムスポンサーLT"],
+      track: "Track1",
+      labels: ["トラック1", "ランチタイムスポンサーLT"],
     },
     {
       type: "session",
       content: [LT_LIST.lt_001, LT_LIST.lt_002, LT_LIST.lt_003, LT_LIST.lt_004],
       size: "md:col-span-3",
-      track: "TrackB",
-      labels: ["トラックB", "ランチタイムスポンサーLT"],
+      track: "Track2",
+      labels: ["トラック2", "ランチタイムスポンサーLT"],
     },
     {
       type: "session",
       content: [LT_LIST.lt_001, LT_LIST.lt_002, LT_LIST.lt_003, LT_LIST.lt_004],
       size: "md:col-span-3",
-      track: "TrackC",
-      labels: ["トラックC", "ランチタイムスポンサーLT"],
+      track: "Track3",
+      labels: ["トラック3", "ランチタイムスポンサーLT"],
     },
   ],
 
-  // 13:20 ~ 13:30
+  // 13:10 ~ 13:20
   [
-    { type: "time", content: "13:20 ~ 13:30", size: "" },
+    { type: "time", content: "13:10 ~ 13:20", size: "" },
     {
       type: "close",
       content: "休憩",
@@ -319,35 +330,35 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
-  // 13:30 ~ 14:00
+  // 13:20 ~ 13:50
   [
-    { type: "time", content: "13:30 ~ 14:00", size: "md:col-span-1" },
+    { type: "time", content: "13:20 ~ 13:50", size: "md:col-span-1" },
     {
       type: "session",
       content: [SESSION_LIST.s_004],
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA", "セッション"],
-    },
-    {
-      type: "session",
-      content: [SESSION_LIST.s_005],
-      size: "md:col-span-3",
-      track: "TrackB",
-      labels: ["トラックB", "セッション"],
+      track: "Track1",
+      labels: ["トラック1", "セッション"],
     },
     {
       type: "session",
       content: [SESSION_LIST.s_006],
       size: "md:col-span-3",
-      track: "TrackC",
-      labels: ["トラックC", "セッション"],
+      track: "Track2",
+      labels: ["トラック2", "セッション"],
+    },
+    {
+      type: "session",
+      content: [SESSION_LIST.s_005],
+      size: "md:col-span-3",
+      track: "Track3",
+      labels: ["トラック3", "セッション"],
     },
   ],
 
-  // 14:00 ~ 14:10
+  // 13:50 ~ 14:00
   [
-    { type: "time", content: "14:00 ~ 14:10", size: "" },
+    { type: "time", content: "13:50 ~ 14:00", size: "" },
     {
       type: "close",
       content: "休憩",
@@ -355,35 +366,35 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
-  // 14:10 ~ 14:40
+  // 14:00 ~ 14:30
   [
-    { type: "time", content: "14:10 ~ 14:40", size: "md:col-span-1" },
+    { type: "time", content: "14:00 ~ 14:30", size: "md:col-span-1" },
     {
       type: "session",
       content: [SESSION_LIST.s_007],
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA", "セッション"],
-    },
-    {
-      type: "session",
-      content: [SESSION_LIST.s_008],
-      size: "md:col-span-3",
-      track: "TrackB",
-      labels: ["トラックB", "セッション"],
+      track: "Track1",
+      labels: ["トラック1", "セッション"],
     },
     {
       type: "session",
       content: [LT_LIST.lt_005, LT_LIST.lt_006, LT_LIST.lt_007, LT_LIST.lt_008],
       size: "md:col-span-3",
-      track: "TrackC",
-      labels: ["トラックC", "LT"],
+      track: "Track2",
+      labels: ["トラック2", "セッション"],
+    },
+    {
+      type: "session",
+      content: [SESSION_LIST.s_008],
+      size: "md:col-span-3",
+      track: "Track3",
+      labels: ["トラック3", "LT"],
     },
   ],
 
-  // 14:40 ~ 14:50
+  // 14:30 ~ 14:40
   [
-    { type: "time", content: "14:40 ~ 14:50", size: "" },
+    { type: "time", content: "14:30 ~ 14:40", size: "" },
     {
       type: "close",
       content: "休憩",
@@ -391,35 +402,35 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
-  // 14:50 ~ 15:20
+  // 14:40 ~ 15:10
   [
-    { type: "time", content: "14:50 ~ 15:20", size: "md:col-span-1" },
+    { type: "time", content: "14:40 ~ 15:10", size: "md:col-span-1" },
     {
       type: "session",
       content: [SESSION_LIST.s_009],
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA", "セッション"],
-    },
-    {
-      type: "session",
-      content: [SESSION_LIST.s_010],
-      size: "md:col-span-3",
-      track: "TrackB",
-      labels: ["トラックB", "セッション"],
+      track: "Track1",
+      labels: ["トラック1", "セッション"],
     },
     {
       type: "session",
       content: [SESSION_LIST.s_011],
       size: "md:col-span-3",
-      track: "TrackC",
-      labels: ["トラックC", "セッション"],
+      track: "Track2",
+      labels: ["トラック2", "セッション"],
+    },
+    {
+      type: "session",
+      content: [SESSION_LIST.s_010],
+      size: "md:col-span-3",
+      track: "Track3",
+      labels: ["トラック3", "セッション"],
     },
   ],
 
-  // 15:20 ~ 15:30
+  // 15:10 ~ 15:20
   [
-    { type: "time", content: "15:20 ~ 15:30", size: "" },
+    { type: "time", content: "15:10 ~ 15:20", size: "" },
     {
       type: "close",
       content: "休憩",
@@ -427,35 +438,35 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
-  // 15:30 ~ 16:00
+  // 15:20 ~ 15:50
   [
-    { type: "time", content: "15:30 ~ 16:00", size: "md:col-span-1" },
+    { type: "time", content: "15:20 ~ 15:50", size: "md:col-span-1" },
     {
       type: "session",
       content: [SESSION_LIST.s_012],
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA", "セッション"],
-    },
-    {
-      type: "session",
-      content: [LT_LIST.lt_009, LT_LIST.lt_010, LT_LIST.lt_011, LT_LIST.lt_012],
-      size: "md:col-span-3",
-      track: "TrackB",
-      labels: ["トラックB", "LT"],
+      track: "Track1",
+      labels: ["トラック1", "セッション"],
     },
     {
       type: "session",
       content: [SESSION_LIST.s_013],
       size: "md:col-span-3",
-      track: "TrackC",
-      labels: ["トラックC", "セッション"],
+      track: "Track2",
+      labels: ["トラック2", "LT"],
+    },
+    {
+      type: "session",
+      content: [LT_LIST.lt_009, LT_LIST.lt_010, LT_LIST.lt_011, LT_LIST.lt_012],
+      size: "md:col-span-3",
+      track: "Track3",
+      labels: ["トラック3", "セッション"],
     },
   ],
 
-  // 16:00 ~ 16:10
+  // 15:50 ~ 16:00
   [
-    { type: "time", content: "16:00 ~ 16:10", size: "" },
+    { type: "time", content: "15:50 ~ 16:00", size: "" },
     {
       type: "close",
       content: "休憩",
@@ -463,35 +474,35 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
-  // 16:10 ~ 16:40
+  // 16:00 ~ 16:30
   [
-    { type: "time", content: "16:10 ~ 16:40", size: "md:col-span-1" },
+    { type: "time", content: "16:00 ~ 16:30", size: "md:col-span-1" },
     {
       type: "session",
       content: [SESSION_LIST.s_014],
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA", "セッション"],
-    },
-    {
-      type: "session",
-      content: [SESSION_LIST.s_015],
-      size: "md:col-span-3",
-      track: "TrackB",
-      labels: ["トラックB", "セッション"],
+      track: "Track1",
+      labels: ["トラック1", "セッション"],
     },
     {
       type: "session",
       content: [SESSION_LIST.s_016],
       size: "md:col-span-3",
-      track: "TrackC",
-      labels: ["トラックC", "セッション"],
+      track: "Track2",
+      labels: ["トラック2", "セッション"],
+    },
+    {
+      type: "session",
+      content: [SESSION_LIST.s_015],
+      size: "md:col-span-3",
+      track: "Track3",
+      labels: ["トラック3", "セッション"],
     },
   ],
 
-  // 16:40 ~ 16:50
+  // 16:30 ~ 16:40
   [
-    { type: "time", content: "16:40 ~ 16:50", size: "" },
+    { type: "time", content: "16:30 ~ 16:40", size: "" },
     {
       type: "close",
       content: "休憩",
@@ -499,35 +510,35 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
-  // 16:50 ~ 17:20
+  // 16:40 ~ 17:10
   [
-    { type: "time", content: "16:50 ~ 17:20", size: "md:col-span-1" },
+    { type: "time", content: "16:40 ~ 17:10", size: "md:col-span-1" },
     {
       type: "session",
       content: [SESSION_LIST.s_017],
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA", "セッション"],
-    },
-    {
-      type: "session",
-      content: [SESSION_LIST.s_018],
-      size: "md:col-span-3",
-      track: "TrackB",
-      labels: ["トラックB", "セッション"],
+      track: "Track1",
+      labels: ["トラック1", "セッション"],
     },
     {
       type: "session",
       content: [LT_LIST.lt_013, LT_LIST.lt_014, LT_LIST.lt_015, LT_LIST.lt_016],
       size: "md:col-span-3",
-      track: "TrackC",
-      labels: ["トラックC", "LT"],
+      track: "Track2",
+      labels: ["トラック2", "セッション"],
+    },
+    {
+      type: "session",
+      content: [SESSION_LIST.s_018],
+      size: "md:col-span-3",
+      track: "Track3",
+      labels: ["トラック3", "LT"],
     },
   ],
 
-  // 17:20 ~ 17:30
+  // 17:10 ~ 17:20
   [
-    { type: "time", content: "17:20 ~ 17:30", size: "" },
+    { type: "time", content: "17:10 ~ 17:20", size: "" },
     {
       type: "close",
       content: "休憩",
@@ -535,48 +546,48 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
-  // 17:30 ~ 17:50
+  // 17:20 ~ 17:40
   [
-    { type: "time", content: "17:30 ~ 17:50", size: "md:col-span-1" },
+    { type: "time", content: "17:20 ~ 17:40", size: "md:col-span-1" },
     {
       type: "session",
       content: [LT_LIST.lt_017, LT_LIST.lt_018, LT_LIST.lt_019],
       size: "md:col-span-3",
-      track: "TrackA",
-      labels: ["トラックA", "LT"],
+      track: "Track1",
+      labels: ["トラック1", "LT"],
+    },
+    {
+      type: "session",
+      content: [LT_LIST.lt_0001, LT_LIST.lt_020, LT_LIST.lt_021],
+      size: "md:col-span-3",
+      track: "Track2",
+      labels: ["トラック2", "LT"],
     },
     {
       type: "close",
       content: "会場転換",
       size: "md:col-span-3",
     },
+  ],
+
+  // 17:40 ~ 18:10
+  [
+    { type: "time", content: "17:50 ~ 18:10", size: "" },
     {
-      type: "session",
-      content: [LT_LIST.lt_020, LT_LIST.lt_021],
+      type: "close",
+      content: "転換",
       size: "md:col-span-3",
-      track: "TrackC",
-      labels: ["トラックC", "LT"],
-    },
-  ],
-
-  // 17:50 ~ 18:00
-  [
-    { type: "time", content: "17:50 ~ 18:00", size: "" },
-    {
-      type: "close",
-      content: "クロージング",
-      size: "md:col-span-6",
     },
     {
       type: "close",
-      content: "クローズ",
-      size: "md:col-span-3 hidden",
+      content: "臨時休憩室",
+      size: "md:col-span-6 hidden",
     },
   ],
 
-  // 18:00 ~ 19:30
+  // 18:10 ~ 19:40
   [
-    { type: "time", content: "18:00 ~ 19:30", size: "" },
+    { type: "time", content: "18:10 ~ 19:40", size: "" },
     {
       type: "close",
       content: "懇親会",
