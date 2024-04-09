@@ -1,10 +1,11 @@
-import type { PageInfo, QandA, CardData, SponsorList, AcountLink } from "./definitions";
+import { IconType } from "react-icons";
+import { FaBook, FaHandshake } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { GiPublicSpeaker } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
 import { HiLightBulb } from "react-icons/hi2";
-import { FaHandshake, FaBook } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { IoTicket } from "react-icons/io5";
-import { GiPublicSpeaker } from "react-icons/gi";
+import type { AcountLink, CardData, PageInfo, QandA, SponsorList } from "./definitions";
 
 
 export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
@@ -16,7 +17,7 @@ export const pageInfos: PageInfo[] = [
     showFooter: true,
     title: "Home",
     description: "",
-    icon: HiHome,
+    icon: (HiHome as IconType),
     href: "/",
   },
   {
@@ -26,7 +27,7 @@ export const pageInfos: PageInfo[] = [
     showFooter: true,
     description:
       "TSKaigiは日本のTypeScriptコミュニティを盛り上げるカンファレンスを開催します。TSKaigiに協賛いただいた企業をご紹介します。",
-    icon: FaHandshake,
+    icon: (FaHandshake as IconType),
     href: "/sponsor",
   },
   {
@@ -36,7 +37,7 @@ export const pageInfos: PageInfo[] = [
     title: "プロポーザル募集",
     description:
       "TSKaigiは日本のTypeScriptコミュニティを盛り上げるカンファレンスを開催します。あなたの発表・登壇をお待ちしております。ぜひ一緒に日本のTypeScriptコミュニティを盛り上げましょう！",
-    icon: HiLightBulb,
+    icon: (HiLightBulb as IconType),
     href: "/call-for-proposals",
   },
   {
@@ -46,7 +47,7 @@ export const pageInfos: PageInfo[] = [
     showFooter: true,
     description:
       "TSKaigiのセッションリストです。",
-    icon: GiPublicSpeaker,
+    icon: (GiPublicSpeaker as IconType),
     href: "/talks",
   },
 ];
@@ -59,7 +60,7 @@ export const acountLink: AcountLink[] = [
     emphasis: false,
     title: "公式X",
     description: "TSKaigiの公式X",
-    icon: FaXTwitter,
+    icon: (FaXTwitter as IconType),
     href: "https://twitter.com/tskaigi",
   },
   {
@@ -69,7 +70,7 @@ export const acountLink: AcountLink[] = [
     showFooter: true,
     emphasis: false,
     description: "TSKaigi運営のブログ",
-    icon: FaBook,
+    icon: (FaBook as IconType),
     href: "https://tskaigi.hatenablog.com/",
   },
   {
@@ -79,7 +80,7 @@ export const acountLink: AcountLink[] = [
     showFooter: true,
     emphasis: true,
     description: "TSKaigiのチケット販売ページ",
-    icon: IoTicket,
+    icon: (IoTicket as IconType),
     href: ticketURL,
   },
 ];
@@ -157,17 +158,17 @@ export const selectionCommittee: CardData[] = [
   {
     title: "hiroppy",
     imageUrl: "/hiroppy_icon.png",
-    links: [{ icon: FaXTwitter, href: "https://twitter.com/about_hiroppy" }],
+    links: [{ icon: (FaXTwitter as IconType), href: "https://twitter.com/about_hiroppy" }],
   },
   {
     title: "mizchi",
     imageUrl: "https://pbs.twimg.com/profile_images/2507664307/viccruw2m1zb0xkkisil_400x400.jpeg",
-    links: [{ icon: FaXTwitter, href: "https://twitter.com/mizchi" }],
+    links: [{ icon: (FaXTwitter as IconType), href: "https://twitter.com/mizchi" }],
   },
   {
     title: "うひょ",
     imageUrl: "https://pbs.twimg.com/profile_images/1341186424423378944/gYTKIbFl_400x400.jpg",
-    links: [{ icon: FaXTwitter, href: "https://twitter.com/uhyo_" }],
+    links: [{ icon: (FaXTwitter as IconType), href: "https://twitter.com/uhyo_" }],
   },
 ];
 
@@ -625,7 +626,7 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
 🧑‍💻 開発環境
 サーバーサイド：Node.js, NestJS, TypeScript
 フロントエンド: React.js,TypeScript,styled-components
-データベース　：MySQL, Redis`,
+データベース ：MySQL, Redis`,
       logoImage: "/sponsors/eventhub_horizontal.png",
       logoLink: "https://jobs.eventhub.co.jp/",
       links: [

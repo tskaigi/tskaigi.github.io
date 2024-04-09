@@ -5,13 +5,13 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./constants/index.ts"
+    "./constants/index.ts",
   ],
   theme: {
-    colors: {
-      white: "#fdfdfd",
-    },
     extend: {
+      colors: {
+        white: "#fdfdfd",
+      },
       backgroundImage: {
         my_bg_image: "url('../public/background.png')",
       },

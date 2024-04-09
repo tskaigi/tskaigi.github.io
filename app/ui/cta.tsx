@@ -13,7 +13,7 @@ export default function Cta({
 }) {
   return (
     <>
-      <div className="flex flex-col items-center justify-center lg:flex-row py-4 gap-4 lg:gap-8">
+      <div className="flex flex-col items-center justify-center gap-4 py-4 lg:flex-row lg:gap-8">
         {subLink && subLinkText && (
           <a
             href={subLink}
@@ -21,7 +21,7 @@ export default function Cta({
             target="_blank"
             className={`link link-primary w-full max-w-xs ${prevent ? "pointer-events-none cursor-not-allowed opacity-50" : ""}`}
           >
-            <div className="btn lg:btn-md w-full">{subLinkText}</div>
+            <div className="btn w-full lg:btn-md">{subLinkText}</div>
           </a>
         )}
         <a
@@ -30,7 +30,7 @@ export default function Cta({
           target="_blank"
           className={`link link-primary w-full max-w-xs ${prevent ? "pointer-events-none cursor-not-allowed opacity-50" : ""}`}
         >
-          <div className="btn lg:btn-md btn-accent font-bold text-primary-content w-full bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90 overflow-hidden whitespace-nowrap">
+          <div className="btn btn-accent w-full overflow-hidden whitespace-nowrap bg-gradient-to-r from-accent to-[#FFCDA8] font-bold text-primary-content lg:btn-md hover:opacity-90">
             {mainLinkText}
           </div>
         </a>

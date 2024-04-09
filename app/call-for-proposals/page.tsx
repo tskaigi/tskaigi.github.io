@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import { selectionCommittee } from "@/app/lib/data";
-import { getTitleByIndex, getDescriptionByIndex } from "../lib/utils";
-import { HiExternalLink } from "react-icons/hi";
 import Qa from "@/app/ui/qa";
-import Card from "../ui/card";
-import Cta from "../ui/cta";
-import Container from "../ui/container";
+import type { Metadata } from "next";
+import { HiExternalLink } from "react-icons/hi";
 import { NavigateAnchorOnFirstRender } from "../functional/navigate-anchor-on-first-render";
-import Image from "next/image";
+import { getDescriptionByIndex, getTitleByIndex } from "../lib/utils";
+import Card from "../ui/card";
+import Container from "../ui/container";
+import Cta from "../ui/cta";
 
 const targetIndex = 3;
 const pageAnchors = {
@@ -27,27 +26,27 @@ export default function Page() {
     <>
       <NavigateAnchorOnFirstRender />
       <Container>
-        <h1 className="text-2xl lg:text-4xl my-10">
+        <h1 className="my-10 text-2xl lg:text-4xl">
           TSKaigi 2024のプロポーザル募集について{" "}
           <span className="text-xl text-error">*現在、募集期間は終了しています</span>
         </h1>
         <div>
           <h2
             id={pageAnchors.overview}
-            className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20"
+            className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
           >
             <a href={`#${pageAnchors.overview}`}>TSKaigi 2024概要</a>
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 my-12">
+          <div className="my-12 grid gap-8 md:grid-cols-2">
             <div className="m-auto">
               <img
-                className="rounded-lg aspect-[4/3] md:aspect-video object-cover max-h-64"
+                className="aspect-[4/3] max-h-64 rounded-lg object-cover md:aspect-video"
                 src="https://www.nakano-centralpark.jp/conference/wp-content/themes/company_renewal3/images/location_img_new.png"
                 alt="tskaigi logo"
               />
             </div>
             <div>
-              <p>日程：　2024年5月11日（土）</p>
+              <p>日程： 2024年5月11日（土）</p>
               <div className="divider divider-neutral my-0"></div>
               <p>
                 <span className="flex">
@@ -59,7 +58,7 @@ export default function Page() {
                     target="_blank"
                   >
                     中野セントラルパーク カンファレンス
-                    <HiExternalLink className="inline-block ml-2" />
+                    <HiExternalLink className="ml-2 inline-block" />
                   </a>
                 </span>
               </p>
@@ -87,35 +86,35 @@ export default function Page() {
           </p>
           <h2
             id={pageAnchors.proposalOverview}
-            className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20"
+            className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
           >
             <a href={`#${pageAnchors.proposalOverview}`}>プロポーザル募集概要</a>
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 my-12">
+          <div className="my-12 grid gap-8 md:grid-cols-2">
             <div className="m-auto">
               <img
                 src="/banner.jpg"
-                className="object-cover h-48 md:h-56 lg:h-80 rounded-lg "
+                className="h-48 rounded-lg object-cover md:h-56 lg:h-80 "
                 alt="tskaigi logo"
               />
             </div>
             <div>
-              <p>応募締切：　2024年2月29日（木）</p>
+              <p>応募締切： 2024年2月29日（木）</p>
               <div className="divider divider-neutral my-0"></div>
-              <p>結果通知：　2024年3月中旬（連絡は採用者のみ）</p>
+              <p>結果通知： 2024年3月中旬（連絡は採用者のみ）</p>
               <div className="divider divider-neutral my-0"></div>
-              <p>テーマ　：　TypeScriptに関する内容</p>
+              <p>テーマ ： TypeScriptに関する内容</p>
               <div className="divider divider-neutral my-0"></div>
-              <p>発表時間：　セッション30分、LT5分</p>
+              <p>発表時間： セッション30分、LT5分</p>
               <div className="divider divider-neutral my-0"></div>
-              <p>発表言語：　日本語</p>
+              <p>発表言語： 日本語</p>
               <div className="divider divider-neutral my-0"></div>
-              <p>登壇形式：　オフラインでの現地登壇</p>
+              <p>登壇形式： オフラインでの現地登壇</p>
               <div className="divider divider-neutral my-0"></div>
-              <p>複数応募：　可</p>
+              <p>複数応募： 可</p>
               <div className="divider divider-neutral my-0"></div>
               <p>
-                応募方法：　
+                応募方法： 
                 <a
                   className="link link-primary"
                   href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform"
@@ -123,7 +122,7 @@ export default function Page() {
                   target="_blank"
                 >
                   こちらのフォーム
-                  <HiExternalLink className="inline-block ml-2" />
+                  <HiExternalLink className="ml-2 inline-block" />
                 </a>
                 から応募
               </p>
@@ -140,11 +139,11 @@ export default function Page() {
         />
         <h2
           id={pageAnchors.judges}
-          className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20"
+          className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
         >
           <a href={`#${pageAnchors.judges}`}>審査員紹介</a>
         </h2>
-        <p className="md:px-10 text-xl leading-relaxed">
+        <p className="text-xl leading-relaxed md:px-10">
           以下のTypeScriptコミュニティの方々に審査員として参加していただいています。
         </p>
         <div className="md:px-10">
@@ -152,7 +151,7 @@ export default function Page() {
         </div>
         <h2
           id={pageAnchors.qAndA}
-          className="text-xl lg:text-3xl mt-24 lg:mt-28 mb-10 border-l-4 pl-2 scroll-mt-20"
+          className="mb-10 mt-24 scroll-mt-20 border-l-4 pl-2 text-xl lg:mt-28 lg:text-3xl"
         >
           <a href={`#${pageAnchors.qAndA}`}>Q&A よくある質問</a>
         </h2>

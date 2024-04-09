@@ -1,12 +1,11 @@
 import Link from "next/link";
-import Container from "./ui/container";
 import { HiExternalLink } from "react-icons/hi";
-import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-first-render";
-import Cta from "./ui/cta";
-import { ticketURL } from "./lib/data";
-import { SponsorLogosSection } from "./components/SponsorLogosSection";
-import { StaffMemberSection } from "./components/StaffMemberSection";
 import { PersonalSponsorSection } from "./components/PersonalSponsorSection";
+import { SponsorLogosSection } from "./components/SponsorLogosSection";
+import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-first-render";
+import { ticketURL } from "./lib/data";
+import Container from "./ui/container";
+import Cta from "./ui/cta";
 
 const pageAnchors = {
   news: "news",
@@ -21,7 +20,7 @@ export default function Home() {
       <div className="bg-white">
         <img
           src="/banner.jpg"
-          className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]"
+          className="mx-auto h-screen max-h-[30vh] object-cover md:max-h-[55vh] lg:max-h-[60vh]"
           alt="banner image"
         />
       </div>
@@ -57,10 +56,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="max-w-4xl my-8 mx-auto pb-20">
+        <div className="mx-auto my-8 max-w-4xl pb-20">
           <div className="mb-10 lg:mt-20">
-            <div className="text-2xl font-bold mb-5 text-center">開催: 2024年5月11日</div>
-            <div className="text-xl font-bold m-auto text-center">
+            <div className="mb-5 text-center text-2xl font-bold">開催: 2024年5月11日</div>
+            <div className="m-auto text-center text-xl font-bold">
               <p>
                 <span>
                   会場：
@@ -71,7 +70,7 @@ export default function Home() {
                     target="_blank"
                   >
                     中野セントラルパーク カンファレンス
-                    <HiExternalLink className="inline-block ml-2" />
+                    <HiExternalLink className="ml-2 inline-block" />
                   </a>
                 </span>
               </p>
@@ -79,7 +78,7 @@ export default function Home() {
           </div>
           <div>
             <iframe
-              className="w-full h-96 sm:h-96 md:h-96 lg:h-96 xl:h-96 2xl:h-96 rounded-md"
+              className="h-96 w-full rounded-md sm:h-96 md:h-96 lg:h-96 xl:h-96 2xl:h-96"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12959.124108748665!2d139.6616947!3d35.7070058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f34668e0bc27%3A0x7d66caba722762c5!2z5Lit6YeO44K744Oz44OI44Op44Or44OR44O844Kv44Kr44Oz44OV44Kh44Os44Oz44K5!5e0!3m2!1sja!2sjp!4v1709223607334!5m2!1sja!2sjp"
               allowFullScreen={false}
               loading="lazy"
@@ -89,19 +88,19 @@ export default function Home() {
           <div className="my-5">
             <h2
               id={pageAnchors.news}
-              className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20"
+              className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
             >
               <a href={`#${pageAnchors.news}`}>最新情報</a>
             </h2>
-            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents sm:px-4">
+            <div className="text-info-contents mx-auto my-6 max-w-5xl text-left sm:px-4 lg:text-xl">
               <a
-                className="pl-1 link link-primary"
+                className="link link-primary pl-1"
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://twitter.com/tskaigi"
               >
                 TSKaigi公式アカウント
-                <HiExternalLink className="inline-block ml-1" />
+                <HiExternalLink className="ml-1 inline-block" />
               </a>
               で最新の情報を発信しています。
               <br />
@@ -111,13 +110,13 @@ export default function Home() {
           <div className="my-5">
             <h2
               id={pageAnchors.programInfo}
-              className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20"
+              className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
             >
               <a href={`#${pageAnchors.programInfo}`}>
-                プログラム情報&nbsp;<span className="text-error text-sm sm:text-lg">*審査中</span>
+                プログラム情報&nbsp;<span className="text-sm text-error sm:text-lg">*審査中</span>
               </a>
             </h2>
-            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents sm:px-4">
+            <div className="text-info-contents mx-auto my-6 max-w-5xl text-left sm:px-4 lg:text-xl">
               プログラムは現在審査中です。
               <br />
               公開時には公式SNSでも告知を予定しています。もうしばらくお待ち下さい。

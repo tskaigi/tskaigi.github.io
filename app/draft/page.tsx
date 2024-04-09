@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
 import { SponsorLogosSection } from "../components/SponsorLogosSection";
-import Container from "../ui/container";
 import { NavigateAnchorOnFirstRender } from "../functional/navigate-anchor-on-first-render";
+import Container from "../ui/container";
 
 const pageAnchors = {
   news: "news",
@@ -17,14 +17,14 @@ export default function DraftTopPage() {
       <div className="bg-white">
         <img
           src="/banner.jpg"
-          className="object-cover mx-auto h-screen max-h-[30vh] md:max-h-[55vh] lg:max-h-[60vh]"
+          className="mx-auto h-screen max-h-[30vh] object-cover md:max-h-[55vh] lg:max-h-[60vh]"
           alt="banner image"
         />
       </div>
       <Container>
-        <div className="max-w-4xl my-8 mx-auto pb-20">
+        <div className="mx-auto my-8 max-w-4xl pb-20">
           <div className="mb-10 lg:my-20 lg:mb-32">
-            <div className="leading-9 mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents sm:leading-loose ">
+            <div className="text-info-contents mx-auto my-6 max-w-5xl text-left leading-9 sm:leading-loose lg:text-xl ">
               TSKaigiは、
               <span className="text-2xl text-accent">
                 日本最大級のTypeScriptをテーマとした技術カンファレンス
@@ -35,8 +35,8 @@ export default function DraftTopPage() {
               <br />
               新型コロナウイルスが落ち着いた今、各所で蓄積されたノウハウが日の目を浴び、より生き生きとTSエンジニアが働ける世界を目指して、TSKaigiを開催します。
             </div>
-            <div className="text-2xl font-bold mt-10 mb-5 text-center">開催: 2024年5月11日</div>
-            <div className="text-xl font-bold m-auto text-center">
+            <div className="mb-5 mt-10 text-center text-2xl font-bold">開催: 2024年5月11日</div>
+            <div className="m-auto text-center text-xl font-bold">
               <p>
                 <span>
                   会場：
@@ -47,20 +47,20 @@ export default function DraftTopPage() {
                     target="_blank"
                   >
                     中野セントラルパーク カンファレンス
-                    <HiExternalLink className="inline-block ml-2" />
+                    <HiExternalLink className="ml-2 inline-block" />
                   </a>
                 </span>
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center lg:flex-row h-32 gap-4 lg:gap-8 my-8">
+          <div className="my-8 flex h-32 flex-col items-center justify-center gap-4 lg:flex-row lg:gap-8">
             <Link href="/sponsor" className="w-full max-w-xs">
-              <div className="btn lg:btn-lg btn-accent w-full text-center bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">
+              <div className="btn btn-accent w-full bg-gradient-to-r from-accent to-[#FFCDA8] text-center lg:btn-lg hover:opacity-90">
                 スポンサー募集
               </div>
             </Link>
             <Link href="/call-for-proposals" className="w-full max-w-xs">
-              <div className="btn lg:btn-lg btn-accent w-full text-center bg-gradient-to-r to-[#FFCDA8] from-accent hover:opacity-90">
+              <div className="btn btn-accent w-full bg-gradient-to-r from-accent to-[#FFCDA8] text-center lg:btn-lg hover:opacity-90">
                 プロポーザル募集
               </div>
             </Link>
@@ -68,19 +68,19 @@ export default function DraftTopPage() {
           <div className="my-5">
             <h2
               id={pageAnchors.news}
-              className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20"
+              className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
             >
               <a href={`#${pageAnchors.news}`}>最新情報</a>
             </h2>
-            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
+            <div className="text-info-contents mx-auto my-6 max-w-5xl text-left lg:text-xl">
               <a
-                className="pl-1 link link-primary"
+                className="link link-primary pl-1"
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://twitter.com/tskaigi"
               >
                 TSKaigi公式アカウント
-                <HiExternalLink className="inline-block ml-1" />
+                <HiExternalLink className="ml-1 inline-block" />
               </a>
               で最新の情報を発信しています。
               <br />
@@ -90,11 +90,11 @@ export default function DraftTopPage() {
           <div className="my-5">
             <h2
               id={pageAnchors.ticketInfo}
-              className="text-xl lg:text-3xl my-10 border-l-4 pl-2 scroll-mt-20"
+              className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
             >
               <a href={`#${pageAnchors.ticketInfo}`}>チケット情報</a>
             </h2>
-            <div className="mx-auto my-6 text-left lg:text-xl max-w-5xl text-info-contents">
+            <div className="text-info-contents mx-auto my-6 max-w-5xl text-left lg:text-xl">
               チケット販売は3月頃を予定しています。
               <br />
               また、開始時には公式SNSでも告知を予定しています。もうしばらくお待ち下さい。

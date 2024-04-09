@@ -197,7 +197,7 @@ const StaffCard = (props: (typeof memberInfos)[number]) => {
   const { name, image, href } = props;
 
   return (
-    <div className="w-32 pb-8 mx-auto">
+    <div className="mx-auto w-32 pb-8">
       <Link href={href} rel="noopener noreferrer" target="_blank">
         <div className="flex-col">
           <div className="avatar">
@@ -215,25 +215,25 @@ const StaffCard = (props: (typeof memberInfos)[number]) => {
 export const StaffMemberSection = () => {
   return (
     <div className="pb-20 md:pb-40">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold text-center text-accent lg:text-3xl mb-20 scroll-mt-20">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="mb-20 scroll-mt-20 text-center text-2xl font-bold text-accent lg:text-3xl">
           コアスタッフ
         </h2>
       </div>
-      <div className="mx-auto pb-20 px-2 w-5/6 md:px-20 md:w-4/6">
-        <div className="grid grid-cols-2 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4">
+      <div className="mx-auto w-5/6 px-2 pb-20 md:w-4/6 md:px-20">
+        <div className="mx-auto grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
           {coreMemberInfos.map((coreMemberInfo) => (
             <StaffCard key={coreMemberInfo.name} {...coreMemberInfo} />
           ))}
         </div>
       </div>
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold text-center text-accent lg:text-3xl mb-20 scroll-mt-20">
+      <div className="mx-auto max-w-4xl">
+        <h2 className="mb-20 scroll-mt-20 text-center text-2xl font-bold text-accent lg:text-3xl">
           スタッフ一覧
         </h2>
       </div>
-      <div className="mx-auto px-2 w-5/6 md:px-20">
-        <div className="grid grid-cols-2 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-5">
+      <div className="mx-auto w-5/6 px-2 md:px-20">
+        <div className="mx-auto grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
           {memberInfos.map((memberInfo) => (
             <StaffCard key={memberInfo.name} {...memberInfo} />
           ))}

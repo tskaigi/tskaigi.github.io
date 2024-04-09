@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { PageInfo } from "../lib/definitions";
-import { pageInfos, ticketURL } from "../lib/data";
 import { HiExternalLink } from "react-icons/hi";
+import { pageInfos, ticketURL } from "../lib/data";
+import { PageInfo } from "../lib/definitions";
 
 export default function Footer() {
   return (
-    <footer className="footer p-10 text-base-content bg-gradient-to-b to-[#0f71d3] from-neutral">
+    <footer className="footer bg-gradient-to-b from-neutral to-[#0f71d3] p-10 text-base-content">
       <aside className="link-hover">
         <a href="https://association.tskaigi.org" rel="noopener noreferrer" target="_blank">
-          <img src="/logo.svg" className="w-36 my-4" alt="logo image" />
+          <img src="/logo.svg" className="my-4 w-36" alt="logo image" />
           一般社団法人TSKaigi Association
         </a>
       </aside>
@@ -17,7 +17,7 @@ export default function Footer() {
         {pageInfos.map(
           (link: PageInfo) =>
             link.showFooter && (
-              <Link key={link.index} href={link.href} className="pl-2 link-hover">
+              <Link key={link.index} href={link.href} className="link-hover pl-2">
                 {link.title}
               </Link>
             ),
@@ -29,7 +29,7 @@ export default function Footer() {
           href={ticketURL}
           rel="noopener noreferrer"
           target="_blank"
-          className="flex items-center gap-2 pl-2 text-accent link-hover"
+          className="link-hover flex items-center gap-2 pl-2 text-accent"
         >
           チケット購入
           <HiExternalLink />
@@ -41,7 +41,7 @@ export default function Footer() {
           href={"https://twitter.com/tskaigi"}
           rel="noopener noreferrer"
           target="_blank"
-          className="flex items-center gap-2 pl-2 link-hover"
+          className="link-hover flex items-center gap-2 pl-2"
         >
           公式X(Twitter)
           <HiExternalLink />
@@ -50,7 +50,7 @@ export default function Footer() {
           href={"https://tskaigi.hatenablog.com/"}
           rel="noopener noreferrer"
           target="_blank"
-          className="flex items-center gap-2 pl-2 link-hover"
+          className="link-hover flex items-center gap-2 pl-2"
         >
           公式ブログ
           <HiExternalLink />
