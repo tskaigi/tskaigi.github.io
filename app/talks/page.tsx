@@ -1,15 +1,36 @@
+import InformationCard from "@/components/session-time-table/InformationCard";
+import SessionCard from "@/components/session-time-table/SessionCard";
+import SessionTimeTableHeader from "@/components/session-time-table/SessionTimeTableHeader";
+import { TIME_TABLE_DATA } from "@/constants";
+import { CardInfo } from "@/typs";
+
+interface SessionTimeTableRowProps {
+  timeTableRow: CardInfo[];
+}
+
+const SessionTimeTableRow = ({ timeTableRow }: SessionTimeTableRowProps) => {
+  return (
+    <div className="grid size-full grid-flow-row gap-4 md:grid-cols-10">
+      {timeTableRow.map((cardInfo, index) => {
+        if (cardInfo.type !== "session") {
+          return <InformationCard cardInfo={cardInfo} key={cardInfo.size + "-" + index} />;
+        } else {
+          return <SessionCard cardInfo={cardInfo} key={cardInfo.size + "-" + index} />;
+        }
+      })}
+    </div>
+  );
+};
+
 const SessionTimeTable = () => {
   return (
-    <div className="py-20 px-8 flex justify-center">
-      <div className="flex flex-col max-w-screen-xl w-full">
-        <div className="flex gap-4">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-        </div>
-        <div>2</div>
-        <div>3</div>
+    <div className="flex justify-center p-4 md:p-8">
+      <div className="flex w-full max-w-screen-xl flex-col gap-4">
+        <SessionTimeTableHeader />
+
+        {TIME_TABLE_DATA.map((row, index) => (
+          <SessionTimeTableRow key={index} timeTableRow={row} />
+        ))}
       </div>
     </div>
   );
