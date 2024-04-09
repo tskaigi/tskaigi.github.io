@@ -1,19 +1,20 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./constants/index.ts"
   ],
   theme: {
     colors: {
-      "white": "#fdfdfd",
+      white: "#fdfdfd",
     },
     extend: {
       backgroundImage: {
-        'my_bg_image': "url('../public/background.png')",
-      }
+        my_bg_image: "url('../public/background.png')",
+      },
     },
   },
   plugins: [require("daisyui")],
@@ -22,16 +23,16 @@ const config: Config = {
       {
         darkTheme: {
           "color-scheme": "dark",
-          "primary": "#93E7FB",
+          primary: "#93E7FB",
           "primary-content": "#384575",
-          "secondary": "#65E0B8",
-          "accent": "#ffe999",
-          "neutral": "#3b8ac4",
+          secondary: "#65E0B8",
+          accent: "#ffe999",
+          neutral: "#3b8ac4",
           "base-100": "#345da7",
-          "info": "#2563eb",
-          "success": "#81CFD1",
-          "warning": "#EFD7BB",
-          "error": "oklch(73.95% 0.19 27.33)",
+          info: "#2563eb",
+          success: "#81CFD1",
+          warning: "#EFD7BB",
+          error: "oklch(73.95% 0.19 27.33)",
         },
         // lightTheme: {
         //   "color-scheme": "light",
@@ -58,5 +59,5 @@ const config: Config = {
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
-}
-export default config
+};
+export default config;
