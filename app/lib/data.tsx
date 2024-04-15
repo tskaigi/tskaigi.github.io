@@ -746,7 +746,6 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         { href: "", text: "" },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "",
