@@ -1,5 +1,6 @@
 import { LABEL_BG_COLOR } from "@/constants";
 import { CardInfo, SessionInfo } from "@/typs";
+import Link from "next/link";
 import SessionCardLabels from "./SessionCardLabels";
 
 interface SessionProps {
@@ -8,11 +9,17 @@ interface SessionProps {
 
 // Create a session row
 const Session = ({ session }: SessionProps) => {
-  const { title, presenter } = session;
+  const { title, displayName, username } = session;
   return (
     <div className="py-2">
-      <p className="text-base font-normal text-[#040404]">{title}</p>
-      <p className="text-xs font-normal text-[#040404]">{presenter}</p>
+      {typeof username === "string" ? (
+        <Link href={`/talks/${username}`} className="hover:underline">
+          <p className="text-base font-normal text-[#040404]">{title}</p>
+        </Link>
+      ) : (
+        <p className="text-base font-normal text-[#040404]">{title}</p>
+      )}
+      <p className="text-xs font-normal text-[#040404]">{displayName}</p>
     </div>
   );
 };

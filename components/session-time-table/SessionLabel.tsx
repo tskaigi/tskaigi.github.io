@@ -1,9 +1,10 @@
 interface SessionLabelProps {
   label: string;
   bgColor: string;
+  isSessionDetail?: boolean;
 }
 
-const SessionLabel = ({ label, bgColor }: SessionLabelProps) => {
+const SessionLabel = ({ label, bgColor, isSessionDetail }: SessionLabelProps) => {
   let hiddenLabel = "";
   if (label === "トラックA" || label === "トラックB" || label === "トラックC") {
     hiddenLabel = "md:hidden";
@@ -11,7 +12,7 @@ const SessionLabel = ({ label, bgColor }: SessionLabelProps) => {
 
   return (
     <div
-      className={`flex h-5 min-w-[88px] items-center justify-center rounded-lg ${bgColor} p-2 text-xs text-neutral-900 ${hiddenLabel}`}
+      className={`flex h-5 min-w-[88px] items-center justify-center rounded-lg ${bgColor} p-2 text-xs ${!isSessionDetail && 'text-neutral-900'} ${!isSessionDetail && hiddenLabel} ${isSessionDetail && 'border'}`}
     >
       <p>{label}</p>
     </div>
