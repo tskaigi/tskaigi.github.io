@@ -17,16 +17,16 @@ const InformationCard = ({ cardInfo }: InformationCardProps) => {
 
   const contentClassNames =
     type === "time"
-      ? "text-white md:px-2 md:text-neutral-950"
+      ? "text-sm text-white md:px-2 md:text-neutral-950"
       : type === "close"
-        ? "flex justify-center text-neutral-950"
+        ? "text-base flex justify-center text-neutral-950"
         : "pb-4 pl-4 pt-2 text-neutral-950";
 
   return (
     <div className={`md:flex md:flex-col ${size} ${cardClassNames}`}>
       {track && <InformationCardLabels track={track} labels={labels} />}
       {typeof content === "string" && (
-        <div className={`text-base md:p-0 ${contentClassNames}`}>{content}</div>
+        <div className={`md:p-0 ${contentClassNames}`}>{content}</div>
       )}
       {keynoteSpeaker && (
         <p className="-mt-4 pb-4 pl-4 text-xs text-neutral-900 md:m-0 md:p-0">{keynoteSpeaker}</p>

@@ -12,7 +12,7 @@ const SessionLabel = ({ label, bgColor, isSessionDetail }: SessionLabelProps) =>
 
   return (
     <div
-      className={`flex h-5 min-w-[88px] items-center justify-center rounded-lg ${bgColor} p-2 text-xs ${!isSessionDetail && 'text-neutral-900'} ${!isSessionDetail && hiddenLabel} ${isSessionDetail && 'border'}`}
+      className={`flex h-auto min-w-[88px] items-center justify-center rounded-lg ${bgColor} p-1 text-xs ${!isSessionDetail && 'text-neutral-900'} ${!isSessionDetail && hiddenLabel} ${isSessionDetail && 'border'}`}
     >
       <p>{label}</p>
     </div>

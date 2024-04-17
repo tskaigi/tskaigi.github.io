@@ -54,7 +54,7 @@ export default function Page({ params }: SessionDetailPageProps) {
                 {detailInfo.additionalInfo}
               </Link>
             )}
-            <div className="flex gap-2 pt-2">
+            <div className="flex items-center gap-2 pt-2">
               {detailInfo.socials.github && (
                 <Link href={`https://github.com/${detailInfo.socials.github}`}>
                   <Image
