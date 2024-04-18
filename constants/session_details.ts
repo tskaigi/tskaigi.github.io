@@ -80,7 +80,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
   },
   naoya_ito: {
     title: "TypeScript 関数型バックエンド開発のリアル",
-    displayName: "伊藤 直也",
+    displayName: "伊藤直也",
     sessionAbstract: `TypeScript で飲食店向け業務システムの GraphQL バックエンド開発をしています。
     Domein Modeling Made Functional という、関数型的な実装アプローチの書籍を参考に、関数型寄りのスタイルで開発を続けています。
     
@@ -473,4 +473,497 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     },
     additionalInfo: "https://meganetaaan.jp/",
   },
+  TAMAGOKAKEG: {
+    title: 'TypeScriptから始めるVR生活',
+    displayName:'TamaG',
+    sessionAbstract: `みなさん、ResoniteというVRSNSはご存知ですか？
+    Resoniteは「Flux」という独自のビジュアルプログラミング言語を使ってメタバース内で何でも作ることが出来る、何でも創りたいエンジニアにはもってこいのVRSNSです！
+    
+    今日はそんなResonite内で使えるアイテムを、みなさんが普段使っているであろうTypeScriptを使って、型安全に開発することができるMirageXについてお話します！
+    
+    こんな人に聞いて欲しい！
+    ・メタバースって今どうなってんだって人
+    ・Resoniteって名前だけは聞いたことあるって人
+    ・TypeScriptで世界を創りたい人`,
+    role: 'エンジニア',
+    org: '株式会社ウィルゲート',
+    speakerImage: 'TAMAGOKAKE_G_.jpeg',
+    bio: `VR空間で健康体操したり、ポケモンと一緒に寝たり、インクを撒き散らしたりで非常に健康的なエンジニアです。
+    普段は TypeScript を使ってフロントエンド・バックエンドの開発をしております！
+    最近、E2E テストの導入を始めたので知見を無限に募集中です！！
+    `,
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '14:00 ~ 14:30'
+    },
+    socials: {
+      xAccount: 'TAMAGOKAKE_G_',
+      github: 'TAMAGOKAKEG'
+    },
+    additionalInfo: ''
+  },
+  euxn23: {
+    title: 'TypeScript をパワフルに使って開発したい！',
+    displayName: 'ユーン',
+    sessionAbstract: `TypeScript によって普通にアプリケーション開発をするだけでも大きな恩恵を受けられるようになってきている昨今ですが、zod をはじめとして TypeScript にはその機能を存分に生かしたパワフルなライブラリたちが多数存在します。
+    フロントだけでなくサーバサイドまで、あるいはその橋渡しとして活用できる TypeScript のライブラリたちを紹介し、フロントエンドのみならず、バックエンドでも TypeScript を使用する魅力を伝えます。
+    知っている人は知っているけど知らない人に伝えるために話します。`,
+    role: 'エンジニア',
+    org: '株式会社ドワンゴ教育事業本部',
+    speakerImage:'euxn23.png',
+    bio: 'ビルドエンジニア再開しました。ラビット小隊が好き',
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '14:00 ~ 14:30'
+    },
+    socials: {
+      xAccount: 'euxn23',
+      github: 'euxn23'
+    },
+    additionalInfo: 'https://blog.euxn.me'
+  },
+  ry0_kaga: {
+    title: 'TypeScriptでもLLMアプリケーション開発！LangChain.js入門',
+    displayName: 'r-kagaya',
+    sessionAbstract: `シンプルにLLMを使ってみるだけなら各社のAPIを叩くだけで良いですが、より込み入ったLLMアプリケーション・機能開発をする際の選択肢としてデファクトになりつつあるのがLangChainです。
+    しかし、どうしても情報がPython環境の例が多く、意外とTypeScriptでの実例などは限定的ですが、LangChainは公式でJavaScript/TypeScript版である、LangChain.jsを提供しており、実はTypeScriptはLLMアプリケーションを開発する上で便利な言語となっています。
+    (JavaやGo版は非公式で存在)
+    
+    本LTでは、TypeScriptでも使える！LangChain.js入門と称して、フロントエンド・サーバーサイド共にTypeScriptで構築されたLLMアプリケーションを開発する上で得た経験も元に、
+    TypeScriptでLangChain.jsで開発を始める上で知っておくと便利な情報をを得てもらうことを目的とします。`,
+    role: 'ソフトウェアエンジニア',
+    org: '株式会社ログラス',
+    speakerImage: 'ry0_kaga.jpeg',
+    bio: '2022年に株式会社ログラスに入社。ソフトウェアエンジニアとしてマスタ管理等の開発、イネーブルメントチームの一員として主に開発者生産性・体験の向上を中心とした横断課題の解決に取り組んだのち、現在は生成AI/LLMチームの立ち上げ',
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '14:00 ~ 14:30'
+    },
+    socials: {
+      xAccount: 'ry0_kaga',
+      github: ''
+    },
+    additionalInfo: ''
+  },
+  ytaisei_: {
+    title: 'TanStack Routerで型安全かつ効率的なルーティングを実現',
+    displayName: '安井大晟（ytaisei）',
+    sessionAbstract: `Reactを用いたSPA開発においてフレームワークの採用は時にtoo muchになります。
+    しかし、Next.jsやRemixのFiled-Basedなルーティングは開発体験が良いです。
+    
+    私たちはSPA開発においても型安全でFile-Basedなルーティングを求めています。
+    
+    今回はそのような状況においてTanStack Routerが有力な候補になることを、その特徴とメリットに触れながら解説します。
+    
+    次の特徴を紹介します。
+    
+    - 型安全でシンプルなルーティング
+    - File-Basedなルート生成
+    - バンドルサイズを軽減するCode Splitting
+    - Search Paramsによる状態管理
+    - キャッシュを備えたData Loading`,
+    role: 'フロントエンドエンジニア',
+    org: '株式会社CyberAgent',
+    speakerImage:'ytaisei_.jpeg',
+    bio: `この春から社会人1年目になったフロントエンドエンジニアです！
+    普段はReactを用いた開発を主に行っております。`,
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '14:00 ~ 14:30'
+    },
+    socials: {
+      xAccount: 'ytaisei_',
+      github: 'taisei-13046'
+    },
+    additionalInfo: ''
+  },
+  dai_shi: {
+    title: 'TypeScriptできると思ったのは勘違いだった件',
+    displayName: 'Daishi Kato (加藤大志)',
+    sessionAbstract: `OSS開発する中で知ったTypeScriptの難解な記法について紹介し、踏み込まない方が良い領域があるということを一つの実例をもとに発表します。`,
+    role: '',
+    org: '',
+    speakerImage: 'dai_shi.png',
+    bio: 'Reactライブラリの作者で、3つの状態管理ライブラリ、Zustand、Jotai、Valtio、React Server ComponentsフレームワークWakuを保守。',
+    labels: {
+      track: 'トラック3',
+      type: 'LT',
+      time: '15:20 ~ 15:50'
+    },
+    socials: {
+      xAccount: 'dai_shi',
+      github: 'dai-shi'
+    },
+    additionalInfo: 'https://daishikato.com'
+  },
+  yasaichi: {
+    title: 'Effectで作る堅牢でスケーラブルなAPIゲートウェイ',
+    displayName: 'yasaichi',
+    sessionAbstract: `# 伝えたいこと
+    - 関数型プログラミングの考え方が（その詳細に立ち入らずとも）ソフトウェア開発の実務において活用できること
+    - 上記の実現にあたり、「Effect」というライブラリが利用できること
+    
+    # トーク内容要約
+    APIゲートウェイを素直に実装すると、背後にあるマイクロサービスへのAPIリクエスト、そのレスポンスの取捨選択と合成といった主要な関心事と、ネットワークI/Oに起因する関心事が1つのコードベースに混在してしまいます。
+    後者は、具体的には非同期処理、並行処理、エラーハンドリング、リトライなどです。
+    このような構造は、機能要件がシンプルなうち問題になりませんが、複雑になるとアプリケーションの保守性の低下を招くことになるでしょう。
+    本発表では、TypeScriptの新興ライブラリ「Effect（https://effect.website）」を使って（※）これら2つの関心事を分離することで、堅牢でスケーラブルなAPIゲートウェイの実装を試みた事例を紹介します。
+    ※ ランタイムにはDeno、フレームワークにはNest.jsを使用`,
+    role: 'シニアエンジニア',
+    org: '株式会社EARTHBRAIN',
+    speakerImage: '_yasaichi.png',
+    bio: '2015年にピクスタ株式会社に新卒入社後、開発プロセスの改善や開発基盤の整備に従事。2020年より執行役員CTOを務めた後、2023年6月よりEARTHBRAINに参画。著作に「パーフェクトRuby on Rails【増補改訂版】」（共著、技術評論社）がある。',
+    labels: {
+      track: 'トラック3',
+      type: 'LT',
+      time: '15:20 ~ 15:50'
+    },
+    socials: {
+      xAccount: '_yasaichi',
+      github: 'yasaichi'
+    },
+    additionalInfo: ''
+  },
+  sugar235711: {
+    title: 'Introduction to Database Connection Management Patterns in TypeScript！LangChain.js入門',
+    displayName: "Sugar",
+    sessionAbstract: `[主題]
+    TypeScriptでのDB Connectionの管理パターンを知ること
+    
+    [題材を選んだ理由・背景]
+    マルチテナントやアクセス数の多いアプリケーションでは安定性の担保やパフォーマンス向上のためにDBのコネクション管理を効率的に行う必要があります。
+    フレームワークによってはDBのコネクション管理を隠蔽してくれるものもありますが、昨今のエッジ環境の盛り上がりから、より薄いORMの採用が増え、結果としてコネクションの管理を自分で実装する場面が増えている今、改めてDBのConnectionの効率的な管理方法を知る良い機会だと思っています。
+    
+    [内容]
+    Transactionにusingを使用することで、効率的にコネクションのリリースをする実装及び、
+    AsyncLocalStorageとTransactionを組み合わせに非同期でも必ず一意なアクセスを担保する方法も併せて紹介する予定です。`,
+    role: 'バックエンドエンジニア',
+    org:'株式会社サイバーエージェント/AI Shift',
+    speakerImage: 'sugar235711.jpeg',
+    bio: '社会に揉まれて3年目',
+    labels: {
+      track: 'トラック3',
+      type: 'LT',
+      time: '15:20 ~ 15:50'
+    },
+    socials: {
+      xAccount: 'sugar235711',
+      github: 'sugar-cat7'
+    },
+    additionalInfo: 'https://sugar-cat7.github.io/portfolio'
+  },
+  ryusaka: {
+    title: 'Prismaでスキーマ変更を行う際のベストプラクティス',
+    displayName: "ryusaka",
+    sessionAbstract: `弊社ではPrismaを用いて開発を行っています。
+    約3年間利用してきた中で、データベーススキーマに変更を加える際に実際の本番運用では気をつけなければいけないことが見えてきました。
+    Prismaと組み合わせている周辺技術を紹介しつつ、スキーマ変更時に気をつけなければならない点を説明します。具体的にはblue greenデプロイを行う際にフロントエンドとの後方互換性を保ちつつリリースする方法について述べます`,
+    role: 'エンジニアリングマネージャー',
+    org: '株式会社ミツモア プロダクト部 プロワンチーム',
+    speakerImage: 'ryusaka.jpeg',
+    bio: `株式会社ミツモアでプロワンのプロダクト責任者をしています。
+    創業4ヶ月後の2017年6月からミツモアに参画しています。`,
+    labels: {
+      track: 'トラック3',
+      type: 'LT',
+      time: '15:20 ~ 15:50'
+    },
+    socials: {
+      xAccount: '',
+      github: 'ryusaka'
+    },
+    additionalInfo: ''
+  },
+  yajihum: {
+    title: 'TypeScriptのパフォーマンス改善',
+    displayName: 'フロントエンドエンジニア',
+    sessionAbstract: `◎概要
+    TypeScriptはJavaScriptのスーパーセットとして、静的型付けと高度な型システムを提供し、大規模なプロジェクトの開発を助けています。しかし、これらの利点を最大限に活用するためには、コンパイルパフォーマンスの最適化が不可欠です。コンパイル速度を上げることでビルド時間やテスト実行時間の削減を行うことができます。今回の発表では、TypeScriptのコンパイルパフォーマンスを改善するための具体的な手法とその背後にある理論をいくつか紹介します。
+    
+    ◎内容
+    1. TypeScriptのパフォーマンスとは何か、そしてなぜそれが重要なのか
+    2. コンパイル速度を改善するための具体的な手法とその背後にある理論
+    
+    ◎このテーマを選んだ理由
+    今回の発表では、コンパイル速度を改善するための方法をいくつか紹介しますが、どれも理解がしやすくすぐに実践できるような方法です。TypeScript公式が紹介しているため信憑性が高く、かつ日本語での解説が少ないことから知らない方も多いと思っています。TypeScriptの初心者から経験者まで、普段TypeScriptを使うすべての開発者によって有益な内容です。
+    また他の理由として、私自身がまだまだ未熟ながらもフロントエンドのパフォーマンス改善に強くなりたいという思いがあります。今回の発表を通して自分の専門性を高めるはじめの一歩となることを目標にしています。`,
+    role: 'フロントエンドエンジニア',
+    org: '株式会社COMPASS',
+    speakerImage: 'yajihum.jpg',
+    bio: `2022年に慶應義塾大学商学部を卒業後、新卒未経験でWeb系受託開発会社に入社。2023年8月からフロントエンドエンジニアとして現職。小中学生を対象にした公教育で使われるプロダクト開発に携わっている。
+    最近の関心事はWebパフォーマンスとエッジコンピューティング、アクセシビリティ。「ぬいぐるみで世界平和の会」に所属。`,
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '16:40 ~ 17:10'
+    },
+    socials: {
+      xAccount: 'yajihum',
+      github: 'yajihum'
+    },
+    additionalInfo: 'https://blog.yajihum.dev/'
+  },
+  nyawach: {
+    title: "ts-morphを使ってコードリプレイスとASTへのハードルを下げる！",
+    displayName: "姫野 佑介",
+    sessionAbstract: `[解決したい課題]
+    コンポーネントライブラリのリプレイスプロジェクトにおいて、どのコンポーネントがどの程度リプレイスが終わっているのかが可視化できていない
+    
+    [トークの主題]
+    上記の課題について、ts-morph を用いてコンポーネントのリプレイス状況を簡単に可視化したときの話をしたいと考えています。
+    ・型があるので、簡単な操作ならASTをほぼ気にしないでよく、初期導入が楽だった
+    ・コード生成や機械的なリプレイスにも転用できるので、小さいところからプロジェクトやチームに浸透させると副次的なメリットがありそう
+    
+    [題材を選んだ理由]
+    ・ASTに苦手意識があったが、型があるおかげもあってそこまでハードルを上げなくていいという気づきの共有がしたい。`,
+    role: 'フロントエンドエンジニア',
+    org: 'マネーフォワード Pay事業本部',
+    speakerImage: '_hyme_.jpeg',
+    bio: 'マネーフォワード Pay事業本部にてフロントエンドエンジニアを担当しています。',
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '16:40 ~ 17:10'
+    },
+    socials: {
+      xAccount: '_hyme_',
+      github: 'nyawach'
+    },
+    additionalInfo: 'https://hyme.site/'
+  },
+  fujiyamaorange: {
+    title: 'SWC Transformerから見るTypeScript関数記述ベストプラクティス',
+    displayName: "Kaito Fujimura",
+    sessionAbstract: `ご存知のようにTypeScriptでは複数の方法で関数を定義できます。これまで機能、リーダビリティ、書きやすさなどの点からTypeScriptの関数記述方法について様々な意見が交わされ知見が共有されてきました。
+
+    この発表ではRust製SWCプラグインの開発経験をもとに、新たにTransformerの視点を加えTypeScriptの関数、特にReactコンポーネント作成時にその記述方法がどういった影響を持つのかを紹介します。
+    
+    検証のため、複数の記述方法に対応した以下のプラグインを作成します。
+    ・ 関数(コンポーネント)名を変更する
+    ・ コンポーネントのトップのHTML要素にdata-testid=”コンポーネント名”を追加する
+    ・ img要素のsrc属性がsvgファイルの際に、alt属性を自動的に空文字列にする
+    
+    そしてこれらを実行・計測し得られた興味深い結果を元にどういった条件でどの記述方法にアドバンテージがあるのかを考察します。
+    
+    最後に結果・考察を元にコードのTransformerレベルでの最適化手法を共有し、ベストプラクティスについて一味違った視点から提案を投げかけます。
+    この発表が、TypeScriptコミュニティ拡大の一助となれば幸いです。`,
+    role: 'エンジニア',
+    org: '株式会社マネーフォワード Pay事業本部',
+    speakerImage: 'fujiyamaorange.png',
+    bio: 'ジブリと音楽とウイスキーが好きです。最近は頑張ってBiomeにコントリビュートしています。',
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '16:40 ~ 17:10'
+    },
+    socials: {
+      xAccount: 'fujiyamaorange',
+      github: 'fujiyamaorange'
+    },
+    additionalInfo: 'https://fujiyamaorange.vercel.app/'
+  },
+  nkowne63: {
+    title: "TypeScriptのコード生成をつらくしないために",
+    displayName: "ノーン（nkowne63）",
+    sessionAbstract: `TypeScriptにおけるコード生成は、バックエンドサーバーとの通信やデータベースの読み書きなどの外部とのやりとりを型安全に行うための重要な手段の一つである。
+    しかし、コード生成を自分たちで実装しようとした場合にはいくつかの罠があり、それらを考慮せずに踏み抜いてしまうとメンテナンスしにくいコードベースが生成されてしまう。
+    このトークでは、コード生成について発表者がかつて遭遇したアンチパターンについて、その類型とつらさを紹介したのちに、それらを踏まえてどのような指針でコード生成を実装すればよいのかについて簡単に紹介を行う。`,
+    role: 'テックリード',
+    org: '株式会社ventus',
+    speakerImage: 'nkowne63.jpeg',
+    bio: '株式会社ventusに創業時から関わる。現在は博士課程（物理工学）に在籍しながらエンジニアをしている。',
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '16:40 ~ 17:10'
+    },
+    socials: {
+      xAccount: 'nkowne63',
+      github: 'nkowne63'
+    },
+    additionalInfo: ''
+  },
+  NoritakaIkeda: {
+    title: "TypeScriptが学生のエンジニアコミュニティ参加を促進する",
+    displayName: 'NoritakaIkeda',
+    sessionAbstract: `## トークを通して伝えたいこと
+    TypeScriptは、授業以外でプログラミングをしてこなかった学生のエンジニアコミュニティへの参加を促進します。
+    
+    授業以外で開発未経験の学生に対して、TypeScriptを用いた、ペアメンターがつくハッカソンを実施しました。その結果、全員自分のアイデアをデモとして動かせる成果物を作成することができました。
+    その過程で、ペアメンターや企業の人、開発ができる先輩学生と触れることで、新たに開発コミュニティに参加したり、インターンに参加したりと、意欲的にエンジニアコミュニティと接することができるようになりました。
+    
+    このLTでは、実際の事例とTypeScriptの具体的な恩恵を紹介します。
+    
+    ## トークの目的・効果・期待
+    
+    TypeScriptによって、エンジニアのキャリアがひらけた学生の事例や、再現性のあるノウハウを共有することで、よりコミュニティを盛り上げることを目指します。
+    
+    
+    ## 試行錯誤の結果、発見・到達したこと
+    TypeScriptとそれを取り囲むエコシステムは、初心者がつまづきやすいポイントがケアされている、大学の情報教育との親和性がある、使用している技術者が多いという特徴があります。
+    初学者が会得するハードルが低い一方で、成果物をデプロイが容易でで、自己の表現、アイデンティティの構築に効果的です。
+    
+    ## 問題の説明・解決方法の提示
+    コンピュータサイエンスを専攻している学生のうち、授業以外の経験を積んでいない人にとって、プログラミングとは、一体何が作れるかわからないことが多いです。
+    
+    自身が習った基礎が、どうゲーム開発やアプリ開発に使われるのか、見えてきません。
+    
+    そんな学生に対して、技術にTypeScriptに選定した上で、 3 日のインプット勉強会と、2 日のペアメンターハッカソンを実施した結果、全員自分のアイデアをデモとして動かせる成果物を作成できました。
+    
+    また、そこから長期プロジェクトへの参加や、コミュニティに新たに参加する学生が増えました。
+    `,
+    role: 'Software Engineer',
+    org: '株式会社ROUTE06',
+    speakerImage: 'omotidaisukijp.jpeg',
+    bio: `株式会社ROUTE06でエンジニアをしています。
+    趣味でハッカソンを主催しています。`,
+    labels: {
+      track: 'トラック1',
+      type: 'LT',
+      time: '17:20 ~ 17:40'
+    },
+    socials: {
+      xAccount: 'omotidaisukijp',
+      github: 'NoritakaIkeda'
+    },
+    additionalInfo: ''
+  },
+  AllenShintani: {
+    title: "Reactでハードウェア制御できるEdison.jsを作っている",
+    displayName: "Allen Shintani",
+    sessionAbstract: `【伝えたいこと】
+    ハードウェアの制御がtsxで書くことができるようになった！
+    
+    【Edison.jsとは】
+    TypeScript × Reactでハードウェア制御ができるOSSです。
+    既存のハードウェア制御ライブラリとの決定的な違いは宣言的UIによる制御が可能であることです。
+    C++やPythonなどを使用することが主流だった今までの常識を変える力があります。
+    
+    【1. hookがそのまま使える事】
+    例えばLEDを点滅させる場合、useStateでbooleanの値を持ちon, offを切り替えられます。
+    
+    【2. すぐに使える】
+    当たり前のように思えますが実はそうでもありません。
+    edison.jsなら現在はfirmataをアップロードしてシリアルポートで繋ぐだけで使用できます。
+    
+    【3. チーム開発に嬉しい】
+    Arduino IDEなどをメインで使用する必要もなく任意のテキストエディタが利用でき、TypeScriptのチーム開発をそのまま再現できます。
+    
+    【題材を選んだ理由】
+    Reactで操作できるという既存ライブラリとの大きな差異を素直に伝えたかった。
+    
+    【将来的実装】
+    ・ESP32を使用するためのfirmataを探す or 作る。
+    ・firmataのアップロードなしで行う方法はないか？deviceScriptという拡張機能に目を付けて模索しています。
+    ・DBとの連携を行う手順を確立してハンズオンしてみる`,
+    role: '学生',
+    org: 'INIAD.ts',
+    speakerImage: 'AllenShintani.jpeg',
+    bio: `TypeScriptを学んでいる学生です
+    Edison.jsというTypeScript × Reactでハードウェアを制御する事が出来るオープンソースを開発しています！#EdisonjsでTwitterでつぶやいて、意見や感想などをお待ちしております！`,
+    labels: {
+      track: 'トラック1',
+      type: 'LT',
+      time: '17:20 ~ 17:40'
+    },
+    socials: {
+      xAccount: 'allenganbaru',
+      github: 'AllenShintani'
+    },
+    additionalInfo: 'https://edison-js-document.vercel.app/'
+  },
+  nabeliwo: {
+    title: "多言語化対応における TypeScript の型定義を通して開発のしやすさについて考えた",
+    displayName: "nabeliwo",
+    sessionAbstract: `アプリケーションの多言語化対応をする中で起きた問題として、マークアップから日本語がなくなってしまいエンジニア以外がコードを触る際にどこをいじれば良いかがわかりづらくなってしまうということがありました。
+    この問題を型定義で解決した話を通して、TypeScript を使ってバグを減らすだけでなく、チームの開発体験も向上できるということを伝えたいと思います。`,
+    role: 'エンジニア',
+    org: '株式会社SmartHR',
+    speakerImage: 'nabeliwo.png',
+    bio: 'web frontend developer',
+    labels: {
+      track: 'トラック1',
+      type: 'LT',
+      time: '17:20 ~ 17:40'
+    },
+    socials: {
+      xAccount: 'nabeliwo',
+      github: 'nabeliwo'
+    },
+    additionalInfo: 'https://blog.nabeliwo.com'
+  },
+  ssssota: {
+    title: 'Documetation testsの恩恵',
+    displayName:'ssssota',
+    sessionAbstract: `ドキュメンテーションテストとは何者か、どのような恩恵があるのか、TypeScriptでどのように実践するのかを紹介します。
+    TypeScriptのソースコードをテストする方法は数多ありますが、ドキュメンテーションテストについて言及、実践している方は非常に少ないと思います。ドキュメンテーションテストは、その名の通りドキュメントとしてもテストとしても機能します。「型チェックなどの静的テスト」と「単体テスト」では受けられない恩恵を紹介します。
+    
+    ドキュメンテーションテストは、名前の通りドキュメントとしてテストを記述します。これにより主に以下３点の恩恵が受けられます。
+    ・ドキュメントに書かれたコードが正常に動作すること
+    　・ドキュメントが管理されず動かない例を見たことがあると思います
+    ・IDEでサンプルコードが閲覧しやすくなること
+    ・ドキュメントを書く習慣の定着及び、ドキュメントに対する心理的障壁の緩和`,
+    role: 'エンジニア',
+    org: '',
+    speakerImage: 'ssssota.jpeg',
+    bio: '気の向くままにコードを書いている。',
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '17:20 ~ 17:40'
+    },
+    socials: {
+      xAccount: 'ssssotaro',
+      github: 'ssssota'
+    },
+    additionalInfo: ''
+  },
+  k1rof18: {
+    title: "Full TypeScriptだから実現できる世界線",
+    displayName: "k-ichirof",
+    sessionAbstract: `TypeScriptを使ってフロントからバックエンドまで全てTypeScriptにすることで、どのようなメリットが得られるのかを紹介したいと思います。
+    また、Full TypeScript にするにあたって苦労した点を紹介することで、今後Full TypeScript化を目指す方々の参考になるような内容にしたいと思います。
+    
+    題材を選んだ理由:
+    Full TypeScript化することで、過去にTypeScript+Go で開発していた時に実現できなかったことを紹介することで、サーバーサイドでもTypeScriptを選定してもらうきっかけにしてもらいたいです。`,
+    role: 'ソフトウェアエンジニア',
+    org: '株式会社ユーザベース',
+    speakerImage: 'k1rof18.jpeg',
+    bio: `TypeScriptでフロントエンドもバックエンドもインフラも経験してきたエンジニア。型が好き。
+    初LTなので優しい目で見守ってください！`,
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '17:20 ~ 17:40'
+    },
+    socials: {
+      xAccount: 'k1rof18',
+      github: 'k1rof18'
+    },
+    additionalInfo: ''
+  },
+  yukukotani: {
+    title: "Real World Type Puzzle and Code Generation",
+    displayName: "Yuku Kotani",
+    sessionAbstract: `PrismaやGraphQL Code Generatorのようなツールは、複雑な型をコード生成することで、型安全なAPIを現実的なパフォーマンスで提供しています。
+    これらのツールが生成するコードを読み解き、現実世界で型パズルがどのように活用されているかを観察します。`,
+    role: 'Lead Architect',
+    org: 'Ubie, Inc.',
+    speakerImage: 'yukukotani.jpeg',
+    bio: 'Ubie株式会社のソフトウェアエンジニア。主に開発戦略・テクノロジーマネジメントを担当しています。筑波大学の情報科学類で勉強もしています。',
+    labels: {
+      track: 'トラック2',
+      type: 'LT',
+      time: '17:20 ~ 17:40'
+    },
+    socials: {
+      xAccount: 'yukukotani',
+      github: 'yukukotani'
+    },
+    additionalInfo: 'https://yuku.dev'
+  }
 };

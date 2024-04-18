@@ -27,6 +27,24 @@ export const SESSION_SPEAKERS: string[] = [
   "pizzacat83",
   "__sosukeSuzuki",
   "meganetaaan",
+  'TAMAGOKAKEG',
+  'euxn23',
+  'ry0_kaga',
+  'ytaisei_',
+  'dai_shi',
+  'yasaichi',
+  'sugar235711',
+  'ryusaka',
+  'yajihum',
+  'nyawach',
+  'fujiyamaorange',
+  'nkowne63',
+  'NoritakaIkeda',
+  'AllenShintani',
+  'nabeliwo',
+  "ssssota",
+  'k1rof18',
+  'yukukotani'
 ];
 
 export const SESSION_LIST: { [key: string]: SessionInfo } = {
@@ -39,7 +57,7 @@ export const SESSION_LIST: { [key: string]: SessionInfo } = {
   s_002: {
     type: "session",
     title: "Prisma ORMを2年運用して培ったノウハウを共有する",
-    displayName: "tockn",
+    displayName: "tockn (Takuto Sato)",
     username: "tockn",
   },
   s_003: {
@@ -111,7 +129,7 @@ export const SESSION_LIST: { [key: string]: SessionInfo } = {
   s_014: {
     type: "session",
     title: "TypeScriptとGraphQLで実現する型安全なAPI実装",
-    displayName: "hokaccha",
+    displayName: "Kazuhito Hokamura",
     username: "hokaccha",
   },
   s_015: {
@@ -145,112 +163,134 @@ export const LT_LIST: { [key: string]: SessionInfo } = {
     type: "LT",
     title: "Documetation testsの恩恵",
     displayName: "ssssota",
+    username: 'ssssota'
   },
   lt_001: {
     type: "LT",
     title: "TypeScriptから始めるVR生活",
     displayName: "TamaG",
+    username: 'TAMAGOKAKEG'
   },
   lt_002: {
     type: "LT",
     title: "TypeScript をパワフルに使って開発したい！",
     displayName: "ユーン",
+    username: 'euxn23'
   },
   lt_003: {
     type: "LT",
     title: "TypeScriptでもLLMアプリケーション開発！LangChain.js入門",
     displayName: "r-kagaya",
+    username: 'ry0_kaga'
   },
   lt_004: {
     type: "LT",
     title: "TanStack Routerで型安全かつ効率的なルーティングを実現",
-    displayName: "安井大晟",
+    displayName: "安井大晟（ytaisei）",
+    username: 'ytaisei_'
   },
   lt_005: {
     type: "LT",
     title: "TypeScriptから始めるVR生活",
     displayName: "TamaG",
+    username: 'TAMAGOKAKEG'
   },
   lt_006: {
     type: "LT",
     title: "TypeScript をパワフルに使って開発したい！",
     displayName: "ユーン",
+    username: 'euxn23'
   },
   lt_007: {
     type: "LT",
     title: "TypeScriptでもLLMアプリケーション開発！LangChain.js入門",
     displayName: "r-kagaya",
+    username: 'ry0_kaga'
   },
   lt_008: {
     type: "LT",
     title: "TanStack Routerで型安全かつ効率的なルーティングを実現",
-    displayName: "安井大晟",
+    displayName: "安井大晟（ytaisei）",
+    username: 'ytaisei_'
   },
   lt_009: {
     type: "LT",
     title: "TypeScriptできると思ったのは勘違いだった件",
-    displayName: "Daishi Kato",
+    displayName: "Daishi Kato (加藤大志)",
+    username: 'dai_shi'
   },
   lt_010: {
     type: "LT",
     title: "Effectで作る堅牢でスケーラブルなAPIゲートウェイ",
     displayName: "yasaichi",
+    username: 'yasaichi'
   },
   lt_011: {
     type: "LT",
     title:
       "Introduction to Database Connection Management Patterns in TypeScript！LangChain.js入門",
     displayName: "Sugar",
+    username: 'sugar235711'
   },
   lt_012: {
     type: "LT",
     title: "Prismaでスキーマ変更を行う際のベストプラクティス",
     displayName: "ryusaka",
+    username: 'ryusaka'
   },
   lt_013: {
     type: "LT",
     title: "TypeScriptのパフォーマンス改善",
     displayName: "やじはむ",
+    username: 'yajihum'
   },
   lt_014: {
     type: "LT",
     title: "ts-morphを使ってコードリプレイスとASTへのハードルを下げる！",
-    displayName: "ひめ",
+    displayName: "姫野 佑介",
+    username: 'nyawach'
   },
   lt_015: {
     type: "LT",
     title: "SWC Transformerから見るTypeScript関数記述ベストプラクティス",
-    displayName: "fujiyamaorange",
+    displayName: "Kaito Fujimura",
+    username: 'fujiyamaorange'
   },
   lt_016: {
     type: "LT",
     title: "TypeScriptのコード生成をつらくしないために",
-    displayName: "nkowne63rt",
+    displayName: "ノーン（nkowne63）",
+    username: 'nkowne63'
   },
   lt_017: {
     type: "LT",
     title: "TypeScriptが学生のエンジニアコミュニティ参加を促進する",
-    displayName: "かがみもち",
+    displayName: "NoritakaIkeda",
+    username: 'NoritakaIkeda'
   },
   lt_018: {
     type: "LT",
     title: "Reactでハードウェア制御できるEdison.jsを作っている",
-    displayName: "新谷アレン",
+    displayName: "Allen Shintani",
+    username: 'AllenShintani'
   },
   lt_019: {
     type: "LT",
     title: "多言語化対応における TypeScript の型定義を通して開発のしやすさについて考えた",
     displayName: "nabeliwo",
+    username: 'nabeliwo'
   },
   lt_020: {
     type: "LT",
     title: "Full TypeScriptだから実現できる世界線",
     displayName: "k-ichirof",
+    username: 'k1rof18'
   },
   lt_021: {
     type: "LT",
     title: "Real World Type Puzzle and Code Generation",
-    displayName: "小谷優空",
+    displayName: "Yuku Kotani",
+    username: 'yukukotani'
   },
 };
 
@@ -612,7 +652,7 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
     {
       type: "close",
-      content: "会場転換",
+      content: "休憩室",
       size: "md:col-span-3",
     },
   ],
@@ -627,7 +667,7 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
     {
       type: "close",
-      content: "臨時休憩室",
+      content: "休憩室",
       size: "md:col-span-6 hidden",
     },
   ],
@@ -638,12 +678,12 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     {
       type: "close",
       content: "懇親会",
-      size: "md:col-span-6 md:h-72",
+      size: "md:col-span-3 md:h-72",
     },
     {
       type: "close",
       content: "クローズ",
-      size: "md:col-span-3 hidden",
+      size: "md:col-span-6 hidden",
     },
   ],
 ];
