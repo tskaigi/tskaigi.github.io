@@ -2,6 +2,7 @@ interface SessionInfo {
   type?: string;
   title: string;
   displayName: string;
+  org?: string;
   username?: string;
 }
 

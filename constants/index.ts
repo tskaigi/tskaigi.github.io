@@ -44,7 +44,20 @@ export const SESSION_SPEAKERS: string[] = [
   'nabeliwo',
   "ssssota",
   'k1rof18',
-  'yukukotani'
+  'yukukotani',
+  'teramotodaiki',
+  'niwa_takeru',
+  '_seoink',
+  'yukimochi',
+  'm0m0i',
+  '_yasaichi',
+  'iskmsy',
+  'myfinder',
+  'r_kawamata',
+  'takuuuuuuu777',
+  'YTakahashii',
+  'yoheikikuta',
+  'drosenwasser'
 ];
 
 export const SESSION_LIST: { [key: string]: SessionInfo } = {
@@ -156,6 +169,12 @@ export const SESSION_LIST: { [key: string]: SessionInfo } = {
     displayName: "ししかわ",
     username: "meganetaaan"
   },
+  s_019: {
+    type: 'session',
+    title: 'Keynote',
+    displayName: 'Daniel Rosenwasser',
+    username: 'drosenwasser'
+  }
 };
 
 export const LT_LIST: { [key: string]: SessionInfo } = {
@@ -164,6 +183,102 @@ export const LT_LIST: { [key: string]: SessionInfo } = {
     title: "Documetation testsの恩恵",
     displayName: "ssssota",
     username: 'ssssota'
+  },
+  sp_lt_01: {
+    type: 'LT',
+    title: 'TypeScript化の旅: Helpfeelが辿った試行錯誤と成功の道のり',
+    displayName: '寺本大輝',
+    username: 'teramotodaiki',
+    org: '株式会社Helpfeel'
+  },
+  sp_lt_02: {
+    type: 'LT',
+    title: 'Coming Soon',
+    displayName: '',
+    org: '株式会社Progate'
+  },
+  sp_lt_03: {
+    type: 'LT',
+    title: 'PMF達成の立役者！Full TypeScript Architecture の選定背景と構成',
+    displayName: '丹羽 健',
+    username: 'niwa_takeru',
+    org: 'アセンド株式会社'
+  },
+  sp_lt_04: {
+    type: 'LT',
+    title: 'TypescriptでのContextualな構造化ロギングと社内全体への導入！',
+    displayName: '瀬尾 光希',
+    username: '_seoink',
+    org: 'レバレジーズ株式会社'
+  },
+  sp_lt_05: {
+    type: 'LT',
+    title: 'Typescriptで使いやすいOpenAPIの書き方',
+    displayName: '上坂 直輝',
+    username: 'yukimochi',
+    org: '株式会社ドワンゴ'
+  },
+  sp_lt_06: {
+    type: 'LT',
+    title: '生成 AI と Cloud Workstations で始めるクラウド AI ネイティブ開発',
+    displayName: 'Hiroyuki Momoi',
+    username: 'm0m0i',
+    org: 'グーグル・クラウド・ジャパン合同会社'
+  },
+  sp_lt_07: {
+    type: 'LT',
+    title: 'EARTHBRAINが挑むグローバルな課題とTypeScriptの活用事例について',
+    displayName: 'yasaichi',
+    username: '_yasaichi',
+    org: '株式会社EARTHBRAIN'
+  },
+  sp_lt_0８: {
+    type: 'LT',
+    title: 'TypeScriptで統一したアーキテクチャ',
+    displayName: '井関正也',
+    username: 'iskmsy',
+    org: '株式会社EventHub'
+  },
+  sp_lt_09: {
+    type: 'LT',
+    title: 'Coming Soon',
+    displayName: '',
+    org: '株式会社LayerX'
+  },
+  sp_lt_10: {
+    type: 'LT',
+    title: 'toggle holdingsとTSあるいはTSKaigi',
+    displayName: 'Tatsuro Hisamori',
+    username: 'myfinder',
+    org: 'トグルホールディングス株式会社'
+  },
+  sp_lt_11: {
+    type: 'LT',
+    title: '高まった熱量をぶつけられるコミュニティ活動のススメ',
+    displayName: '河又 涼',
+    username: 'r_kawamata',
+    org: '株式会社タイミー'
+  },
+  sp_lt_12: {
+    type: 'LT',
+    title: 'こんなTypescriptは嫌だ',
+    displayName: '佐藤 拓人',
+    username: 'takuuuuuuu777',
+    org: '株式会社ビットキー'
+  },
+  sp_lt_13: {
+    type: 'LT',
+    title: 'チームで挑むTypeScriptコードの漸進的改善',
+    displayName: '髙橋 佑太',
+    username: 'YTakahashii',
+    org: '株式会社メドレー'
+  },
+  sp_lt_14: {
+    type: 'LT',
+    title: 'Ubie のプロダクト開発における技術的レバレッジポイント3選',
+    displayName: 'yoheikikuta',
+    username: 'yoheikikuta',
+    org: 'Ubie株式会社'
   },
   lt_001: {
     type: "LT",
@@ -329,12 +444,11 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
   [
     { type: "time", content: "10:30 ~ 11:15", size: "md:col-span-1" },
     {
-      type: "info",
-      content: "基調講演",
+      type: "keynote",
+      content: [SESSION_LIST.s_019],
       size: "md:col-span-3",
       track: "Track1",
-      labels: ["トラック1"],
-      keynoteSpeaker: "Daniel Rosenwasser",
+      labels: ['トラック1'],
     },
     {
       type: "info",
@@ -386,21 +500,21 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     { type: "time", content: "12:10 ~ 13:10", size: "md:col-span-1" },
     {
       type: "session",
-      content: [LT_LIST.lt_001, LT_LIST.lt_002, LT_LIST.lt_003, LT_LIST.lt_004],
+      content: [LT_LIST.sp_lt_01, LT_LIST.sp_lt_02,LT_LIST.sp_lt_03],
       size: "md:col-span-3",
       track: "Track1",
       labels: ["トラック1", "スポンサーLT"],
     },
     {
       type: "session",
-      content: [LT_LIST.lt_001, LT_LIST.lt_002, LT_LIST.lt_003, LT_LIST.lt_004],
+      content: [LT_LIST.sp_lt_04, LT_LIST.sp_lt_05, LT_LIST.sp_lt_06, LT_LIST.sp_lt_07, LT_LIST.sp_lt_0８],
       size: "md:col-span-3",
       track: "Track2",
       labels: ["トラック2", "スポンサーLT"],
     },
     {
       type: "session",
-      content: [LT_LIST.lt_001, LT_LIST.lt_002, LT_LIST.lt_003, LT_LIST.lt_004],
+      content: [LT_LIST.sp_lt_09, LT_LIST.sp_lt_10, LT_LIST.sp_lt_11, LT_LIST.sp_lt_12, LT_LIST.sp_lt_13, LT_LIST.sp_lt_14],
       size: "md:col-span-3",
       track: "Track3",
       labels: ["トラック3", "スポンサーLT"],

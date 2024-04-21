@@ -9,7 +9,8 @@ interface SessionProps {
 
 // Create a session row
 const Session = ({ session }: SessionProps) => {
-  const { title, displayName, username } = session;
+  const { title, displayName, username, org } = session;
+
   return (
     <div className="py-2">
       {typeof username === "string" ? (
@@ -19,7 +20,7 @@ const Session = ({ session }: SessionProps) => {
       ) : (
         <p className="text-base font-normal text-[#040404]">{title}</p>
       )}
-      <p className="mt-1 text-xs font-normal text-[#040404]">{displayName}</p>
+      <p className="mt-1 text-xs font-normal text-[#040404]">{org !== undefined ? `${org} ${displayName}`: displayName}</p>
     </div>
   );
 };

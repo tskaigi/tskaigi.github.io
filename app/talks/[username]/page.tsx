@@ -35,14 +35,14 @@ export default function Page({ params }: SessionDetailPageProps) {
           <p>{detailInfo.sessionAbstract}</p>
         </div>
         <div className="md:flex md:gap-8">
-          <Image
+          {detailInfo.speakerImage && <Image
             className="size-20 rounded-full"
             src={`/speaker_images/${detailInfo.speakerImage}`}
             width={80}
             height={80}
             alt={`${username}_image`}
             unoptimized
-          />
+          />}
           <div>
             <div className="text-base font-bold">{detailInfo.displayName}</div>
             <p className="text-sm">{`${detailInfo.role} ${slash} ${detailInfo.org}`}</p>
