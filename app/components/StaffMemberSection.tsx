@@ -63,7 +63,7 @@ const memberInfos = [
   },
   {
     name: "yuto nagai",
-    image: "noimage.png",
+    image: "nagai.jpg",
     href: "https://twitter.com/yut0naga1",
   },
   {
