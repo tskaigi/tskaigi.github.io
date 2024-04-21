@@ -191,6 +191,11 @@ const memberInfos = [
     image: "noimage.png",
     href: "https://twitter.com/omotidaisukijp",
   },
+  {
+    name: "TecSoc",
+    image: "tecsoc.jpg",
+    href: "https://twitter.com/tec2soc",
+  },
 ];
 
 const StaffCard = (props: (typeof memberInfos)[number]) => {
