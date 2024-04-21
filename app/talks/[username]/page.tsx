@@ -41,6 +41,7 @@ export default function Page({ params }: SessionDetailPageProps) {
             width={80}
             height={80}
             alt={`${username}_image`}
+            unoptimized
           />
           <div>
             <div className="text-base font-bold">{detailInfo.displayName}</div>
@@ -62,12 +63,13 @@ export default function Page({ params }: SessionDetailPageProps) {
                     width={24}
                     height={24}
                     alt="github_link"
+                    unoptimized
                   />
                 </Link>
               )}
               {detailInfo.socials.xAccount && (
                 <Link href={`https://twitter.com/${detailInfo.socials.xAccount}`}>
-                  <Image src={"/social_logos/logo.svg"} width={22} height={22} alt="twitter_link" />
+                  <Image src={"/social_logos/logo.svg"} width={22} height={22} alt="twitter_link" unoptimized/>
                 </Link>
               )}
             </div>
