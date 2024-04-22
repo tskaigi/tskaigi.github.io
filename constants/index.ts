@@ -416,11 +416,9 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
   [
     { type: "time", content: "09:30 ~ 10:25", size: "md:col-span-1" },
     {
-      type: "info",
+      type: "close",
       content: "開場",
       size: "md:col-span-9",
-      track: "Track1",
-      labels: ["トラック1"],
     },
   ],
   // 10:25 ~ 10:30
