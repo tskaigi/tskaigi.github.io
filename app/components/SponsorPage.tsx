@@ -140,7 +140,7 @@ export default function SponsorPage({ showDraft }: SponsorPageProps) {
               <span className=" pr-4 text-accent lg:text-6xl">
                 TSKaigi 2024 <br />
               </span>
-              はスポンサーを募集しています
+              スポンサーの募集は終了しました。
             </h1>
           </div>
         </div>
@@ -156,12 +156,16 @@ export default function SponsorPage({ showDraft }: SponsorPageProps) {
               ></iframe>
             </div>
           </div>
-          <Cta
-            subLink="https://forms.gle/aZnQSAz8UEwdiitj7"
-            subLinkText="お問い合わせ"
-            mainLink="https://forms.gle/ERgp32CP8q7ZTc8h8"
-            mainLinkText="応募する"
-          />
+          <div className="flex justify-center mt-8">
+            <a
+              href="https://forms.gle/aZnQSAz8UEwdiitj7"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="link link-primary"
+            >
+              <div className="btn lg:btn-md ">お問い合わせ</div>
+            </a>
+          </div>
         </div>
       </Container>
     </div>

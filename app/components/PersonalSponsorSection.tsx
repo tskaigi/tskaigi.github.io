@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const PersonalSponsors = [
   {
-    name: "大石 貴則 (おおいし)",
-    image: "	https://pbs.twimg.com/profile_images/1671084783122907139/ovRsFdyJ_400x400.jpg",
+    name: "おおいし (bicstone)",
+    image: "https://pbs.twimg.com/profile_images/1671084783122907139/ovRsFdyJ_400x400.jpg",
     href: "https://bicstone.me/",
   },
   {

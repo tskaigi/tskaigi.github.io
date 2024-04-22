@@ -759,7 +759,6 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
         { href: "", text: "" },
       ],
       addPadding: false,
-      draft: true,
     },
     {
       name: "",
@@ -839,6 +838,18 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
       description: ``,
       logoImage: "/sponsors/kaminashi.png",
       logoLink: "https://corp.kaminashi.jp/",
+      links: [
+        { href: "", text: "" },
+        { href: "", text: "" },
+        { href: "", text: "" },
+      ],
+      addPadding: false,
+    },
+    {
+      name: "株式会社ケップル",
+      description: ``,
+      logoImage: "/sponsors/kepple.svg",
+      logoLink: "https://corp.kepple.co.jp/",
       links: [
         { href: "", text: "" },
         { href: "", text: "" },

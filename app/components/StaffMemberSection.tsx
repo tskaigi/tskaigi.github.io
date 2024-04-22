@@ -63,7 +63,7 @@ const memberInfos = [
   },
   {
     name: "yuto nagai",
-    image: "noimage.png",
+    image: "nagai.jpg",
     href: "https://twitter.com/yut0naga1",
   },
   {
@@ -190,6 +190,11 @@ const memberInfos = [
     name: "かがみもち",
     image: "noimage.png",
     href: "https://twitter.com/omotidaisukijp",
+  },
+  {
+    name: "TecSoc",
+    image: "tecsoc.jpg",
+    href: "https://twitter.com/tec2soc",
   },
 ];
 
