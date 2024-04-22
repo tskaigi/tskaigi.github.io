@@ -46,6 +46,7 @@ export const SESSION_SPEAKERS: string[] = [
   'k1rof18',
   'yukukotani',
   'teramotodaiki',
+  'MakotoShimazu',
   'niwa_takeru',
   '_seoink',
   'yukimochi',
@@ -83,7 +84,7 @@ export const SESSION_LIST: { [key: string]: SessionInfo } = {
   s_004: {
     type: "session",
     title: "TypeScript 関数型バックエンド開発のリアル",
-    displayName: "伊藤直也",
+    displayName: "伊藤 直也",
     username: "naoya_ito",
   },
   s_005: {
@@ -194,8 +195,9 @@ export const LT_LIST: { [key: string]: SessionInfo } = {
   },
   sp_lt_02: {
     type: 'LT',
-    title: 'Coming Soon',
-    displayName: '',
+    title: '新サービス Progate Path の演習で TypeScript を採用して見えた教材観点からの利点と課題',
+    displayName: '島津 真人',
+    username: 'MakotoShimazu',
     org: '株式会社Progate'
   },
   sp_lt_03: {
