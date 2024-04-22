@@ -3,7 +3,6 @@ import { NavigateAnchorOnFirstRender } from "../functional/navigate-anchor-on-fi
 import { sponsorList } from "../lib/data";
 import { SponsorList } from "../lib/definitions";
 import Container from "../ui/container";
-import Cta from "../ui/cta";
 
 const pageAnchors = {
   news: "news",
