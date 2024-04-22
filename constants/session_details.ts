@@ -38,7 +38,9 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
   Himenon: {
     title: "TypeScript ASTを利用したコードジェネレーターの実装入門",
     displayName: "Himenon",
-    sessionAbstract: `TypeScriptのAPIにはAbstract Syntax Tree（抽象構文木。以降ASTと省略）に関するAPIがあります。抽象構文木は静的解析やSyntax Highlight、Code Generatorなど普段我々が利用しているツールの内部で利用されています。本発表では、TypeScriptのASTに入門しつつ、その応用であるコードの自動生成をどうやって実現していくか、OpenAPI Code Generatorのライブラリを4年間維持し続けている経験から紹介していきます。`,
+    sessionAbstract: `TypeScriptのAPIにはAbstract Syntax Tree（抽象構文木。以降ASTと省略）に関するAPIがあります。抽象構文木は静的解析やSyntax Highlight、Code Generatorなど普段我々が利用しているツールの内部で利用されています。
+
+    本発表では、TypeScriptのASTに入門しつつ、その応用であるコードの自動生成をどうやって実現していくか、OpenAPI Code Generatorのライブラリを4年間維持し続けている経験から紹介していきます。`,
     role: "ソフトウェアエンジニア",
     org: "株式会社ハイヤールー",
     speakerImage: "Himenon.jpeg",
@@ -80,7 +82,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
   },
   naoya_ito: {
     title: "TypeScript 関数型バックエンド開発のリアル",
-    displayName: "伊藤直也",
+    displayName: "伊藤 直也",
     sessionAbstract: `TypeScript で飲食店向け業務システムの GraphQL バックエンド開発をしています。
     Domein Modeling Made Functional という、関数型的な実装アプローチの書籍を参考に、関数型寄りのスタイルで開発を続けています。
     
@@ -497,7 +499,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '14:00 ~ 14:30'
+      time: '14:00~14:30'
     },
     socials: {
       xAccount: 'TAMAGOKAKE_G_',
@@ -518,7 +520,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '14:00 ~ 14:30'
+      time: '14:00~14:30'
     },
     socials: {
       xAccount: 'euxn23',
@@ -542,7 +544,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '14:00 ~ 14:30'
+      time: '14:00~14:30'
     },
     socials: {
       xAccount: 'ry0_kaga',
@@ -575,7 +577,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '14:00 ~ 14:30'
+      time: '14:00~14:30'
     },
     socials: {
       xAccount: 'ytaisei_',
@@ -594,7 +596,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '15:20 ~ 15:50'
+      time: '15:20~15:50'
     },
     socials: {
       xAccount: 'dai_shi',
@@ -605,11 +607,11 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
   yasaichi: {
     title: 'Effectで作る堅牢でスケーラブルなAPIゲートウェイ',
     displayName: 'yasaichi',
-    sessionAbstract: `# 伝えたいこと
+    sessionAbstract: `伝えたいこと
     - 関数型プログラミングの考え方が（その詳細に立ち入らずとも）ソフトウェア開発の実務において活用できること
     - 上記の実現にあたり、「Effect」というライブラリが利用できること
     
-    # トーク内容要約
+    トーク内容要約
     APIゲートウェイを素直に実装すると、背後にあるマイクロサービスへのAPIリクエスト、そのレスポンスの取捨選択と合成といった主要な関心事と、ネットワークI/Oに起因する関心事が1つのコードベースに混在してしまいます。
     後者は、具体的には非同期処理、並行処理、エラーハンドリング、リトライなどです。
     このような構造は、機能要件がシンプルなうち問題になりませんが、複雑になるとアプリケーションの保守性の低下を招くことになるでしょう。
@@ -622,7 +624,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '15:20 ~ 15:50'
+      time: '15:20~15:50'
     },
     socials: {
       xAccount: '_yasaichi',
@@ -650,7 +652,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '15:20 ~ 15:50'
+      time: '15:20~15:50'
     },
     socials: {
       xAccount: 'sugar235711',
@@ -672,7 +674,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '15:20 ~ 15:50'
+      time: '15:20~15:50'
     },
     socials: {
       xAccount: '',
@@ -700,7 +702,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '16:40 ~ 17:10'
+      time: '16:40~17:10'
     },
     socials: {
       xAccount: 'yajihum',
@@ -728,7 +730,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '16:40 ~ 17:10'
+      time: '16:40~17:10'
     },
     socials: {
       xAccount: '_hyme_',
@@ -759,7 +761,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '16:40 ~ 17:10'
+      time: '16:40~17:10'
     },
     socials: {
       xAccount: 'fujiyamaorange',
@@ -780,7 +782,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '16:40 ~ 17:10'
+      time: '16:40~17:10'
     },
     socials: {
       xAccount: 'nkowne63',
@@ -825,7 +827,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック1',
       type: 'LT',
-      time: '17:20 ~ 17:40'
+      time: '17:20~17:40'
     },
     socials: {
       xAccount: 'omotidaisukijp',
@@ -869,7 +871,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック1',
       type: 'LT',
-      time: '17:20 ~ 17:40'
+      time: '17:20~17:40'
     },
     socials: {
       xAccount: 'allenganbaru',
@@ -889,7 +891,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック1',
       type: 'LT',
-      time: '17:20 ~ 17:40'
+      time: '17:20~17:40'
     },
     socials: {
       xAccount: 'nabeliwo',
@@ -915,7 +917,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '17:20 ~ 17:40'
+      time: '17:20~17:40'
     },
     socials: {
       xAccount: 'ssssotaro',
@@ -939,7 +941,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '17:20 ~ 17:40'
+      time: '17:20~17:40'
     },
     socials: {
       xAccount: 'k1rof18',
@@ -959,7 +961,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '17:20 ~ 17:40'
+      time: '17:20~17:40'
     },
     socials: {
       xAccount: 'yukukotani',
@@ -978,7 +980,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック1',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: 'teramotodaiki',
@@ -999,7 +1001,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック1',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: 'niwa_takeru',
@@ -1018,7 +1020,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: '_seoink',
@@ -1040,7 +1042,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: '',
@@ -1060,7 +1062,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: '',
@@ -1080,7 +1082,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: '_yasaichi',
@@ -1105,7 +1107,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック2',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: 'iskmsy',
@@ -1124,7 +1126,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: 'Toshi11274',
@@ -1147,7 +1149,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: 'myfinder',
@@ -1168,7 +1170,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: 'r_kawamata',
@@ -1187,7 +1189,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: 'takuuuuuuu777',
@@ -1210,7 +1212,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: 'Wakeupsloth',
@@ -1229,7 +1231,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: 'トラック3',
       type: 'LT',
-      time: '12:10 ~ 13:10'
+      time: '12:10~13:10'
     },
     socials: {
       xAccount: 'yohei_kikuta',
@@ -1248,7 +1250,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     labels: {
       track: "トラック１",
       type: "セッション",
-      time: "10:30 ~ 11:15",
+      time: "10:30~11:15",
     },
     socials: {
       xAccount: 'drosenwasser',

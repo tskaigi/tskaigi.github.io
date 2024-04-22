@@ -83,7 +83,7 @@ export const SESSION_LIST: { [key: string]: SessionInfo } = {
   s_004: {
     type: "session",
     title: "TypeScript 関数型バックエンド開発のリアル",
-    displayName: "伊藤直也",
+    displayName: "伊藤 直也",
     username: "naoya_ito",
   },
   s_005: {
