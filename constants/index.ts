@@ -497,6 +497,16 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
+  // 12:00 ~ 12:10
+  [
+    { type: "time", content: "12:00 ~ 12:10", size: "" },
+    {
+      type: "close",
+      content: "昼食配布",
+      size: "md:col-span-9",
+    },
+  ],
+
   // 12:10 ~ 13:10
   [
     { type: "time", content: "12:10 ~ 13:10", size: "md:col-span-1" },
