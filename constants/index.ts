@@ -345,7 +345,7 @@ export const LT_LIST: { [key: string]: SessionInfo } = {
   lt_011: {
     type: "LT",
     title:
-      "Introduction to Database Connection Management Patterns in TypeScript！LangChain.js入門",
+      "Introduction to Database Connection Management Patterns in TypeScript",
     displayName: "Sugar",
     username: 'sugar235711'
   },

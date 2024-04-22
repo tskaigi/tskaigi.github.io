@@ -629,7 +629,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: ''
   },
   sugar235711: {
-    title: 'Introduction to Database Connection Management Patterns in TypeScript！LangChain.js入門',
+    title: 'Introduction to Database Connection Management Patterns in TypeScript',
     displayName: "Sugar",
     sessionAbstract: `[主題]
     TypeScriptでのDB Connectionの管理パターンを知ること
