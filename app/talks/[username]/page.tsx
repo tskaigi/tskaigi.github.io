@@ -45,7 +45,7 @@ export default function Page({ params }: SessionDetailPageProps) {
           />}
           <div>
             <div className="text-base font-bold">{detailInfo.displayName}</div>
-            <p className="text-sm">{`${detailInfo.role} ${slash} ${detailInfo.org}`}</p>
+            <p className="text-sm">{`${detailInfo.org} ${slash} ${detailInfo.role}`}</p>
             <p className="whitespace-pre-line pt-4 text-base">{detailInfo.bio}</p>
             {detailInfo.additionalInfo && (
               <Link
