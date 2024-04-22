@@ -108,21 +108,6 @@ export default function Home() {
               フォローやリツイートでの参加表明・応援をお願いします。
             </div>
           </div>
-          <div className="my-5">
-            <h2
-              id={pageAnchors.programInfo}
-              className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
-            >
-              <a href={`#${pageAnchors.programInfo}`}>
-                プログラム情報&nbsp;<span className="text-sm text-error sm:text-lg">*審査中</span>
-              </a>
-            </h2>
-            <div className="text-info-contents mx-auto my-6 max-w-5xl text-left sm:px-4 lg:text-xl">
-              プログラムは現在審査中です。
-              <br />
-              公開時には公式SNSでも告知を予定しています。もうしばらくお待ち下さい。
-            </div>
-          </div>
         </div>
       </Container>
       <SponsorLogosSection anchor={pageAnchors.sponsor} showDraft={false} />
