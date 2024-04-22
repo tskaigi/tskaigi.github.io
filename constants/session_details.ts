@@ -682,7 +682,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
   },
   yajihum: {
     title: 'TypeScriptのパフォーマンス改善',
-    displayName: 'フロントエンドエンジニア',
+    displayName: 'やじはむ',
     sessionAbstract: `◎概要
     TypeScriptはJavaScriptのスーパーセットとして、静的型付けと高度な型システムを提供し、大規模なプロジェクトの開発を助けています。しかし、これらの利点を最大限に活用するためには、コンパイルパフォーマンスの最適化が不可欠です。コンパイル速度を上げることでビルド時間やテスト実行時間の削減を行うことができます。今回の発表では、TypeScriptのコンパイルパフォーマンスを改善するための具体的な手法とその背後にある理論をいくつか紹介します。
     
