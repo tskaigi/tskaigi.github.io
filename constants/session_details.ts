@@ -969,6 +969,27 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     },
     additionalInfo: 'https://yuku.dev'
   },
+  MakotoShimazu: {
+    title: '新サービス Progate Path の演習で TypeScript を採用して見えた教材観点からの利点と課題',
+    displayName: '島津 真人',
+    sessionAbstract:`株式会社Progateは、初心者向けのプログラミング学習サービス Progate に加え、より一歩先の学習が出来る新サービス、 Progate Path を2022年11月にリリースしました。Progate Path は「実務感」をテーマに、自分の環境でプロダクト開発に携わる経験が積める学習サービスになっています。ローンチ前には、この「実務感」のある演習の試作を作ろうと、OSSのPRを模した課題を作成したり、オープンになっているインターンプロジェクトを模したプロジェクトを用意するなど、様々な形で試作を行いました。
+
+    本セッションでは、試作する中で見えてきた「実務感」の定義などを紹介しつつ、TypeScriptでは教材としてどういう点が優れており、逆にどういった点が課題となっているかを紹介します。`,
+    role: 'CTO',
+    org: '株式会社Progate',
+    speakerImage: 'MakotoShimazu.jpeg',
+    bio: '東大大学院を卒業した後、GoogleのChromeチームでSoftware Engineerとして５年間勤務。テックリードとして Service Worker の実装をする傍ら、STEP教育コースの講師なども行っていた。 2021年4月より Progate に入社し、Progate Pathのリードを経て 2023年4月よりCTOに就任。「いろんなアイデアを爆速で形にしつづける」をスローガンに、いい組織をつくれるよう日々試行錯誤をしています。',
+    labels: {
+      track: 'トラック1',
+      type: 'LT',
+      time: '12:10~13:10'
+    },
+    socials: {
+      xAccount: 'MakotoShimazu',
+      github: 'makotoshimazu'
+    },
+    additionalInfo: ''
+  },
   teramotodaiki: {
     title: 'TypeScript化の旅: Helpfeelが辿った試行錯誤と成功の道のり',
     displayName: '寺本大輝',
