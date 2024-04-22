@@ -367,14 +367,16 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     TypeScriptを対象としたLinterとして、typescript-eslint, biome, oxcなどが挙げられます。  
     現在、最も普及しているtypescript-eslintは、tscから得られた型情報を利用して、await-thenable や no-floating-promiseなどのlint ruleを提供しています。型情報を用いるlint ruleは、バグの早期発見などの観点で有用です。
     
-    一方、Rust製であるbiomeやoxcなどは、Lint速度 (パフォーマンス) を特徴の1つとしています。RustからTypeScriptの型情報を取得・利用する方法はいくつかの選択肢があります。1. stcやeznoといったRust製TypeScript Compilerの利用, 2. 部分的な型推論のためのサブセットの構築, 3. TypeScriptに追加される可能性のある '--isolatedDeclarations' option の利用（ただしリリース時期未定）
+    一方、Rust製であるbiomeやoxcなどは、Lint速度 (パフォーマンス) を特徴の1つとしています。RustからTypeScriptの型情報を取得・利用する方法はいくつかの選択肢があります。
+    1. stcやeznoといったRust製TypeScript Compilerの利用, 
+    2. 部分的な型推論のためのサブセットの構築, 
+    3. TypeScriptに追加される可能性のある '--isolatedDeclarations' option の利用（ただしリリース時期未定）
     
     これらの情報を整理し、Rust製Linterの型情報の模索過程について共有します。`,
     role: "Software Engineer",
     org: "",
     speakerImage: "unvalley.jpeg",
-    bio: `A software engineer who writes Rust and TypeScript. Biome core member.
-    株式会社LIXILで、アプリケーションエキスパートとして認証基盤周りの開発をメインで行っています。また、個人的にはZennなどで技術記事を書くなど、外部発信もしています。`,
+    bio: `A software engineer who writes Rust and TypeScript. Biome core member.`,
     labels: {
       track: "トラック2",
       type: "セッション",
