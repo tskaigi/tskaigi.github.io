@@ -2,6 +2,7 @@ import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
 import { PersonalSponsorSection } from "./components/PersonalSponsorSection";
 import { SponsorLogosSection } from "./components/SponsorLogosSection";
+import { StaffMemberSection } from "./components/StaffMemberSection";
 import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-first-render";
 import { ticketURL } from "./lib/data";
 import Container from "./ui/container";
