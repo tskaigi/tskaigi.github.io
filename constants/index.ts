@@ -52,6 +52,7 @@ export const SESSION_SPEAKERS: string[] = [
   'm0m0i',
   '_yasaichi',
   'iskmsy',
+  'Toshi1127',
   'myfinder',
   'r_kawamata',
   'takuuuuuuu777',
@@ -241,8 +242,9 @@ export const LT_LIST: { [key: string]: SessionInfo } = {
   },
   sp_lt_09: {
     type: 'LT',
-    title: 'Coming Soon',
-    displayName: '',
+    title: 'エンジニアの技術的な意思決定を支えるADR - LayerXの活用事例',
+    displayName: '松本駿',
+    username: 'Toshi1127',
     org: '株式会社LayerX'
   },
   sp_lt_10: {

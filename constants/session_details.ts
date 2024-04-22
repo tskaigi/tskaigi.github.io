@@ -1112,6 +1112,25 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     },
     additionalInfo: 'https://even-eko.hatenablog.com/'
   },
+  Toshi1127: {
+    title: 'エンジニアの技術的な意思決定を支えるADR - LayerXの活用事例',
+    displayName: '松本駿',
+    sessionAbstract: `LayerXでは各々のエンジニアが技術的な意思決定をしていくことを推進しており、これを維持するために技術的な意思決定の記録をADR(Architecture Decision Record)として残しています。当セッションでは、TypeScriptに関する実例を交えて、ADRを書くことのメリットやLayerXの技術意思決定の文化を紹介します。`,
+    role: 'ソフトウェアエンジニア',
+    org: '株式会社LayerX',
+    speakerImage: 'Toshi1127.jpeg',
+    bio: '2019年に株式会社リクルートへ新卒として入社し、不動産情報サイトの新機能開発やパフォーマンス改善、技術的負債の解消などを経験。2022年2月に株式会社LayerXに入社し、バクラクシリーズのバックエンドからフロントエンドまで幅広く担当。現在はテックリードとしてプロダクト開発を牽引しています。',
+    labels: {
+      track: 'トラック3',
+      type: 'LT',
+      time: '12:10 ~ 13:10'
+    },
+    socials: {
+      xAccount: 'Toshi11274',
+      github: 'Toshi1127'
+    },
+    additionalInfo: ''
+  },
   myfinder: {
     title: 'toggle holdingsとTSあるいはTSKaigi',
     displayName: 'Tatsuro Hisamori',
