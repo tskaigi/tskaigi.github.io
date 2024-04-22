@@ -433,7 +433,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     このセッションでは、それらの新しいツールとPrettierを比較しながら、JavaScriptのコードフォーマッタの未来について議論します。`,
     role: "エンジニア",
     org: "ユビー株式会社",
-    speakerImage: "__sosukeSuzuki.jpeg",
+    speakerImage: "__sosukesuzuki.jpeg",
     bio: `筑波大学情報学群の学生で、Ubie株式会社のソフトウェアエンジニア。「テクノロジーで人々を適切な医療に案内する」ことを目指して、症状検索エンジン「ユビー」の開発に尽力している。副業としてサイボウズフロントエンドエキスパートチームに所属。また、JavaScriptのコードフォーマッタであるPrettierのメンテナや、JavaScriptのトランスパイラBabelのコミッタとしても活躍中。`,
     labels: {
       track: "トラック1",
