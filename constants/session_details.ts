@@ -909,7 +909,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     ・ドキュメントを書く習慣の定着及び、ドキュメントに対する心理的障壁の緩和`,
     role: 'エンジニア',
     org: '',
-    speakerImage: 'ssssota.jpeg',
+    speakerImage: 'ssssota.png',
     bio: '気の向くままにコードを書いている。',
     labels: {
       track: 'トラック2',
