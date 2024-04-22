@@ -1,6 +1,5 @@
-import React from "react";
-import { sponsorList } from "../lib/data";
 import Link from "next/link";
+import { sponsorList } from "../lib/data";
 import { SponsorData, SponsorList } from "../lib/definitions";
 
 const sponsorVariants = {
@@ -54,10 +53,10 @@ type SponsorLogosSectionProps = {
 export const SponsorLogosSection = ({ showDraft, anchor }: SponsorLogosSectionProps) => {
   return (
     <div className="py-20">
-      <div className="max-w-4xl mx-auto">
+      <div className="mx-auto max-w-4xl">
         <h2
           id={anchor}
-          className="text-2xl font-bold text-center text-accent lg:text-3xl mb-20 scroll-mt-20"
+          className="mb-20 scroll-mt-20 text-center text-2xl font-bold text-accent lg:text-3xl"
         >
           <a href="#sponsor">TSKaigi 2024 スポンサー各社</a>
         </h2>
@@ -99,25 +98,20 @@ const PlanSponsors = ({
 }) => {
   return (
     <div>
-      <h3 className={`text-2xl font-bold divider ${sponsorVariants[plan].divider}`}>
+      <h3 className={`divider text-2xl font-bold ${sponsorVariants[plan].divider}`}>
         {`${plan}${!isOptionalPlan ? " Sponsors" : ""}`}
       </h3>
       <div
-        className={`grid my-8 px-4 sm:px-6 lg:px-8 mt-8 mb-12 grid-cols-1 ${sponsorVariants[plan].gridSize}`}
+        className={`my-8 mb-12 grid grid-cols-1 px-4 sm:px-6 lg:px-8 ${sponsorVariants[plan].gridSize}`}
       >
         {sponsors.map((sponsor) => (
-          <Link
-            key={sponsor.name}
-            href={sponsor.logoLink}
-            rel="noopener"
-            target="_blank"
-          >
+          <Link key={sponsor.name} href={sponsor.logoLink} rel="noopener" target="_blank">
             <div
               key={sponsor.name}
-              className={`text-sm my-auto rounded-md md:rounded-lg bg-white mb-4 hover:opacity-80 hover:shadow-md transition duration-300 ease-in-out overflow-hidden ${sponsorVariants[plan].height} ${["Platinum", "Gold"].includes(plan) ? (sponsor.addPadding ? "p-8" : "p-2") : sponsor.addPadding ? "p-2" : "p-1"}`}
+              className={`my-auto mb-4 overflow-hidden rounded-md bg-white text-sm transition duration-300 ease-in-out hover:opacity-80 hover:shadow-md md:rounded-lg ${sponsorVariants[plan].height} ${["Platinum", "Gold"].includes(plan) ? (sponsor.addPadding ? "p-8" : "p-2") : sponsor.addPadding ? "p-2" : "p-1"}`}
             >
               <img
-                className="p-4 h-full w-full object-contain"
+                className="size-full object-contain p-4"
                 src={sponsor.logoImage}
                 alt={sponsor.name}
               />

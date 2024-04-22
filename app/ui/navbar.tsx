@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import { PageInfo } from "../lib/definitions";
 import { acountLink, pageInfos } from "../lib/data";
+import { PageInfo } from "../lib/definitions";
 
 const closeSideBar = () => {
   const drawerElement = document.getElementById("my-drawer-3") as HTMLInputElement;
@@ -12,17 +12,17 @@ const closeSideBar = () => {
 
 export default function NavBar() {
   return (
-    <div className="bg-base-200 z-50 text-base-content sticky top-0 h-16 w-full bg-gradient-to-tl from-base-300 from-80% to-base-100">
+    <div className="sticky top-0 z-50 h-16 w-full bg-base-200 bg-gradient-to-tl from-base-300 from-80% to-base-100 text-base-content">
       <div className="drawer drawer-end z-50">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          <div className="w-full navbar">
-            <div className="flex-1 px-2 mx-2">
+          <div className="navbar w-full">
+            <div className="mx-2 flex-1 px-2">
               <Link href={"/"}>
-                <img src="/logo.svg" className="w-24"></img>
+                <img src="/logo.svg" className="w-24" alt="logo"></img>
               </Link>
             </div>
-            <div className="flex-none hidden lg:block">
+            <div className="hidden flex-none lg:block">
               <ul className="menu menu-horizontal">
                 {pageInfos.map((link: PageInfo) => {
                   const LinkIcon = link.icon;
@@ -30,7 +30,7 @@ export default function NavBar() {
                     link.showNavbar && (
                       <li key={link.index}>
                         <Link href={link.href}>
-                          <LinkIcon className="w-5 h-5" />
+                          <LinkIcon className="size-5" />
                           {link.title}
                         </Link>
                       </li>
@@ -47,7 +47,7 @@ export default function NavBar() {
                       >
                         <li>
                           <Link href={link.href} rel="noopener noreferrer" target="_blank">
-                            <LinkIcon className="w-5 h-5" />
+                            <LinkIcon className="size-5" />
                             {link.title}
                           </Link>
                         </li>
@@ -67,7 +67,7 @@ export default function NavBar() {
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
-                  className="inline-block w-6 h-6 stroke-current"
+                  className="inline-block size-6 stroke-current"
                 >
                   <path
                     strokeLinecap="round"
@@ -88,14 +88,14 @@ export default function NavBar() {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="bg-gradient-to-b from-[#363541] via-base-300 to-base-200 menu p-4 w-64 sm:w-80 min-h-full">
+          <ul className="menu min-h-full w-64 bg-gradient-to-b from-[#363541] via-base-300 to-base-200 p-4 sm:w-80">
             {pageInfos.map((link: PageInfo) => {
               const LinkIcon = link.icon;
               return (
                 link.showNavbar && (
                   <li key={link.index}>
                     <Link href={link.href} onClick={closeSideBar}>
-                      <LinkIcon className="w-4 h-4" />
+                      <LinkIcon className="size-4" />
                       {link.title}
                     </Link>
                   </li>
@@ -109,7 +109,7 @@ export default function NavBar() {
                   <div key={link.index} className={link.emphasis ? "indicator text-accent" : ""}>
                     <li>
                       <Link href={link.href} rel="noopener noreferrer" target="_blank">
-                        <LinkIcon className="w-4 h-4" />
+                        <LinkIcon className="size-4" />
                         {link.title}
                       </Link>
                     </li>
