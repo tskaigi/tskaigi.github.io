@@ -1013,7 +1013,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     role: 'エンジニア',
     org: 'レバレジーズ株式会社',
     speakerImage: '_seoink.jpeg',
-    bio: 'Pino+AsyncLocalStorageによってStructured LoggingとContextual Loggingを同時に達成し、レバテックのサーバーに全体導入した話と、それによる効果や導入時に気をつけておけばよかったことをお話します。',
+    bio: 'ドメインモデリングに興味があります！',
     labels: {
       track: 'トラック2',
       type: 'LT',
