@@ -42,11 +42,11 @@ export const pageInfos: PageInfo[] = [
   },
   {
     index: 4,
-    title: "セッション",
+    title: "タイムテーブル",
     showNavbar: true,
     showFooter: true,
     description:
-      "TSKaigiのセッションリストです。",
+      "TSKaigiのタイムテーブルです。",
     icon: (GiPublicSpeaker as IconType),
     href: "/talks",
   },
