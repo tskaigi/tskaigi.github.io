@@ -798,9 +798,9 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
     },
   ],
 
-  // 18:10 ~ 19:40
+  // 18:10 ~ 20:00
   [
-    { type: "time", content: "18:10 ~ 19:40", size: "" },
+    { type: "time", content: "18:10 ~ 20:00", size: "" },
     {
       type: "close",
       content: "懇親会",
