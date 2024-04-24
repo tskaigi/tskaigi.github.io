@@ -183,7 +183,7 @@ const memberInfos = [
   },
   {
     name: "ツノ",
-    image: "noimage.png",
+    image: "2nofa11.jpg",
     href: "https://twitter.com/2nofa11",
   },
   {
@@ -195,6 +195,11 @@ const memberInfos = [
     name: "TecSoc",
     image: "tecsoc.jpg",
     href: "https://twitter.com/tec2soc",
+  },
+  {
+    name: "ジン",
+    image: "saitou_jin.jpg",
+    href: "https://twitter.com/Jin_pro_01",
   },
 ];
 
