@@ -516,7 +516,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     role: 'エンジニア',
     org: '株式会社ドワンゴ教育事業本部',
     speakerImage:'euxn23.png',
-    bio: 'ビルドエンジニア再開しました。ラビット小隊が好き',
+    bio: 'ビルドエンジニア再開しました。RABBIT 小隊が好き',
     labels: {
       track: 'トラック2',
       type: 'LT',
