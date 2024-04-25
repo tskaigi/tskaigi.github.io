@@ -1050,10 +1050,10 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: 'https://my.prairie.cards/u/seoink'
   },
   yukimochi: {
-    title: 'Typescriptで使いやすいOpenAPIの書き方',
+    title: 'TypeScriptで使いやすいOpenAPIの書き方',
     displayName: '上坂 直輝',
     sessionAbstract: `弊社のN予備校ではマイクロサービス構成を採用しており、API開発ではOpenAPIやgRPCのprotoファイルを事前に作成し、これに基づきサーバーとクライアントを同時に開発しています。
-    OpenAPIの書き方を工夫することで、Typescript用のより正確な型定義が生成できるようになり、開発を効率化することができます。
+    OpenAPIの書き方を工夫することで、TypeScript用のより正確な型定義が生成できるようになり、開発を効率化することができます。
     このセッションでは、そのようなOpenAPIの書き方の工夫についていくつか紹介します。`,
     role: 'エンジニア',
     org: '株式会社ドワンゴ',

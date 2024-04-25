@@ -216,7 +216,7 @@ export const LT_LIST: { [key: string]: SessionInfo } = {
   },
   sp_lt_05: {
     type: 'LT',
-    title: 'Typescriptで使いやすいOpenAPIの書き方',
+    title: 'TypeScriptで使いやすいOpenAPIの書き方',
     displayName: '上坂 直輝',
     username: 'yukimochi',
     org: '株式会社ドワンゴ'
