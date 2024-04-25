@@ -209,14 +209,14 @@ export const LT_LIST: { [key: string]: SessionInfo } = {
   },
   sp_lt_04: {
     type: 'LT',
-    title: 'TypescriptでのContextualな構造化ロギングと社内全体への導入！',
+    title: 'TypeScriptでのContextualな構造化ロギングと社内全体への導入！',
     displayName: '瀬尾 光希',
     username: '_seoink',
     org: 'レバレジーズ株式会社'
   },
   sp_lt_05: {
     type: 'LT',
-    title: 'Typescriptで使いやすいOpenAPIの書き方',
+    title: 'TypeScriptで使いやすいOpenAPIの書き方',
     displayName: '上坂 直輝',
     username: 'yukimochi',
     org: '株式会社ドワンゴ'
@@ -265,7 +265,7 @@ export const LT_LIST: { [key: string]: SessionInfo } = {
   },
   sp_lt_12: {
     type: 'LT',
-    title: 'こんなTypescriptは嫌だ',
+    title: 'こんなTypeScriptは嫌だ',
     displayName: '佐藤 拓人',
     username: 'takuuuuuuu777',
     org: '株式会社ビットキー'

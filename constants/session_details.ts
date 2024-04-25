@@ -1031,7 +1031,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: 'https://product.career.ascendlogi.co.jp/'
   },
   _seoink: {
-    title: 'TypescriptでのContextualな構造化ロギングと社内全体への導入！',
+    title: 'TypeScriptでのContextualな構造化ロギングと社内全体への導入！',
     displayName: '瀬尾 光希',
     sessionAbstract: `Pino+AsyncLocalStorageによってStructured LoggingとContextual Loggingを同時に達成し、レバテックのサーバーに全体導入した話と、それによる効果や導入時に気をつけておけばよかったことをお話します。`,
     role: 'エンジニア',
@@ -1050,10 +1050,10 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: 'https://my.prairie.cards/u/seoink'
   },
   yukimochi: {
-    title: 'Typescriptで使いやすいOpenAPIの書き方',
+    title: 'TypeScriptで使いやすいOpenAPIの書き方',
     displayName: '上坂 直輝',
     sessionAbstract: `弊社のN予備校ではマイクロサービス構成を採用しており、API開発ではOpenAPIやgRPCのprotoファイルを事前に作成し、これに基づきサーバーとクライアントを同時に開発しています。
-    OpenAPIの書き方を工夫することで、Typescript用のより正確な型定義が生成できるようになり、開発を効率化することができます。
+    OpenAPIの書き方を工夫することで、TypeScript用のより正確な型定義が生成できるようになり、開発を効率化することができます。
     このセッションでは、そのようなOpenAPIの書き方の工夫についていくつか紹介します。`,
     role: 'エンジニア',
     org: '株式会社ドワンゴ',
@@ -1200,9 +1200,9 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: ''
   },
   takuuuuuuu777: {
-    title: 'こんなTypescriptは嫌だ',
+    title: 'こんなTypeScriptは嫌だ',
     displayName: '佐藤 拓人',
-    sessionAbstract: 'Typescriptの開発で感じるちょっとした「つらみ」とそこから得られる「知見」を簡単ですが紹介します',
+    sessionAbstract: 'TypeScriptの開発で感じるちょっとした「つらみ」とそこから得られる「知見」を簡単ですが紹介します',
     role: 'テックリード',
     org: '株式会社ビットキー',
     speakerImage: 'takuuuuuuu777.jpeg',

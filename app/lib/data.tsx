@@ -504,7 +504,7 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
 
 レバテックの開発組織では、その発展を支えるために、ユーザー体験や業務プロセスを含めたアーキテクチャの見直しと、事業拡大とともに積み重なった技術的負債の解消を進めています。
 
-フロントエンド/バックエンドともにTypescriptを使用しており、o11yやTiDBなど新しい技術も積極的に導入しています。`,
+フロントエンド/バックエンドともにTypeScriptを使用しており、o11yやTiDBなど新しい技術も積極的に導入しています。`,
       logoImage: "/sponsors/levtech.jpg",
       logoLink: "https://speakerdeck.com/leverages/levtech-hui-she-shao-jie-zi-liao-enziniazhi-xiang-ke",
       links: [
@@ -603,7 +603,7 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
     {
       name: "株式会社メディカルフォース",
       description: `「これからの産業の成長プロセスを合理化する」をビジョンに、現在は自由診療クリニック向けのオールインワンSaaSを提供しています。自由診療以外にも、今後の成長が期待されながら産業ならではの専門性・複雑性の高さから整備が行われず、今のテクノロジーの発展の恩恵が受けられていない産業は数多くあります。その中に深く入り込み、産業と共に会社としての成長を生み出すことを目指しています。
-弊社のプロダクトは一貫してTypescriptを活用しており、また経営陣にエンジニアが2名おり技術的な意思決定に強い組織です。`,
+弊社のプロダクトは一貫してTypeScriptを活用しており、また経営陣にエンジニアが2名おり技術的な意思決定に強い組織です。`,
       logoImage: "/sponsors/medicalforce_horizontal.png",
       logoLink: "https://corp.medical-force.com/",
       links: [
