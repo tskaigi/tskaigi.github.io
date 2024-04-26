@@ -163,8 +163,8 @@ const memberInfos = [
   },
   {
     name: "ujita",
-    image: "noimage.png",
-    href: "",
+    image: "ujita.jpg",
+    href: "https://twitter.com/uji_t4",
   },
   {
     name: "jamashita",
