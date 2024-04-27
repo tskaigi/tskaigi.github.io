@@ -21,7 +21,7 @@ export default function Home() {
       <div className="bg-white">
         <img
           src="/banner.jpg"
-          className="mx-auto h-screen max-h-[30vh] object-cover md:max-h-[55vh] lg:max-h-[60vh]"
+          className="mx-auto h-full max-h-[30vh] object-cover md:max-h-[55vh] lg:max-h-[60vh]"
           alt="banner image"
         />
       </div>
