@@ -31,10 +31,10 @@ export default function Home() {
             <div className="mx-auto max-w-4xl lg:pt-8">
               <div>
                 <Link href={`#${pageAnchors.news}`} className="inline-flex space-x-6">
-                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-white">
+                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 ring-1 ring-inset hover:ring-white">
                     新着情報
                   </span>
-                  <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6">
+                  <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 hover:underline">
                     2024-03-01 &gt;
                   </span>
                 </Link>
