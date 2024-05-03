@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { FaBook, FaHandshake } from "react-icons/fa";
+import { FaBook, FaHandshake, FaBan } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
@@ -13,7 +13,7 @@ export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
 export const pageInfos: PageInfo[] = [
   {
     index: 1,
-    showNavbar: true,
+    showNavbar: false,
     showFooter: true,
     title: "Home",
     description: "",
@@ -49,6 +49,15 @@ export const pageInfos: PageInfo[] = [
       "TSKaigiのタイムテーブルです。",
     icon: (GiPublicSpeaker as IconType),
     href: "/talks",
+  },
+  {
+    index: 5,
+    title: "行動規範",
+    showNavbar: true,
+    showFooter: true,
+    description: "TSKaigiの行動規範です。参加にあったって必ずご一読ください。",
+    icon: (FaBan as IconType),
+    href: "/code-of-conduct",
   },
 ];
 
