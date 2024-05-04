@@ -785,7 +785,7 @@ export const TIME_TABLE_DATA: CardInfo[][] = [
 
   // 17:40 ~ 18:10
   [
-    { type: "time", content: "17:50 ~ 18:10", size: "" },
+    { type: "time", content: "17:40 ~ 18:10", size: "" },
     {
       type: "close",
       content: "転換",
