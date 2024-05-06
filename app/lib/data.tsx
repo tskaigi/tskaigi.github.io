@@ -59,6 +59,15 @@ export const pageInfos: PageInfo[] = [
     icon: (FaBan as IconType),
     href: "/code-of-conduct",
   },
+  {
+    index: 6,
+    title: "特定商取引法に基づく表記",
+    showNavbar: false,
+    showFooter: true,
+    description: "特定商取引法に基づく表記",
+    icon: (FaBan as IconType),
+    href: "/specific-commercial",
+  }
 ];
 
 export const acountLink: AcountLink[] = [
