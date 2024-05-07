@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+type Member = {
+  name: string;
+  image: string;
+  href: `http://${string}` | `https://${string}` | "";
+};
+
 const coreMemberInfos = [
   {
     name: "takezoux2",
@@ -21,7 +27,7 @@ const coreMemberInfos = [
     image: "niwa-takeru.jpg",
     href: "https://twitter.com/niwa_takeru",
   },
-];
+] satisfies Member[];
 
 const memberInfos = [
   {
@@ -211,9 +217,9 @@ const memberInfos = [
     image: "ken7253.png",
     href: "https://twitter.com/ken7253_",
   },
-];
+] satisfies Member[];
 
-const StaffCard = (props: (typeof memberInfos)[number]) => {
+const StaffCard = (props: Member) => {
   const { name, image, href } = props;
 
   return (
