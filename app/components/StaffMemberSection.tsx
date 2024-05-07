@@ -206,6 +206,11 @@ const memberInfos = [
     image: "pr1v4t3.jpg",
     href: "https://twitter.com/pr1v4t3_",
   },
+  {
+    name: "ken7253",
+    image: "ken7253.png",
+    href: "https://twitter.com/ken7253_",
+  },
 ];
 
 const StaffCard = (props: (typeof memberInfos)[number]) => {
