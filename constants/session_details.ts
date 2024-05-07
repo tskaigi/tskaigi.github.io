@@ -900,8 +900,8 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: 'https://blog.nabeliwo.com'
   },
   ssssota: {
-    title: 'Documetation testsの恩恵',
-    displayName:'ssssota',
+    title: 'Documentation testsの恩恵',
+    displayName: 'ssssota',
     sessionAbstract: `ドキュメンテーションテストとは何者か、どのような恩恵があるのか、TypeScriptでどのように実践するのかを紹介します。
     TypeScriptのソースコードをテストする方法は数多ありますが、ドキュメンテーションテストについて言及、実践している方は非常に少ないと思います。ドキュメンテーションテストは、その名の通りドキュメントとしてもテストとしても機能します。「型チェックなどの静的テスト」と「単体テスト」では受けられない恩恵を紹介します。
     
