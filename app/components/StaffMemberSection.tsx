@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PropsWithChildren } from "react";
 
 type Member = {
   name: string;
@@ -219,12 +220,22 @@ const memberInfos = [
   },
 ] satisfies Member[];
 
+const LinkOrBox = (props: PropsWithChildren<{ href: Member["href"] }>) => {
+  return props.href === "" ? (
+    <div>{props.children}</div>
+  ) : (
+    <Link href={props.href} rel="noopener noreferrer" target="_blank">
+      {props.children}
+    </Link>
+  );
+};
+
 const StaffCard = (props: Member) => {
   const { name, image, href } = props;
 
   return (
     <div className="mx-auto w-32 pb-8">
-      <Link href={href} rel="noopener noreferrer" target="_blank">
+      <LinkOrBox href={href}>
         <div className="flex-col">
           <div className="avatar">
             <div className="rounded-full">
@@ -233,7 +244,7 @@ const StaffCard = (props: Member) => {
           </div>
           <p className="text-center">{name}</p>
         </div>
-      </Link>
+      </LinkOrBox>
     </div>
   );
 };
