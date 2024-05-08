@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
 import { PersonalSponsorSection } from "./components/PersonalSponsorSection";
 import { SponsorLogosSection } from "./components/SponsorLogosSection";
