@@ -9,7 +9,7 @@ import Container from "./ui/container";
 import Cta from "./ui/cta";
 
 const pageAnchors = {
-  news: "news",
+  map: "map",
   programInfo: "program-info",
   sponsor: "sponsor",
 };
@@ -29,16 +29,6 @@ export default function Home() {
         <div className="relative isolate overflow-hidden">
           <div className="mx-auto max-w-7xl ">
             <div className="mx-auto max-w-4xl lg:pt-8">
-              <div>
-                <Link href={`#${pageAnchors.news}`} className="inline-flex space-x-6">
-                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 ring-1 ring-inset hover:ring-white">
-                    新着情報
-                  </span>
-                  <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 hover:underline">
-                    2024-03-01 &gt;
-                  </span>
-                </Link>
-              </div>
               <h1 className="mt-4 text-2xl font-bold tracking-tight text-accent">
                 日本最大級の
                 <br />
@@ -86,26 +76,20 @@ export default function Home() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div className="my-5">
-            <h2
-              id={pageAnchors.news}
-              className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
-            >
-              <a href={`#${pageAnchors.news}`}>最新情報</a>
-            </h2>
-            <div className="text-info-contents mx-auto my-6 max-w-5xl text-left sm:px-4 lg:text-xl">
-              <a
-                className="link link-primary pl-1"
-                rel="noopener noreferrer"
-                target="_blank"
-                href="https://twitter.com/tskaigi"
-              >
-                TSKaigi公式アカウント
-                <HiExternalLink className="ml-1 inline-block" />
-              </a>
-              で最新の情報を発信しています。
-              <br />
-              フォローやリツイートでの参加表明・応援をお願いします。
+          <div className="mt-40">
+            <div className="mx-auto max-w-4xl">
+              <h2 className="m-20 scroll-mt-20 text-center text-2xl font-bold text-accent lg:text-3xl">
+                 会場マップ
+              </h2>
+            </div>
+            <div className="mx-auto my-6 max-w-5xl text-left sm:px-4 lg:text-xl">
+              <div className="hidden md:block">
+                <img src="/pc_map.png" alt="PC用会場図" />
+              </div>
+              <div className="md:hidden">
+                <img className="" src="/1f_map.png" alt="1F会場図" />
+                <img className="" src="/b1f_map.png" alt="B1F会場図" />
+              </div>
             </div>
           </div>
         </div>
