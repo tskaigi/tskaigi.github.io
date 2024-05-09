@@ -10,7 +10,7 @@ type Member = {
 const coreMemberInfos = [
   {
     name: "takezoux2",
-    image: "takezoux2.jpg",
+    image: "takezoux2-2.jpg",
     href: "https://twitter.com/takezoux2",
   },
   {

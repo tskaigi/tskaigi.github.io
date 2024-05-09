@@ -229,7 +229,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     (正式名称はEffectですが、TSをつけないとGooglabilityが低いので発表中ではEffect-TSと呼称します)`,
     role: "テクノロジー戦略室 室長",
     org: "レバレジーズ株式会社",
-    speakerImage: "takezoux2.jpeg",
+    speakerImage: "takezoux2.jpg",
     bio: `レバレジーズ株式会社 テクノロジー戦略室室長、一般社団法人TSKaigi Association 代表理事、一般社団法人Japan Scala Association理事。
     2009年に東京大学大学院農学生命科学科を修了後、芸者東京を経て2020年にレバレジーズに入社。フルスタックの技術力を背景に、レバレジーズ社の技術の向上とエンジニア組織文化の構築に取り組む。また、ScalaMatsuriやTSKaigiの運営にも関わり、技術コミュニティを盛り上げる活動も行っている。`,
     labels: {
@@ -478,8 +478,8 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: "https://meganetaaan.jp/",
   },
   TAMAGOKAKEG: {
-    title: 'TypeScriptから始めるVR生活',
-    displayName:'TamaG',
+    title: "TypeScriptから始めるVR生活",
+    displayName: "TamaG",
     sessionAbstract: `みなさん、ResoniteというVRSNSはご存知ですか？
     Resoniteは「Flux」という独自のビジュアルプログラミング言語を使ってメタバース内で何でも作ることが出来る、何でも創りたいエンジニアにはもってこいのVRSNSです！
     
@@ -489,72 +489,72 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     ・メタバースって今どうなってんだって人
     ・Resoniteって名前だけは聞いたことあるって人
     ・TypeScriptで世界を創りたい人`,
-    role: 'エンジニア',
-    org: '株式会社ウィルゲート',
-    speakerImage: 'TAMAGOKAKE_G_.jpeg',
+    role: "エンジニア",
+    org: "株式会社ウィルゲート",
+    speakerImage: "TAMAGOKAKE_G_.jpeg",
     bio: `VR空間で健康体操したり、ポケモンと一緒に寝たり、インクを撒き散らしたりで非常に健康的なエンジニアです。
     普段は TypeScript を使ってフロントエンド・バックエンドの開発をしております！
     最近、E2E テストの導入を始めたので知見を無限に募集中です！！
     `,
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '14:00~14:30'
+      track: "トラック2",
+      type: "LT",
+      time: "14:00~14:30",
     },
     socials: {
-      xAccount: 'TAMAGOKAKE_G_',
-      github: 'TAMAGOKAKEG'
+      xAccount: "TAMAGOKAKE_G_",
+      github: "TAMAGOKAKEG",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   euxn23: {
-    title: 'TypeScript をパワフルに使って開発したい！',
-    displayName: 'ユーン',
+    title: "TypeScript をパワフルに使って開発したい！",
+    displayName: "ユーン",
     sessionAbstract: `TypeScript によって普通にアプリケーション開発をするだけでも大きな恩恵を受けられるようになってきている昨今ですが、zod をはじめとして TypeScript にはその機能を存分に生かしたパワフルなライブラリたちが多数存在します。
     フロントだけでなくサーバサイドまで、あるいはその橋渡しとして活用できる TypeScript のライブラリたちを紹介し、フロントエンドのみならず、バックエンドでも TypeScript を使用する魅力を伝えます。
     知っている人は知っているけど知らない人に伝えるために話します。`,
-    role: 'エンジニア',
-    org: '株式会社ドワンゴ教育事業本部',
-    speakerImage:'euxn23.png',
-    bio: 'ビルドエンジニア再開しました。RABBIT 小隊が好き',
+    role: "エンジニア",
+    org: "株式会社ドワンゴ教育事業本部",
+    speakerImage: "euxn23.png",
+    bio: "ビルドエンジニア再開しました。RABBIT 小隊が好き",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '14:00~14:30'
+      track: "トラック2",
+      type: "LT",
+      time: "14:00~14:30",
     },
     socials: {
-      xAccount: 'euxn23',
-      github: 'euxn23'
+      xAccount: "euxn23",
+      github: "euxn23",
     },
-    additionalInfo: 'https://blog.euxn.me'
+    additionalInfo: "https://blog.euxn.me",
   },
   ry0_kaga: {
-    title: 'TypeScriptでもLLMアプリケーション開発！LangChain.js入門',
-    displayName: 'r-kagaya',
+    title: "TypeScriptでもLLMアプリケーション開発！LangChain.js入門",
+    displayName: "r-kagaya",
     sessionAbstract: `シンプルにLLMを使ってみるだけなら各社のAPIを叩くだけで良いですが、より込み入ったLLMアプリケーション・機能開発をする際の選択肢としてデファクトになりつつあるのがLangChainです。
     しかし、どうしても情報がPython環境の例が多く、意外とTypeScriptでの実例などは限定的ですが、LangChainは公式でJavaScript/TypeScript版である、LangChain.jsを提供しており、実はTypeScriptはLLMアプリケーションを開発する上で便利な言語となっています。
     (JavaやGo版は非公式で存在)
     
     本LTでは、TypeScriptでも使える！LangChain.js入門と称して、フロントエンド・サーバーサイド共にTypeScriptで構築されたLLMアプリケーションを開発する上で得た経験も元に、
     TypeScriptでLangChain.jsで開発を始める上で知っておくと便利な情報をを得てもらうことを目的とします。`,
-    role: 'ソフトウェアエンジニア',
-    org: '株式会社ログラス',
-    speakerImage: 'ry0_kaga.jpeg',
-    bio: '2022年に株式会社ログラスに入社。ソフトウェアエンジニアとしてマスタ管理等の開発、イネーブルメントチームの一員として主に開発者生産性・体験の向上を中心とした横断課題の解決に取り組んだのち、現在は生成AI/LLMチームの立ち上げ',
+    role: "ソフトウェアエンジニア",
+    org: "株式会社ログラス",
+    speakerImage: "ry0_kaga.jpeg",
+    bio: "2022年に株式会社ログラスに入社。ソフトウェアエンジニアとしてマスタ管理等の開発、イネーブルメントチームの一員として主に開発者生産性・体験の向上を中心とした横断課題の解決に取り組んだのち、現在は生成AI/LLMチームの立ち上げ",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '14:00~14:30'
+      track: "トラック2",
+      type: "LT",
+      time: "14:00~14:30",
     },
     socials: {
-      xAccount: 'ry0_kaga',
-      github: ''
+      xAccount: "ry0_kaga",
+      github: "",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   ytaisei_: {
-    title: 'TanStack Routerで型安全かつ効率的なルーティングを実現',
-    displayName: '安井大晟（ytaisei）',
+    title: "TanStack Routerで型安全かつ効率的なルーティングを実現",
+    displayName: "安井大晟（ytaisei）",
     sessionAbstract: `Reactを用いたSPA開発においてフレームワークの採用は時にtoo muchになります。
     しかし、Next.jsやRemixのFiled-Basedなルーティングは開発体験が良いです。
     
@@ -569,44 +569,44 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     - バンドルサイズを軽減するCode Splitting
     - Search Paramsによる状態管理
     - キャッシュを備えたData Loading`,
-    role: 'フロントエンドエンジニア',
-    org: '株式会社CyberAgent',
-    speakerImage:'ytaisei_.jpeg',
+    role: "フロントエンドエンジニア",
+    org: "株式会社CyberAgent",
+    speakerImage: "ytaisei_.jpeg",
     bio: `この春から社会人1年目になったフロントエンドエンジニアです！
     普段はReactを用いた開発を主に行っております。`,
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '14:00~14:30'
+      track: "トラック2",
+      type: "LT",
+      time: "14:00~14:30",
     },
     socials: {
-      xAccount: 'ytaisei_',
-      github: 'taisei-13046'
+      xAccount: "ytaisei_",
+      github: "taisei-13046",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   dai_shi: {
-    title: 'TypeScriptできると思ったのは勘違いだった件',
-    displayName: 'Daishi Kato (加藤大志)',
+    title: "TypeScriptできると思ったのは勘違いだった件",
+    displayName: "Daishi Kato (加藤大志)",
     sessionAbstract: `OSS開発する中で知ったTypeScriptの難解な記法について紹介し、踏み込まない方が良い領域があるということを一つの実例をもとに発表します。`,
-    role: '',
-    org: '',
-    speakerImage: 'dai_shi.png',
-    bio: 'Reactライブラリの作者で、3つの状態管理ライブラリ、Zustand、Jotai、Valtio、React Server ComponentsフレームワークWakuを保守。',
+    role: "",
+    org: "",
+    speakerImage: "dai_shi.png",
+    bio: "Reactライブラリの作者で、3つの状態管理ライブラリ、Zustand、Jotai、Valtio、React Server ComponentsフレームワークWakuを保守。",
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '15:20~15:50'
+      track: "トラック3",
+      type: "LT",
+      time: "15:20~15:50",
     },
     socials: {
-      xAccount: 'dai_shi',
-      github: 'dai-shi'
+      xAccount: "dai_shi",
+      github: "dai-shi",
     },
-    additionalInfo: 'https://daishikato.com'
+    additionalInfo: "https://daishikato.com",
   },
   yasaichi: {
-    title: 'Effectで作る堅牢でスケーラブルなAPIゲートウェイ',
-    displayName: 'yasaichi',
+    title: "Effectで作る堅牢でスケーラブルなAPIゲートウェイ",
+    displayName: "yasaichi",
     sessionAbstract: `伝えたいこと
     - 関数型プログラミングの考え方が（その詳細に立ち入らずとも）ソフトウェア開発の実務において活用できること
     - 上記の実現にあたり、「Effect」というライブラリが利用できること
@@ -617,23 +617,23 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     このような構造は、機能要件がシンプルなうち問題になりませんが、複雑になるとアプリケーションの保守性の低下を招くことになるでしょう。
     本発表では、TypeScriptの新興ライブラリ「Effect（https://effect.website）」を使って（※）これら2つの関心事を分離することで、堅牢でスケーラブルなAPIゲートウェイの実装を試みた事例を紹介します。
     ※ ランタイムにはDeno、フレームワークにはNest.jsを使用`,
-    role: 'シニアエンジニア',
-    org: '株式会社EARTHBRAIN',
-    speakerImage: '_yasaichi.png',
-    bio: '2015年にピクスタ株式会社に新卒入社後、開発プロセスの改善や開発基盤の整備に従事。2020年より執行役員CTOを務めた後、2023年6月よりEARTHBRAINに参画。著作に「パーフェクトRuby on Rails【増補改訂版】」（共著、技術評論社）がある。',
+    role: "シニアエンジニア",
+    org: "株式会社EARTHBRAIN",
+    speakerImage: "_yasaichi.png",
+    bio: "2015年にピクスタ株式会社に新卒入社後、開発プロセスの改善や開発基盤の整備に従事。2020年より執行役員CTOを務めた後、2023年6月よりEARTHBRAINに参画。著作に「パーフェクトRuby on Rails【増補改訂版】」（共著、技術評論社）がある。",
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '15:20~15:50'
+      track: "トラック3",
+      type: "LT",
+      time: "15:20~15:50",
     },
     socials: {
-      xAccount: '_yasaichi',
-      github: 'yasaichi'
+      xAccount: "_yasaichi",
+      github: "yasaichi",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   sugar235711: {
-    title: 'Introduction to Database Connection Management Patterns in TypeScript',
+    title: "Introduction to Database Connection Management Patterns in TypeScript",
     displayName: "Sugar",
     sessionAbstract: `[主題]
     TypeScriptでのDB Connectionの管理パターンを知ること
@@ -645,46 +645,46 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     [内容]
     Transactionにusingを使用することで、効率的にコネクションのリリースをする実装及び、
     AsyncLocalStorageとTransactionを組み合わせに非同期でも必ず一意なアクセスを担保する方法も併せて紹介する予定です。`,
-    role: 'バックエンドエンジニア',
-    org:'株式会社サイバーエージェント/AI Shift',
-    speakerImage: 'sugar235711.jpeg',
-    bio: '社会に揉まれて3年目',
+    role: "バックエンドエンジニア",
+    org: "株式会社サイバーエージェント/AI Shift",
+    speakerImage: "sugar235711.jpeg",
+    bio: "社会に揉まれて3年目",
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '15:20~15:50'
+      track: "トラック3",
+      type: "LT",
+      time: "15:20~15:50",
     },
     socials: {
-      xAccount: 'sugar235711',
-      github: 'sugar-cat7'
+      xAccount: "sugar235711",
+      github: "sugar-cat7",
     },
-    additionalInfo: 'https://sugar-cat7.github.io/portfolio'
+    additionalInfo: "https://sugar-cat7.github.io/portfolio",
   },
   ryusaka: {
-    title: 'Prismaでスキーマ変更を行う際のベストプラクティス',
+    title: "Prismaでスキーマ変更を行う際のベストプラクティス",
     displayName: "ryusaka",
     sessionAbstract: `弊社ではPrismaを用いて開発を行っています。
     約3年間利用してきた中で、データベーススキーマに変更を加える際に実際の本番運用では気をつけなければいけないことが見えてきました。
     Prismaと組み合わせている周辺技術を紹介しつつ、スキーマ変更時に気をつけなければならない点を説明します。具体的にはblue greenデプロイを行う際にフロントエンドとの後方互換性を保ちつつリリースする方法について述べます`,
-    role: 'エンジニアリングマネージャー',
-    org: '株式会社ミツモア プロダクト部 プロワンチーム',
-    speakerImage: 'ryusaka.jpeg',
+    role: "エンジニアリングマネージャー",
+    org: "株式会社ミツモア プロダクト部 プロワンチーム",
+    speakerImage: "ryusaka.jpeg",
     bio: `株式会社ミツモアでプロワンのプロダクト責任者をしています。
     創業4ヶ月後の2017年6月からミツモアに参画しています。`,
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '15:20~15:50'
+      track: "トラック3",
+      type: "LT",
+      time: "15:20~15:50",
     },
     socials: {
-      xAccount: '',
-      github: 'ryusaka'
+      xAccount: "",
+      github: "ryusaka",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   yajihum: {
-    title: 'TypeScriptのパフォーマンス改善',
-    displayName: 'やじはむ',
+    title: "TypeScriptのパフォーマンス改善",
+    displayName: "やじはむ",
     sessionAbstract: `◎概要
     TypeScriptはJavaScriptのスーパーセットとして、静的型付けと高度な型システムを提供し、大規模なプロジェクトの開発を助けています。しかし、これらの利点を最大限に活用するためには、コンパイルパフォーマンスの最適化が不可欠です。コンパイル速度を上げることでビルド時間やテスト実行時間の削減を行うことができます。今回の発表では、TypeScriptのコンパイルパフォーマンスを改善するための具体的な手法とその背後にある理論をいくつか紹介します。
     
@@ -694,21 +694,21 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     
     ◎このテーマを選んだ理由
     今回の発表では、コンパイル速度を改善するための方法をいくつか紹介しますが、どれも理解がしやすくすぐに実践できるような方法です。TypeScript公式が紹介しているため信憑性が高く、かつ日本語での解説が少ないことから知らない方も多いと思っています。TypeScriptの初心者から経験者まで、普段TypeScriptを使うすべての開発者によって有益な内容です。`,
-    role: 'フロントエンドエンジニア',
-    org: '株式会社COMPASS',
-    speakerImage: 'yajihum.jpg',
+    role: "フロントエンドエンジニア",
+    org: "株式会社COMPASS",
+    speakerImage: "yajihum.jpg",
     bio: `2022年に慶應義塾大学商学部を卒業後、新卒未経験でWeb系受託開発会社に入社。2023年8月からフロントエンドエンジニアとして現職。小中学生を対象にした公教育で使われるプロダクト開発に携わっている。
     最近の関心事はWebパフォーマンスとエッジコンピューティング、アクセシビリティ。「ぬいぐるみで世界平和の会」に所属。`,
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '16:40~17:10'
+      track: "トラック2",
+      type: "LT",
+      time: "16:40~17:10",
     },
     socials: {
-      xAccount: 'yajihum',
-      github: 'yajihum'
+      xAccount: "yajihum",
+      github: "yajihum",
     },
-    additionalInfo: 'https://blog.yajihum.dev/'
+    additionalInfo: "https://blog.yajihum.dev/",
   },
   nyawach: {
     title: "ts-morphを使ってコードリプレイスとASTへのハードルを下げる！",
@@ -723,23 +723,23 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     
     [題材を選んだ理由]
     ・ASTに苦手意識があったが、型があるおかげもあってそこまでハードルを上げなくていいという気づきの共有がしたい。`,
-    role: 'フロントエンドエンジニア',
-    org: 'マネーフォワード Pay事業本部',
-    speakerImage: '_hyme_.jpeg',
-    bio: 'マネーフォワード Pay事業本部にてフロントエンドエンジニアを担当しています。',
+    role: "フロントエンドエンジニア",
+    org: "マネーフォワード Pay事業本部",
+    speakerImage: "_hyme_.jpeg",
+    bio: "マネーフォワード Pay事業本部にてフロントエンドエンジニアを担当しています。",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '16:40~17:10'
+      track: "トラック2",
+      type: "LT",
+      time: "16:40~17:10",
     },
     socials: {
-      xAccount: '_hyme_',
-      github: 'nyawach'
+      xAccount: "_hyme_",
+      github: "nyawach",
     },
-    additionalInfo: 'https://hyme.site/'
+    additionalInfo: "https://hyme.site/",
   },
   fujiyamaorange: {
-    title: 'SWC Transformerから見るTypeScript関数記述ベストプラクティス',
+    title: "SWC Transformerから見るTypeScript関数記述ベストプラクティス",
     displayName: "Kaito Fujimura",
     sessionAbstract: `ご存知のようにTypeScriptでは複数の方法で関数を定義できます。これまで機能、リーダビリティ、書きやすさなどの点からTypeScriptの関数記述方法について様々な意見が交わされ知見が共有されてきました。
 
@@ -754,20 +754,20 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     
     最後に結果・考察を元にコードのTransformerレベルでの最適化手法を共有し、ベストプラクティスについて一味違った視点から提案を投げかけます。
     この発表が、TypeScriptコミュニティ拡大の一助となれば幸いです。`,
-    role: 'エンジニア',
-    org: '株式会社マネーフォワード Pay事業本部',
-    speakerImage: 'fujiyamaorange.png',
-    bio: 'ジブリと音楽とウイスキーが好きです。最近は頑張ってBiomeにコントリビュートしています。',
+    role: "エンジニア",
+    org: "株式会社マネーフォワード Pay事業本部",
+    speakerImage: "fujiyamaorange.png",
+    bio: "ジブリと音楽とウイスキーが好きです。最近は頑張ってBiomeにコントリビュートしています。",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '16:40~17:10'
+      track: "トラック2",
+      type: "LT",
+      time: "16:40~17:10",
     },
     socials: {
-      xAccount: 'fujiyamaorange',
-      github: 'fujiyamaorange'
+      xAccount: "fujiyamaorange",
+      github: "fujiyamaorange",
     },
-    additionalInfo: 'https://fujiyamaorange.vercel.app/'
+    additionalInfo: "https://fujiyamaorange.vercel.app/",
   },
   nkowne63: {
     title: "TypeScriptのコード生成をつらくしないために",
@@ -775,24 +775,24 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `TypeScriptにおけるコード生成は、バックエンドサーバーとの通信やデータベースの読み書きなどの外部とのやりとりを型安全に行うための重要な手段の一つである。
     しかし、コード生成を自分たちで実装しようとした場合にはいくつかの罠があり、それらを考慮せずに踏み抜いてしまうとメンテナンスしにくいコードベースが生成されてしまう。
     このトークでは、コード生成について発表者がかつて遭遇したアンチパターンについて、その類型とつらさを紹介したのちに、それらを踏まえてどのような指針でコード生成を実装すればよいのかについて簡単に紹介を行う。`,
-    role: 'テックリード',
-    org: '株式会社ventus',
-    speakerImage: 'nkowne63.jpeg',
-    bio: '株式会社ventusに創業時から関わる。現在は博士課程（物理工学）に在籍しながらエンジニアをしている。',
+    role: "テックリード",
+    org: "株式会社ventus",
+    speakerImage: "nkowne63.jpeg",
+    bio: "株式会社ventusに創業時から関わる。現在は博士課程（物理工学）に在籍しながらエンジニアをしている。",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '16:40~17:10'
+      track: "トラック2",
+      type: "LT",
+      time: "16:40~17:10",
     },
     socials: {
-      xAccount: 'nkowne63',
-      github: 'nkowne63'
+      xAccount: "nkowne63",
+      github: "nkowne63",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   NoritakaIkeda: {
     title: "TypeScriptが学生のエンジニアコミュニティ参加を促進する",
-    displayName: 'NoritakaIkeda',
+    displayName: "NoritakaIkeda",
     sessionAbstract: `## トークを通して伝えたいこと
     TypeScriptは、授業以外でプログラミングをしてこなかった学生のエンジニアコミュニティへの参加を促進します。
     
@@ -819,21 +819,21 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     
     また、そこから長期プロジェクトへの参加や、コミュニティに新たに参加する学生が増えました。
     `,
-    role: 'Software Engineer',
-    org: '株式会社ROUTE06',
-    speakerImage: 'omotidaisukijp.jpeg',
+    role: "Software Engineer",
+    org: "株式会社ROUTE06",
+    speakerImage: "omotidaisukijp.jpeg",
     bio: `株式会社ROUTE06でエンジニアをしています。
     趣味でハッカソンを主催しています。`,
     labels: {
-      track: 'トラック1',
-      type: 'LT',
-      time: '17:20~17:40'
+      track: "トラック1",
+      type: "LT",
+      time: "17:20~17:40",
     },
     socials: {
-      xAccount: 'omotidaisukijp',
-      github: 'NoritakaIkeda'
+      xAccount: "omotidaisukijp",
+      github: "NoritakaIkeda",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   AllenShintani: {
     title: "Reactでハードウェア制御できるEdison.jsを作っている",
@@ -863,45 +863,45 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     ・ESP32を使用するためのfirmataを探す or 作る。
     ・firmataのアップロードなしで行う方法はないか？deviceScriptという拡張機能に目を付けて模索しています。
     ・DBとの連携を行う手順を確立してハンズオンしてみる`,
-    role: '学生',
-    org: 'INIAD.ts',
-    speakerImage: 'AllenShintani.jpeg',
+    role: "学生",
+    org: "INIAD.ts",
+    speakerImage: "AllenShintani.jpeg",
     bio: `TypeScriptを学んでいる学生です
     Edison.jsというTypeScript × Reactでハードウェアを制御する事が出来るオープンソースを開発しています！#EdisonjsでTwitterでつぶやいて、意見や感想などをお待ちしております！`,
     labels: {
-      track: 'トラック1',
-      type: 'LT',
-      time: '17:20~17:40'
+      track: "トラック1",
+      type: "LT",
+      time: "17:20~17:40",
     },
     socials: {
-      xAccount: 'allenganbaru',
-      github: 'AllenShintani'
+      xAccount: "allenganbaru",
+      github: "AllenShintani",
     },
-    additionalInfo: 'https://edison-js-document.vercel.app/'
+    additionalInfo: "https://edison-js-document.vercel.app/",
   },
   nabeliwo: {
     title: "多言語化対応における TypeScript の型定義を通して開発のしやすさについて考えた",
     displayName: "nabeliwo",
     sessionAbstract: `アプリケーションの多言語化対応をする中で起きた問題として、マークアップから日本語がなくなってしまいエンジニア以外がコードを触る際にどこをいじれば良いかがわかりづらくなってしまうということがありました。
     この問題を型定義で解決した話を通して、TypeScript を使ってバグを減らすだけでなく、チームの開発体験も向上できるということを伝えたいと思います。`,
-    role: 'エンジニア',
-    org: '株式会社SmartHR',
-    speakerImage: 'nabeliwo.png',
-    bio: 'web frontend developer',
+    role: "エンジニア",
+    org: "株式会社SmartHR",
+    speakerImage: "nabeliwo.png",
+    bio: "web frontend developer",
     labels: {
-      track: 'トラック1',
-      type: 'LT',
-      time: '17:20~17:40'
+      track: "トラック1",
+      type: "LT",
+      time: "17:20~17:40",
     },
     socials: {
-      xAccount: 'nabeliwo',
-      github: 'nabeliwo'
+      xAccount: "nabeliwo",
+      github: "nabeliwo",
     },
-    additionalInfo: 'https://blog.nabeliwo.com'
+    additionalInfo: "https://blog.nabeliwo.com",
   },
   ssssota: {
-    title: 'Documentation testsの恩恵',
-    displayName: 'ssssota',
+    title: "Documentation testsの恩恵",
+    displayName: "ssssota",
     sessionAbstract: `ドキュメンテーションテストとは何者か、どのような恩恵があるのか、TypeScriptでどのように実践するのかを紹介します。
     TypeScriptのソースコードをテストする方法は数多ありますが、ドキュメンテーションテストについて言及、実践している方は非常に少ないと思います。ドキュメンテーションテストは、その名の通りドキュメントとしてもテストとしても機能します。「型チェックなどの静的テスト」と「単体テスト」では受けられない恩恵を紹介します。
     
@@ -910,20 +910,20 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     ・ドキュメントが管理されず動かない例を見たことがあると思います
     ・IDEでサンプルコードが閲覧しやすくなること
     ・ドキュメントを書く習慣の定着及び、ドキュメントに対する心理的障壁の緩和`,
-    role: 'エンジニア',
-    org: '',
-    speakerImage: 'ssssota.png',
-    bio: '気の向くままにコードを書いている。',
+    role: "エンジニア",
+    org: "",
+    speakerImage: "ssssota.png",
+    bio: "気の向くままにコードを書いている。",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '17:20~17:40'
+      track: "トラック2",
+      type: "LT",
+      time: "17:20~17:40",
     },
     socials: {
-      xAccount: 'ssssotaro',
-      github: 'ssssota'
+      xAccount: "ssssotaro",
+      github: "ssssota",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   k1rof18: {
     title: "Full TypeScriptだから実現できる世界線",
@@ -933,191 +933,194 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     
     題材を選んだ理由:
     Full TypeScript化することで、過去にTypeScript+Go で開発していた時に実現できなかったことを紹介することで、サーバーサイドでもTypeScriptを選定してもらうきっかけにしてもらいたいです。`,
-    role: 'ソフトウェアエンジニア',
-    org: '株式会社ユーザベース',
-    speakerImage: 'k1rof18.jpeg',
+    role: "ソフトウェアエンジニア",
+    org: "株式会社ユーザベース",
+    speakerImage: "k1rof18.jpeg",
     bio: `TypeScriptでフロントエンドもバックエンドもインフラも経験してきたエンジニア。型が好き。
     初LTなので優しい目で見守ってください！`,
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '17:20~17:40'
+      track: "トラック2",
+      type: "LT",
+      time: "17:20~17:40",
     },
     socials: {
-      xAccount: 'k1rof18',
-      github: 'k1rof18'
+      xAccount: "k1rof18",
+      github: "k1rof18",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   yukukotani: {
     title: "Real World Type Puzzle and Code Generation",
     displayName: "Yuku Kotani",
     sessionAbstract: `PrismaやGraphQL Code Generatorのようなツールは、複雑な型をコード生成することで、型安全なAPIを現実的なパフォーマンスで提供しています。
     これらのツールが生成するコードを読み解き、現実世界で型パズルがどのように活用されているかを観察します。`,
-    role: 'Lead Architect',
-    org: 'Ubie, Inc.',
-    speakerImage: 'yukukotani.jpeg',
-    bio: 'Ubie株式会社のソフトウェアエンジニア。主に開発戦略・テクノロジーマネジメントを担当しています。筑波大学の情報科学類で勉強もしています。',
+    role: "Lead Architect",
+    org: "Ubie, Inc.",
+    speakerImage: "yukukotani.jpeg",
+    bio: "Ubie株式会社のソフトウェアエンジニア。主に開発戦略・テクノロジーマネジメントを担当しています。筑波大学の情報科学類で勉強もしています。",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '17:20~17:40'
+      track: "トラック2",
+      type: "LT",
+      time: "17:20~17:40",
     },
     socials: {
-      xAccount: 'yukukotani',
-      github: 'yukukotani'
+      xAccount: "yukukotani",
+      github: "yukukotani",
     },
-    additionalInfo: 'https://yuku.dev'
+    additionalInfo: "https://yuku.dev",
   },
   MakotoShimazu: {
-    title: '新サービス Progate Path の演習で TypeScript を採用して見えた教材観点からの利点と課題',
-    displayName: '島津 真人',
-    sessionAbstract:`株式会社Progateは、初心者向けのプログラミング学習サービス Progate に加え、より一歩先の学習が出来る新サービス、 Progate Path を2022年11月にリリースしました。Progate Path は「実務感」をテーマに、自分の環境でプロダクト開発に携わる経験が積める学習サービスになっています。ローンチ前には、この「実務感」のある演習の試作を作ろうと、OSSのPRを模した課題を作成したり、オープンになっているインターンプロジェクトを模したプロジェクトを用意するなど、様々な形で試作を行いました。
+    title: "新サービス Progate Path の演習で TypeScript を採用して見えた教材観点からの利点と課題",
+    displayName: "島津 真人",
+    sessionAbstract: `株式会社Progateは、初心者向けのプログラミング学習サービス Progate に加え、より一歩先の学習が出来る新サービス、 Progate Path を2022年11月にリリースしました。Progate Path は「実務感」をテーマに、自分の環境でプロダクト開発に携わる経験が積める学習サービスになっています。ローンチ前には、この「実務感」のある演習の試作を作ろうと、OSSのPRを模した課題を作成したり、オープンになっているインターンプロジェクトを模したプロジェクトを用意するなど、様々な形で試作を行いました。
 
     本セッションでは、試作する中で見えてきた「実務感」の定義などを紹介しつつ、TypeScriptでは教材としてどういう点が優れており、逆にどういった点が課題となっているかを紹介します。`,
-    role: 'CTO',
-    org: '株式会社Progate',
-    speakerImage: 'MakotoShimazu.jpeg',
-    bio: '東大大学院を卒業した後、GoogleのChromeチームでSoftware Engineerとして５年間勤務。テックリードとして Service Worker の実装をする傍ら、STEP教育コースの講師なども行っていた。 2021年4月より Progate に入社し、Progate Pathのリードを経て 2023年4月よりCTOに就任。「いろんなアイデアを爆速で形にしつづける」をスローガンに、いい組織をつくれるよう日々試行錯誤をしています。',
+    role: "CTO",
+    org: "株式会社Progate",
+    speakerImage: "MakotoShimazu.jpeg",
+    bio: "東大大学院を卒業した後、GoogleのChromeチームでSoftware Engineerとして５年間勤務。テックリードとして Service Worker の実装をする傍ら、STEP教育コースの講師なども行っていた。 2021年4月より Progate に入社し、Progate Pathのリードを経て 2023年4月よりCTOに就任。「いろんなアイデアを爆速で形にしつづける」をスローガンに、いい組織をつくれるよう日々試行錯誤をしています。",
     labels: {
-      track: 'トラック1',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック1",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'MakotoShimazu',
-      github: 'makotoshimazu'
+      xAccount: "MakotoShimazu",
+      github: "makotoshimazu",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   teramotodaiki: {
-    title: 'TypeScript化の旅: Helpfeelが辿った試行錯誤と成功の道のり',
-    displayName: '寺本大輝',
-    sessionAbstract: '2019年にスタートしたHelpfeelのTypeScript化プロジェクト。JSDocで型を付けるなどの戦略を立て、重要な部分から着手しました。レビューを通じてベストプラクティスを育みながら、anyの荒野を抜け、型安全の地を目指す旅を進めてきました。2024年の今、コードベースはほぼ完全にTypeScriptとなり、その恩恵を日々実感しています。その道のりで得た知見と教訓を、実際のコード例を交えてお届けします。この経験が、レガシーコードのTypeScript化に挑戦する他のチームへのヒントになれば幸いです。',
-    role: 'プロダクトエンジニア',
-    org: '株式会社Helpfee',
-    speakerImage: 'teramotodaiki.jpg',
-    bio: 'ゲームをハックしてプログラミングを学ぶ教材「HackforPlay」を石川工業高等専門学校在学中に開発、石川県金沢市で起業。2021年にHelpfeelエンジニアとしてNotaにジョイン。個人で一気通貫してプロダクト開発してきた知見を活かし、Helpfeelの新機能開発に取り組んでいる。',
+    title: "TypeScript化の旅: Helpfeelが辿った試行錯誤と成功の道のり",
+    displayName: "寺本大輝",
+    sessionAbstract:
+      "2019年にスタートしたHelpfeelのTypeScript化プロジェクト。JSDocで型を付けるなどの戦略を立て、重要な部分から着手しました。レビューを通じてベストプラクティスを育みながら、anyの荒野を抜け、型安全の地を目指す旅を進めてきました。2024年の今、コードベースはほぼ完全にTypeScriptとなり、その恩恵を日々実感しています。その道のりで得た知見と教訓を、実際のコード例を交えてお届けします。この経験が、レガシーコードのTypeScript化に挑戦する他のチームへのヒントになれば幸いです。",
+    role: "プロダクトエンジニア",
+    org: "株式会社Helpfee",
+    speakerImage: "teramotodaiki.jpg",
+    bio: "ゲームをハックしてプログラミングを学ぶ教材「HackforPlay」を石川工業高等専門学校在学中に開発、石川県金沢市で起業。2021年にHelpfeelエンジニアとしてNotaにジョイン。個人で一気通貫してプロダクト開発してきた知見を活かし、Helpfeelの新機能開発に取り組んでいる。",
     labels: {
-      track: 'トラック1',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック1",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'teramotodaiki',
-      github: 'teramotodaiki'
+      xAccount: "teramotodaiki",
+      github: "teramotodaiki",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   niwa_takeru: {
-    title: 'PMF達成の立役者！Full TypeScript Architecture の選定背景と構成',
-    displayName: '丹羽 健',
+    title: "PMF達成の立役者！Full TypeScript Architecture の選定背景と構成",
+    displayName: "丹羽 健",
     sessionAbstract: `アセンドは創業した４年前にフロントエンド・バックエンド・IaCの全てをTypeScriptで統一することを選択しました。日本の全産業の中で最もクラウド利用率が低い物流産業に対してSaaSを開発提供するためには長い時間軸とLeanでPDCA的な開発が求められます。このFull TypeScript Architectureの選択があったからこそ、SaaSプロダクトにおいてPMF(Product Market Fit)を達成し、シリーズAの資金調達をすることができました。
 
     本セッションではFullTSの選択をした経営的・プロダクト的な背景を整理して当時の技術選定を振り返ると共に、４年間の開発において組織内で発生した効果と課題について紹介します。`,
-    role: '取締役CTO',
-    org: 'アセンド株式会社',
-    speakerImage: 'niwa_takeru.jpeg',
-    bio: 'TSKaigi理事/Product Engineer Night主催/2021年に物流業界向けSaaS「ロジックス」を提供するアセンド株式会社に取締役CTOとして参画。7年以上のVertical SaaSの開発経験を持ち、PdMやEM、エンジニアとしての専門知識を活かして社会課題を解決するプロダクトエンジニア組織の構築に取り組んでいます。',
+    role: "取締役CTO",
+    org: "アセンド株式会社",
+    speakerImage: "niwa_takeru.jpeg",
+    bio: "TSKaigi理事/Product Engineer Night主催/2021年に物流業界向けSaaS「ロジックス」を提供するアセンド株式会社に取締役CTOとして参画。7年以上のVertical SaaSの開発経験を持ち、PdMやEM、エンジニアとしての専門知識を活かして社会課題を解決するプロダクトエンジニア組織の構築に取り組んでいます。",
     labels: {
-      track: 'トラック1',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック1",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'niwa_takeru',
-      github: ''
+      xAccount: "niwa_takeru",
+      github: "",
     },
-    additionalInfo: 'https://product.career.ascendlogi.co.jp/'
+    additionalInfo: "https://product.career.ascendlogi.co.jp/",
   },
   _seoink: {
-    title: 'TypescriptでのContextualな構造化ロギングと社内全体への導入！',
-    displayName: '瀬尾 光希',
+    title: "TypescriptでのContextualな構造化ロギングと社内全体への導入！",
+    displayName: "瀬尾 光希",
     sessionAbstract: `Pino+AsyncLocalStorageによってStructured LoggingとContextual Loggingを同時に達成し、レバテックのサーバーに全体導入した話と、それによる効果や導入時に気をつけておけばよかったことをお話します。`,
-    role: 'エンジニア',
-    org: 'レバレジーズ株式会社',
-    speakerImage: '_seoink.jpeg',
-    bio: 'ドメインモデリングに興味があります！',
+    role: "エンジニア",
+    org: "レバレジーズ株式会社",
+    speakerImage: "_seoink.jpeg",
+    bio: "ドメインモデリングに興味があります！",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック2",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: '_seoink',
-      github: ''
+      xAccount: "_seoink",
+      github: "",
     },
-    additionalInfo: 'https://my.prairie.cards/u/seoink'
+    additionalInfo: "https://my.prairie.cards/u/seoink",
   },
   yukimochi: {
-    title: 'TypeScriptで使いやすいOpenAPIの書き方',
-    displayName: '上坂 直輝',
+    title: "TypeScriptで使いやすいOpenAPIの書き方",
+    displayName: "上坂 直輝",
     sessionAbstract: `弊社のN予備校ではマイクロサービス構成を採用しており、API開発ではOpenAPIやgRPCのprotoファイルを事前に作成し、これに基づきサーバーとクライアントを同時に開発しています。
     OpenAPIの書き方を工夫することで、TypeScript用のより正確な型定義が生成できるようになり、開発を効率化することができます。
     このセッションでは、そのようなOpenAPIの書き方の工夫についていくつか紹介します。`,
-    role: 'エンジニア',
-    org: '株式会社ドワンゴ',
-    speakerImage: '',
+    role: "エンジニア",
+    org: "株式会社ドワンゴ",
+    speakerImage: "",
     bio: `2020年に株式会社ドワンゴに新卒入社
     教育事業本部にてN予備校の教材基盤バックエンド開発に従事`,
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック2",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: '',
-      github: 'yukimochi'
+      xAccount: "",
+      github: "yukimochi",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   m0m0i: {
-    title: '生成 AI と Cloud Workstations で始めるクラウド AI ネイティブ開発',
-    displayName: 'Hiroyuki Momoi',
+    title: "生成 AI と Cloud Workstations で始めるクラウド AI ネイティブ開発",
+    displayName: "Hiroyuki Momoi",
     sessionAbstract: `エンジニアのみなさん、やること多すぎませんか？
     Google の開発者支援生成 AI - Gemini Code Assist とクラウド開発環境の Google Cloud Workstations で楽をして生産性をあげていきましょう！`,
-    role: 'Customer Engineer',
-    org: 'グーグル・クラウド・ジャパン合同会社',
-    speakerImage: 'm0m0i.jpeg',
-    bio: '独立系 SIer にてインフラ系システム導入、IT 戦略企画支援、新規サービス研究開発などを経験し、Google Cloud へ。Google Cloud ソリューションの紹介やアーキテクチャ設計、PoC 支援などを通してお客様のクラウドシステム構築を技術面よりサポートしています。',
+    role: "Customer Engineer",
+    org: "グーグル・クラウド・ジャパン合同会社",
+    speakerImage: "m0m0i.jpeg",
+    bio: "独立系 SIer にてインフラ系システム導入、IT 戦略企画支援、新規サービス研究開発などを経験し、Google Cloud へ。Google Cloud ソリューションの紹介やアーキテクチャ設計、PoC 支援などを通してお客様のクラウドシステム構築を技術面よりサポートしています。",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック2",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: '',
-      github: 'm0m0i'
+      xAccount: "",
+      github: "m0m0i",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   _yasaichi: {
-    title: 'EARTHBRAINが挑むグローバルな課題とTypeScriptの活用事例について',
-    displayName: 'yasaichi',
+    title: "EARTHBRAINが挑むグローバルな課題とTypeScriptの活用事例について",
+    displayName: "yasaichi",
     sessionAbstract: `EARTHBRAINは、コマツ・NTTドコモ・ソニー・野村総合研究所が2021年に共同で立ち上げたテクノロジースタートアップです。建設現場の見える化、施工の最適化のためのプロダクトを複数開発しており、その一部は既に世界20カ国以上で利用されています。
     本発表では、EARTHBRAINが挑むグローバルな課題と、なぜ解決すべきなのか、解決のためにどのようなアプローチを取っているのかについてお話しします。また、この中でTypeScriptをどのように活用しているのかを紹介します。`,
-    role: 'シニアエンジニア',
-    org: '株式会社EARTHBRAIN',
-    speakerImage: '_yasaichi.png',
-    bio: '2015年にピクスタ株式会社に新卒入社後、開発プロセスの改善や開発基盤の整備に従事。2020年より執行役員CTOを務めた後、2023年よりEARTHBRAINに参画。現在は同社のデータプラットフォームの開発を牽引している。著作に「パーフェクトRuby on Rails【増補改訂版】」（共著、技術評論社）がある。',
+    role: "シニアエンジニア",
+    org: "株式会社EARTHBRAIN",
+    speakerImage: "_yasaichi.png",
+    bio: "2015年にピクスタ株式会社に新卒入社後、開発プロセスの改善や開発基盤の整備に従事。2020年より執行役員CTOを務めた後、2023年よりEARTHBRAINに参画。現在は同社のデータプラットフォームの開発を牽引している。著作に「パーフェクトRuby on Rails【増補改訂版】」（共著、技術評論社）がある。",
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック2",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: '_yasaichi',
-      github: 'yasaichi'
+      xAccount: "_yasaichi",
+      github: "yasaichi",
     },
-    additionalInfo: 'https://earthbrain.notion.site/EARTHBRAIN-Tech-3775fb71b41342aebf0aee6848d722bd'
+    additionalInfo:
+      "https://earthbrain.notion.site/EARTHBRAIN-Tech-3775fb71b41342aebf0aee6848d722bd",
   },
   iskmsy: {
-    title: 'TypeScriptで統一したアーキテクチャ',
-    displayName: '井関正也',
-    sessionAbstract: 'エンジニアが自分一人だった時にどういったことを見据えて、そしてどんな理由でTypeScriptを選定したのかをお話します。',
-    role: 'CTO',
-    org: '株式会社EventHub',
-    speakerImage: 'iskmsy.jpeg',
+    title: "TypeScriptで統一したアーキテクチャ",
+    displayName: "井関正也",
+    sessionAbstract:
+      "エンジニアが自分一人だった時にどういったことを見据えて、そしてどんな理由でTypeScriptを選定したのかをお話します。",
+    role: "CTO",
+    org: "株式会社EventHub",
+    speakerImage: "iskmsy.jpeg",
     bio: `東京工業大学大学院修士卒業。2013年にFirefox（Gecko）のOSS
     開発に参加しコミッターとなった後、Google Chrome（Blink）の
     コミッターとなる。2015年に産業技術総合研究所のリサーチ・
@@ -1126,157 +1129,159 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     セキュリティカンファレンスSCISでイノベーション論文賞を受賞。
     大学院在学中の2016年に株式会社EventHubを創業。`,
     labels: {
-      track: 'トラック2',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック2",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'iskmsy',
-      github: 'iseki-masaya'
+      xAccount: "iskmsy",
+      github: "iseki-masaya",
     },
-    additionalInfo: 'https://even-eko.hatenablog.com/'
+    additionalInfo: "https://even-eko.hatenablog.com/",
   },
   Toshi1127: {
-    title: 'エンジニアの技術的な意思決定を支えるADR - LayerXの活用事例',
-    displayName: '松本駿',
+    title: "エンジニアの技術的な意思決定を支えるADR - LayerXの活用事例",
+    displayName: "松本駿",
     sessionAbstract: `LayerXでは各々のエンジニアが技術的な意思決定をしていくことを推進しており、これを維持するために技術的な意思決定の記録をADR(Architecture Decision Record)として残しています。当セッションでは、TypeScriptに関する実例を交えて、ADRを書くことのメリットやLayerXの技術意思決定の文化を紹介します。`,
-    role: 'ソフトウェアエンジニア',
-    org: '株式会社LayerX',
-    speakerImage: 'Toshi1127.jpeg',
-    bio: '2019年に株式会社リクルートへ新卒として入社し、不動産情報サイトの新機能開発やパフォーマンス改善、技術的負債の解消などを経験。2022年2月に株式会社LayerXに入社し、バクラクシリーズのバックエンドからフロントエンドまで幅広く担当。現在はテックリードとしてプロダクト開発を牽引しています。',
+    role: "ソフトウェアエンジニア",
+    org: "株式会社LayerX",
+    speakerImage: "Toshi1127.jpeg",
+    bio: "2019年に株式会社リクルートへ新卒として入社し、不動産情報サイトの新機能開発やパフォーマンス改善、技術的負債の解消などを経験。2022年2月に株式会社LayerXに入社し、バクラクシリーズのバックエンドからフロントエンドまで幅広く担当。現在はテックリードとしてプロダクト開発を牽引しています。",
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック3",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'Toshi11274',
-      github: 'Toshi1127'
+      xAccount: "Toshi11274",
+      github: "Toshi1127",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   myfinder: {
-    title: 'toggle holdingsとTSあるいはTSKaigi',
-    displayName: 'Tatsuro Hisamori',
+    title: "toggle holdingsとTSあるいはTSKaigi",
+    displayName: "Tatsuro Hisamori",
     sessionAbstract: `toggle holdingsでは「全方位TypeScript」と称して、TSをフル活用した開発を推進しています。
     当社がTSKaigiでどのような取り組みをしているかや、今後エンジニアの皆様に向けて取り組んでいくことなどをお話しできればと考えております。`,
-    role: '執行役員CTO',
-    org: 'トグルホールディングス株式会社',
-    speakerImage: 'myfinder.png',
+    role: "執行役員CTO",
+    org: "トグルホールディングス株式会社",
+    speakerImage: "myfinder.png",
     bio: `大学在学中からガラケー向けWebサービス開発でエンジニアとしてのキャリアをスタート。
     以降、エンジニアとしてEC、ゲーム、アドテク、パブリッククラウド、IoT製品など幅広いジャンルで開発のみならず経営にも参画した後、2020年3月に独立。
     2020年6月、内閣官房 情報通信技術総合戦略室 政府CIO補佐官に就任。
     2023年、toggle holdings参画。`,
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック3",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'myfinder',
-      github: 'myfinder'
+      xAccount: "myfinder",
+      github: "myfinder",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   r_kawamata: {
-    title: '高まった熱量をぶつけられるコミュニティ活動のススメ',
-    displayName: '河又 涼',
+    title: "高まった熱量をぶつけられるコミュニティ活動のススメ",
+    displayName: "河又 涼",
     sessionAbstract: `TSKaigiのようなカンファレンスに参加するとモチベーションが上がりますよね？
     熱量そのままに自分で勉強会などを開催することの良さなどについてお話します。
     でも、勉強会を開催するにも会場どうしよう？？　ご安心ください。それに対する答えも用意してあります！`,
-    role: 'DevRel',
-    org: '株式会社タイミー',
-    speakerImage: 'r_kawamata.jpeg',
-    bio: '新卒で株式会社サトーに入社、営業としてラベルプリンターやハンディターミナルを活用したソリューション提案を担当。その後株式会社groovesにて、Forkwell事業部のリードセールスとして活動。セールスと海外事業の兼任を経て、Forkwell DevRel Teamに異動、エンジニア向けのイベント企画を担うDevRel Specialistとして活動。2023年5月、株式会社タイミーに入社、DevRelとして技術的な認知活動を担う。',
+    role: "DevRel",
+    org: "株式会社タイミー",
+    speakerImage: "r_kawamata.jpeg",
+    bio: "新卒で株式会社サトーに入社、営業としてラベルプリンターやハンディターミナルを活用したソリューション提案を担当。その後株式会社groovesにて、Forkwell事業部のリードセールスとして活動。セールスと海外事業の兼任を経て、Forkwell DevRel Teamに異動、エンジニア向けのイベント企画を担うDevRel Specialistとして活動。2023年5月、株式会社タイミーに入社、DevRelとして技術的な認知活動を担う。",
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック3",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'r_kawamata',
-      github: ''
+      xAccount: "r_kawamata",
+      github: "",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   takuuuuuuu777: {
-    title: 'こんなTypescriptは嫌だ',
-    displayName: '佐藤 拓人',
-    sessionAbstract: 'Typescriptの開発で感じるちょっとした「つらみ」とそこから得られる「知見」を簡単ですが紹介します',
-    role: 'テックリード',
-    org: '株式会社ビットキー',
-    speakerImage: 'takuuuuuuu777.jpeg',
-    bio: '東京大学卒業後、ワークスアプリケーションズへ新卒入社。2019年春にビットキーへジョインし、ソフトウェア開発に携わる。2019年はbitkey Store(ECサイト)や社内システムの開発に従事し、2020年よりプロダクトの開発チームに参加。現在はHome事業のプロダクト開発責任者を務める。',
+    title: "こんなTypescriptは嫌だ",
+    displayName: "佐藤 拓人",
+    sessionAbstract:
+      "Typescriptの開発で感じるちょっとした「つらみ」とそこから得られる「知見」を簡単ですが紹介します",
+    role: "テックリード",
+    org: "株式会社ビットキー",
+    speakerImage: "takuuuuuuu777.jpeg",
+    bio: "東京大学卒業後、ワークスアプリケーションズへ新卒入社。2019年春にビットキーへジョインし、ソフトウェア開発に携わる。2019年はbitkey Store(ECサイト)や社内システムの開発に従事し、2020年よりプロダクトの開発チームに参加。現在はHome事業のプロダクト開発責任者を務める。",
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック3",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'takuuuuuuu777',
-      github: 'taku7777777'
+      xAccount: "takuuuuuuu777",
+      github: "taku7777777",
     },
-    additionalInfo: 'https://qiita.com/takuuuuuuu777'
+    additionalInfo: "https://qiita.com/takuuuuuuu777",
   },
   YTakahashii: {
-    title: 'チームで挑むTypeScriptコードの漸進的改善',
-    displayName: '髙橋 佑太',
+    title: "チームで挑むTypeScriptコードの漸進的改善",
+    displayName: "髙橋 佑太",
     sessionAbstract: `株式会社メドレーで提供するプロダクト「クラウド診療支援システムCLINICS」では、ESLintの設定見直しを通じて、TypeScriptコードの漸進的な品質改善にチーム一丸となって取り組んでいます。
     このLTでは、私達がtypescript-eslintの各ルールを漸進的に導入する過程で蓄積した知見と実践例を共有します。主な内容は以下の通りです：
     - 現状のESLint設定を把握する
     - typescript-eslintのルールに関する定期的な読み合わせ会を通して、新規ルールを一つずつ導入する方法とその利点
     - 約3ヶ月に及ぶ改善活動の振り返りと学び`,
-    role: 'エンジニア',
-    org: '株式会社メドレー',
-    speakerImage: 'YTakahashii.jpeg',
-    bio: '2021年に株式会社メドレーに新卒入社。クラウド診療支援システムCLINICSの機能開発の傍らフロントエンドの改善をリードしています。',
+    role: "エンジニア",
+    org: "株式会社メドレー",
+    speakerImage: "YTakahashii.jpeg",
+    bio: "2021年に株式会社メドレーに新卒入社。クラウド診療支援システムCLINICSの機能開発の傍らフロントエンドの改善をリードしています。",
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック3",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'Wakeupsloth',
-      github: 'YTakahashii'
+      xAccount: "Wakeupsloth",
+      github: "YTakahashii",
     },
-    additionalInfo: ''
+    additionalInfo: "",
   },
   yoheikikuta: {
-    title: 'Ubie のプロダクト開発における技術的レバレッジポイント3選',
-    displayName: 'yoheikikuta',
-    sessionAbstract: 'Ubie のプロダクト開発において、特にここが技術的レバレッジポイントになります！というところを 3 つほどかいつまんでご紹介します。',
-    role: 'VPoE',
-    org: 'Ubie株式会社',
-    speakerImage: 'yoheikikuta.jpeg',
-    bio: 'Deloitte にて機械学習の研究や顧客への価値提供に従事した後、クックパッドにて機械学習エンジニアとして新しい技術を用いた新規プロダクト開発を推進。2020年4月に Ubie に入社してデータの利活用やアルゴリズム開発を推進した後に、VPoE としてプロダクト開発組織を牽引。論文執筆や書籍・記事執筆や対外発表など多数。博士（理学）。',
+    title: "Ubie のプロダクト開発における技術的レバレッジポイント3選",
+    displayName: "yoheikikuta",
+    sessionAbstract:
+      "Ubie のプロダクト開発において、特にここが技術的レバレッジポイントになります！というところを 3 つほどかいつまんでご紹介します。",
+    role: "VPoE",
+    org: "Ubie株式会社",
+    speakerImage: "yoheikikuta.jpeg",
+    bio: "Deloitte にて機械学習の研究や顧客への価値提供に従事した後、クックパッドにて機械学習エンジニアとして新しい技術を用いた新規プロダクト開発を推進。2020年4月に Ubie に入社してデータの利活用やアルゴリズム開発を推進した後に、VPoE としてプロダクト開発組織を牽引。論文執筆や書籍・記事執筆や対外発表など多数。博士（理学）。",
     labels: {
-      track: 'トラック3',
-      type: 'LT',
-      time: '12:10~13:10'
+      track: "トラック3",
+      type: "LT",
+      time: "12:10~13:10",
     },
     socials: {
-      xAccount: 'yohei_kikuta',
-      github: 'yoheikikuta'
+      xAccount: "yohei_kikuta",
+      github: "yoheikikuta",
     },
-    additionalInfo: 'https://yoheikikuta.github.io/'
+    additionalInfo: "https://yoheikikuta.github.io/",
   },
   drosenwasser: {
-    title: 'Keynote',
-    displayName: 'Daniel Rosenwasser',
-    sessionAbstract: '',
-    role: 'TypeScript Product Manager',
-    org: 'Microsoft',
-    speakerImage: 'drosenwasser.jpeg',
-    bio: '',
+    title: "Keynote",
+    displayName: "Daniel Rosenwasser",
+    sessionAbstract: "",
+    role: "TypeScript Product Manager",
+    org: "Microsoft",
+    speakerImage: "drosenwasser.jpeg",
+    bio: "",
     labels: {
       track: "トラック１",
       type: "セッション",
       time: "10:30~11:15",
     },
     socials: {
-      xAccount: 'drosenwasser',
-      github: 'DanielRosenwasser'
+      xAccount: "drosenwasser",
+      github: "DanielRosenwasser",
     },
-    additionalInfo: 'https://bsky.app/profile/danr.bsky.social'
-  }
+    additionalInfo: "https://bsky.app/profile/danr.bsky.social",
+  },
 };
