@@ -45,11 +45,19 @@ export default function NavBar() {
                         key={link.index}
                         className={link.emphasis ? "indicator text-accent" : ""}
                       >
-                        <li>
-                          <Link href={link.href} rel="noopener noreferrer" target="_blank">
-                            <LinkIcon className="size-5" />
-                            {link.title}
-                          </Link>
+                        <li className="flex items-center"> {/* li 要素を flex コンテナにします */}
+                          <div className="relative flex items-center"> {/* div 要素を flex コンテナにして中の要素を横並びにします */}
+                            <Link href={link.href} rel="noopener noreferrer" target="_blank" className="flex items-center"> {/* Link 要素も flex コンテナにします */}
+                              <LinkIcon className="size-5 relative mr-2" /> {/* アイコンとタイトルの間に適切なマージンを設定します */}
+                              <span>{link.title}</span>
+                            </Link>
+                            {link.index == 3 && (
+                              <span className="relative flex h-3 w-3 -top-2 right-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" style={{ animationDuration: '2s' }}></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+                              </span>
+                            )}
+                          </div>
                         </li>
                       </div>
                     )
