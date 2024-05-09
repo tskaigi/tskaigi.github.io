@@ -188,98 +188,98 @@ export const LT_LIST: { [key: string]: SessionInfo } = {
   },
   sp_lt_01: {
     type: 'LT',
-    title: 'TypeScript化の旅: Helpfeelが辿った試行錯誤と成功の道のり',
+    title: 'TypeScript化の旅: Helpfeelが辿った試行錯誤と成功の道のり（10分）',
     displayName: '寺本大輝',
     username: 'teramotodaiki',
     org: '株式会社Helpfeel'
   },
   sp_lt_02: {
     type: 'LT',
-    title: '新サービス Progate Path の演習で TypeScript を採用して見えた教材観点からの利点と課題',
+    title: '新サービス Progate Path の演習で TypeScript を採用して見えた教材観点からの利点と課題（10分）',
     displayName: '島津 真人',
     username: 'MakotoShimazu',
     org: '株式会社Progate'
   },
   sp_lt_03: {
     type: 'LT',
-    title: 'PMF達成の立役者！Full TypeScript Architecture の選定背景と構成',
+    title: 'PMF達成の立役者！Full TypeScript Architecture の選定背景と構成（10分）',
     displayName: '丹羽 健',
     username: 'niwa_takeru',
     org: 'アセンド株式会社'
   },
   sp_lt_04: {
     type: 'LT',
-    title: 'TypescriptでのContextualな構造化ロギングと社内全体への導入！',
+    title: 'TypescriptでのContextualな構造化ロギングと社内全体への導入！（10分）',
     displayName: '瀬尾 光希',
     username: '_seoink',
     org: 'レバレジーズ株式会社'
   },
   sp_lt_05: {
     type: 'LT',
-    title: 'TypeScriptで使いやすいOpenAPIの書き方',
+    title: 'TypeScriptで使いやすいOpenAPIの書き方（10分）',
     displayName: '上坂 直輝',
     username: 'yukimochi',
     org: '株式会社ドワンゴ'
   },
   sp_lt_06: {
     type: 'LT',
-    title: '生成 AI と Cloud Workstations で始めるクラウド AI ネイティブ開発',
+    title: '生成 AI と Cloud Workstations で始めるクラウド AI ネイティブ開発（5分）',
     displayName: 'Hiroyuki Momoi',
     username: 'm0m0i',
     org: 'グーグル・クラウド・ジャパン合同会社'
   },
   sp_lt_07: {
     type: 'LT',
-    title: 'EARTHBRAINが挑むグローバルな課題とTypeScriptの活用事例について',
+    title: 'EARTHBRAINが挑むグローバルな課題とTypeScriptの活用事例について（5分）',
     displayName: 'yasaichi',
     username: '_yasaichi',
     org: '株式会社EARTHBRAIN'
   },
   sp_lt_0８: {
     type: 'LT',
-    title: 'TypeScriptで統一したアーキテクチャ',
+    title: 'TypeScriptで統一したアーキテクチャ（5分）',
     displayName: '井関正也',
     username: 'iskmsy',
     org: '株式会社EventHub'
   },
   sp_lt_09: {
     type: 'LT',
-    title: 'エンジニアの技術的な意思決定を支えるADR - LayerXの活用事例',
+    title: 'エンジニアの技術的な意思決定を支えるADR - LayerXの活用事例（5分）',
     displayName: '松本駿',
     username: 'Toshi1127',
     org: '株式会社LayerX'
   },
   sp_lt_10: {
     type: 'LT',
-    title: 'toggle holdingsとTSあるいはTSKaigi',
+    title: 'toggle holdingsとTSあるいはTSKaigi（5分）',
     displayName: 'Tatsuro Hisamori',
     username: 'myfinder',
     org: 'トグルホールディングス株式会社'
   },
   sp_lt_11: {
     type: 'LT',
-    title: '高まった熱量をぶつけられるコミュニティ活動のススメ',
+    title: '高まった熱量をぶつけられるコミュニティ活動のススメ（5分）',
     displayName: '河又 涼',
     username: 'r_kawamata',
     org: '株式会社タイミー'
   },
   sp_lt_12: {
     type: 'LT',
-    title: 'こんなTypescriptは嫌だ',
+    title: 'こんなTypescriptは嫌だ（5分）',
     displayName: '佐藤 拓人',
     username: 'takuuuuuuu777',
     org: '株式会社ビットキー'
   },
   sp_lt_13: {
     type: 'LT',
-    title: 'チームで挑むTypeScriptコードの漸進的改善',
+    title: 'チームで挑むTypeScriptコードの漸進的改善（5分）',
     displayName: '髙橋 佑太',
     username: 'YTakahashii',
     org: '株式会社メドレー'
   },
   sp_lt_14: {
     type: 'LT',
-    title: 'Ubie のプロダクト開発における技術的レバレッジポイント3選',
+    title: 'Ubie のプロダクト開発における技術的レバレッジポイント3選（5分）',
     displayName: 'yoheikikuta',
     username: 'yoheikikuta',
     org: 'Ubie株式会社'
