@@ -6,6 +6,7 @@ import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-fir
 import { ticketURL } from "./lib/data";
 import Container from "./ui/container";
 import Cta from "./ui/cta";
+import { MapDialog } from "./components/MapDialog";
 
 const pageAnchors = {
   map: "map",
@@ -78,16 +79,18 @@ export default function Home() {
           <div className="mt-40">
             <div className="mx-auto max-w-4xl">
               <h2 className="m-20 scroll-mt-20 text-center text-2xl font-bold text-accent lg:text-3xl">
-                 会場マップ
+                会場マップ
               </h2>
             </div>
-            <div className="mx-auto my-6 max-w-5xl text-left sm:px-4 lg:text-xl">
-              <div className="hidden md:block">
-                <img src="/pc_map.png" alt="PC用会場図" />
+            <div className="mx-auto my-6 max-w-5xl text-left sm:px-4 lg:text-xl flex flex-col items-center">
+              <div className="hidden md:block bg-white rounded-xl shadow overflow-hidden">
+                <img src="/tskaigi_map_h.png" alt="PC用会場図" />
               </div>
-              <div className="md:hidden">
-                <img className="" src="/1f_map.png" alt="1F会場図" />
-                <img className="" src="/b1f_map.png" alt="B1F会場図" />
+              <div className="md:hidden rounded-xl overflow-hidden bg-white shadow flex flex-col gap-8">
+                <img src="/tskaigi_map_v.png" alt="PC用会場図" />
+              </div>
+              <div className="mt-10">
+                <MapDialog />
               </div>
             </div>
           </div>
