@@ -358,23 +358,24 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: "",
   },
   unvalley: {
-    title: "Exploring type-informed lint rules in Rust based Linters",
+    title: "Exploring type-informed lint rules in Rust based TypeScript Linters",
     displayName: "unvalley",
-    sessionAbstract: `本セッションの内容は以下となる予定です。
+	sessionAbstract: `本セッションの内容は以下となる予定です。
 
-    - typescript-eslintにおける型情報を必要とするLint Ruleの実現方法
-    - Rust製のJavaScript / TypeScript Linterが、どのように型情報を必要とするLint Rulesを実現方法の模索
-    - stc / ezno といったAlternative TypeScript Compilerの動向
-    
-    TypeScriptを対象としたLinterとして、typescript-eslint, biome, oxcなどが挙げられます。  
-    現在、最も普及しているtypescript-eslintは、tscから得られた型情報を利用して、await-thenable や no-floating-promiseなどのlint ruleを提供しています。型情報を用いるlint ruleは、バグの早期発見などの観点で有用です。
-    
-    一方、Rust製であるbiomeやoxcなどは、Lint速度 (パフォーマンス) を特徴の1つとしています。RustからTypeScriptの型情報を取得・利用する方法はいくつかの選択肢があります。
-    1. stcやeznoといったRust製TypeScript Compilerの利用, 
-    2. 部分的な型推論のためのサブセットの構築, 
-    3. TypeScriptに追加される可能性のある '--isolatedDeclarations' option の利用（ただしリリース時期未定）
-    
-    これらの情報を整理し、Rust製Linterの型情報の模索過程について共有します。`,
+    - typescript-eslintにおける型情報Lintルールとは何か
+    - typescript-eslintにおける型情報Lintルールの実現方法
+    - Alternative TypeScript Compilerの動向 (stc/ezno)
+    - Rust製のTypeScript Linterの型情報Lintルール実現方法
+
+    TypeScriptを対象としたLinterとして、typescript-eslint, biome, oxc, deno_lintなどが挙げられます。
+    現在、最も普及しているtypescript-eslintは、tscから得られた型情報を利用して、await-thenable や no-floating-promiseなどのlint ruleを提供しています。型情報Lintルールは、バグの早期発見などの観点で有用です。
+
+    一方、Rust製であるbiomeやoxcなどは、Lint実行速度 (パフォーマンス) を特徴の1つとしています。RustからTypeScriptの型情報を取得・利用する方法はいくつかの選択肢があります。
+    1. TypeScript Compilerから型情報を取得する方法
+    2. Alternative TypeScript Compilerの利用
+    3. 部分的な型推論のためのサブセットの構築 (with --isolatedDeclarations option)
+
+    これらの情報を整理し、Rust製TypeScript Linterの型情報Lintルール実現の模索過程について共有します。`,
     role: "Software Engineer",
     org: "",
     speakerImage: "unvalley.jpeg",
