@@ -24,13 +24,15 @@ const SubEventPage = () => {
         <p className="mt-1 text-sm">※ 正確な情報は各イベントページをご確認ください。</p>
       </div>
       <div className="mt-10 flex flex-col gap-8">
-        {SUB_EVENTS.map(({ title, link, description, tags, date, thumbnail, sponsorList }) => (
+        {SUB_EVENTS.map(({ title, link, description, tags, date, day, thumbnail, sponsorList }) => (
           <div
             key={title}
             className="flex flex-col rounded-xl bg-white p-4 text-slate-800 md:flex-row"
           >
             <div className="w-full shrink-0 border-b border-b-slate-200 border-r-slate-200 p-2 pb-4 pr-8 text-3xl md:w-[112px] md:border-b-0 md:border-r md:p-4">
               {date}
+              <br />
+              <span className="text-xl">({day})</span>
             </div>
             <div className="p-2 pt-4 md:p-4">
               <a href={link} target="_blank" rel="noopener noreferrer">
@@ -40,7 +42,7 @@ const SubEventPage = () => {
                 </h2>
               </a>
               <a href={link} target="_blank" rel="noopener noreferrer">
-                <img src={thumbnail} alt={title} className="mt-4 max-h-[100px]" />
+                <img src={thumbnail} alt={title} className="mt-4 h-full max-h-[200px]" />
               </a>
               <p className="mt-4 whitespace-pre-line">{description}</p>
               <div className="mt-4 flex flex-wrap gap-2">
