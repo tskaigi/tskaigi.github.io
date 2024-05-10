@@ -288,7 +288,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: "https://lacolaco.net",
   },
   "9wick": {
-    title: "ハードウェアを動かすTypeScrptの世界",
+    title: "ハードウェアを動かすTypeScriptの世界",
     displayName: "9wick",
     sessionAbstract: `TypeScriptはIoTの領域でも使われており、様々なハードウェアと連動させて動かすことができます。
     Webブラウザ経由でBluetoothを制御したり、スマートフォンの加速度センサで動きをセンシングしたりなど、ディスプレイの外側の現実世界と連動させることもやりやすい時代になりました。
