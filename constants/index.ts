@@ -156,7 +156,7 @@ export const SESSION_LIST: { [key: string]: SessionInfo } = {
   },
   s_016: {
     type: "session",
-    title: "Exploring type-informed lint rules in Rust based Linters",
+    title: "Exploring type-informed lint rules in Rust based TypeScript Linters",
     displayName: "unvalley",
     username: "unvalley",
   },

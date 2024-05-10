@@ -6,13 +6,13 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "君田 祥一",
     sessionAbstract: `【概要】
     近年、フロントエンド開発における主要な言語として認知されているTypeScriptですが、その活躍の場はフロントエンドだけではありません。フロントエンドだけでなく、バックエンドやインフラも含めた全社開発環境をTypeScriptで統一している現場のリアルをお伝えします。
-    
+
     【トークの主題】
     ・TypeScriptをフル活用した開発現場のリアル
     ・フロントエンド以外でのTypeScriptの活用
     ・全方位TypeScript開発のメリット
     ・導入している技術スタックについて
-    
+
     【題材を選んだ理由】
     ・TypeScriptにおけるフルスタック開発は、まだ多くの企業で実践されていない新しい開発手法だと思います。ですので、その実態や効果について知りたいというニーズが高いと思ったからです。
     ・フロントエンド開発以外でのTypeScriptの活用事例を紹介することで、TypeScript活用の視野を広げ、新たな開発の可能性を提案できると思ったからです。
@@ -61,9 +61,9 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "tockn (Takuto Sato)",
     sessionAbstract: `PrismaはTypeScript製のORMライブラリとしてその地位を確立しつつあります。
     ネット上では入門するための記事や採用したことを共有する記事、個別のエラーへの対処法を解説した記事は増えている一方で、年単位でPrismaを運用し、その現場のリアルな知見を得られる情報はまだまだ足りていない印象を持っています。
-    
+
     そこで本発表では筆者が所属するCloudbase株式会社において2年以上Prismaを運用する中で取り入れてきた様々な工夫や、直面した課題とその対処法について共有していきます。
-    
+
     すでにPrismaを運用している方にとっても、これから運用を始める・検討している方にとっても学びになるような発表にしていきます。`,
     role: "Software Engineer",
     org: "Cloudbase株式会社",
@@ -85,17 +85,17 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "伊藤 直也",
     sessionAbstract: `TypeScript で飲食店向け業務システムの GraphQL バックエンド開発をしています。
     Domein Modeling Made Functional という、関数型的な実装アプローチの書籍を参考に、関数型寄りのスタイルで開発を続けています。
-    
+
     この開発の概要は以前に、他所でも発表していますが、そこでは型をどう使うかといったところに主に焦点をあてた発表でした。
-    
+
     この発表をすると、決まって、従前のオブジェクト指向/手続き型アプローチを前提とした開発とのギャップについて質問を受けます。
-    
+
     今回は、少し視点を変えてその辺りを中心に実際にはどんな風に設計・実装しているかをお話できればと思っています。
-    
+
     端的に言えば、アーキテクチャやモデリング、設計自体はこれまでとあまり変わりません。一方で、実装は色々と変わる··· 関数型のアプローチを取り入れることで改善できるところがあります。オブジェクト指向のメンタルモデルが無駄になることはありません。
-    
+
     とはいえその一方で、純粋関数型言語ではない TypeScript で関数型アプローチをやっていくときの面倒な側面も、もちろんあります。
-    
+
     このあたりのリアリティについてお話したいと思います。`,
     role: "CTO",
     org: "株式会社 一休",
@@ -116,7 +116,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     title: "TypeScriptと型のパフォーマンス",
     displayName: "ypresto",
     sessionAbstract: `TypeScriptではそのチューリング完全な型計算能力を使って、ライブラリの利用者に高度な開発者体験を提供することができます。React、MUI、react-hook-formなどの、ジェネリクスを多用した型定義が、その最たる例です。
- 
+
     一方で型パズルや黒魔術などと呼ばれるこの技法は、使い方によってはエディタがフリーズするほどの負荷がかかり、開発者体験を損ねることもある諸刃の剣です。過剰な計算が発生するシチュエーションの実例を、tscの動作とデバッグ方法を交えて紹介します。`,
     role: "ソフトウェアエンジニア",
     org: "株式会社LayerX",
@@ -139,9 +139,9 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `プログラミング言語の世界では、強力な静的型付け言語の重要性が高まっており、代数的データ型やパターンマッチングが注目を集めています。
 
     TypeScriptもこの影響を受け、代数的構造を意識したプログラミングが期待されています。しかし、TypeScriptにおける基本的な型のレベルでさえ、どのような代数的構造を持つかということが十分に理解されていません。
-    
+
     この発表では、TypeScriptの型と部分型関係が形成する複数の代数的構造を解説し、強固かつ柔軟な型に関するメンタルモデルの構築方法を紹介します。具体的には、順序理論、集合論、束論、環論、圏論といった複数の数学理論の観点から、型の振る舞いを代数法則に基づいて予測できるようになります。
-    
+
     このような知識を深めることで、TypeScriptのユーザー全体が型システムに対する理解を深め、TypeScriptの型についての議論やコミュニティが発展するような発表となることを目指します。`,
     role: "フロントエンドエンジニア",
     org: "",
@@ -189,19 +189,19 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "kosui",
     sessionAbstract: `課題
     特にtoBサービスを開発する皆様、こんな悩みを抱えたことはありませんか？
-    
+
     「顧客がExcelやCSVで入稿した複雑な入力データを、正確かつ効率的に検証しなければならない…」
-    
+
     toBサービスでは、数々のエンティティの関係性について、顧客の業界特有のビジネスルールや法令に基づいた検証を実現しなければならないことがあります。もちろん、検証結果が正確であることは必須ですが、顧客に何度も再入力させないためには複数のエラーをなるべく一度に返却しなければなりません。
-    
+
     数多くのビジネスルールの検証結果を、正確かつ効率的に合成する良い方法はないでしょうか？
-    
+
     解決策
     fp-tsの柔軟な関数合成・エラー合成機能
-    
+
     この発表では、複数の医療系SaaSを展開するカケハシにて、エンタープライズな顧客の組織階層を管理・配信する基盤システム「OGAS」の事例を紹介します。「Excel入稿ファイルからツリー形式のデータ構造を組み立てる」という複雑な要件に対し、fp-tsの柔軟な関数合成・エラー合成機能で立ち向かい、検証ロジックの正確さと効率性を両立させることができました。
-    
-    fp-tsをチームで活用するために    
+
+    fp-tsをチームで活用するために
     さらに、この発表ではfp-tsをチームで活用するための工夫も紹介します。fp-tsは日本語の情報が少なく、neverthrowなどと比べて抽象度が高いため、しばしば敬遠されることがあります。しかし、OptionやEitherだけではなく、これらを柔軟に合成できるpipeやflow、Validationなどの仕組みを活用することで、複雑なビジネスロジックに立ち向かうことができます。私達は、一日二回のモブプロや、すぐに使える社内レシピ集などを通じ、幅広い背景を持つメンバーが活躍できる環境を実現しました。`,
     role: "テックリード",
     org: "株式会社カケハシ",
@@ -224,7 +224,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `TypeScriptに、関数型、データ指向プログラミングの思想を取り入れることで、実用上でどのようなメリットが生まれるかを解説していきます。
     内容としては、ADT(代数的データ型)、Either、Task、TaskEither、モナドトランスフォーマー、Effect-TSと段階を追いながら、それぞれでどのようなメリット、デメリットがあるかを学びながら、モナドの理解を深めて行ってもらいます。
     また、Effect-TSによる副作用の分離や依存性の注入によるテストの容易化などライブラリの便利な使い方も紹介していきます。
-    
+
     Effect-TS https://www.effect.website/
     (正式名称はEffectですが、TSをつけないとGooglabilityが低いので発表中ではEffect-TSと呼称します)`,
     role: "テクノロジー戦略室 室長",
@@ -249,7 +249,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `tRPCを実務で使用して見つけたメリットと実際に起きた問題、またその解消・回避方法について紹介します。
 
     私が所属する株式会社ゼストではアプリケーションAPIのインターフェイスとして昨年2月からtRPCを使用してWebアプリケーション開発をしています。規模の目安としては、現在約80のprocedureがありサーバーサイドの実装行数は65,000行程で、フロントエンドはNext.jsを使っていまして実装行数は118,000行程です。
-    
+
     tRPCに限らず「話題になったが調べてもリアルな声が聞けない」というライブラリや技術はたくさんあります。何が嬉しいか、どう使うのかはすぐ調べられても、実際に設計・開発を行った際に何が起きるのかについて知るのは難しいです。弊社の事例を紹介してtRPCを検討している方や詳しく知らない方の助けになればと思っています。
     願わくばtRPC仲間を見つけて意見交換もしたいですね！`,
     role: "エンジニア",
@@ -293,7 +293,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `TypeScriptはIoTの領域でも使われており、様々なハードウェアと連動させて動かすことができます。
     Webブラウザ経由でBluetoothを制御したり、スマートフォンの加速度センサで動きをセンシングしたりなど、ディスプレイの外側の現実世界と連動させることもやりやすい時代になりました。
     選択肢が増えた分、「やりたいこと」に対して「どれを使うのが適切なのか」「将来的な拡張性があるのはどれか」などの選定が難しくなってきています。
-    
+
     本発表では、みんな大好きラズベリーパイから、Microsoftが出したDeviceScriptや、組み込みマイコンをどうやってTypeScriptで制御する際の選択肢など、IoT/ハードウェアにおけるTypeScriptの選択肢とそれぞれの違い、および実際に使う際に気をつけないといけない点などについてお話いたします。`,
     role: "Co-Founder & Engineer",
     org: "株式会社obniz",
@@ -338,9 +338,9 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `TypeScriptを用いたGraphQLのクライアント・サーバーの実装は、開発フローに型安全性と予測可能性をもたらしますが、その過程は必ずしも単純ではありません。本トークは、複数のプロジェクトにおいてTypeScriptとGraphQLで型安全なシステムを構築してきた経験をもとに、APIの入出力に型を付けることの重要性やそのためのベストプラクティスを解説します。
 
     まず初めに、なぜAPIに型をつけることが重要なのかを明らかにします。その上で、型安全にするためのツールや手法を紹介します。これらのツールや手法は、エラーを未然に防ぎ、予測可能な開発フローを実現します。
-    
+
     さらに、クライアントとサーバーでは考慮すべき点が異なります。それぞれの視点から、どのような点を考慮すべきか、また、ベストプラクティスは何かを解説します。例えば、クライアントでは単純にGraphQLのスキーマから生成した型だけでは安全にはならず、送信するクエリから型生成する必要があります。また、GraphQLから生成したした型をコンポーネントからはどのように利用するかというのも興味深いトピックです。一方サーバーでは、Resolverが返す型とアプリケーション内部で扱うModelの型を合わせることでより安全な実装にするプラクティスや、NestJSなどのフレームワークを使ううえで考慮することなど、クライアントとサーバーでは考えることが全然違います。
-    
+
     このトークを通じて、TypeScriptとGraphQLを用いた開発フローの質を向上させ、開発者の生産性を高めることを目指します。`,
     role: "ソフトウェアエンジニア",
     org: "ユビー株式会社",
@@ -358,23 +358,24 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: "",
   },
   unvalley: {
-    title: "Exploring type-informed lint rules in Rust based Linters",
+    title: "Exploring type-informed lint rules in Rust based TypeScript Linters",
     displayName: "unvalley",
     sessionAbstract: `本セッションの内容は以下となる予定です。
 
-    - typescript-eslintにおける型情報を必要とするLint Ruleの実現方法
-    - Rust製のJavaScript / TypeScript Linterが、どのように型情報を必要とするLint Rulesを実現方法の模索
-    - stc / ezno といったAlternative TypeScript Compilerの動向
-    
-    TypeScriptを対象としたLinterとして、typescript-eslint, biome, oxcなどが挙げられます。  
-    現在、最も普及しているtypescript-eslintは、tscから得られた型情報を利用して、await-thenable や no-floating-promiseなどのlint ruleを提供しています。型情報を用いるlint ruleは、バグの早期発見などの観点で有用です。
-    
-    一方、Rust製であるbiomeやoxcなどは、Lint速度 (パフォーマンス) を特徴の1つとしています。RustからTypeScriptの型情報を取得・利用する方法はいくつかの選択肢があります。
-    1. stcやeznoといったRust製TypeScript Compilerの利用, 
-    2. 部分的な型推論のためのサブセットの構築, 
-    3. TypeScriptに追加される可能性のある '--isolatedDeclarations' option の利用（ただしリリース時期未定）
-    
-    これらの情報を整理し、Rust製Linterの型情報の模索過程について共有します。`,
+    - typescript-eslintにおける型情報Lintルールとは何か
+    - typescript-eslintにおける型情報Lintルールの実現方法
+    - Alternative TypeScript Compilerの動向 (stc/ezno)
+    - Rust製のTypeScript Linterの型情報Lintルール実現方法
+
+    TypeScriptを対象としたLinterとして、typescript-eslint, biome, oxc, deno_lintなどが挙げられます。
+    現在、最も普及しているtypescript-eslintは、tscから得られた型情報を利用して、await-thenable や no-floating-promiseなどのlint ruleを提供しています。型情報Lintルールは、バグの早期発見などの観点で有用です。
+
+    一方、Rust製であるbiomeやoxcなどは、Lint実行速度 (パフォーマンス) を特徴の1つとしています。RustからTypeScriptの型情報を取得・利用する方法はいくつかの選択肢があります。
+    1. TypeScript Compilerから型情報を取得する方法
+    2. Alternative TypeScript Compilerの利用
+    3. 部分的な型推論のためのサブセットの構築 (with --isolatedDeclarations option)
+
+    これらの情報を整理し、Rust製TypeScript Linterの型情報Lintルール実現の模索過程について共有します。`,
     role: "Software Engineer",
     org: "",
     speakerImage: "unvalley.jpeg",
@@ -398,12 +399,12 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     ・クラウドの検査ルールを書く言語としてのTSの魅力
     ・“as TypeScript Code”プラットフォームの基盤にDenoを採用した背景
     ・コード生成器・ランタイム・バンドラの作り方、快適な“as Code”体験のための細かなこだわり、実装の苦労話
-    
+
     トークの題材である「クラウドの設定値検査ルールをTypeScriptで書ける」機能は、次のようなものです。
     ・ユーザーはどのような設定値（例：S3バケットの公開設定）を検査したいかをGraphQLクエリとして記述する
     ・ユーザーは設定値に不備があるかどうかを判定するTypeScriptコードを書く（例：S3バケットが公開状態ならNGを出力）
     ・ユーザーがアップロードしたGraphQLクエリとTSの検査コードをもとに、Shisho Cloudは継続的にクラウドの設定値を取得して検査コードを実行し、出力がNGなら報告する
-    
+
     この機能を実現するために、以下のものを実装しました。
     ・ユーザーのGraphQLクエリに基づきクラウドの設定値データを取得するシステム
     ・取得した設定値データを入力として、ユーザーのTSコードをサンドボックス実行するシステム（Denoベース）
@@ -431,7 +432,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `Prettierは、2017年にJames Longとvjeuxによって開発されて以降、JavaScriptエコシステムにおけるコードフォーマッタのデファクトスタンダードとしての地位を確立してきました。James Longとvjeuxが開発から離れた後も、ボランティアのチームによって活発なメンテナンスが行われています。しかし、たくさん使われるようになって、ESLintなどの別のツールを組み合わせたときの設定の難しさや、実行速度の低さなどの問題が顕在化しています。
 
     最近はそういった問題を解決する後継となりうるソフトウェアがいくつか登場しています。たとえば、Romeのコミュニティフォーク版であるBiomeや、Denoの標準コードフォーマッタであるdprintなどです。
-    
+
     このセッションでは、それらの新しいツールとPrettierを比較しながら、JavaScriptのコードフォーマッタの未来について議論します。`,
     role: "エンジニア",
     org: "ユビー株式会社",
@@ -454,13 +455,13 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `オープンソースのコミュニケーションロボット「ｽﾀｯｸﾁｬﾝ」開発におけるTypeScriptの活用について紹介します。
 
     ｽﾀｯｸﾁｬﾝはマイコンモジュール「M5Stack」を顔に見立てたｶﾜｲｲﾛﾎﾞｯﾄです。M5Stackの開発ではC/C++言語が広く使われますが、Webフロントエンドを生業とする私にとって、組込み機器のUIやネットワークアクセスのコードをCで書くのはとても大変でした。そこで「Moddable」という組み込み向けJavaScriptアプリケーション開発プラットフォームを全面的に採用することで、Webエンジニアにも易しく柔軟なアプリケーション開発を実現しました。
-    
+
     本セッションではｽﾀｯｸﾁｬﾝの動作デモやコードの具体例を見せながら、ロボットや組込み開発においてTypeScript（Moddable）を使うメリットとトレードオフについて紹介します。一例として下記のトピックを扱います。
     - ECMA-419に準拠した型安全な組み込みAPIの利用
     - グラフィック、ネットワーク、サウンドなどの豊富な機能
     - Lint、テストツール、CLIなどのWebのエコシステムとの親和性
     - 速度やメモリ使用量に関するトレードオフと対策
-    
+
     TypeScriptでロボットが動く時代。組込み開発を始めてみたいWeb開発者におすすめのトークです！`,
     role: "",
     org: "ｽﾀｯｸﾁｬﾝコミュニティ",
@@ -482,9 +483,9 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "TamaG",
     sessionAbstract: `みなさん、ResoniteというVRSNSはご存知ですか？
     Resoniteは「Flux」という独自のビジュアルプログラミング言語を使ってメタバース内で何でも作ることが出来る、何でも創りたいエンジニアにはもってこいのVRSNSです！
-    
+
     今日はそんなResonite内で使えるアイテムを、みなさんが普段使っているであろうTypeScriptを使って、型安全に開発することができるMirageXについてお話します！
-    
+
     こんな人に聞いて欲しい！
     ・メタバースって今どうなってんだって人
     ・Resoniteって名前だけは聞いたことあるって人
@@ -534,7 +535,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `シンプルにLLMを使ってみるだけなら各社のAPIを叩くだけで良いですが、より込み入ったLLMアプリケーション・機能開発をする際の選択肢としてデファクトになりつつあるのがLangChainです。
     しかし、どうしても情報がPython環境の例が多く、意外とTypeScriptでの実例などは限定的ですが、LangChainは公式でJavaScript/TypeScript版である、LangChain.jsを提供しており、実はTypeScriptはLLMアプリケーションを開発する上で便利な言語となっています。
     (JavaやGo版は非公式で存在)
-    
+
     本LTでは、TypeScriptでも使える！LangChain.js入門と称して、フロントエンド・サーバーサイド共にTypeScriptで構築されたLLMアプリケーションを開発する上で得た経験も元に、
     TypeScriptでLangChain.jsで開発を始める上で知っておくと便利な情報をを得てもらうことを目的とします。`,
     role: "ソフトウェアエンジニア",
@@ -557,13 +558,13 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "安井大晟（ytaisei）",
     sessionAbstract: `Reactを用いたSPA開発においてフレームワークの採用は時にtoo muchになります。
     しかし、Next.jsやRemixのFiled-Basedなルーティングは開発体験が良いです。
-    
+
     私たちはSPA開発においても型安全でFile-Basedなルーティングを求めています。
-    
+
     今回はそのような状況においてTanStack Routerが有力な候補になることを、その特徴とメリットに触れながら解説します。
-    
+
     次の特徴を紹介します。
-    
+
     - 型安全でシンプルなルーティング
     - File-Basedなルート生成
     - バンドルサイズを軽減するCode Splitting
@@ -610,7 +611,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `伝えたいこと
     - 関数型プログラミングの考え方が（その詳細に立ち入らずとも）ソフトウェア開発の実務において活用できること
     - 上記の実現にあたり、「Effect」というライブラリが利用できること
-    
+
     トーク内容要約
     APIゲートウェイを素直に実装すると、背後にあるマイクロサービスへのAPIリクエスト、そのレスポンスの取捨選択と合成といった主要な関心事と、ネットワークI/Oに起因する関心事が1つのコードベースに混在してしまいます。
     後者は、具体的には非同期処理、並行処理、エラーハンドリング、リトライなどです。
@@ -637,11 +638,11 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "Sugar",
     sessionAbstract: `[主題]
     TypeScriptでのDB Connectionの管理パターンを知ること
-    
+
     [題材を選んだ理由・背景]
     マルチテナントやアクセス数の多いアプリケーションでは安定性の担保やパフォーマンス向上のためにDBのコネクション管理を効率的に行う必要があります。
     フレームワークによってはDBのコネクション管理を隠蔽してくれるものもありますが、昨今のエッジ環境の盛り上がりから、より薄いORMの採用が増え、結果としてコネクションの管理を自分で実装する場面が増えている今、改めてDBのConnectionの効率的な管理方法を知る良い機会だと思っています。
-    
+
     [内容]
     Transactionにusingを使用することで、効率的にコネクションのリリースをする実装及び、
     AsyncLocalStorageとTransactionを組み合わせに非同期でも必ず一意なアクセスを担保する方法も併せて紹介する予定です。`,
@@ -687,11 +688,11 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "やじはむ",
     sessionAbstract: `◎概要
     TypeScriptはJavaScriptのスーパーセットとして、静的型付けと高度な型システムを提供し、大規模なプロジェクトの開発を助けています。しかし、これらの利点を最大限に活用するためには、コンパイルパフォーマンスの最適化が不可欠です。コンパイル速度を上げることでビルド時間やテスト実行時間の削減を行うことができます。今回の発表では、TypeScriptのコンパイルパフォーマンスを改善するための具体的な手法とその背後にある理論をいくつか紹介します。
-    
+
     ◎内容
     1. TypeScriptのパフォーマンスとは何か、そしてなぜそれが重要なのか
     2. コンパイル速度を改善するための具体的な手法とその背後にある理論
-    
+
     ◎このテーマを選んだ理由
     今回の発表では、コンパイル速度を改善するための方法をいくつか紹介しますが、どれも理解がしやすくすぐに実践できるような方法です。TypeScript公式が紹介しているため信憑性が高く、かつ日本語での解説が少ないことから知らない方も多いと思っています。TypeScriptの初心者から経験者まで、普段TypeScriptを使うすべての開発者によって有益な内容です。`,
     role: "フロントエンドエンジニア",
@@ -715,12 +716,12 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "姫野 佑介",
     sessionAbstract: `[解決したい課題]
     コンポーネントライブラリのリプレイスプロジェクトにおいて、どのコンポーネントがどの程度リプレイスが終わっているのかが可視化できていない
-    
+
     [トークの主題]
     上記の課題について、ts-morph を用いてコンポーネントのリプレイス状況を簡単に可視化したときの話をしたいと考えています。
     ・型があるので、簡単な操作ならASTをほぼ気にしないでよく、初期導入が楽だった
     ・コード生成や機械的なリプレイスにも転用できるので、小さいところからプロジェクトやチームに浸透させると副次的なメリットがありそう
-    
+
     [題材を選んだ理由]
     ・ASTに苦手意識があったが、型があるおかげもあってそこまでハードルを上げなくていいという気づきの共有がしたい。`,
     role: "フロントエンドエンジニア",
@@ -744,14 +745,14 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract: `ご存知のようにTypeScriptでは複数の方法で関数を定義できます。これまで機能、リーダビリティ、書きやすさなどの点からTypeScriptの関数記述方法について様々な意見が交わされ知見が共有されてきました。
 
     この発表ではRust製SWCプラグインの開発経験をもとに、新たにTransformerの視点を加えTypeScriptの関数、特にReactコンポーネント作成時にその記述方法がどういった影響を持つのかを紹介します。
-    
+
     検証のため、複数の記述方法に対応した以下のプラグインを作成します。
     ・ 関数(コンポーネント)名を変更する
     ・ コンポーネントのトップのHTML要素にdata-testid=”コンポーネント名”を追加する
     ・ img要素のsrc属性がsvgファイルの際に、alt属性を自動的に空文字列にする
-    
+
     そしてこれらを実行・計測し得られた興味深い結果を元にどういった条件でどの記述方法にアドバンテージがあるのかを考察します。
-    
+
     最後に結果・考察を元にコードのTransformerレベルでの最適化手法を共有し、ベストプラクティスについて一味違った視点から提案を投げかけます。
     この発表が、TypeScriptコミュニティ拡大の一助となれば幸いです。`,
     role: "エンジニア",
@@ -795,28 +796,28 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "NoritakaIkeda",
     sessionAbstract: `## トークを通して伝えたいこと
     TypeScriptは、授業以外でプログラミングをしてこなかった学生のエンジニアコミュニティへの参加を促進します。
-    
+
     授業以外で開発未経験の学生に対して、TypeScriptを用いた、ペアメンターがつくハッカソンを実施しました。その結果、全員自分のアイデアをデモとして動かせる成果物を作成することができました。
     その過程で、ペアメンターや企業の人、開発ができる先輩学生と触れることで、新たに開発コミュニティに参加したり、インターンに参加したりと、意欲的にエンジニアコミュニティと接することができるようになりました。
-    
+
     このLTでは、実際の事例とTypeScriptの具体的な恩恵を紹介します。
-    
+
     ## トークの目的・効果・期待
-    
+
     TypeScriptによって、エンジニアのキャリアがひらけた学生の事例や、再現性のあるノウハウを共有することで、よりコミュニティを盛り上げることを目指します。
-    
-    
+
+
     ## 試行錯誤の結果、発見・到達したこと
     TypeScriptとそれを取り囲むエコシステムは、初心者がつまづきやすいポイントがケアされている、大学の情報教育との親和性がある、使用している技術者が多いという特徴があります。
     初学者が会得するハードルが低い一方で、成果物をデプロイが容易でで、自己の表現、アイデンティティの構築に効果的です。
-    
+
     ## 問題の説明・解決方法の提示
     コンピュータサイエンスを専攻している学生のうち、授業以外の経験を積んでいない人にとって、プログラミングとは、一体何が作れるかわからないことが多いです。
-    
+
     自身が習った基礎が、どうゲーム開発やアプリ開発に使われるのか、見えてきません。
-    
+
     そんな学生に対して、技術にTypeScriptに選定した上で、 3 日のインプット勉強会と、2 日のペアメンターハッカソンを実施した結果、全員自分のアイデアをデモとして動かせる成果物を作成できました。
-    
+
     また、そこから長期プロジェクトへの参加や、コミュニティに新たに参加する学生が増えました。
     `,
     role: "Software Engineer",
@@ -840,25 +841,25 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "Allen Shintani",
     sessionAbstract: `【伝えたいこと】
     ハードウェアの制御がtsxで書くことができるようになった！
-    
+
     【Edison.jsとは】
     TypeScript × Reactでハードウェア制御ができるOSSです。
     既存のハードウェア制御ライブラリとの決定的な違いは宣言的UIによる制御が可能であることです。
     C++やPythonなどを使用することが主流だった今までの常識を変える力があります。
-    
+
     【1. hookがそのまま使える事】
     例えばLEDを点滅させる場合、useStateでbooleanの値を持ちon, offを切り替えられます。
-    
+
     【2. すぐに使える】
     当たり前のように思えますが実はそうでもありません。
     edison.jsなら現在はfirmataをアップロードしてシリアルポートで繋ぐだけで使用できます。
-    
+
     【3. チーム開発に嬉しい】
     Arduino IDEなどをメインで使用する必要もなく任意のテキストエディタが利用でき、TypeScriptのチーム開発をそのまま再現できます。
-    
+
     【題材を選んだ理由】
     Reactで操作できるという既存ライブラリとの大きな差異を素直に伝えたかった。
-    
+
     【将来的実装】
     ・ESP32を使用するためのfirmataを探す or 作る。
     ・firmataのアップロードなしで行う方法はないか？deviceScriptという拡張機能に目を付けて模索しています。
@@ -904,7 +905,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "ssssota",
     sessionAbstract: `ドキュメンテーションテストとは何者か、どのような恩恵があるのか、TypeScriptでどのように実践するのかを紹介します。
     TypeScriptのソースコードをテストする方法は数多ありますが、ドキュメンテーションテストについて言及、実践している方は非常に少ないと思います。ドキュメンテーションテストは、その名の通りドキュメントとしてもテストとしても機能します。「型チェックなどの静的テスト」と「単体テスト」では受けられない恩恵を紹介します。
-    
+
     ドキュメンテーションテストは、名前の通りドキュメントとしてテストを記述します。これにより主に以下３点の恩恵が受けられます。
     ・ドキュメントに書かれたコードが正常に動作すること
     ・ドキュメントが管理されず動かない例を見たことがあると思います
@@ -930,7 +931,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     displayName: "k-ichirof",
     sessionAbstract: `TypeScriptを使ってフロントからバックエンドまで全てTypeScriptにすることで、どのようなメリットが得られるのかを紹介したいと思います。
     また、Full TypeScript にするにあたって苦労した点を紹介することで、今後Full TypeScript化を目指す方々の参考になるような内容にしたいと思います。
-    
+
     題材を選んだ理由:
     Full TypeScript化することで、過去にTypeScript+Go で開発していた時に実現できなかったことを紹介することで、サーバーサイドでもTypeScriptを選定してもらうきっかけにしてもらいたいです。`,
     role: "ソフトウェアエンジニア",
