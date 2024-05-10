@@ -1266,7 +1266,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     additionalInfo: "https://yoheikikuta.github.io/",
   },
   drosenwasser: {
-    title: "Keynote",
+    title: "What's New in TypeScript",
     displayName: "Daniel Rosenwasser",
     sessionAbstract: "",
     role: "TypeScript Product Manager",
