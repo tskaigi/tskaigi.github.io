@@ -996,7 +996,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     sessionAbstract:
       "2019年にスタートしたHelpfeelのTypeScript化プロジェクト。JSDocで型を付けるなどの戦略を立て、重要な部分から着手しました。レビューを通じてベストプラクティスを育みながら、anyの荒野を抜け、型安全の地を目指す旅を進めてきました。2024年の今、コードベースはほぼ完全にTypeScriptとなり、その恩恵を日々実感しています。その道のりで得た知見と教訓を、実際のコード例を交えてお届けします。この経験が、レガシーコードのTypeScript化に挑戦する他のチームへのヒントになれば幸いです。",
     role: "プロダクトエンジニア",
-    org: "株式会社Helpfee",
+    org: "株式会社Helpfeel",
     speakerImage: "teramotodaiki.jpg",
     bio: "ゲームをハックしてプログラミングを学ぶ教材「HackforPlay」を石川工業高等専門学校在学中に開発、石川県金沢市で起業。2021年にHelpfeelエンジニアとしてNotaにジョイン。個人で一気通貫してプロダクト開発してきた知見を活かし、Helpfeelの新機能開発に取り組んでいる。",
     labels: {
