@@ -9,6 +9,8 @@ import type { AcountLink, CardData, PageInfo, QandA, SponsorList } from "./defin
 
 
 export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
+export const loginURL = "https://event.eventhub.jp/e/VjqcjZK60/login";
+export const onlineTicketURL = "https://client.eventhub.jp/form/888f0f37-63fb-46b4-887e-f3bec9678d05/formprofile?isTicketSelected=true"
 
 export const pageInfos: PageInfo[] = [
   {
@@ -93,13 +95,13 @@ export const acountLink: AcountLink[] = [
   },
   {
     index: 3,
-    title: "チケット販売",
+    title: "オンライン参加枠",
     showNavbar: true,
     showFooter: true,
     emphasis: true,
     description: "TSKaigiのチケット販売ページ",
     icon: (IoTicket as IconType),
-    href: ticketURL,
+    href: onlineTicketURL,
   },
 ];
 

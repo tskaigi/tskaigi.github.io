@@ -3,7 +3,7 @@ import { PersonalSponsorSection } from "./components/PersonalSponsorSection";
 import { SponsorLogosSection } from "./components/SponsorLogosSection";
 import { StaffMemberSection } from "./components/StaffMemberSection";
 import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-first-render";
-import { ticketURL } from "./lib/data";
+import { ticketURL, loginURL, onlineTicketURL } from "./lib/data";
 import Container from "./ui/container";
 import Cta from "./ui/cta";
 
@@ -25,6 +25,34 @@ export default function Home() {
         />
       </div>
       <Container>
+        <div className="my-20">
+          <h2 className="mb-10 scroll-mt-20 text-center text-2xl font-bold text-accent lg:text-3xl">
+            当日のお知らせ
+          </h2>
+          <div className="grid sm:grid-cols-2 mx-auto max-w-4xl gap-2">
+            <div className="bg-info-content text-base-300 rounded-md">
+              <p className="text-2xl text-center m-4">現地参加の方</p>
+              <p className="text-lg px-4">
+                会場到着後、受付で入場用QRコードの提示が必要になります。<br />
+                EventHubへのログイン後、入場用QRコードを表示して列に待機してください。<br />
+              </p>
+              <div className="px-4">
+                <Cta mainLink={loginURL} mainLinkText="参加QRを表示する" />
+              </div>
+            </div>
+            <div className="border border-info-content rounded-md">
+              <p className="text-2xl text-center m-4">オンライン視聴の方</p>
+              <p className="text-lg px-4">
+                オンライン視聴には無料の参加登録が必要です。下記リンクからお進みください。
+                <br />
+                オンラインは<span className="text-accent text-2xl">当日参加</span>も受け付けていますので、お気軽にご参加ください。
+              </p>
+              <div className="px-4">
+                <Cta mainLink={loginURL} mainLinkText="視聴する" subLink={onlineTicketURL} subLinkText="参加登録する" />
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="relative isolate overflow-hidden">
           <div className="mx-auto max-w-7xl ">
             <div className="mx-auto max-w-4xl lg:pt-8">
@@ -78,7 +106,7 @@ export default function Home() {
           <div className="mt-40">
             <div className="mx-auto max-w-4xl">
               <h2 className="m-20 scroll-mt-20 text-center text-2xl font-bold text-accent lg:text-3xl">
-                 会場マップ
+                会場マップ
               </h2>
             </div>
             <div className="mx-auto my-6 max-w-5xl text-left sm:px-4 lg:text-xl">
