@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import { FaBook, FaHandshake, FaBan } from "react-icons/fa";
+import { FaBook, FaHandshake, FaBan, FaBolt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
@@ -61,6 +61,15 @@ export const pageInfos: PageInfo[] = [
   },
   {
     index: 6,
+    title: "サブイベント",
+    showNavbar: true,
+    showFooter: true,
+    description: "TSKaigiの公認サブイベントです",
+    icon: FaBolt as IconType,
+    href: "/subevents",
+  },
+  {
+    index: 7,
     title: "特定商取引法に基づく表記",
     showNavbar: false,
     showFooter: true,
@@ -877,3 +886,24 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
     },
   ],
 };
+
+export const SUB_EVENTS = [
+  {
+    title: "タイトルタイトルタイトルタイトルタイトルタイトル",
+    description: `あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。`,
+    sponsorList: ["スポンサー名1", "スポンサー名2"],
+    tags: ["オンラインあり"],
+    date: "1/1",
+    link: "https://example.com",
+    thumbnail: "/banner.png",
+  },
+  {
+    title: "タイトルタイトルタイトルタイトルタイトルタイトル2",
+    description: `あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。`,
+    sponsorList: ["スポンサー名1", "スポンサー名2"],
+    tags: ["オンラインあり"],
+    date: "1/1",
+    link: "https://example.com",
+    thumbnail: "/banner.png",
+  },
+];
