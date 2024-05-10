@@ -174,7 +174,7 @@ export const SESSION_LIST: { [key: string]: SessionInfo } = {
   },
   s_019: {
     type: "session",
-    title: "Keynote",
+    title: "Keynote: What's New in TypeScript",
     displayName: "Daniel Rosenwasser",
     username: "drosenwasser",
   },
