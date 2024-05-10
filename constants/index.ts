@@ -132,7 +132,7 @@ export const SESSION_LIST: { [key: string]: SessionInfo } = {
   },
   s_012: {
     type: "session",
-    title: "ハードウェアを動かすTypeScrptの世界",
+    title: "ハードウェアを動かすTypeScriptの世界",
     displayName: "9wick",
     username: "9wick",
   },
