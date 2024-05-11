@@ -145,7 +145,7 @@ export default function Home() {
         <h2 className=" scroll-mt-20 text-center text-2xl font-bold text-accent lg:text-3xl">
           トーク&LT審査員
         </h2>
-        <div className="md:px-10 mb-20">
+        <div className="px-4 mb-20">
           <Card cardData={selectionCommittee} />
         </div>
       </div>
