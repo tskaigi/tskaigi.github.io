@@ -1270,7 +1270,7 @@ export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
     title: "Keynote: What's New in TypeScript",
     displayName: "Daniel Rosenwasser",
     sessionAbstract: "",
-    role: "TypeScript Product Manager",
+    role: "TypeScript Principal Product Manager",
     org: "Microsoft",
     speakerImage: "drosenwasser.jpeg",
     bio: "",
