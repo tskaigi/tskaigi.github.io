@@ -61,7 +61,7 @@ export type SponsorList = {
   "Event Platform": SponsorData[];
 };
 
-export type AcountLink = {
+export type AccountLink = {
   index: number;
   showNavbar: boolean;
   showFooter: boolean;
