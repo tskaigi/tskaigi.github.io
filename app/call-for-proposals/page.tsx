@@ -141,7 +141,7 @@ export default function Page() {
           id={pageAnchors.judges}
           className="my-10 scroll-mt-20 border-l-4 pl-2 text-xl lg:text-3xl"
         >
-          <a href={`#${pageAnchors.judges}`}>審査員紹介</a>
+          <a href={`#${pageAnchors.judges}`}>トーク&LT審査員紹介</a>
         </h2>
         <p className="text-xl leading-relaxed md:px-10">
           以下のTypeScriptコミュニティの方々に審査員として参加していただいています。

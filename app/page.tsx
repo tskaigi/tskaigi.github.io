@@ -3,10 +3,11 @@ import { PersonalSponsorSection } from "./components/PersonalSponsorSection";
 import { SponsorLogosSection } from "./components/SponsorLogosSection";
 import { StaffMemberSection } from "./components/StaffMemberSection";
 import { NavigateAnchorOnFirstRender } from "./functional/navigate-anchor-on-first-render";
-import { ticketURL, loginURL, onlineTicketURL } from "./lib/data";
+import { ticketURL, loginURL, onlineTicketURL, selectionCommittee } from "./lib/data";
 import Container from "./ui/container";
 import Cta from "./ui/cta";
 import { MapDialog } from "./components/MapDialog";
+import Card from "./ui/card";
 
 const pageAnchors = {
   map: "map",
@@ -140,6 +141,14 @@ export default function Home() {
         </div>
       </Container>
       <SponsorLogosSection anchor={pageAnchors.sponsor} showDraft={false} />
+      <div className="mx-auto max-w-5xl mb-40">
+        <h2 className=" scroll-mt-20 text-center text-2xl font-bold text-accent lg:text-3xl">
+          トーク&LT審査員
+        </h2>
+        <div className="md:px-10 mb-20">
+          <Card cardData={selectionCommittee} />
+        </div>
+      </div>
       <PersonalSponsorSection />
       <StaffMemberSection />
     </>
