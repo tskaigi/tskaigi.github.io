@@ -53,6 +53,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="my-10 mx-auto max-w-4xl">
+            <p className="text-xl text-accent my-4">諸注意事項</p>
+            <p className="pl-2">
+              ・会場にはwifi(id,passはお手持ちのリーフレット参照)がありますのでご自由にお使いください。ただし、遅延を避けるためdocker pull等、<span className="text-accent">負荷が懸念される操作</span>はご遠慮ください。
+              <br />
+              <br />
+              ・各トラックルーム、最前列のカバー付きの椅子は<span className="text-accent">個人スポンサーの優先席</span>です。個人スポンサーの優先入場時にTシャツの確認をさせていただいております。
+              <br />
+              <br />
+              ・本日は記録のために、カメラマンが撮影を行っています。個別対応はできかねますので、<span className="text-accent">あらかじめご了承ください。</span>
+              <br />
+              <br />
+              ・地下一階のホワイエ(エスカレーターを降りた場所)は、<span className="text-accent">飲食禁止エリア</span>となっています。各トラックのルーム内や、休憩室でお済ませください。
+            </p>
+          </div>
         </div>
         <div className="relative isolate overflow-hidden">
           <div className="mx-auto max-w-7xl ">
