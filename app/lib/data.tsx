@@ -5,7 +5,7 @@ import { GiPublicSpeaker } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
 import { HiLightBulb } from "react-icons/hi2";
 import { IoTicket } from "react-icons/io5";
-import type { AcountLink, CardData, PageInfo, QandA, SponsorList } from "./definitions";
+import type { AccountLink, CardData, PageInfo, QandA, SponsorList } from "./definitions";
 
 
 export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
@@ -72,7 +72,7 @@ export const pageInfos: PageInfo[] = [
   }
 ];
 
-export const acountLink: AcountLink[] = [
+export const accountLink: AccountLink[] = [
   {
     index: 1,
     showNavbar: true,

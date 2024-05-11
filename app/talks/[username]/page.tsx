@@ -1,6 +1,6 @@
 import SessionLabel from "@/components/session-time-table/SessionLabel";
 import { SESSION_SPEAKERS } from "@/constants";
-import { SESSSION_DETAILS } from "@/constants/session_details";
+import { SESSION_DETAILS } from "@/constants/session_details";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ interface SessionDetailPageProps {
 }
 export default function Page({ params }: SessionDetailPageProps) {
   const { username } = params;
-  const detailInfo = SESSSION_DETAILS[username];
+  const detailInfo = SESSION_DETAILS[username];
   const slash = detailInfo.role && detailInfo.org ? '/' : '';
 
   return (

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { acountLink, pageInfos } from "../lib/data";
+import { accountLink, pageInfos } from "../lib/data";
 import { PageInfo } from "../lib/definitions";
 
 const closeSideBar = () => {
@@ -37,7 +37,7 @@ export default function NavBar() {
                     )
                   );
                 })}
-                {acountLink.map((link) => {
+                {accountLink.map((link) => {
                   const LinkIcon = link.icon;
                   return (
                     link.showNavbar && (
@@ -110,7 +110,7 @@ export default function NavBar() {
                 )
               );
             })}
-            {acountLink.map((link) => {
+            {accountLink.map((link) => {
               const LinkIcon = link.icon;
               return (
                 link.showNavbar && (

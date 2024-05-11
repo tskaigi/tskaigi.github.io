@@ -1,6 +1,6 @@
 import { SessionDetail } from "@/typs";
 
-export const SESSSION_DETAILS: { [key: string]: SessionDetail } = {
+export const SESSION_DETAILS: { [key: string]: SessionDetail } = {
   kimi_koma1111: {
     title: "フロントエンドもバックエンドもインフラも… 全てをTypeScriptで統一したらこうなった！",
     displayName: "君田 祥一",
