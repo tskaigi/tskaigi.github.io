@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
-import { pageInfos, ticketURL } from "../lib/data";
+import { pageInfos } from "../lib/data";
 import { PageInfo } from "../lib/definitions";
 
 export default function Footer() {
@@ -22,18 +22,6 @@ export default function Footer() {
               </Link>
             ),
         )}
-      </nav>
-      <nav>
-        <header className="footer-title">チケット購入</header>
-        <Link
-          href={ticketURL}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="link-hover flex items-center gap-2 pl-2 text-accent"
-        >
-          チケット購入
-          <HiExternalLink />
-        </Link>
       </nav>
       <nav>
         <header className="footer-title">公式アカウント</header>
