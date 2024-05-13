@@ -25,18 +25,21 @@ export default function Footer() {
       </nav>
       <nav>
         <h2 className="footer-title">公式アカウント</h2>
-        {accountLink.map(({ href, title }) => (
-          <Link
-            key={href}
-            href={href}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="link-hover flex items-center gap-2 pl-2"
-          >
-            {title}
-            <HiExternalLink />
-          </Link>
-        ))}
+        {accountLink.map(
+          ({ href, title, showFooter }) =>
+            showFooter && (
+              <Link
+                key={href}
+                href={href}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="link-hover flex items-center gap-2 pl-2"
+              >
+                {title}
+                <HiExternalLink />
+              </Link>
+            ),
+        )}
       </nav>
     </footer>
   );
