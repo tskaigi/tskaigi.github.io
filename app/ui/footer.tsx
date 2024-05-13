@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
-import { pageInfos } from "../lib/data";
+import { pageInfos, accountLink } from "../lib/data";
 import { PageInfo } from "../lib/definitions";
 
 export default function Footer() {
@@ -25,24 +25,18 @@ export default function Footer() {
       </nav>
       <nav>
         <header className="footer-title">公式アカウント</header>
-        <Link
-          href={"https://twitter.com/tskaigi"}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="link-hover flex items-center gap-2 pl-2"
-        >
-          公式X(Twitter)
-          <HiExternalLink />
-        </Link>
-        <Link
-          href={"https://tskaigi.hatenablog.com/"}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="link-hover flex items-center gap-2 pl-2"
-        >
-          公式ブログ
-          <HiExternalLink />
-        </Link>
+        {accountLink.map(({ href, title }) => (
+          <Link
+            key={href}
+            href={href}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="link-hover flex items-center gap-2 pl-2"
+          >
+            {title}
+            <HiExternalLink />
+          </Link>
+        ))}
       </nav>
     </footer>
   );
