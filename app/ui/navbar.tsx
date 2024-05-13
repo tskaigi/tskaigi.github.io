@@ -47,16 +47,15 @@ export default function NavBar() {
                       >
                         <li className="flex items-center">
                           <div className="relative flex items-center">
-                            <Link href={link.href} rel="noopener noreferrer" target="_blank" className="flex items-center"> 
+                            <Link
+                              href={link.href}
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              className="flex items-center"
+                            >
                               <LinkIcon className="size-5 relative mr-2" />
                               <span>{link.title}</span>
                             </Link>
-                            {link.index == 3 && (
-                              <span className="relative flex h-3 w-3 -top-2 right-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" style={{ animationDuration: '2s' }}></span>
-                                <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
-                              </span>
-                            )}
                           </div>
                         </li>
                       </div>
