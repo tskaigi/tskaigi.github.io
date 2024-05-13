@@ -13,7 +13,7 @@ export default function Footer() {
         </a>
       </aside>
       <nav>
-        <header className="footer-title">ページ一覧</header>
+        <h2 className="footer-title">ページ一覧</h2>
         {pageInfos.map(
           (link: PageInfo) =>
             link.showFooter && (
@@ -24,7 +24,7 @@ export default function Footer() {
         )}
       </nav>
       <nav>
-        <header className="footer-title">公式アカウント</header>
+        <h2 className="footer-title">公式アカウント</h2>
         {accountLink.map(({ href, title }) => (
           <Link
             key={href}
