@@ -889,23 +889,19 @@ EventHubは、マーケティング、営業のためのウェビナー・カン
 
 export const SUB_EVENTS = [
   {
-    title: "タイトルタイトルタイトルタイトルタイトルタイトル",
-    description: `あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。`,
-    sponsorList: ["スポンサー名1", "スポンサー名2"],
-    tags: ["オンラインあり", "公募あり"],
-    date: "1/1",
-    day: "月",
-    link: "https://example.com",
-    thumbnail: "/banner.png",
-  },
-  {
-    title: "タイトルタイトルタイトルタイトルタイトルタイトル2",
-    description: `あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。`,
-    sponsorList: ["スポンサー名1", "スポンサー名2"],
-    tags: ["オンラインあり"],
-    date: "1/2",
-    day: "火",
-    link: "https://example.com",
-    thumbnail: "/banner.png",
-  },
+    title: "【学生向け】来年は TSKaigi に登壇するぞ！LT会&交流会で学生エンジニアと繋がろう！",
+    description: `初LT大歓迎！TS好きな学生も触ったことない学生も集まってワイワイ盛り上がろう！
+
+カンファレンスに登壇してるエンジニアってかっこいいですよね！
+
+でも、登壇するにはハードルが高い...そんなあなたに向けて、今回は学生限定のTSKaigiサブイベントとしてLT会を企画しました。
+この機会をきっかけにし、ぜひ来年のTSKaigiではプロポーザルを出しましょう！
+`,
+    sponsorList: ["株式会社Progate", "エムスリー株式会社"],
+    tags: ["学生向け", "公募枠あり", "オンラインあり"],
+    date: "5/17",
+    day: "金",
+    link: "https://progate.connpass.com/event/318009/",
+    thumbnail: "/subevent_5_17.png",
+  }
 ];
