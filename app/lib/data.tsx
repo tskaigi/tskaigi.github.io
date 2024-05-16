@@ -4,13 +4,13 @@ import { FaXTwitter } from "react-icons/fa6";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { HiHome } from "react-icons/hi";
 import { HiLightBulb } from "react-icons/hi2";
-import { IoTicket } from "react-icons/io5";
+import { FaYoutube } from "react-icons/fa";
 import type { AccountLink, CardData, PageInfo, QandA, SponsorList } from "./definitions";
-
 
 export const ticketURL = "https://client.eventhub.jp/ticket/VjqcjZK60";
 export const loginURL = "https://event.eventhub.jp/e/VjqcjZK60/login";
-export const onlineTicketURL = "https://client.eventhub.jp/form/888f0f37-63fb-46b4-887e-f3bec9678d05/formprofile?isTicketSelected=true"
+export const onlineTicketURL =
+  "https://client.eventhub.jp/form/888f0f37-63fb-46b4-887e-f3bec9678d05/formprofile?isTicketSelected=true";
 
 export const pageInfos: PageInfo[] = [
   {
@@ -19,7 +19,7 @@ export const pageInfos: PageInfo[] = [
     showFooter: true,
     title: "Home",
     description: "",
-    icon: (HiHome as IconType),
+    icon: HiHome as IconType,
     href: "/",
   },
   {
@@ -29,7 +29,7 @@ export const pageInfos: PageInfo[] = [
     showFooter: true,
     description:
       "TSKaigiは日本のTypeScriptコミュニティを盛り上げるカンファレンスを開催します。TSKaigiに協賛いただいた企業をご紹介します。",
-    icon: (FaHandshake as IconType),
+    icon: FaHandshake as IconType,
     href: "/sponsor",
   },
   {
@@ -39,7 +39,7 @@ export const pageInfos: PageInfo[] = [
     title: "プロポーザル募集",
     description:
       "TSKaigiは日本のTypeScriptコミュニティを盛り上げるカンファレンスを開催します。あなたの発表・登壇をお待ちしております。ぜひ一緒に日本のTypeScriptコミュニティを盛り上げましょう！",
-    icon: (HiLightBulb as IconType),
+    icon: HiLightBulb as IconType,
     href: "/call-for-proposals",
   },
   {
@@ -47,9 +47,8 @@ export const pageInfos: PageInfo[] = [
     title: "タイムテーブル",
     showNavbar: true,
     showFooter: true,
-    description:
-      "TSKaigiのタイムテーブルです。",
-    icon: (GiPublicSpeaker as IconType),
+    description: "TSKaigiのタイムテーブルです。",
+    icon: GiPublicSpeaker as IconType,
     href: "/talks",
   },
   {
@@ -58,7 +57,7 @@ export const pageInfos: PageInfo[] = [
     showNavbar: true,
     showFooter: true,
     description: "TSKaigiの行動規範です。参加にあったって必ずご一読ください。",
-    icon: (FaBan as IconType),
+    icon: FaBan as IconType,
     href: "/code-of-conduct",
   },
   {
@@ -76,9 +75,9 @@ export const pageInfos: PageInfo[] = [
     showNavbar: false,
     showFooter: true,
     description: "特定商取引法に基づく表記",
-    icon: (FaBan as IconType),
+    icon: FaBan as IconType,
     href: "/specific-commercial",
-  }
+  },
 ];
 
 export const accountLink: AccountLink[] = [
@@ -89,7 +88,7 @@ export const accountLink: AccountLink[] = [
     emphasis: false,
     title: "公式X",
     description: "TSKaigiの公式X",
-    icon: (FaXTwitter as IconType),
+    icon: FaXTwitter as IconType,
     href: "https://twitter.com/tskaigi",
   },
   {
@@ -99,18 +98,18 @@ export const accountLink: AccountLink[] = [
     showFooter: true,
     emphasis: false,
     description: "TSKaigi運営のブログ",
-    icon: (FaBook as IconType),
+    icon: FaBook as IconType,
     href: "https://tskaigi.hatenablog.com/",
   },
   {
     index: 3,
-    title: "オンライン参加枠",
+    title: "公式YouTube",
     showNavbar: true,
     showFooter: true,
-    emphasis: true,
-    description: "TSKaigiのチケット販売ページ",
-    icon: (IoTicket as IconType),
-    href: onlineTicketURL,
+    emphasis: false,
+    description: "TSKaigi公式のYouTubeチャンネルです、主に講演のアーカイブ動画などを公開しています",
+    icon: FaYoutube as IconType,
+    href: "https://www.youtube.com/@tskaigi",
   },
 ];
 
@@ -187,17 +186,17 @@ export const selectionCommittee: CardData[] = [
   {
     title: "hiroppy",
     imageUrl: "/hiroppy_icon.png",
-    links: [{ icon: (FaXTwitter as IconType), href: "https://twitter.com/about_hiroppy" }],
+    links: [{ icon: FaXTwitter as IconType, href: "https://twitter.com/about_hiroppy" }],
   },
   {
     title: "mizchi",
     imageUrl: "https://pbs.twimg.com/profile_images/2507664307/viccruw2m1zb0xkkisil_400x400.jpeg",
-    links: [{ icon: (FaXTwitter as IconType), href: "https://twitter.com/mizchi" }],
+    links: [{ icon: FaXTwitter as IconType, href: "https://twitter.com/mizchi" }],
   },
   {
     title: "うひょ",
     imageUrl: "https://pbs.twimg.com/profile_images/1341186424423378944/gYTKIbFl_400x400.jpg",
-    links: [{ icon: (FaXTwitter as IconType), href: "https://twitter.com/uhyo_" }],
+    links: [{ icon: FaXTwitter as IconType, href: "https://twitter.com/uhyo_" }],
   },
 ];
 
@@ -436,7 +435,8 @@ Google Cloud Innovators は、デベロッパーや学生向けのプログラ�
 
 Innovators Live Japan は、Googsle Cloud やデベロッパー界隈の注目トピックについて、Google社員や Innovators メンバーなどがトークするライブ配信型ウェビナーです。`,
       logoImage: "/sponsors/googlecloudjapan.png",
-      logoLink: "https://cloud.google.com/innovators?hl=en&utm_source=events-with-google&utm_medium=et&utm_campaign=FY24-Q2-3P-TSKaigi_join&utm_content=joininnovators&utm_term=-",
+      logoLink:
+        "https://cloud.google.com/innovators?hl=en&utm_source=events-with-google&utm_medium=et&utm_campaign=FY24-Q2-3P-TSKaigi_join&utm_content=joininnovators&utm_term=-",
       links: [
         {
           href: "https://cloud.google.com/innovators?hl=en&utm_source=events-with-google&utm_medium=et&utm_campaign=FY24-Q2-3P-TSKaigi_join&utm_content=joininnovators&utm_term=-",
@@ -535,10 +535,14 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
 
 フロントエンド/バックエンドともにTypescriptを使用しており、o11yやTiDBなど新しい技術も積極的に導入しています。`,
       logoImage: "/sponsors/levtech.jpg",
-      logoLink: "https://speakerdeck.com/leverages/levtech-hui-she-shao-jie-zi-liao-enziniazhi-xiang-ke",
+      logoLink:
+        "https://speakerdeck.com/leverages/levtech-hui-she-shao-jie-zi-liao-enziniazhi-xiang-ke",
       links: [
         { href: "https://zenn.dev/p/levtech", text: "テックブログ" },
-        { href: "https://speakerdeck.com/leverages/levtech-hui-she-shao-jie-zi-liao-enziniazhi-xiang-ke", text: "エンジニア職向け会社紹介" },
+        {
+          href: "https://speakerdeck.com/leverages/levtech-hui-she-shao-jie-zi-liao-enziniazhi-xiang-ke",
+          text: "エンジニア職向け会社紹介",
+        },
         { href: "https://speakerdeck.com/leveragestech", text: "登壇資料" },
       ],
       addPadding: true,
@@ -623,7 +627,10 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       logoImage: "/sponsors/teamlab.png",
       logoLink: "https://www.team-lab.com/",
       links: [
-        { href: "https://open.talentio.com/r/1/c/teamlab/homes/4227", text: "カジュアル面談の受付" },
+        {
+          href: "https://open.talentio.com/r/1/c/teamlab/homes/4227",
+          text: "カジュアル面談の受付",
+        },
         { href: "https://zenn.dev/teamlab_front", text: "チームラボ フロントエンド班Zenn" },
         { href: "https://note.team-lab.com/", text: "チームラボ採用note「解体新書」" },
       ],
@@ -636,9 +643,18 @@ Rust、TypeScriptを採用しており、特定のやり方に拘らず課題に
       logoImage: "/sponsors/medicalforce_horizontal.png",
       logoLink: "https://corp.medical-force.com/",
       links: [
-        { href: "https://medicalforce.notion.site/d47facf9d55c470aae6a184b85a5c326", text: "エントランスブック" },
-        { href: "https://service.medical-force.com/", text: "自由診療クリニック向けオールインワンSaaS「medicalforce」" },
-        { href: "https://note.com/s_hatanaka/n/n7f9561844b92", text: "全社で大規模スクラムを導入してみた話 - CTO畠中のnote" },
+        {
+          href: "https://medicalforce.notion.site/d47facf9d55c470aae6a184b85a5c326",
+          text: "エントランスブック",
+        },
+        {
+          href: "https://service.medical-force.com/",
+          text: "自由診療クリニック向けオールインワンSaaS「medicalforce」",
+        },
+        {
+          href: "https://note.com/s_hatanaka/n/n7f9561844b92",
+          text: "全社で大規模スクラムを導入してみた話 - CTO畠中のnote",
+        },
       ],
       addPadding: true,
     },

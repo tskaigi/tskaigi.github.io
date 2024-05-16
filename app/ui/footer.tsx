@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { HiExternalLink } from "react-icons/hi";
-import { pageInfos, ticketURL } from "../lib/data";
+import { pageInfos, accountLink } from "../lib/data";
 import { PageInfo } from "../lib/definitions";
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
         </a>
       </aside>
       <nav>
-        <header className="footer-title">ページ一覧</header>
+        <h2 className="footer-title">ページ一覧</h2>
         {pageInfos.map(
           (link: PageInfo) =>
             link.showFooter && (
@@ -24,37 +24,22 @@ export default function Footer() {
         )}
       </nav>
       <nav>
-        <header className="footer-title">チケット購入</header>
-        <Link
-          href={ticketURL}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="link-hover flex items-center gap-2 pl-2 text-accent"
-        >
-          チケット購入
-          <HiExternalLink />
-        </Link>
-      </nav>
-      <nav>
-        <header className="footer-title">公式アカウント</header>
-        <Link
-          href={"https://twitter.com/tskaigi"}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="link-hover flex items-center gap-2 pl-2"
-        >
-          公式X(Twitter)
-          <HiExternalLink />
-        </Link>
-        <Link
-          href={"https://tskaigi.hatenablog.com/"}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="link-hover flex items-center gap-2 pl-2"
-        >
-          公式ブログ
-          <HiExternalLink />
-        </Link>
+        <h2 className="footer-title">公式アカウント</h2>
+        {accountLink.map(
+          ({ href, title, showFooter }) =>
+            showFooter && (
+              <Link
+                key={href}
+                href={href}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="link-hover flex items-center gap-2 pl-2"
+              >
+                {title}
+                <HiExternalLink />
+              </Link>
+            ),
+        )}
       </nav>
     </footer>
   );
