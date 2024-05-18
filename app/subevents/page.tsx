@@ -42,7 +42,7 @@ const SubEventPage = () => {
                 </h2>
               </a>
               <a href={link} target="_blank" rel="noopener noreferrer">
-                <img src={thumbnail} alt={title} className="mt-4 h-full max-h-[200px]" />
+                <img src={thumbnail} alt={title} className="mt-4 max-h-[200px]" />
               </a>
               <p className="mt-4 whitespace-pre-line">{description}</p>
               <div className="mt-4 flex flex-wrap gap-2">
