@@ -824,7 +824,7 @@ export const SESSION_DETAILS: { [key: string]: SessionDetail } = {
     org: "株式会社ROUTE06",
     speakerImage: "omotidaisukijp.jpeg",
     bio: `株式会社ROUTE06でエンジニアをしています。
-    趣味でハッカソンを主催しています。`,
+    ハッカソンを主催しています。`,
     labels: {
       track: "トラック1",
       type: "LT",
