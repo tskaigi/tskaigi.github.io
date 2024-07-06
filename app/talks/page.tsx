@@ -12,7 +12,7 @@ const SessionTimeTableRow = ({ timeTableRow }: SessionTimeTableRowProps) => {
   return (
     <div className="grid size-full grid-flow-row gap-4 md:grid-cols-10">
       {timeTableRow.map((cardInfo, index) => {
-        if (!['keynote','session'].includes(cardInfo.type)) {
+        if (!["keynote", "session"].includes(cardInfo.type)) {
           return <InformationCard cardInfo={cardInfo} key={cardInfo.size + "-" + index} />;
         } else {
           return <SessionCard cardInfo={cardInfo} key={cardInfo.size + "-" + index} />;

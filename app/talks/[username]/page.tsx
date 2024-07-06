@@ -18,7 +18,7 @@ interface SessionDetailPageProps {
 export default function Page({ params }: SessionDetailPageProps) {
   const { username } = params;
   const detailInfo = SESSION_DETAILS[username];
-  const slash = detailInfo.role && detailInfo.org ? '/' : '';
+  const slash = detailInfo.role && detailInfo.org ? "/" : "";
 
   return (
     <div className="p-8 md:flex md:flex-col md:items-center md:justify-center">
@@ -35,14 +35,16 @@ export default function Page({ params }: SessionDetailPageProps) {
           <p>{detailInfo.sessionAbstract}</p>
         </div>
         <div className="md:flex md:gap-8">
-          {detailInfo.speakerImage && <Image
-            className="size-20 rounded-full"
-            src={`/speaker_images/${detailInfo.speakerImage}`}
-            width={80}
-            height={80}
-            alt={`${username}_image`}
-            unoptimized
-          />}
+          {detailInfo.speakerImage && (
+            <Image
+              className="size-20 rounded-full"
+              src={`/speaker_images/${detailInfo.speakerImage}`}
+              width={80}
+              height={80}
+              alt={`${username}_image`}
+              unoptimized
+            />
+          )}
           <div>
             <div className="text-base font-bold">{detailInfo.displayName}</div>
             <p className="text-sm">{`${detailInfo.org} ${slash} ${detailInfo.role}`}</p>
@@ -69,7 +71,13 @@ export default function Page({ params }: SessionDetailPageProps) {
               )}
               {detailInfo.socials.xAccount && (
                 <Link href={`https://twitter.com/${detailInfo.socials.xAccount}`}>
-                  <Image src={"/social_logos/logo.svg"} width={22} height={22} alt="twitter_link" unoptimized/>
+                  <Image
+                    src={"/social_logos/logo.svg"}
+                    width={22}
+                    height={22}
+                    alt="twitter_link"
+                    unoptimized
+                  />
                 </Link>
               )}
             </div>
