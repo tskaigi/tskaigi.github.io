@@ -6,8 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier . --check --write"
+    "format": "prettier . --check --write",
+    "check": "run-p check:*",
+    "check:format": "prettier . --check --log-level=silent",
+    "check:types": "tsc --noEmit",
+    "check:lint": "next lint"
   },
   "dependencies": {
     "next": "14.0.3",
