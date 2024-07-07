@@ -938,5 +938,5 @@ TSKaigi 2024にご参加された方はもちろん、参加できなかった�
     day: "火",
     link: "https://layerx.connpass.com/event/318123/",
     thumbnail: "/subevent_6_4.png",
-  }
+  },
 ];

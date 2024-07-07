@@ -114,7 +114,7 @@ export default function Page() {
               <p>複数応募： 可</p>
               <div className="divider divider-neutral my-0"></div>
               <p>
-                応募方法： 
+                応募方法：
                 <a
                   className="link link-primary"
                   href="https://docs.google.com/forms/d/e/1FAIpQLScYM2r5EKCY7rK45-fPSo0IQpoHKc5dgLg82y1PAr12QIFPYQ/viewform"

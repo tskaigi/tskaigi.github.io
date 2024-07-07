@@ -35,8 +35,10 @@ export default function Home() {
             <div className="bg-info-content text-base-300 rounded-md">
               <p className="text-2xl text-center m-4">現地参加の方</p>
               <p className="text-lg px-4">
-                会場到着後、受付で入場用QRコードの提示が必要になります。<br />
-                EventHubへのログイン後、入場用QRコードを表示して列に待機してください。<br />
+                会場到着後、受付で入場用QRコードの提示が必要になります。
+                <br />
+                EventHubへのログイン後、入場用QRコードを表示して列に待機してください。
+                <br />
               </p>
               <div className="px-4">
                 <Cta mainLink={loginURL} mainLinkText="参加QRを表示する" />
@@ -47,26 +49,38 @@ export default function Home() {
               <p className="text-lg px-4">
                 オンライン視聴には無料の参加登録が必要です。下記リンクからお進みください。
                 <br />
-                オンラインは<span className="text-accent text-2xl">当日参加</span>も受け付けていますので、お気軽にご参加ください。
+                オンラインは<span className="text-accent text-2xl">当日参加</span>
+                も受け付けていますので、お気軽にご参加ください。
               </p>
               <div className="px-4">
-                <Cta mainLink={loginURL} mainLinkText="視聴する" subLink={onlineTicketURL} subLinkText="参加登録する" />
+                <Cta
+                  mainLink={loginURL}
+                  mainLinkText="視聴する"
+                  subLink={onlineTicketURL}
+                  subLinkText="参加登録する"
+                />
               </div>
             </div>
           </div>
           <div className="my-10 mx-auto max-w-4xl">
             <p className="text-xl text-accent my-4">諸注意事項</p>
             <p className="pl-2">
-              ・会場にはwifi(id,passはお手持ちのリーフレット参照)がありますのでご自由にお使いください。ただし、遅延を避けるためdocker pull等、<span className="text-accent">負荷が懸念される操作</span>はご遠慮ください。
+              ・会場にはwifi(id,passはお手持ちのリーフレット参照)がありますのでご自由にお使いください。ただし、遅延を避けるためdocker
+              pull等、<span className="text-accent">負荷が懸念される操作</span>はご遠慮ください。
               <br />
               <br />
-              ・各トラックルーム、最前列のカバー付きの椅子は<span className="text-accent">個人スポンサーの優先席</span>です。個人スポンサーの優先入場時にTシャツの確認をさせていただいております。
+              ・各トラックルーム、最前列のカバー付きの椅子は
+              <span className="text-accent">個人スポンサーの優先席</span>
+              です。個人スポンサーの優先入場時にTシャツの確認をさせていただいております。
               <br />
               <br />
-              ・本日は記録のために、カメラマンが撮影を行っています。個別対応はできかねますので、<span className="text-accent">あらかじめご了承ください。</span>
+              ・本日は記録のために、カメラマンが撮影を行っています。個別対応はできかねますので、
+              <span className="text-accent">あらかじめご了承ください。</span>
               <br />
               <br />
-              ・地下一階のホワイエ(エスカレーターを降りた場所)は、<span className="text-accent">飲食禁止エリア</span>となっています。各トラックのルーム内や、休憩室でお済ませください。
+              ・地下一階のホワイエ(エスカレーターを降りた場所)は、
+              <span className="text-accent">飲食禁止エリア</span>
+              となっています。各トラックのルーム内や、休憩室でお済ませください。
             </p>
           </div>
         </div>

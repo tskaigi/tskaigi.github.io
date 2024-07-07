@@ -20,7 +20,9 @@ const Session = ({ session }: SessionProps) => {
       ) : (
         <p className="text-base font-normal text-[#040404]">{title}</p>
       )}
-      <p className="mt-1 text-xs font-normal text-[#040404]">{org !== undefined ? `${org} ${displayName}`: displayName}</p>
+      <p className="mt-1 text-xs font-normal text-[#040404]">
+        {org !== undefined ? `${org} ${displayName}` : displayName}
+      </p>
     </div>
   );
 };
