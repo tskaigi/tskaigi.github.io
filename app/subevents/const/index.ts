@@ -10,7 +10,7 @@ type SubEvent = {
   sponsorList: string[];
   tags: string[];
   date: Date;
-  link: string;
+  link: `https://${string}` | `http://${string}`;
   thumbnail: StaticImageData;
 };
 
