@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../ui/container";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { SUB_EVENTS } from "../lib/data";
+import { SUB_EVENTS } from "./const";
 
 const Tag = ({ children }: { children: string }) => {
   return (
