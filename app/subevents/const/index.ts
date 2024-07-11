@@ -4,11 +4,13 @@ import eventImage517 from "../image/subevent_5_17.png";
 import eventImage64 from "../image/subevent_6_4.png";
 import eventImage86 from "../image/subevent_8_6.png";
 
+type EventTag = "公募枠あり" | "オンラインあり" | "学生向け";
+
 type SubEvent = {
   title: string;
   description: string[];
   sponsorList: string[];
-  tags: string[];
+  tags: EventTag[] | string[]; // 補完を表示しつつ任意入力を許可
   date: Date;
   link: `https://${string}` | `http://${string}`;
   thumbnail: StaticImageData;
@@ -21,6 +23,7 @@ export const SUB_EVENTS = [
       "TSKaigiサブイベントは、TypeScriptコミュニティの活性化のために、TSKaigi運営チームが開催する定期イベントです！",
       "オンライン・オフライン合わせて2000名以上にご参加いただいたTSKaigi2024では、フロントエンドからハードウェアまで、様々な分野のセッションを展開しました。",
       "一方、定期開催するTSKaigiサブイベントでは、特定の「テーマ」を設定し、そのテーマに関したセッションやLTを募集いたします！皆さんの興味のある領域やテーマの回で、ぜひご参加ください！",
+      "初回となる今回は、王道「フロントエンド」をテーマとし、TypeScriptとフロントエンドに関するトークを行います！ゲストセッションとして、TSKaigi2024の選考委員も務めてくださったうひょさんさんにもトークを行っていただく予定です。（イベント後は懇親会も予定しています。）",
     ],
     sponsorList: ["TBD"],
     tags: ["公募枠あり", "オンラインあり"],
