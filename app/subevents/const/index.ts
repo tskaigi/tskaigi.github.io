@@ -8,8 +8,7 @@ type SubEvent = {
   description: string[];
   sponsorList: string[];
   tags: string[];
-  date: string;
-  day: string;
+  date: Date;
   link: string;
   thumbnail: StaticImageData;
 };
@@ -24,8 +23,7 @@ export const SUB_EVENTS = [
     ],
     sponsorList: ["株式会社Progate", "エムスリー株式会社"],
     tags: ["学生向け", "公募枠あり", "オンラインあり"],
-    date: "5/17",
-    day: "金",
+    date: new Date("2024-05-17"),
     link: "https://progate.connpass.com/event/318009/",
     thumbnail: eventImage517,
   },
@@ -39,8 +37,7 @@ export const SUB_EVENTS = [
     ],
     sponsorList: ["株式会社LayerX", "株式会社Helpfeel", "アセンド株式会社"],
     tags: ["公募枠あり", "オンラインあり"],
-    date: "6/4",
-    day: "火",
+    date: new Date("2024-06-04"),
     link: "https://layerx.connpass.com/event/318123/",
     thumbnail: eventImage64,
   },
