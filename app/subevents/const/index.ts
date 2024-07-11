@@ -2,6 +2,7 @@ import type { StaticImageData } from "next/image";
 
 import eventImage517 from "../image/subevent_5_17.png";
 import eventImage64 from "../image/subevent_6_4.png";
+import eventImage86 from "../image/subevent_8_6.png";
 
 type SubEvent = {
   title: string;
@@ -14,6 +15,19 @@ type SubEvent = {
 };
 
 export const SUB_EVENTS = [
+  {
+    title: "TSKaigiサブイベント #1 フロントエンド",
+    description: [
+      "TSKaigiサブイベントは、TypeScriptコミュニティの活性化のために、TSKaigi運営チームが開催する定期イベントです！",
+      "オンライン・オフライン合わせて2000名以上にご参加いただいたTSKaigi2024では、フロントエンドからハードウェアまで、様々な分野のセッションを展開しました。",
+      "一方、定期開催するTSKaigiサブイベントでは、特定の「テーマ」を設定し、そのテーマに関したセッションやLTを募集いたします！皆さんの興味のある領域やテーマの回で、ぜひご参加ください！",
+    ],
+    sponsorList: ["TBD"],
+    tags: ["公募枠あり", "オンラインあり"],
+    date: new Date("2024-08-06"),
+    link: "https://typescript-jpc.connpass.com/event/325001/",
+    thumbnail: eventImage86,
+  },
   {
     title: "【学生向け】来年は TSKaigi に登壇するぞ！LT会&交流会で学生エンジニアと繋がろう！",
     description: [
