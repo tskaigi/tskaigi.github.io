@@ -42,13 +42,15 @@ const SubEventPage = () => {
                 </h2>
               </a>
               <a href={link} target="_blank" rel="noopener noreferrer">
-                <img src={thumbnail} alt={title} className="mt-4 max-h-[200px]" />
+                <img src={thumbnail.src} alt={title} className="mt-4 max-h-[200px]" />
               </a>
-              <>
+              <div className="pb-4 pt-2">
                 {description.map((text, index) => (
-                  <p key={index}>{text}</p>
+                  <p key={index} className="mt-4 whitespace-pre-line">
+                    {text}
+                  </p>
                 ))}
-              </>
+              </div>
               <div className="mt-4 flex flex-wrap gap-2">
                 {tags.map((tag) => (
                   <Tag key={tag}>{tag}</Tag>

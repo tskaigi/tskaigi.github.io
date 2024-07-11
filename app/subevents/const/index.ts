@@ -1,3 +1,8 @@
+import type { StaticImageData } from "next/image";
+
+import eventImage517 from "../image/subevent_5_17.png";
+import eventImage64 from "../image/subevent_6_4.png";
+
 type SubEvent = {
   title: string;
   description: string[];
@@ -6,7 +11,7 @@ type SubEvent = {
   date: string;
   day: string;
   link: string;
-  thumbnail: string;
+  thumbnail: StaticImageData;
 };
 
 export const SUB_EVENTS = [
@@ -22,7 +27,7 @@ export const SUB_EVENTS = [
     date: "5/17",
     day: "金",
     link: "https://progate.connpass.com/event/318009/",
-    thumbnail: "/subevent_5_17.png",
+    thumbnail: eventImage517,
   },
   {
     title: "TSKaigi 2024 After Talk",
@@ -37,6 +42,6 @@ export const SUB_EVENTS = [
     date: "6/4",
     day: "火",
     link: "https://layerx.connpass.com/event/318123/",
-    thumbnail: "/subevent_6_4.png",
+    thumbnail: eventImage64,
   },
 ] as const satisfies SubEvent[];
