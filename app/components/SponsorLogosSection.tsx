@@ -7,49 +7,49 @@ const sponsorVariants = {
     divider: `text-secondary divider-secondary`,
     gridSize: `gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3`,
     height: `h-48`,
-    style: ``
+    style: ``,
   },
   Gold: {
     divider: `text-accent divider-accent`,
     gridSize: `gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4`,
     height: `h-36`,
-    style: ``
+    style: ``,
   },
   Silver: {
     divider: `text-primary divider-primary`,
     gridSize: `gap-2 grid-cols-3 sm:grid-cols-4 md:grid-cols-5`,
     height: `h-28`,
-    style: ``
+    style: ``,
   },
   Bronze: {
     divider: `text-error divider-error`,
     gridSize: `gap-1 grid-cols-4 sm:grid-cols-5 md:grid-cols-6`,
     height: `h-24`,
-    style: ``
+    style: ``,
   },
   Refreshment: {
     divider: `text-gray-500 divider-gray-500`,
     gridSize: `gap-4 grid-cols-1`,
     height: `h-28`,
-    style: `text-sm`
+    style: `text-sm`,
   },
   Coffee: {
     divider: `text-gray-500 divider-gray-500`,
     gridSize: `gap-4 grid-cols-1`,
     height: `h-28`,
-    style: ``
+    style: ``,
   },
   Beer: {
     divider: `text-gray-500 divider-gray-500`,
     gridSize: `gap-4 grid-cols-1`,
     height: `h-28`,
-    style: ``
+    style: ``,
   },
   "Event Platform": {
     divider: `text-gray-500 divider-gray-500`,
     gridSize: `gap-4 grid-cols-1`,
     height: `h-28`,
-    style: `text-sm`
+    style: `text-sm`,
   },
 } as const;
 
@@ -106,7 +106,9 @@ const PlanSponsors = ({
 }) => {
   return (
     <div>
-      <h3 className={`divider sm:text-2xl font-bold ${sponsorVariants[plan].divider} ${sponsorVariants[plan].style}`}>
+      <h3
+        className={`divider sm:text-2xl font-bold ${sponsorVariants[plan].divider} ${sponsorVariants[plan].style}`}
+      >
         {`${plan}${!isOptionalPlan ? " Sponsors" : ""}`}
       </h3>
       <div

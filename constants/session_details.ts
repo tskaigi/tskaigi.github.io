@@ -360,7 +360,7 @@ export const SESSION_DETAILS: { [key: string]: SessionDetail } = {
   unvalley: {
     title: "Exploring type-informed lint rules in Rust based TypeScript Linters",
     displayName: "unvalley",
-	sessionAbstract: `本セッションの内容は以下となる予定です。
+    sessionAbstract: `本セッションの内容は以下となる予定です。
 
     - typescript-eslintにおける型情報Lintルールとは何か
     - typescript-eslintにおける型情報Lintルールの実現方法

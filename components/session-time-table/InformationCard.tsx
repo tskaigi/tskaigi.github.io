@@ -7,7 +7,7 @@ interface InformationCardProps {
 
 const InformationCard = ({ cardInfo }: InformationCardProps) => {
   const { type, content, size, track, labels, keynoteSpeaker } = cardInfo;
-  
+
   const cardClassNames =
     type === "time"
       ? "md:items-center md:justify-center md:rounded-lg md:bg-white"

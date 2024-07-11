@@ -7,8 +7,8 @@ interface SessionInfo {
 }
 
 interface SessionDetail {
-  title: string,
-  displayName: string,
+  title: string;
+  displayName: string;
   sessionAbstract: string;
   role: string;
   org: string;
