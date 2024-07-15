@@ -4,7 +4,7 @@ import eventImage517 from "../image/subevent_5_17.png";
 import eventImage64 from "../image/subevent_6_4.png";
 import eventImage86 from "../image/subevent_8_6.png";
 
-type EventTag = "公募枠あり" | "オンラインあり" | "学生向け";
+type EventTag = "公募枠あり" | "オンラインあり" | "学生向け" | "公式イベント";
 
 type SubEvent = {
   title: string;
@@ -26,7 +26,7 @@ export const SUB_EVENTS = [
       "初回となる今回は、王道「フロントエンド」をテーマとし、TypeScriptとフロントエンドに関するトークを行います！ゲストセッションとして、TSKaigi2024の選考委員も務めてくださったうひょさんさんにもトークを行っていただく予定です。（イベント後は懇親会も予定しています。）",
     ],
     sponsorList: ["TBD"],
-    tags: ["公募枠あり", "オンラインあり"],
+    tags: ["公募枠あり", "オンラインあり", "公式イベント"],
     date: new Date("2024-08-06"),
     link: "https://typescript-jpc.connpass.com/event/325001/",
     thumbnail: eventImage86,
