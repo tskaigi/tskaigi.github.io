@@ -24,7 +24,8 @@ const SubEventPage = () => {
         <p className="mt-1 text-sm">※ 正確な情報は各イベントページをご確認ください。</p>
       </div>
       <div className="mt-10 flex flex-col gap-8">
-        {SUB_EVENTS.map(({ title, link, description, tags, date, thumbnail, sponsorList }) => {
+        {/* FIXME: Next.jsが新しい配列のメソッドに対応していないのでsortを使っているがtoSortedを利用したい: https://github.com/vercel/next.js/issues/58242 */}
+        {SUB_EVENTS.sort((prev, next) => next.date.getTime() - prev.date.getTime()).map(
           const weekday = new Intl.DateTimeFormat("ja-JP", {
             weekday: "narrow",
           }).format(date);
