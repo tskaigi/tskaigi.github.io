@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../ui/container";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { SUB_EVENTS } from "../lib/data";
+import { SUB_EVENTS } from "./const";
 
 const Tag = ({ children }: { children: string }) => {
   return (
@@ -24,36 +24,57 @@ const SubEventPage = () => {
         <p className="mt-1 text-sm">※ 正確な情報は各イベントページをご確認ください。</p>
       </div>
       <div className="mt-10 flex flex-col gap-8">
-        {SUB_EVENTS.map(({ title, link, description, tags, date, day, thumbnail, sponsorList }) => (
-          <div
-            key={title}
-            className="flex flex-col rounded-xl bg-white p-4 text-slate-800 md:flex-row"
-          >
-            <div className="w-full shrink-0 border-b border-b-slate-200 border-r-slate-200 p-2 pb-4 pr-8 text-3xl md:w-[112px] md:border-b-0 md:border-r md:p-4">
-              {date}
-              <br />
-              <span className="text-xl">({day})</span>
-            </div>
-            <div className="p-2 pt-4 md:p-4">
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                <h2 className="text-xl font-bold underline hover:no-underline">
-                  {title}
-                  <FaExternalLinkAlt className="ml-2 inline" size={14} />
-                </h2>
-              </a>
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                <img src={thumbnail} alt={title} className="mt-4 max-h-[200px]" />
-              </a>
-              <p className="mt-4 whitespace-pre-line">{description}</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {tags.map((tag) => (
-                  <Tag key={tag}>{tag}</Tag>
-                ))}
+        {/* FIXME: Next.jsが新しい配列のメソッドに対応していないのでsortを使っているがtoSortedを利用したい: https://github.com/vercel/next.js/issues/58242 */}
+        {SUB_EVENTS.sort((prev, next) => next.date.getTime() - prev.date.getTime()).map(
+          ({ title, link, description, tags, date, thumbnail, sponsorList, sponsorType }) => {
+            const weekday = new Intl.DateTimeFormat("ja-JP", {
+              weekday: "narrow",
+            }).format(date);
+            const localeDate = new Intl.DateTimeFormat("ja-JP", {
+              day: "2-digit",
+              month: "2-digit",
+            }).format(date);
+
+            return (
+              <div
+                key={title}
+                className="flex flex-col rounded-xl bg-white p-4 text-slate-800 md:flex-row"
+              >
+                <div className="w-full shrink-0 border-b border-b-slate-200 border-r-slate-200 p-2 pb-4 pr-8 text-3xl md:w-[112px] md:border-b-0 md:border-r md:p-4">
+                  {localeDate}
+                  <br />
+                  <span className="text-xl">({weekday})</span>
+                </div>
+                <div className="p-2 pt-4 md:p-4">
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    <h2 className="text-xl font-bold underline hover:no-underline">
+                      {title}
+                      <FaExternalLinkAlt className="ml-2 inline" size={14} />
+                    </h2>
+                  </a>
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    <img src={thumbnail.src} alt={title} className="mt-4 max-h-[200px]" />
+                  </a>
+                  <div className="pb-4 pt-2">
+                    {description.map((text, index) => (
+                      <p key={index} className="mt-4 whitespace-pre-line">
+                        {text}
+                      </p>
+                    ))}
+                  </div>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {tags.map((tag) => (
+                      <Tag key={tag}>{tag}</Tag>
+                    ))}
+                  </div>
+                  <div className="mt-4 w-full text-end text-sm">
+                    {sponsorType === "hosting" ? "実施" : "スポンサー"}: {sponsorList.join("、")}
+                  </div>
+                </div>
               </div>
-              <div className="mt-4 w-full text-end text-sm">実施: {sponsorList.join("、")}</div>
-            </div>
-          </div>
-        ))}
+            );
+          },
+        )}
       </div>
     </Container>
   );
