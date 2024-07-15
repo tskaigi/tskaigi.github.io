@@ -12,6 +12,12 @@ type SubEvent = {
   sponsorList: string[];
   tags: EventTag[] | string[]; // 補完を表示しつつ任意入力を許可
   date: Date;
+  /**
+   * スポンサーの方法
+   * - `"hosting"` : 主催がスポンサー企業
+   * - `"sponsored"` : 主催がTSKaigi 協賛がスポンサー企業
+   */
+  sponsorType: "hosting" | "sponsored";
   link: `https://${string}` | `http://${string}`;
   thumbnail: StaticImageData;
 };
@@ -26,6 +32,7 @@ export const SUB_EVENTS = [
       "初回となる今回は、王道「フロントエンド」をテーマとし、TypeScriptとフロントエンドに関するトークを行います！ゲストセッションとして、TSKaigi2024の選考委員も務めてくださったうひょさんさんにもトークを行っていただく予定です。（イベント後は懇親会も予定しています。）",
     ],
     sponsorList: ["TBD"],
+    sponsorType: "sponsored",
     tags: ["公募枠あり", "オンラインあり", "公式イベント"],
     date: new Date("2024-08-06"),
     link: "https://typescript-jpc.connpass.com/event/325001/",
@@ -39,6 +46,7 @@ export const SUB_EVENTS = [
       "でも、登壇するにはハードルが高い...そんなあなたに向けて、今回は学生限定のTSKaigiサブイベントとしてLT会を企画しました。この機会をきっかけにし、ぜひ来年のTSKaigiではプロポーザルを出しましょう！",
     ],
     sponsorList: ["株式会社Progate", "エムスリー株式会社"],
+    sponsorType: "hosting",
     tags: ["学生向け", "公募枠あり", "オンラインあり"],
     date: new Date("2024-05-17"),
     link: "https://progate.connpass.com/event/318009/",
@@ -53,6 +61,7 @@ export const SUB_EVENTS = [
       "オフライン・オンライン問わず、皆様のご参加をスタッフ一同心よりお待ちしております。",
     ],
     sponsorList: ["株式会社LayerX", "株式会社Helpfeel", "アセンド株式会社"],
+    sponsorType: "hosting",
     tags: ["公募枠あり", "オンラインあり"],
     date: new Date("2024-06-04"),
     link: "https://layerx.connpass.com/event/318123/",
