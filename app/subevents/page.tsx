@@ -67,8 +67,10 @@ const SubEventPage = () => {
                       <Tag key={tag}>{tag}</Tag>
                     ))}
                   </div>
-                  <div className="mt-4 w-full text-end text-sm">
-                    {sponsorType === "hosting" ? "実施" : "スポンサー"}: {sponsorList.join("、")}
+                  <div className="mt-4 w-full text-sm flex justify-end">
+                    <div>
+                      {sponsorType === "hosting" ? "実施" : "スポンサー"}: {sponsorList.join("、")}
+                    </div>
                   </div>
                 </div>
               </div>
