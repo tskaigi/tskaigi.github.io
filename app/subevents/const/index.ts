@@ -24,7 +24,7 @@ type SubEvent = {
 
 export const SUB_EVENTS = [
   {
-    title: "TSKaigiサブイベント #1 フロントエンド",
+    title: "TSKaigi Mashup #1 フロントエンド",
     description: [
       "TSKaigiサブイベントは、TypeScriptコミュニティの活性化のために、TSKaigi運営チームが開催する定期イベントです！",
       "オンライン・オフライン合わせて2000名以上にご参加いただいたTSKaigi2024では、フロントエンドからハードウェアまで、様々な分野のセッションを展開しました。",
