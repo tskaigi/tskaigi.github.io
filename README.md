@@ -1,3 +1,10 @@
+# <span style="color:red;">こちらはもう更新しないでください</span>
+
+こちらは削除予定です。TSKaigi2024のページを更新する場合は
+[tskaigi2024-web-site](
+https://github.com/tskaigi/tskaigi2024-web-site)のレポジトリへ変更をかけてください。
+
+
 ## Getting Started
 
 First, run the development server:
